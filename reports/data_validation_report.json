@@ -1,0 +1,933 @@
+[
+  {
+    "split": "train",
+    "image_count": 12111,
+    "annotation_count": 70426,
+    "category_count": 4,
+    "expected_image_count": 12111,
+    "image_count_matches": true,
+    "duplicate_image_ids": 0,
+    "duplicate_annotation_ids": 0,
+    "missing_image_references": [],
+    "unknown_category_references": [],
+    "invalid_dimensions": [],
+    "invalid_boxes": [
+      {
+        "annotation_id": 130875,
+        "image_id": 45707,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 7669,
+        "image_id": 3311,
+        "bbox": [
+          845.7777777777778,
+          716.6666666666666,
+          5.333333333333333,
+          4.666666666666667
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 7670,
+        "image_id": 3311,
+        "bbox": [
+          860.8888888888889,
+          755.3333333333334,
+          8.0,
+          4.666666666666667
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 7671,
+        "image_id": 3311,
+        "bbox": [
+          776.0,
+          720.6666666666666,
+          19.555555555555557,
+          16.666666666666668
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 11717,
+        "image_id": 3929,
+        "bbox": [
+          287.1111111111111,
+          711.3333333333334,
+          14.666666666666666,
+          9.333333333333334
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 5477,
+        "image_id": 4405,
+        "bbox": [
+          1271,
+          669,
+          51,
+          109
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4585,
+        "image_id": 4415,
+        "bbox": [
+          761,
+          862,
+          8,
+          11
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4586,
+        "image_id": 4415,
+        "bbox": [
+          649,
+          867,
+          8,
+          5
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4326,
+        "image_id": 4506,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 4754,
+        "image_id": 4579,
+        "bbox": [
+          1271,
+          949,
+          28,
+          29
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4755,
+        "image_id": 4579,
+        "bbox": [
+          839,
+          1303,
+          16,
+          21
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4201,
+        "image_id": 4615,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 5951,
+        "image_id": 4650,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 4982,
+        "image_id": 4652,
+        "bbox": [
+          1280,
+          967,
+          6,
+          15
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4983,
+        "image_id": 4652,
+        "bbox": [
+          1208,
+          834,
+          11,
+          16
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4984,
+        "image_id": 4652,
+        "bbox": [
+          1003,
+          1230,
+          20,
+          17
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4985,
+        "image_id": 4652,
+        "bbox": [
+          1242,
+          899,
+          29,
+          37
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 5895,
+        "image_id": 4674,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 5898,
+        "image_id": 4674,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 5899,
+        "image_id": 4674,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 7216,
+        "image_id": 4951,
+        "bbox": [
+          938,
+          575,
+          64,
+          147
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 7217,
+        "image_id": 4951,
+        "bbox": [
+          1058,
+          559,
+          100,
+          191
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 6631,
+        "image_id": 4956,
+        "bbox": [
+          571,
+          559,
+          60,
+          166
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 6396,
+        "image_id": 5185,
+        "bbox": [
+          1280,
+          1291,
+          33,
+          79
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 6397,
+        "image_id": 5185,
+        "bbox": [
+          1131,
+          807,
+          36,
+          26
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 6398,
+        "image_id": 5185,
+        "bbox": [
+          590,
+          1116,
+          33,
+          13
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16535,
+        "image_id": 5276,
+        "bbox": [
+          1278,
+          887,
+          19,
+          17
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16536,
+        "image_id": 5276,
+        "bbox": [
+          1124,
+          929,
+          40,
+          51
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16537,
+        "image_id": 5276,
+        "bbox": [
+          1201,
+          955,
+          20,
+          12
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16538,
+        "image_id": 5276,
+        "bbox": [
+          1228,
+          969,
+          32,
+          17
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16257,
+        "image_id": 5394,
+        "bbox": [
+          65,
+          711,
+          25,
+          14
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16258,
+        "image_id": 5394,
+        "bbox": [
+          1102,
+          946,
+          23,
+          25
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16259,
+        "image_id": 5394,
+        "bbox": [
+          1238,
+          933,
+          12,
+          18
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 16041,
+        "image_id": 5673,
+        "bbox": [
+          671,
+          703,
+          22,
+          19
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10233,
+        "image_id": 5800,
+        "bbox": [
+          899,
+          694,
+          32,
+          27
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10234,
+        "image_id": 5800,
+        "bbox": [
+          701,
+          791,
+          87,
+          55
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10235,
+        "image_id": 5800,
+        "bbox": [
+          800,
+          755,
+          35,
+          26
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10236,
+        "image_id": 5800,
+        "bbox": [
+          843,
+          755,
+          14,
+          7
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10237,
+        "image_id": 5800,
+        "bbox": [
+          856,
+          761,
+          13,
+          6
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10238,
+        "image_id": 5800,
+        "bbox": [
+          851,
+          737,
+          23,
+          19
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10239,
+        "image_id": 5800,
+        "bbox": [
+          744,
+          866,
+          26,
+          14
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10240,
+        "image_id": 5800,
+        "bbox": [
+          402,
+          993,
+          31,
+          30
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10241,
+        "image_id": 5800,
+        "bbox": [
+          446,
+          991,
+          33,
+          30
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10242,
+        "image_id": 5800,
+        "bbox": [
+          442,
+          1021,
+          79,
+          49
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10243,
+        "image_id": 5800,
+        "bbox": [
+          244,
+          1023,
+          165,
+          105
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10244,
+        "image_id": 5800,
+        "bbox": [
+          266,
+          1074,
+          84,
+          23
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10245,
+        "image_id": 5800,
+        "bbox": [
+          0,
+          1164,
+          284,
+          145
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10246,
+        "image_id": 5800,
+        "bbox": [
+          788,
+          1117,
+          15,
+          15
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10554,
+        "image_id": 5847,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 9344,
+        "image_id": 5922,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 9247,
+        "image_id": 5949,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 10787,
+        "image_id": 6004,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 9110,
+        "image_id": 6035,
+        "bbox": [
+          1159,
+          1209,
+          14,
+          9
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 10247,
+        "image_id": 6076,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 12725,
+        "image_id": 6293,
+        "bbox": [
+          1279,
+          761,
+          15,
+          9
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      }
+    ],
+    "class_counts": {
+      "1": {
+        "name": "Plastic",
+        "count": 66556
+      },
+      "2": {
+        "name": "Pile",
+        "count": 1467
+      },
+      "3": {
+        "name": "Face mask",
+        "count": 1658
+      },
+      "4": {
+        "name": "Trash bin",
+        "count": 745
+      }
+    }
+  },
+  {
+    "split": "val",
+    "image_count": 1514,
+    "annotation_count": 8852,
+    "category_count": 4,
+    "expected_image_count": 1514,
+    "image_count_matches": true,
+    "duplicate_image_ids": 0,
+    "duplicate_annotation_ids": 0,
+    "missing_image_references": [],
+    "unknown_category_references": [],
+    "invalid_dimensions": [],
+    "invalid_boxes": [
+      {
+        "annotation_id": 7488,
+        "image_id": 3239,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 5653,
+        "image_id": 4399,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 15997,
+        "image_id": 5533,
+        "bbox": [
+          1277,
+          1096,
+          22,
+          30
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 15998,
+        "image_id": 5533,
+        "bbox": [
+          1251,
+          1038,
+          16,
+          12
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      }
+    ],
+    "class_counts": {
+      "1": {
+        "name": "Plastic",
+        "count": 8338
+      },
+      "2": {
+        "name": "Pile",
+        "count": 188
+      },
+      "3": {
+        "name": "Face mask",
+        "count": 232
+      },
+      "4": {
+        "name": "Trash bin",
+        "count": 94
+      }
+    }
+  },
+  {
+    "split": "test",
+    "image_count": 1513,
+    "annotation_count": 8782,
+    "category_count": 4,
+    "expected_image_count": 1513,
+    "image_count_matches": true,
+    "duplicate_image_ids": 0,
+    "duplicate_annotation_ids": 0,
+    "missing_image_references": [],
+    "unknown_category_references": [],
+    "invalid_dimensions": [],
+    "invalid_boxes": [
+      {
+        "annotation_id": 5577,
+        "image_id": 4456,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 5698,
+        "image_id": 4810,
+        "bbox": [
+          1280,
+          838,
+          18,
+          5
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 4650,
+        "image_id": 4828,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      },
+      {
+        "annotation_id": 9330,
+        "image_id": 6085,
+        "bbox": [
+          612,
+          709,
+          34,
+          12
+        ],
+        "errors": [
+          "bbox extends beyond image bounds"
+        ]
+      },
+      {
+        "annotation_id": 13801,
+        "image_id": 6363,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "errors": [
+          "width and height must be positive"
+        ]
+      }
+    ],
+    "class_counts": {
+      "1": {
+        "name": "Plastic",
+        "count": 8319
+      },
+      "2": {
+        "name": "Pile",
+        "count": 173
+      },
+      "3": {
+        "name": "Face mask",
+        "count": 197
+      },
+      "4": {
+        "name": "Trash bin",
+        "count": 93
+      }
+    }
+  }
+]

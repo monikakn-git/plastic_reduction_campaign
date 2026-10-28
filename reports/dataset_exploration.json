@@ -1,0 +1,68 @@
+[
+  {
+    "split": "train",
+    "image_count": 12111,
+    "annotation_count": 70426,
+    "average_annotations_per_image": 5.815,
+    "zero_annotation_images": 0,
+    "annotated_status": {
+      "false": 12111
+    },
+    "image_dimensions": {
+      "min_width": 480,
+      "max_width": 5664,
+      "min_height": 360,
+      "max_height": 4608
+    },
+    "class_distribution": {
+      "Plastic": 66556,
+      "Pile": 1467,
+      "Face mask": 1658,
+      "Trash bin": 745
+    }
+  },
+  {
+    "split": "val",
+    "image_count": 1514,
+    "annotation_count": 8852,
+    "average_annotations_per_image": 5.847,
+    "zero_annotation_images": 0,
+    "annotated_status": {
+      "false": 1514
+    },
+    "image_dimensions": {
+      "min_width": 720,
+      "max_width": 4608,
+      "min_height": 720,
+      "max_height": 4160
+    },
+    "class_distribution": {
+      "Plastic": 8338,
+      "Pile": 188,
+      "Face mask": 232,
+      "Trash bin": 94
+    }
+  },
+  {
+    "split": "test",
+    "image_count": 1513,
+    "annotation_count": 8782,
+    "average_annotations_per_image": 5.804,
+    "zero_annotation_images": 0,
+    "annotated_status": {
+      "false": 1513
+    },
+    "image_dimensions": {
+      "min_width": 256,
+      "max_width": 4608,
+      "min_height": 480,
+      "max_height": 4608
+    },
+    "class_distribution": {
+      "Plastic": 8319,
+      "Pile": 173,
+      "Face mask": 197,
+      "Trash bin": 93
+    }
+  }
+]
