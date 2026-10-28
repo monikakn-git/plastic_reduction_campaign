@@ -1,71 +1,30 @@
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
 .venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
+venv/
 .env
-.venv/
-venv/
 
-# Datasets and Large Media (Managed by DVC)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+# Dataset archives and raw data
 *.zip
-*.tar.gz
-*.tar
-*.7z
+data/raw/
+data/processed/
+datasets/
 
-# Model weights and runs
+# Model artifacts and training runs
 *.pt
+*.pth
 *.onnx
-*.engine
-*.tflite
 runs/
-models/*.pt
-weights/
-
-# MLflow
+yolo_runs/
 mlruns/
-mlartifacts/
-.trash/
+models/
 
-# IDE and OS
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
+# Local caches
+.cache/
+*.cache
 
-# Testing and coverage
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Logs
-logs/
-*.log
+# Generated reports: retain code, avoid accidental large outputs
+# Uncomment if you want reports tracked only selectively
+# reports/*.json
