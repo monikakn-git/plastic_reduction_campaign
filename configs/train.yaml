@@ -1,0 +1,21 @@
+
+model:
+  name: yolov8n.yaml
+
+training:
+  epochs: 1
+  image_size: 320
+  batch_size: 4
+  device: cpu
+  workers: 0
+  patience: 1
+  seed: 42
+
+output:
+  project: runs/detect
+  name: ecopulse_waste_smoke_test
+  exist_ok: true
+
+tracking:
+  enabled: true
+  experiment_name: ecopulse-waste-detection

@@ -1,19 +1,13 @@
-
 dataset:
-  root: "G:/My Drive/datasets/Ai_Waste_Campaign"
-
-  images_archive: "G:/My Drive/datasets/Ai_Waste_Campaign/images.zip"
+  root: "D:/datasets/Ai_Waste_Campaign"
+  images_archive: "D:/datasets/Ai_Waste_Campaign/images.zip"
+  annotations_archive: "D:/datasets/Ai_Waste_Campaign/annotations.zip"
   image_prefix: "images/"
-
-  annotations_archive: "G:/My Drive/datasets/Ai_Waste_Campaign/annotations.zip"
   annotation_prefix: "annotations/4_class_splits/"
-
-  train_annotations: "annotations_train.json"
-  val_annotations: "annotations_val.json"
-  test_annotations: "annotations_test.json"
+  images_dir: "D:/datasets/Ai_Waste_Campaign/extracted/images"
 
   classes:
-    1: "Plastic"
-    2: "Pile"
-    3: "Face mask"
-    4: "Trash bin"
+    0: "Plastic"
+    1: "Pile"
+    2: "Face mask"
+    3: "Trash bin"
