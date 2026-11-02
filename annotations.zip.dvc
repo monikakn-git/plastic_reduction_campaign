@@ -1,0 +1,5 @@
+outs:
+- md5: 2484e076b1e9d66036b0a15e9928692f
+  size: 8764662
+  hash: md5
+  path: annotations.zip
