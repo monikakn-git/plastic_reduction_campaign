@@ -45,3 +45,7 @@ mlruns/
 __pycache__/
 *.pyc
 .pytest_cache/
+# Allow DVC metadata for project datasets
+!artifacts/datasets/
+!artifacts/datasets/*.dvc
+!artifacts/datasets/.gitignore
