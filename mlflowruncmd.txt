@@ -1,0 +1,3 @@
+cd D:\mlops
+.\venv\Scripts\Activate.ps1
+python -m mlflow ui --backend-store-uri "sqlite:///D:/mlops/mlflow.db" --host 127.0.0.1 --port 5000

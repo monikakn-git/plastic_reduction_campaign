@@ -28,3 +28,20 @@ models/
 # Generated reports: retain code, avoid accidental large outputs
 # Uncomment if you want reports tracked only selectively
 # reports/*.json
+# Local MLflow database
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+
+# Training outputs
+runs/
+mlruns/
+
+# Model checkpoints
+*.pt
+*.onnx
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
