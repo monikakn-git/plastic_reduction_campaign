@@ -1,6 +1,8 @@
-
 model:
   name: yolov8n.yaml
+
+dataset:
+  path: data/waste10/data.yaml
 
 training:
   epochs: 1

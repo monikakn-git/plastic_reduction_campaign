@@ -1,4 +1,5 @@
 [core]
     remote = localstorage
+    site_cache_dir = .dvc/tmp/site_cache
 ['remote "localstorage"']
     url = D:\mlops-dvc-storage

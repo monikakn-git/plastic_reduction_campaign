@@ -1,13 +1,26 @@
 dataset:
-  root: "D:/datasets/Ai_Waste_Campaign"
-  images_archive: "D:/datasets/Ai_Waste_Campaign/images.zip"
-  annotations_archive: "D:/datasets/Ai_Waste_Campaign/annotations.zip"
-  image_prefix: "images/"
-  annotation_prefix: "annotations/4_class_splits/"
-  images_dir: "D:/datasets/Ai_Waste_Campaign/extracted/images"
+  root: "data/waste10"
+  data_yaml: "data/waste10/data.yaml"
+  images_dir: "data/waste10/images"
+  labels_dir: "data/waste10/labels"
 
+  # External storage references (read-only archive)
+  external_images_archive: "G:/My Drive/datasets/Ai_Waste_Campaign/images.zip"
+  external_annotations_archive: "annotations.zip"
+  annotation_prefix: "annotations/10_class_splits/"
+
+  # DVC-tracked processed dataset
+  dvc_processed_dataset: "artifacts/datasets/processed/data.yaml"
+
+  num_classes: 10
   classes:
-    0: "Plastic"
-    1: "Pile"
-    2: "Face mask"
-    3: "Trash bin"
+    0: "litter"
+    1: "pile"
+    2: "face_mask"
+    3: "trash_bin"
+    4: "plastic_bag"
+    5: "bottle"
+    6: "cup"
+    7: "rope"
+    8: "sachet"
+    9: "straw"

@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import json
 import os
@@ -9,21 +8,48 @@ DATA_ROOT = Path(
     os.environ.get("WASTE_DATA_DIR", r"D:\datasets\Ai_Waste_Campaign")
 )
 
-ANNOTATIONS_ZIP = DATA_ROOT / "annotations.zip"
-IMAGES_DIR = DATA_ROOT / "extracted" / "images"
-YOLO_ROOT = DATA_ROOT / "yolo_dataset"
-ANNOTATION_DIR = "annotations/4_class_splits"
+ANNOTATIONS_ZIP = Path(
+    os.environ.get("WASTE_ANNOTATIONS_ZIP", str(DATA_ROOT / "annotations.zip"))
+)
+IMAGES_DIR = Path(
+    os.environ.get("WASTE_IMAGES_DIR", str(DATA_ROOT / "extracted" / "images"))
+)
+YOLO_ROOT = Path(
+    os.environ.get("WASTE_YOLO_DIR", str(DATA_ROOT / "yolo_dataset"))
+)
+ANNOTATION_DIR = os.environ.get("ANNOTATION_DIR", "annotations/10_class_splits")
 
 SPLITS = ("train", "val", "test")
 
+CANONICAL_10_CLASSES = {
+    0: "litter",
+    1: "pile",
+    2: "face_mask",
+    3: "trash_bin",
+    4: "plastic_bag",
+    5: "bottle",
+    6: "cup",
+    7: "rope",
+    8: "sachet",
+    9: "straw",
+}
 
-def load_split(archive, split):
+
+def load_split(archive: zipfile.ZipFile, split: str) -> dict:
     member = f"{ANNOTATION_DIR}/annotations_{split}.json"
+    if member not in archive.namelist():
+        # Fallback to 4-class if 10-class is not in archive
+        fallback = f"annotations/4_class_splits/annotations_{split}.json"
+        if fallback in archive.namelist():
+            member = fallback
+        else:
+            raise FileNotFoundError(f"Neither {member} nor {fallback} found in archive.")
+
     with archive.open(member) as file:
         return json.load(file)
 
 
-def create_image_link(source: Path, destination: Path):
+def create_image_link(source: Path, destination: Path) -> None:
     """Use a hard link to avoid copying the large image files."""
     destination.parent.mkdir(parents=True, exist_ok=True)
 
@@ -39,7 +65,7 @@ def create_image_link(source: Path, destination: Path):
         shutil.copy2(source, destination)
 
 
-def main():
+def main() -> None:
     if not ANNOTATIONS_ZIP.is_file():
         raise FileNotFoundError(f"Missing annotation archive: {ANNOTATIONS_ZIP}")
 
@@ -50,6 +76,7 @@ def main():
 
     counts = {}
     seen_files = set()
+    category_names = {}
 
     with zipfile.ZipFile(ANNOTATIONS_ZIP, "r") as archive:
         for split in SPLITS:
@@ -60,12 +87,13 @@ def main():
             image_by_id = {image["id"]: image for image in images}
             labels_by_image = {image["id"]: [] for image in images}
 
+            sorted_cats = sorted(data["categories"], key=lambda item: item["id"])
             categories = {
                 category["id"]: index
-                for index, category in enumerate(
-                    sorted(data["categories"], key=lambda item: item["id"])
-                )
+                for index, category in enumerate(sorted_cats)
             }
+            for cat in sorted_cats:
+                category_names[categories[cat["id"]]] = cat["name"]
 
             for annotation in annotations:
                 image_id = annotation.get("image_id")
@@ -139,17 +167,16 @@ def main():
                 f"{len(annotations):,} annotations"
             )
 
+    names_to_use = category_names if category_names else CANONICAL_10_CLASSES
+    names_block = "\n".join(f"  {idx}: {name}" for idx, name in sorted(names_to_use.items()))
+
     yaml_path = YOLO_ROOT / "dataset.yaml"
     yaml_path.write_text(
         f"path: {YOLO_ROOT.as_posix()}\n"
         "train: images/train\n"
         "val: images/val\n"
         "test: images/test\n\n"
-        "names:\n"
-        "  0: Plastic\n"
-        "  1: Pile\n"
-        "  2: Face mask\n"
-        "  3: Trash bin\n",
+        f"names:\n{names_block}\n",
         encoding="utf-8",
     )
 

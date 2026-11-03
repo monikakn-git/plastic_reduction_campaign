@@ -36,10 +36,23 @@ except ImportError as exc:
 # ---------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------
-DATASET_ROOT = Path(r"G:\My Drive\datasets\Ai_Waste_Campaign")
-DATA_YAML = DATASET_ROOT / "processed" / "data.yaml"
-LABELS_ROOT = DATASET_ROOT / "processed" / "labels"
-OUTPUT_DIR = Path(r"D:\mlops\artifacts\feature_engineering")
+import os
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+LOCAL_PROCESSED = PROJECT_ROOT / "artifacts" / "datasets" / "processed"
+DRIVE_PROCESSED = Path(r"G:\My Drive\datasets\Ai_Waste_Campaign\processed")
+
+DATASET_ROOT = (
+    Path(os.environ["WASTE_DATASET_ROOT"])
+    if "WASTE_DATASET_ROOT" in os.environ
+    else (LOCAL_PROCESSED if LOCAL_PROCESSED.is_dir() else DRIVE_PROCESSED)
+)
+
+DATA_YAML = DATASET_ROOT / "data.yaml"
+LABELS_ROOT = DATASET_ROOT / "labels"
+OUTPUT_DIR = Path(
+    os.environ.get("FEATURES_OUTPUT_DIR", str(PROJECT_ROOT / "artifacts" / "features"))
+)
 
 SPLITS = ("train", "val", "test")
 

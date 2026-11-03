@@ -1,0 +1,32 @@
+{
+  "checkpoint": "D:\\mlops\\artifacts\\checkpoints\\yolo11n_best.pt",
+  "model_name": "yolo11n_best",
+  "classes": {
+    "0": "litter",
+    "1": "pile",
+    "2": "face_mask",
+    "3": "trash_bin",
+    "4": "plastic_bag",
+    "5": "bottle",
+    "6": "cup",
+    "7": "rope",
+    "8": "sachet",
+    "9": "straw"
+  },
+  "num_classes": 10,
+  "split": "test",
+  "model_size_mb": 5.25,
+  "mean_latency_ms": 146.26,
+  "metrics": {
+    "precision": 0.6436,
+    "recall": 0.6051,
+    "map50": 0.5657,
+    "map50_95": 0.4231
+  },
+  "quality_gate": {
+    "decision": "PASSED_APPROVED_FOR_DEPLOYMENT",
+    "min_map50_threshold": 0.2,
+    "max_latency_threshold_ms": 500.0,
+    "passed": true
+  }
+}

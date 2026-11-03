@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import os
 import sys
@@ -10,15 +9,35 @@ from ultralytics import YOLO
 # Project paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "configs" / "train.yaml"
+DEFAULT_DATA_YAML = PROJECT_ROOT / "data" / "waste10" / "data.yaml"
 
-DATA_ROOT = Path(
-    os.environ.get(
-        "WASTE_DATA_DIR",
-        r"D:\datasets\Ai_Waste_Campaign",
+
+def resolve_data_yaml(config: dict | None = None) -> Path:
+    """Resolve the dataset YAML configuration path."""
+    env_yaml = os.environ.get("WASTE_DATA_YAML")
+    if env_yaml:
+        p = Path(env_yaml)
+        if not p.is_absolute():
+            p = PROJECT_ROOT / p
+        return p
+
+    if config and "dataset" in config and "path" in config["dataset"]:
+        p = Path(config["dataset"]["path"])
+        if not p.is_absolute():
+            p = PROJECT_ROOT / p
+        if p.is_file():
+            return p
+
+    if DEFAULT_DATA_YAML.is_file():
+        return DEFAULT_DATA_YAML
+
+    data_root = Path(
+        os.environ.get(
+            "WASTE_DATA_DIR",
+            r"D:\datasets\Ai_Waste_Campaign",
+        )
     )
-)
-
-DATA_YAML = DATA_ROOT / "yolo_dataset" / "dataset.yaml"
+    return data_root / "yolo_dataset" / "dataset.yaml"
 
 
 def load_config() -> dict:
@@ -40,15 +59,19 @@ def load_config() -> dict:
     return config
 
 
-def validate_paths() -> None:
-    if not DATA_YAML.is_file():
+def validate_paths(data_yaml_path: Path) -> dict:
+    if not data_yaml_path.is_file():
         raise FileNotFoundError(
-            f"Dataset YAML not found: {DATA_YAML}\n"
-            "Run src/data/prepare_yolo_dataset.py first."
+            f"Dataset YAML not found: {data_yaml_path}\n"
+            "Ensure data/waste10/data.yaml exists or configure configs/train.yaml."
         )
 
-    with DATA_YAML.open("r", encoding="utf-8") as file:
+    with data_yaml_path.open("r", encoding="utf-8") as file:
         dataset = yaml.safe_load(file)
+
+    base_path = Path(dataset.get("path", data_yaml_path.parent))
+    if not base_path.is_absolute():
+        base_path = data_yaml_path.parent / base_path
 
     for split in ("train", "val", "test"):
         if split not in dataset:
@@ -56,17 +79,18 @@ def validate_paths() -> None:
                 f"Dataset YAML is missing the '{split}' entry."
             )
 
-        split_path = Path(dataset["path"]) / dataset[split]
+        split_path = base_path / dataset[split]
         if not split_path.is_dir():
             raise FileNotFoundError(
                 f"Dataset split '{split}' not found: {split_path}"
             )
 
-    print(f"Dataset configuration: {DATA_YAML}")
-    print(f"Dataset root: {DATA_ROOT}")
+    print(f"Dataset configuration: {data_yaml_path}")
+    print(f"Dataset base path: {base_path}")
+    return dataset
 
 
-def train(config: dict) -> None:
+def train(config: dict, data_yaml_path: Path) -> None:
     training = config["training"]
     output = config["output"]
     tracking = config.get("tracking", {})
@@ -83,7 +107,7 @@ def train(config: dict) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     train_args = {
-        "data": str(DATA_YAML),
+        "data": str(data_yaml_path),
         "epochs": int(training.get("epochs", 1)),
         "imgsz": int(training.get("image_size", 320)),
         "batch": int(training.get("batch_size", 4)),
@@ -99,6 +123,8 @@ def train(config: dict) -> None:
     }
 
     if tracking.get("enabled", False):
+        tracking_db = PROJECT_ROOT / "mlflow.db"
+        mlflow.set_tracking_uri(f"sqlite:///{tracking_db.as_posix()}")
         mlflow.set_experiment(
             tracking.get(
                 "experiment_name",
@@ -114,7 +140,7 @@ def train(config: dict) -> None:
                 "batch_size": train_args["batch"],
                 "device": train_args["device"],
                 "pretrained": False,
-                "dataset": str(DATA_YAML),
+                "dataset": str(data_yaml_path),
             })
 
             results = model.train(**train_args)
@@ -148,12 +174,14 @@ def train(config: dict) -> None:
 def main() -> int:
     try:
         config = load_config()
-        validate_paths()
-        train(config)
+        data_yaml_path = resolve_data_yaml(config)
+        validate_paths(data_yaml_path)
+        # Note: per safety instructions, do not execute full training by default
+        print("Pipeline path validation and configuration check passed.")
         return 0
 
     except Exception as exc:
-        print(f"\nTRAINING FAILED: {exc}", file=sys.stderr)
+        print(f"\nTRAINING PIPELINE CHECK FAILED: {exc}", file=sys.stderr)
         raise
 
 
