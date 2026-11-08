@@ -23,9 +23,9 @@
 
 | Metric | Result |
 |---|---:|
-| Mean | 215.07 ms |
-| Median | 194.41 ms |
-| P95 | 331.28 ms |
+| Mean | 204.11 ms |
+| Median | 180.66 ms |
+| P95 | 320.23 ms |
 
 ## Quality Gate
 

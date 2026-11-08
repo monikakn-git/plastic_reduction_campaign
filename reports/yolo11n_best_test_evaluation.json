@@ -20,9 +20,9 @@
     "evaluation_images": 1306,
     "model_size_mb": 5.25,
     "inference_latency": {
-        "mean_ms": 215.07,
-        "median_ms": 194.41,
-        "p95_ms": 331.28
+        "mean_ms": 204.11,
+        "median_ms": 180.66,
+        "p95_ms": 320.23
     },
     "metrics": {
         "precision": 0.369,

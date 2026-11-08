@@ -1,0 +1,115 @@
+# =============================================================================
+# EcoPulse AI — Docker Compose Orchestration
+# =============================================================================
+# Services:
+#   1. api     – FastAPI inference server (builds from local Dockerfile)
+#   2. mlflow  – MLflow tracking server (lightweight python:3.11-slim image)
+#
+# Usage:
+#   docker compose up -d          # start all services
+#   docker compose logs -f api    # tail API logs
+#   docker compose down           # stop and remove containers
+# =============================================================================
+
+version: "3.8"
+
+services:
+  # ---------------------------------------------------------------------------
+  # MLflow Tracking Server
+  # ---------------------------------------------------------------------------
+  # Provides experiment tracking, model registry, and artifact storage.
+  # The backend store uses a SQLite database mounted from the host, and
+  # artifacts are persisted under ./mlruns on the host.
+  # ---------------------------------------------------------------------------
+  mlflow:
+    image: python:3.11-slim
+    container_name: ecopulse-mlflow
+    ports:
+      - "127.0.0.1:5000:5000"
+    command: >
+      bash -c "pip install 'mlflow>=2.15.0' &&
+               mlflow server
+                 --host 0.0.0.0
+                 --port 5000
+                 --backend-store-uri sqlite:////data/mlflow.db
+                 --serve-artifacts
+                 --artifacts-destination /data/mlruns"
+    volumes:
+      - mlflow-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health', timeout=3)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 40s
+      retries: 5
+
+  # ---------------------------------------------------------------------------
+  # EcoPulse AI — FastAPI Inference API
+  # ---------------------------------------------------------------------------
+  # Builds the application image from the project root Dockerfile and exposes
+  # the prediction API on port 8000. Waits for the MLflow service to start
+  # before launching so that tracking calls succeed on first request.
+  # ---------------------------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ecopulse-ai:latest
+    container_name: ecopulse-api
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      # Point the SDK at the in-cluster MLflow server
+      MLFLOW_TRACKING_URI: "http://mlflow:5000"
+      # Enable MLflow integration
+      ECOPULSE_DISABLE_MLFLOW: "false"
+    volumes:
+      # Persist privacy-safe per-request feature summaries for Evidently.
+      - ./monitoring:/app/monitoring
+      # Supply local fallback checkpoints; MLflow production aliases are downloaded on demand.
+      - ./artifacts/checkpoints:/app/artifacts/checkpoints:ro
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    container_name: ecopulse-prometheus
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - ./ops/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:12.2.0
+    container_name: ecopulse-grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-change-me-before-exposure}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./ops/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./ops/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  mlflow-data:
+  prometheus-data:
+  grafana-data:

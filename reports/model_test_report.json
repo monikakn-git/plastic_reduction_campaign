@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-11-08T16:46:33Z",
+  "sample_image": "D:\\mlops\\artifacts\\datasets\\processed\\images\\test\\ATT104_20200301_164523.jpg",
+  "checkpoints_tested": {
+    "yolo11n": {
+      "checkpoint": "D:\\mlops\\artifacts\\checkpoints\\yolo11n_best.pt",
+      "loading": {
+        "name": "yolo11n_best.pt",
+        "path": "D:\\mlops\\artifacts\\checkpoints\\yolo11n_best.pt",
+        "size_mb": 5.25,
+        "load_time_ms": 193.7,
+        "class_count": 10,
+        "classes": {
+          "0": "litter",
+          "1": "pile",
+          "2": "face_mask",
+          "3": "trash_bin",
+          "4": "plastic_bag",
+          "5": "bottle",
+          "6": "cup",
+          "7": "rope",
+          "8": "sachet",
+          "9": "straw"
+        },
+        "has_10_classes": true,
+        "status": "PASS"
+      },
+      "correctness": {
+        "sample_image": "ATT104_20200301_164523.jpg",
+        "total_detections": 1,
+        "detections": [
+          {
+            "class_id": 1,
+            "class_name": "pile",
+            "confidence": 0.8664,
+            "bbox": [
+              13.5,
+              352.5,
+              4153.16,
+              3120.0
+            ]
+          }
+        ],
+        "valid_coordinates": true,
+        "valid_confidences": true,
+        "valid_classes": true,
+        "errors": [],
+        "status": "PASS"
+      },
+      "speed": {
+        "iterations": 3,
+        "mean_latency_ms": 343.53,
+        "median_latency_ms": 336.46,
+        "p95_latency_ms": 363.4,
+        "fps": 2.91,
+        "status": "PASS"
+      },
+      "edge_cases": {
+        "solid_black": {
+          "handled": true,
+          "detections": 0,
+          "status": "PASS"
+        },
+        "extreme_aspect": {
+          "handled": true,
+          "detections": 0,
+          "status": "PASS"
+        },
+        "missing_file_handling": {
+          "status": "PASS",
+          "handled": true
+        }
+      },
+      "status": "PASS"
+    },
+    "yolov8n": {
+      "checkpoint": "D:\\mlops\\artifacts\\checkpoints\\yolov8n_best.pt",
+      "loading": {
+        "name": "yolov8n_best.pt",
+        "path": "D:\\mlops\\artifacts\\checkpoints\\yolov8n_best.pt",
+        "size_mb": 6.2,
+        "load_time_ms": 86.05,
+        "class_count": 10,
+        "classes": {
+          "0": "litter",
+          "1": "pile",
+          "2": "face_mask",
+          "3": "trash_bin",
+          "4": "plastic_bag",
+          "5": "bottle",
+          "6": "cup",
+          "7": "rope",
+          "8": "sachet",
+          "9": "straw"
+        },
+        "has_10_classes": true,
+        "status": "PASS"
+      },
+      "correctness": {
+        "sample_image": "ATT104_20200301_164523.jpg",
+        "total_detections": 1,
+        "detections": [
+          {
+            "class_id": 1,
+            "class_name": "pile",
+            "confidence": 0.906,
+            "bbox": [
+              17.5,
+              348.46,
+              4154.05,
+              3119.27
+            ]
+          }
+        ],
+        "valid_coordinates": true,
+        "valid_confidences": true,
+        "valid_classes": true,
+        "errors": [],
+        "status": "PASS"
+      },
+      "speed": {
+        "iterations": 3,
+        "mean_latency_ms": 330.38,
+        "median_latency_ms": 335.72,
+        "p95_latency_ms": 335.88,
+        "fps": 3.03,
+        "status": "PASS"
+      },
+      "edge_cases": {
+        "solid_black": {
+          "handled": true,
+          "detections": 0,
+          "status": "PASS"
+        },
+        "extreme_aspect": {
+          "handled": true,
+          "detections": 0,
+          "status": "PASS"
+        },
+        "missing_file_handling": {
+          "status": "PASS",
+          "handled": true
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "overall_status": "PASS"
+}

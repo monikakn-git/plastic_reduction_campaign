@@ -8,7 +8,8 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PORT=8000 \
-    MLFLOW_TRACKING_URI="sqlite:////app/mlflow.db"
+    MLFLOW_TRACKING_URI="sqlite:////app/mlflow.db" \
+    ECOPULSE_MAX_UPLOAD_BYTES=10485760
 
 # Install OS libraries required for OpenCV, image decoding, and healthcheck
 RUN apt-get update && apt-get install -y --no-install-recommends \

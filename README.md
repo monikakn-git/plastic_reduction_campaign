@@ -149,6 +149,63 @@ Check health:
 curl http://localhost:8000/health
 ```
 
+### Compose deployment (API + MLflow)
+
+The API expects checkpoints in `artifacts/checkpoints/`. Start the API and tracking server with:
+
+```bash
+cp .env.example .env
+# Set a unique GRAFANA_ADMIN_PASSWORD in .env before starting.
+docker compose up --build -d
+docker compose ps
+```
+
+The API is available at `http://localhost:8000/docs`, MLflow at `http://localhost:5000`,
+Prometheus at `http://localhost:9090`, and Grafana at `http://localhost:3000` (default local login `admin` / `change-me-before-exposure`). Services bind to localhost so the metrics and MLflow UI are not exposed directly on a cloud host. Set a strong `GRAFANA_ADMIN_PASSWORD` in `.env` before using outside a local machine. Set `ECOPULSE_MAX_UPLOAD_BYTES` on the API service to change the default 10 MiB upload limit.
+
+### Model evaluation, risk gate, and registry promotion
+
+Evaluate the checkpoint on the test split, run the risk checks, then register/promote it only if both reports pass:
+
+```bash
+python src/models/evaluate.py --checkpoint artifacts/checkpoints/yolo11n_best.pt --split test --no-mlflow
+python src/models/risk_quality_checks.py --checkpoint yolo11n
+docker compose up -d mlflow
+python src/models/registry.py --tracking-uri http://localhost:5000 --name yolo11n --checkpoint artifacts/checkpoints/yolo11n_best.pt --evaluation reports/yolo11n_best_test_evaluation.json --risk reports/model_risk_quality_report.json --promote
+```
+
+The registry command must use the HTTP tracking server because this project configures MLflow artifact proxying in Docker Compose. A local SQLite tracking URI cannot write to the server's `mlflow-artifacts:/` artifact URI. The registry records a PyFunc model wrapping the YOLO checkpoint, evaluation metrics, gate tags, and a checkpoint SHA-256 digest. The API resolves the MLflow `production` alias, downloads its checkpoint artifact, and verifies the digest before loading it. See the [MLflow alias workflow](https://mlflow.org/docs/latest/ml/model-registry/workflow) for registry concepts.
+
+### Model quality, visual review, and production drift
+
+Install the offline quality dependencies for Deepchecks and Evidently:
+
+```bash
+pip install -r requirements-quality.txt
+```
+
+Install FiftyOne and Supervision when you want an interactive visual review:
+
+```bash
+pip install -r requirements-vision-tools.txt
+python src/visualization/inspect_with_fiftyone.py --checkpoint artifacts/checkpoints/yolo11n_best.pt --split test --limit 100
+```
+
+Pytest runs the automated checks with `python -m pytest`. The risk gate runs Deepchecks image/label integrity checks and writes JSON/HTML artifacts under `reports/`.
+
+For production drift, generate a reference observation set from the held-out test images, then compare it with the privacy-safe feature summaries the API writes to `monitoring/inference_observations.csv`:
+
+```bash
+python src/monitoring/build_baseline.py --checkpoint artifacts/checkpoints/yolo11n_best.pt --limit 300
+python src/monitoring/drift.py --reference reports/baseline_inference.csv --current monitoring/inference_observations.csv
+```
+
+The API also exposes Prometheus request, inference-latency, and class-detection metrics at `/metrics`; Compose provisions a Grafana dashboard for them.
+
+### AWS EC2 deployment
+
+On an Ubuntu EC2 instance, install Docker Engine and the Compose plugin, copy/clone the repository, restore a checkpoint under `artifacts/checkpoints/` (or configure a reachable MLflow registry), set a strong Grafana password in `.env`, and run `docker compose up --build -d`. The GitHub Actions `Deploy EcoPulse to EC2` workflow can copy the tracked release source and deploy it over SSH when `EC2_HOST`, `EC2_USER`, `EC2_SSH_KEY`, and pinned `EC2_KNOWN_HOSTS` secrets are configured. Restore the model artifact on the instance before the first deploy. Use an SSH tunnel for the localhost-bound service ports during setup. For public API traffic, put a TLS reverse proxy or load balancer in front of port 8000 and restrict the EC2 security group to the required ingress; keep MLflow, Prometheus, and Grafana private. The workflow does not provision cloud resources.
+
 ---
 
 ## 5. Model Performance Summary (Test Split: 1,306 images)

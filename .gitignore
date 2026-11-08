@@ -19,7 +19,10 @@ datasets/
 runs/
 yolo_runs/
 mlruns/
+monitoring/*.csv
 models/
+!src/models/
+!src/models/*.py
 
 # Local caches
 .cache/

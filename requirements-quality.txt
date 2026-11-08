@@ -1,0 +1,4 @@
+# Offline model and production drift quality gates.
+-r requirements.txt
+deepchecks[vision]>=0.18.0
+evidently>=0.7.0

@@ -1,0 +1,4 @@
+# Interactive visual evaluation tools. Kept out of the serving image.
+-r requirements.txt
+fiftyone>=1.0.0
+supervision>=0.25.0

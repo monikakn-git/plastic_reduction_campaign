@@ -1,0 +1,97 @@
+{
+  "yolo11n": {
+    "model_key": "yolo11n",
+    "checkpoint": "D:\\mlops\\artifacts\\checkpoints\\yolo11n_best.pt",
+    "model_size_mb": 5.25,
+    "metrics_summary": {
+      "mAP50": 0.2721,
+      "mAP50_95": 0.1652,
+      "precision": 0.369,
+      "recall": 0.3153,
+      "mean_latency_ms": 204.11,
+      "p95_latency_ms": 320.23
+    },
+    "robustness": {
+      "test_images_evaluated": 5,
+      "clean_detections": 10,
+      "perturbed_detections": 10,
+      "retention_rate": 1.0,
+      "passed": true
+    },
+    "deepchecks": {
+      "passed": true,
+      "samples": 200,
+      "json_report": "D:\\mlops\\reports\\deepchecks_yolo11n_quality.json",
+      "html_report": "D:\\mlops\\reports\\deepchecks_yolo11n_quality.html",
+      "checks": 3
+    },
+    "risk_checks": [
+      {
+        "category": "Performance Gate",
+        "metric": "mAP50",
+        "value": 0.2721,
+        "threshold": ">= 0.2",
+        "passed": true,
+        "severity": "CRITICAL"
+      },
+      {
+        "category": "Performance Gate",
+        "metric": "Precision",
+        "value": 0.369,
+        "threshold": ">= 0.25",
+        "passed": true,
+        "severity": "HIGH"
+      },
+      {
+        "category": "Performance Gate",
+        "metric": "Recall",
+        "value": 0.3153,
+        "threshold": ">= 0.25",
+        "passed": true,
+        "severity": "HIGH"
+      },
+      {
+        "category": "Operational SLA",
+        "metric": "Mean Latency (CPU)",
+        "value": "204.11 ms",
+        "threshold": "<= 500.0 ms",
+        "passed": true,
+        "severity": "HIGH"
+      },
+      {
+        "category": "Operational SLA",
+        "metric": "P95 Tail Latency",
+        "value": "320.23 ms",
+        "threshold": "<= 750.0 ms",
+        "passed": true,
+        "severity": "MEDIUM"
+      },
+      {
+        "category": "Edge Deployment Feasibility",
+        "metric": "Model Size",
+        "value": "5.25 MB",
+        "threshold": "<= 25.0 MB",
+        "passed": true,
+        "severity": "CRITICAL"
+      },
+      {
+        "category": "Robustness / Perturbation Risk",
+        "metric": "Detection Retention (Low Light & Blur)",
+        "value": "100.0%",
+        "threshold": ">= 40%",
+        "passed": true,
+        "severity": "MEDIUM"
+      },
+      {
+        "category": "Deepchecks Vision Integrity",
+        "metric": "Data integrity suite",
+        "value": "PASSED",
+        "threshold": "all configured integrity checks pass",
+        "passed": true,
+        "severity": "HIGH"
+      }
+    ],
+    "verdict": "APPROVED_FOR_PRODUCTION",
+    "passed": true
+  }
+}
