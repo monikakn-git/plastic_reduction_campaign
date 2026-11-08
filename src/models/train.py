@@ -6,8 +6,11 @@ Integrates with MLflow experiment tracking and the 10-class dataset configuratio
 """
 
 from pathlib import Path
+import hashlib
 import os
+import platform
 import sys
+import subprocess
 from typing import Any
 
 import mlflow
@@ -103,12 +106,74 @@ def train_model(
 
         save_dir = Path(results.save_dir)
         best_pt = save_dir / "weights" / "best.pt"
-        if best_pt.is_file():
-            mlflow.log_artifact(str(best_pt), artifact_path="model")
+        essential_files = [
+            best_pt,
+            save_dir / "weights" / "last.pt",
+            save_dir / "results.csv",
+            save_dir / "args.yaml",
+            data_path,
+            cfg_path,
+        ]
+        for source in essential_files:
+            if source.is_file():
+                if source == best_pt:
+                    artifact_path = "model"
+                elif source.parent.name == "weights":
+                    artifact_path = "training/weights"
+                elif source == data_path:
+                    artifact_path = "training/dataset"
+                elif source == cfg_path:
+                    artifact_path = "training/config"
+                else:
+                    artifact_path = "training"
+                mlflow.log_artifact(str(source), artifact_path=artifact_path)
 
-        results_csv = save_dir / "results.csv"
-        if results_csv.is_file():
-            mlflow.log_artifact(str(results_csv), artifact_path="training_results")
+        plot_names = (
+            "results.png", "confusion_matrix.png", "confusion_matrix_normalized.png",
+            "BoxF1_curve.png", "BoxPR_curve.png", "BoxP_curve.png", "BoxR_curve.png",
+        )
+        for plot_name in plot_names:
+            plot_path = save_dir / plot_name
+            if plot_path.is_file():
+                mlflow.log_artifact(str(plot_path), artifact_path="training/plots")
+
+        try:
+            git_commit = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=PROJECT_ROOT, text=True, stderr=subprocess.DEVNULL
+            ).strip()
+        except (OSError, subprocess.CalledProcessError):
+            git_commit = None
+        reproducibility = {
+            "training_run": run_name,
+            "model_architecture": model_name,
+            "dataset_yaml": str(data_path),
+            "dataset_yaml_sha256": hashlib.sha256(data_path.read_bytes()).hexdigest(),
+            "training_config": str(cfg_path) if cfg_path.is_file() else None,
+            "training_config_sha256": hashlib.sha256(cfg_path.read_bytes()).hexdigest() if cfg_path.is_file() else None,
+            "epochs": epochs_val,
+            "image_size": imgsz_val,
+            "batch_size": batch_val,
+            "device": device_val,
+            "seed": int(training_cfg.get("seed", 42)),
+            "git_commit": git_commit,
+            "environment": {
+                "python": sys.version,
+                "platform": platform.platform(),
+                "mlflow": mlflow.__version__,
+            },
+        }
+        mlflow.log_dict(reproducibility, "training/reproducibility.json")
+        try:
+            dependency_snapshot = subprocess.check_output(
+                [sys.executable, "-m", "pip", "freeze"],
+                cwd=PROJECT_ROOT,
+                text=True,
+                stderr=subprocess.DEVNULL,
+            )
+        except (OSError, subprocess.CalledProcessError):
+            dependency_snapshot = ""
+        if dependency_snapshot:
+            mlflow.log_text(dependency_snapshot, "training/environment/requirements.txt")
 
         run_id = mlflow.active_run().info.run_id
         print(f"\nMLflow training run completed. Run ID: {run_id}")

@@ -176,6 +176,12 @@ python src/models/registry.py --tracking-uri http://localhost:5000 --name yolo11
 
 The registry command must use the HTTP tracking server because this project configures MLflow artifact proxying in Docker Compose. A local SQLite tracking URI cannot write to the server's `mlflow-artifacts:/` artifact URI. The registry records a PyFunc model wrapping the YOLO checkpoint, evaluation metrics, gate tags, and a checkpoint SHA-256 digest. The API resolves the MLflow `production` alias, downloads its checkpoint artifact, and verifies the digest before loading it. See the [MLflow alias workflow](https://mlflow.org/docs/latest/ml/model-registry/workflow) for registry concepts.
 
+The registration run stores the serving model/checkpoint, evaluation JSON and Markdown, dataset configuration and summary, per-class metrics, evaluation visualizations, runtime requirements/environment, model risk report, Deepchecks JSON/HTML output when available, and a SHA-256 artifact manifest. Training runs retain the best/last checkpoints, results CSV, training arguments, dataset/config files, standard training plots, installed package snapshot, and a reproducibility manifest. Dataset contents stay in DVC; MLflow stores the dataset configuration and summary used for evaluation. For a model already registered, append the latest evidence to its current aliased run without creating another model version:
+
+```bash
+python src/models/registry.py --tracking-uri http://localhost:5000 --name yolo11n --checkpoint artifacts/checkpoints/yolo11n_best.pt --evaluation reports/yolo11n_best_test_evaluation.json --risk reports/model_risk_quality_report.json --backfill-existing
+```
+
 ### Model quality, visual review, and production drift
 
 Install the offline quality dependencies for Deepchecks and Evidently:
