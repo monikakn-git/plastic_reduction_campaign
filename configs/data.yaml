@@ -1,10 +1,11 @@
 dataset:
-  root: "data/waste10"
-  data_yaml: "data/waste10/data.yaml"
-  images_dir: "data/waste10/images"
-  labels_dir: "data/waste10/labels"
+  # Actual local processed dataset
+  root: "artifacts/datasets/processed"
+  data_yaml: "artifacts/datasets/processed/data.yaml"
+  images_dir: "artifacts/datasets/processed/images"
+  labels_dir: "artifacts/datasets/processed/labels"
 
-  # External storage references (read-only archive)
+  # External storage references (keep for archival purposes)
   external_images_archive: "G:/My Drive/datasets/Ai_Waste_Campaign/images.zip"
   external_annotations_archive: "annotations.zip"
   annotation_prefix: "annotations/10_class_splits/"

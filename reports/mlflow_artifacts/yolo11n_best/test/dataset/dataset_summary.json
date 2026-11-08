@@ -1,0 +1,19 @@
+{
+    "project": "EcoPulse AI",
+    "dataset": "D:\\mlops\\artifacts\\datasets\\processed\\data.yaml",
+    "split": "test",
+    "evaluation_images": 1306,
+    "num_classes": 10,
+    "classes": {
+        "0": "litter",
+        "1": "pile",
+        "2": "face_mask",
+        "3": "trash_bin",
+        "4": "plastic_bag",
+        "5": "bottle",
+        "6": "cup",
+        "7": "rope",
+        "8": "sachet",
+        "9": "straw"
+    }
+}

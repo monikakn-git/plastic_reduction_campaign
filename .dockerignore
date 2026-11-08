@@ -1,0 +1,36 @@
+# Git and DVC versioning
+.git/
+.gitignore
+.dvc/
+.dvcignore
+*.dvc
+
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Large datasets and archives
+*.zip
+*.tar.gz
+data/
+artifacts/datasets/
+artifacts/features/
+
+# Training runs and MLflow tracking
+mlruns/
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+runs/
+yolo_runs/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

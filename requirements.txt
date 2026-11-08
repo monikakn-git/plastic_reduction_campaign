@@ -1,0 +1,28 @@
+# EcoPulse AI - Core Dependencies
+# Tested on Python 3.14 (Windows / Linux)
+
+# Core Deep Learning & Computer Vision
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.3.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Experiment Tracking & MLOps
+mlflow>=2.15.0
+dvc>=3.50.0
+
+# API & Model Serving
+fastapi>=0.110.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9
+pydantic>=2.7.0
+
+# Data Processing & Visualization
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+pyyaml>=6.0.0
+requests>=2.31.0
+

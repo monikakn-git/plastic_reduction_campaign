@@ -1,0 +1,17 @@
+{
+    "source_directory": "D:\\mlops\\runs\\detect\\val-3",
+    "copied_files": [
+        "BoxF1_curve.png",
+        "BoxPR_curve.png",
+        "BoxP_curve.png",
+        "BoxR_curve.png",
+        "confusion_matrix.png",
+        "confusion_matrix_normalized.png",
+        "val_batch0_labels.jpg",
+        "val_batch0_pred.jpg",
+        "val_batch1_labels.jpg",
+        "val_batch1_pred.jpg",
+        "val_batch2_labels.jpg",
+        "val_batch2_pred.jpg"
+    ]
+}
