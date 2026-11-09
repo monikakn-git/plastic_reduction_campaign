@@ -1,0 +1,99 @@
+{
+  "status": "separate_preprocessing_variant_created_not_trained",
+  "variant_path": "data/prepared/plitterstreet-orientation-v2",
+  "source_path": "data/prepared/plitterstreet",
+  "changed_training_images": 4,
+  "changed_annotations": 5,
+  "class_changes": 0,
+  "split_changes": 0,
+  "original_raw_and_baseline_unchanged": true,
+  "convention": "Source boxes in encoded-pixel coordinates; OpenCV/Ultralytics decodes EXIF orientation 3 as 180 degrees. Derived boxes transformed to that decoder orientation.",
+  "changes": [
+    {
+      "image_id": 372,
+      "annotation_id": 128368,
+      "original_bbox": [
+        0.0,
+        1048.0,
+        4031.0,
+        888.0
+      ],
+      "derived_bbox": [
+        1.0,
+        1088.0,
+        4031.0,
+        888.0
+      ]
+    },
+    {
+      "image_id": 449,
+      "annotation_id": 277,
+      "original_bbox": [
+        0.0,
+        0.0,
+        4160.0,
+        1805.0
+      ],
+      "derived_bbox": [
+        0.0,
+        1315.0,
+        4160.0,
+        1805.0
+      ]
+    },
+    {
+      "image_id": 528,
+      "annotation_id": 976,
+      "original_bbox": [
+        0.0,
+        5.0,
+        3620.0,
+        2112.0
+      ],
+      "derived_bbox": [
+        412.0,
+        907.0,
+        3620.0,
+        2112.0
+      ]
+    },
+    {
+      "image_id": 528,
+      "annotation_id": 977,
+      "original_bbox": [
+        3630.0,
+        735.0,
+        402.0,
+        501.0
+      ],
+      "derived_bbox": [
+        0.0,
+        1788.0,
+        402.0,
+        501.0
+      ]
+    },
+    {
+      "image_id": 651,
+      "annotation_id": 76108,
+      "original_bbox": [
+        0.0,
+        0.0,
+        720.0,
+        708.0
+      ],
+      "derived_bbox": [
+        0.0,
+        12.0,
+        720.0,
+        708.0
+      ]
+    }
+  ],
+  "different_label_files": [
+    "labels/train/ATT157_20200304_093209.txt",
+    "labels/train/ATT82_9304590E-91A3-429F-B1FC-8D44377482D5.txt",
+    "labels/train/ATT112_859A6070-BD32-404A-9D22-8B78A83D8430.txt",
+    "labels/train/ATT227_887D62F8-ABCC-40AC-87A3-15FF0DFE0305.txt"
+  ]
+}

@@ -1,0 +1,508 @@
+--progress is a global compose flag, better use `docker compose --progress xx build ...
+ Image mlops-el-inference:phase2 Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 566B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.13kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 125B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 14.55kB done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#6 resolve docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df 0.0s done
+#6 DONE 0.0s
+
+#7 [2/6] WORKDIR /app
+#7 DONE 0.1s
+
+#8 [3/6] RUN apt-get update && apt-get install -y --no-install-recommends libgl1 libglib2.0-0     && rm -rf /var/lib/apt/lists/*     && useradd --create-home --uid 10001 app
+#8 0.186 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#8 0.237 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#8 0.251 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#8 0.272 Get:4 http://deb.debian.org/debian bookworm/main arm64 Packages [8689 kB]
+#8 0.534 Get:5 http://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+#8 0.554 Get:6 http://deb.debian.org/debian-security bookworm-security/main arm64 Packages [361 kB]
+#8 1.059 Fetched 9299 kB in 1s (9787 kB/s)
+#8 1.059 Reading package lists...
+#8 1.289 Reading package lists...
+#8 1.498 Building dependency tree...
+#8 1.550 Reading state information...
+#8 1.612 The following additional packages will be installed:
+#8 1.612   libbsd0 libdrm-amdgpu1 libdrm-common libdrm-nouveau2 libdrm-radeon1 libdrm2
+#8 1.612   libedit2 libelf1 libexpat1 libgl1-mesa-dri libglapi-mesa libglvnd0
+#8 1.612   libglx-mesa0 libglx0 libicu72 libllvm15 libsensors-config libsensors5
+#8 1.612   libx11-6 libx11-data libx11-xcb1 libxau6 libxcb-dri2-0 libxcb-dri3-0
+#8 1.612   libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0 libxcb-sync1
+#8 1.612   libxcb-xfixes0 libxcb1 libxdmcp6 libxext6 libxfixes3 libxml2 libxshmfence1
+#8 1.613   libxxf86vm1 libz3-4
+#8 1.613 Suggested packages:
+#8 1.613   low-memory-monitor lm-sensors
+#8 1.613 Recommended packages:
+#8 1.613   libglib2.0-data shared-mime-info xdg-user-dirs
+#8 1.695 The following NEW packages will be installed:
+#8 1.695   libbsd0 libdrm-amdgpu1 libdrm-common libdrm-nouveau2 libdrm-radeon1 libdrm2
+#8 1.695   libedit2 libelf1 libexpat1 libgl1 libgl1-mesa-dri libglapi-mesa libglib2.0-0
+#8 1.695   libglvnd0 libglx-mesa0 libglx0 libicu72 libllvm15 libsensors-config
+#8 1.695   libsensors5 libx11-6 libx11-data libx11-xcb1 libxau6 libxcb-dri2-0
+#8 1.695   libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0
+#8 1.695   libxcb-sync1 libxcb-xfixes0 libxcb1 libxdmcp6 libxext6 libxfixes3 libxml2
+#8 1.695   libxshmfence1 libxxf86vm1 libz3-4
+#8 1.746 0 upgraded, 40 newly installed, 0 to remove and 0 not upgraded.
+#8 1.746 Need to get 47.7 MB of archives.
+#8 1.746 After this operation, 214 MB of additional disk space will be used.
+#8 1.746 Get:1 http://deb.debian.org/debian bookworm/main arm64 libbsd0 arm64 0.11.7-2 [115 kB]
+#8 1.790 Get:2 http://deb.debian.org/debian bookworm/main arm64 libdrm-common all 2.4.114-1 [7112 B]
+#8 1.790 Get:3 http://deb.debian.org/debian bookworm/main arm64 libdrm2 arm64 2.4.114-1+b1 [36.7 kB]
+#8 1.792 Get:4 http://deb.debian.org/debian bookworm/main arm64 libdrm-amdgpu1 arm64 2.4.114-1+b1 [20.4 kB]
+#8 1.793 Get:5 http://deb.debian.org/debian bookworm/main arm64 libdrm-nouveau2 arm64 2.4.114-1+b1 [18.4 kB]
+#8 1.793 Get:6 http://deb.debian.org/debian bookworm/main arm64 libdrm-radeon1 arm64 2.4.114-1+b1 [20.9 kB]
+#8 1.796 Get:7 http://deb.debian.org/debian bookworm/main arm64 libedit2 arm64 3.1-20221030-2 [88.1 kB]
+#8 1.818 Get:8 http://deb.debian.org/debian bookworm/main arm64 libelf1 arm64 0.188-2.1 [173 kB]
+#8 1.824 Get:9 http://deb.debian.org/debian-security bookworm-security/main arm64 libexpat1 arm64 2.5.0-1+deb12u5 [91.7 kB]
+#8 1.824 Get:10 http://deb.debian.org/debian bookworm/main arm64 libglvnd0 arm64 1.6.0-1 [41.4 kB]
+#8 1.826 Get:11 http://deb.debian.org/debian bookworm/main arm64 libxau6 arm64 1:1.0.9-1 [19.7 kB]
+#8 1.826 Get:12 http://deb.debian.org/debian bookworm/main arm64 libxdmcp6 arm64 1:1.1.2-3 [25.4 kB]
+#8 1.832 Get:13 http://deb.debian.org/debian bookworm/main arm64 libxcb1 arm64 1.15-1 [143 kB]
+#8 1.852 Get:14 http://deb.debian.org/debian bookworm/main arm64 libx11-data all 2:1.8.4-2+deb12u2 [292 kB]
+#8 1.877 Get:15 http://deb.debian.org/debian bookworm/main arm64 libx11-6 arm64 2:1.8.4-2+deb12u2 [735 kB]
+#8 1.901 Get:16 http://deb.debian.org/debian bookworm/main arm64 libglapi-mesa arm64 22.3.6-1+deb12u2 [45.1 kB]
+#8 1.919 Get:17 http://deb.debian.org/debian bookworm/main arm64 libx11-xcb1 arm64 2:1.8.4-2+deb12u2 [192 kB]
+#8 1.936 Get:18 http://deb.debian.org/debian bookworm/main arm64 libxcb-dri2-0 arm64 1.15-1 [107 kB]
+#8 1.937 Get:19 http://deb.debian.org/debian bookworm/main arm64 libxcb-dri3-0 arm64 1.15-1 [107 kB]
+#8 1.938 Get:20 http://deb.debian.org/debian bookworm/main arm64 libxcb-glx0 arm64 1.15-1 [123 kB]
+#8 1.939 Get:21 http://deb.debian.org/debian bookworm/main arm64 libxcb-present0 arm64 1.15-1 [106 kB]
+#8 1.941 Get:22 http://deb.debian.org/debian bookworm/main arm64 libxcb-randr0 arm64 1.15-1 [117 kB]
+#8 1.956 Get:23 http://deb.debian.org/debian bookworm/main arm64 libxcb-shm0 arm64 1.15-1 [106 kB]
+#8 1.973 Get:24 http://deb.debian.org/debian bookworm/main arm64 libxcb-sync1 arm64 1.15-1 [109 kB]
+#8 1.993 Get:25 http://deb.debian.org/debian bookworm/main arm64 libxcb-xfixes0 arm64 1.15-1 [110 kB]
+#8 1.998 Get:26 http://deb.debian.org/debian bookworm/main arm64 libxext6 arm64 2:1.3.4-1+b1 [51.7 kB]
+#8 2.000 Get:27 http://deb.debian.org/debian bookworm/main arm64 libxfixes3 arm64 1:6.0.0-2 [22.9 kB]
+#8 2.001 Get:28 http://deb.debian.org/debian bookworm/main arm64 libxshmfence1 arm64 1.3-1 [8712 B]
+#8 2.002 Get:29 http://deb.debian.org/debian bookworm/main arm64 libxxf86vm1 arm64 1:1.1.4-1+b2 [20.1 kB]
+#8 2.026 Get:30 http://deb.debian.org/debian bookworm/main arm64 libicu72 arm64 72.1-3+deb12u1 [9202 kB]
+#8 2.361 Get:31 http://deb.debian.org/debian bookworm/main arm64 libxml2 arm64 2.9.14+dfsg-1.3~deb12u6 [620 kB]
+#8 2.414 Get:32 http://deb.debian.org/debian bookworm/main arm64 libz3-4 arm64 4.8.12-3.1 [6282 kB]
+#8 2.810 Get:33 http://deb.debian.org/debian bookworm/main arm64 libllvm15 arm64 1:15.0.6-4+b1 [20.7 MB]
+#8 5.894 Get:34 http://deb.debian.org/debian bookworm/main arm64 libsensors-config all 1:3.6.0-7.1 [14.3 kB]
+#8 5.894 Get:35 http://deb.debian.org/debian bookworm/main arm64 libsensors5 arm64 1:3.6.0-7.1 [33.3 kB]
+#8 5.894 Get:36 http://deb.debian.org/debian bookworm/main arm64 libgl1-mesa-dri arm64 22.3.6-1+deb12u2 [6281 kB]
+#8 6.438 Get:37 http://deb.debian.org/debian bookworm/main arm64 libglx-mesa0 arm64 22.3.6-1+deb12u2 [146 kB]
+#8 6.446 Get:38 http://deb.debian.org/debian bookworm/main arm64 libglx0 arm64 1.6.0-1 [30.8 kB]
+#8 6.446 Get:39 http://deb.debian.org/debian bookworm/main arm64 libgl1 arm64 1.6.0-1 [90.2 kB]
+#8 6.459 Get:40 http://deb.debian.org/debian bookworm/main arm64 libglib2.0-0 arm64 2.74.6-2+deb12u9 [1316 kB]
+#8 6.641 debconf: delaying package configuration, since apt-utils is not installed
+#8 6.653 Fetched 47.7 MB in 5s (9827 kB/s)
+#8 6.663 Selecting previously unselected package libbsd0:arm64.
+#8 6.663 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 6695 files and directories currently installed.)
+#8 6.665 Preparing to unpack .../00-libbsd0_0.11.7-2_arm64.deb ...
+#8 6.666 Unpacking libbsd0:arm64 (0.11.7-2) ...
+#8 6.679 Selecting previously unselected package libdrm-common.
+#8 6.679 Preparing to unpack .../01-libdrm-common_2.4.114-1_all.deb ...
+#8 6.680 Unpacking libdrm-common (2.4.114-1) ...
+#8 6.689 Selecting previously unselected package libdrm2:arm64.
+#8 6.690 Preparing to unpack .../02-libdrm2_2.4.114-1+b1_arm64.deb ...
+#8 6.691 Unpacking libdrm2:arm64 (2.4.114-1+b1) ...
+#8 6.701 Selecting previously unselected package libdrm-amdgpu1:arm64.
+#8 6.701 Preparing to unpack .../03-libdrm-amdgpu1_2.4.114-1+b1_arm64.deb ...
+#8 6.702 Unpacking libdrm-amdgpu1:arm64 (2.4.114-1+b1) ...
+#8 6.713 Selecting previously unselected package libdrm-nouveau2:arm64.
+#8 6.714 Preparing to unpack .../04-libdrm-nouveau2_2.4.114-1+b1_arm64.deb ...
+#8 6.715 Unpacking libdrm-nouveau2:arm64 (2.4.114-1+b1) ...
+#8 6.724 Selecting previously unselected package libdrm-radeon1:arm64.
+#8 6.725 Preparing to unpack .../05-libdrm-radeon1_2.4.114-1+b1_arm64.deb ...
+#8 6.725 Unpacking libdrm-radeon1:arm64 (2.4.114-1+b1) ...
+#8 6.734 Selecting previously unselected package libedit2:arm64.
+#8 6.734 Preparing to unpack .../06-libedit2_3.1-20221030-2_arm64.deb ...
+#8 6.735 Unpacking libedit2:arm64 (3.1-20221030-2) ...
+#8 6.747 Selecting previously unselected package libelf1:arm64.
+#8 6.747 Preparing to unpack .../07-libelf1_0.188-2.1_arm64.deb ...
+#8 6.748 Unpacking libelf1:arm64 (0.188-2.1) ...
+#8 6.764 Selecting previously unselected package libexpat1:arm64.
+#8 6.765 Preparing to unpack .../08-libexpat1_2.5.0-1+deb12u5_arm64.deb ...
+#8 6.766 Unpacking libexpat1:arm64 (2.5.0-1+deb12u5) ...
+#8 6.780 Selecting previously unselected package libglvnd0:arm64.
+#8 6.781 Preparing to unpack .../09-libglvnd0_1.6.0-1_arm64.deb ...
+#8 6.781 Unpacking libglvnd0:arm64 (1.6.0-1) ...
+#8 6.795 Selecting previously unselected package libxau6:arm64.
+#8 6.795 Preparing to unpack .../10-libxau6_1%3a1.0.9-1_arm64.deb ...
+#8 6.796 Unpacking libxau6:arm64 (1:1.0.9-1) ...
+#8 6.804 Selecting previously unselected package libxdmcp6:arm64.
+#8 6.804 Preparing to unpack .../11-libxdmcp6_1%3a1.1.2-3_arm64.deb ...
+#8 6.805 Unpacking libxdmcp6:arm64 (1:1.1.2-3) ...
+#8 6.816 Selecting previously unselected package libxcb1:arm64.
+#8 6.817 Preparing to unpack .../12-libxcb1_1.15-1_arm64.deb ...
+#8 6.818 Unpacking libxcb1:arm64 (1.15-1) ...
+#8 6.828 Selecting previously unselected package libx11-data.
+#8 6.828 Preparing to unpack .../13-libx11-data_2%3a1.8.4-2+deb12u2_all.deb ...
+#8 6.829 Unpacking libx11-data (2:1.8.4-2+deb12u2) ...
+#8 6.861 Selecting previously unselected package libx11-6:arm64.
+#8 6.861 Preparing to unpack .../14-libx11-6_2%3a1.8.4-2+deb12u2_arm64.deb ...
+#8 6.863 Unpacking libx11-6:arm64 (2:1.8.4-2+deb12u2) ...
+#8 6.898 Selecting previously unselected package libglapi-mesa:arm64.
+#8 6.898 Preparing to unpack .../15-libglapi-mesa_22.3.6-1+deb12u2_arm64.deb ...
+#8 6.899 Unpacking libglapi-mesa:arm64 (22.3.6-1+deb12u2) ...
+#8 6.909 Selecting previously unselected package libx11-xcb1:arm64.
+#8 6.909 Preparing to unpack .../16-libx11-xcb1_2%3a1.8.4-2+deb12u2_arm64.deb ...
+#8 6.910 Unpacking libx11-xcb1:arm64 (2:1.8.4-2+deb12u2) ...
+#8 6.922 Selecting previously unselected package libxcb-dri2-0:arm64.
+#8 6.922 Preparing to unpack .../17-libxcb-dri2-0_1.15-1_arm64.deb ...
+#8 6.923 Unpacking libxcb-dri2-0:arm64 (1.15-1) ...
+#8 6.937 Selecting previously unselected package libxcb-dri3-0:arm64.
+#8 6.937 Preparing to unpack .../18-libxcb-dri3-0_1.15-1_arm64.deb ...
+#8 6.938 Unpacking libxcb-dri3-0:arm64 (1.15-1) ...
+#8 6.951 Selecting previously unselected package libxcb-glx0:arm64.
+#8 6.951 Preparing to unpack .../19-libxcb-glx0_1.15-1_arm64.deb ...
+#8 6.952 Unpacking libxcb-glx0:arm64 (1.15-1) ...
+#8 6.964 Selecting previously unselected package libxcb-present0:arm64.
+#8 6.965 Preparing to unpack .../20-libxcb-present0_1.15-1_arm64.deb ...
+#8 6.966 Unpacking libxcb-present0:arm64 (1.15-1) ...
+#8 6.977 Selecting previously unselected package libxcb-randr0:arm64.
+#8 6.978 Preparing to unpack .../21-libxcb-randr0_1.15-1_arm64.deb ...
+#8 6.978 Unpacking libxcb-randr0:arm64 (1.15-1) ...
+#8 6.991 Selecting previously unselected package libxcb-shm0:arm64.
+#8 6.991 Preparing to unpack .../22-libxcb-shm0_1.15-1_arm64.deb ...
+#8 6.992 Unpacking libxcb-shm0:arm64 (1.15-1) ...
+#8 7.005 Selecting previously unselected package libxcb-sync1:arm64.
+#8 7.005 Preparing to unpack .../23-libxcb-sync1_1.15-1_arm64.deb ...
+#8 7.006 Unpacking libxcb-sync1:arm64 (1.15-1) ...
+#8 7.018 Selecting previously unselected package libxcb-xfixes0:arm64.
+#8 7.018 Preparing to unpack .../24-libxcb-xfixes0_1.15-1_arm64.deb ...
+#8 7.019 Unpacking libxcb-xfixes0:arm64 (1.15-1) ...
+#8 7.031 Selecting previously unselected package libxext6:arm64.
+#8 7.032 Preparing to unpack .../25-libxext6_2%3a1.3.4-1+b1_arm64.deb ...
+#8 7.032 Unpacking libxext6:arm64 (2:1.3.4-1+b1) ...
+#8 7.042 Selecting previously unselected package libxfixes3:arm64.
+#8 7.042 Preparing to unpack .../26-libxfixes3_1%3a6.0.0-2_arm64.deb ...
+#8 7.044 Unpacking libxfixes3:arm64 (1:6.0.0-2) ...
+#8 7.053 Selecting previously unselected package libxshmfence1:arm64.
+#8 7.053 Preparing to unpack .../27-libxshmfence1_1.3-1_arm64.deb ...
+#8 7.054 Unpacking libxshmfence1:arm64 (1.3-1) ...
+#8 7.062 Selecting previously unselected package libxxf86vm1:arm64.
+#8 7.063 Preparing to unpack .../28-libxxf86vm1_1%3a1.1.4-1+b2_arm64.deb ...
+#8 7.063 Unpacking libxxf86vm1:arm64 (1:1.1.4-1+b2) ...
+#8 7.072 Selecting previously unselected package libicu72:arm64.
+#8 7.073 Preparing to unpack .../29-libicu72_72.1-3+deb12u1_arm64.deb ...
+#8 7.073 Unpacking libicu72:arm64 (72.1-3+deb12u1) ...
+#8 7.405 Selecting previously unselected package libxml2:arm64.
+#8 7.405 Preparing to unpack .../30-libxml2_2.9.14+dfsg-1.3~deb12u6_arm64.deb ...
+#8 7.406 Unpacking libxml2:arm64 (2.9.14+dfsg-1.3~deb12u6) ...
+#8 7.438 Selecting previously unselected package libz3-4:arm64.
+#8 7.438 Preparing to unpack .../31-libz3-4_4.8.12-3.1_arm64.deb ...
+#8 7.439 Unpacking libz3-4:arm64 (4.8.12-3.1) ...
+#8 7.713 Selecting previously unselected package libllvm15:arm64.
+#8 7.714 Preparing to unpack .../32-libllvm15_1%3a15.0.6-4+b1_arm64.deb ...
+#8 7.715 Unpacking libllvm15:arm64 (1:15.0.6-4+b1) ...
+#8 8.343 Selecting previously unselected package libsensors-config.
+#8 8.345 Preparing to unpack .../33-libsensors-config_1%3a3.6.0-7.1_all.deb ...
+#8 8.346 Unpacking libsensors-config (1:3.6.0-7.1) ...
+#8 8.355 Selecting previously unselected package libsensors5:arm64.
+#8 8.355 Preparing to unpack .../34-libsensors5_1%3a3.6.0-7.1_arm64.deb ...
+#8 8.357 Unpacking libsensors5:arm64 (1:3.6.0-7.1) ...
+#8 8.374 Selecting previously unselected package libgl1-mesa-dri:arm64.
+#8 8.374 Preparing to unpack .../35-libgl1-mesa-dri_22.3.6-1+deb12u2_arm64.deb ...
+#8 8.377 Unpacking libgl1-mesa-dri:arm64 (22.3.6-1+deb12u2) ...
+#8 8.694 Selecting previously unselected package libglx-mesa0:arm64.
+#8 8.694 Preparing to unpack .../36-libglx-mesa0_22.3.6-1+deb12u2_arm64.deb ...
+#8 8.695 Unpacking libglx-mesa0:arm64 (22.3.6-1+deb12u2) ...
+#8 8.711 Selecting previously unselected package libglx0:arm64.
+#8 8.711 Preparing to unpack .../37-libglx0_1.6.0-1_arm64.deb ...
+#8 8.712 Unpacking libglx0:arm64 (1.6.0-1) ...
+#8 8.723 Selecting previously unselected package libgl1:arm64.
+#8 8.724 Preparing to unpack .../38-libgl1_1.6.0-1_arm64.deb ...
+#8 8.727 Unpacking libgl1:arm64 (1.6.0-1) ...
+#8 8.742 Selecting previously unselected package libglib2.0-0:arm64.
+#8 8.742 Preparing to unpack .../39-libglib2.0-0_2.74.6-2+deb12u9_arm64.deb ...
+#8 8.743 Unpacking libglib2.0-0:arm64 (2.74.6-2+deb12u9) ...
+#8 8.808 Setting up libexpat1:arm64 (2.5.0-1+deb12u5) ...
+#8 8.811 Setting up libxau6:arm64 (1:1.0.9-1) ...
+#8 8.813 Setting up libicu72:arm64 (72.1-3+deb12u1) ...
+#8 8.815 Setting up libglib2.0-0:arm64 (2.74.6-2+deb12u9) ...
+#8 8.819 No schema files found: doing nothing.
+#8 8.821 Setting up libglvnd0:arm64 (1.6.0-1) ...
+#8 8.823 Setting up libsensors-config (1:3.6.0-7.1) ...
+#8 8.826 Setting up libz3-4:arm64 (4.8.12-3.1) ...
+#8 8.828 Setting up libx11-data (2:1.8.4-2+deb12u2) ...
+#8 8.830 Setting up libsensors5:arm64 (1:3.6.0-7.1) ...
+#8 8.831 Setting up libglapi-mesa:arm64 (22.3.6-1+deb12u2) ...
+#8 8.833 Setting up libxshmfence1:arm64 (1.3-1) ...
+#8 8.835 Setting up libbsd0:arm64 (0.11.7-2) ...
+#8 8.837 Setting up libdrm-common (2.4.114-1) ...
+#8 8.839 Setting up libelf1:arm64 (0.188-2.1) ...
+#8 8.840 Setting up libxml2:arm64 (2.9.14+dfsg-1.3~deb12u6) ...
+#8 8.842 Setting up libxdmcp6:arm64 (1:1.1.2-3) ...
+#8 8.844 Setting up libxcb1:arm64 (1.15-1) ...
+#8 8.846 Setting up libxcb-xfixes0:arm64 (1.15-1) ...
+#8 8.848 Setting up libxcb-glx0:arm64 (1.15-1) ...
+#8 8.850 Setting up libedit2:arm64 (3.1-20221030-2) ...
+#8 8.853 Setting up libxcb-shm0:arm64 (1.15-1) ...
+#8 8.855 Setting up libxcb-present0:arm64 (1.15-1) ...
+#8 8.856 Setting up libxcb-sync1:arm64 (1.15-1) ...
+#8 8.858 Setting up libxcb-dri2-0:arm64 (1.15-1) ...
+#8 8.861 Setting up libdrm2:arm64 (2.4.114-1+b1) ...
+#8 8.863 Setting up libxcb-randr0:arm64 (1.15-1) ...
+#8 8.865 Setting up libllvm15:arm64 (1:15.0.6-4+b1) ...
+#8 8.866 Setting up libx11-6:arm64 (2:1.8.4-2+deb12u2) ...
+#8 8.868 Setting up libdrm-amdgpu1:arm64 (2.4.114-1+b1) ...
+#8 8.872 Setting up libxcb-dri3-0:arm64 (1.15-1) ...
+#8 8.874 Setting up libx11-xcb1:arm64 (2:1.8.4-2+deb12u2) ...
+#8 8.876 Setting up libdrm-nouveau2:arm64 (2.4.114-1+b1) ...
+#8 8.878 Setting up libdrm-radeon1:arm64 (2.4.114-1+b1) ...
+#8 8.879 Setting up libgl1-mesa-dri:arm64 (22.3.6-1+deb12u2) ...
+#8 8.883 Setting up libxext6:arm64 (2:1.3.4-1+b1) ...
+#8 8.885 Setting up libxxf86vm1:arm64 (1:1.1.4-1+b2) ...
+#8 8.886 Setting up libxfixes3:arm64 (1:6.0.0-2) ...
+#8 8.888 Setting up libglx-mesa0:arm64 (22.3.6-1+deb12u2) ...
+#8 8.889 Setting up libglx0:arm64 (1.6.0-1) ...
+#8 8.893 Setting up libgl1:arm64 (1.6.0-1) ...
+#8 8.895 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+#8 DONE 9.1s
+
+#9 [4/6] COPY requirements-service.txt .
+#9 DONE 0.0s
+
+#10 [5/6] RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch==2.11.0 torchvision==0.26.0     && pip install --no-cache-dir -r requirements-service.txt
+#10 0.730 Looking in indexes: https://download.pytorch.org/whl/cpu
+#10 1.227 Collecting torch==2.11.0
+#10 1.630   Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.11.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl.metadata (29 kB)
+#10 1.726 Collecting torchvision==0.26.0
+#10 2.012   Downloading https://download-r2.pytorch.org/whl/cpu/torchvision-0.26.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl.metadata (5.5 kB)
+#10 2.070 Collecting filelock (from torch==2.11.0)
+#10 2.265   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+#10 2.304 Collecting typing-extensions>=4.10.0 (from torch==2.11.0)
+#10 2.358   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#10 2.390 Collecting setuptools<82 (from torch==2.11.0)
+#10 2.417   Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+#10 2.470 Collecting sympy>=1.13.3 (from torch==2.11.0)
+#10 2.523   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+#10 2.581 Collecting networkx>=2.5.1 (from torch==2.11.0)
+#10 2.633   Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+#10 2.669 Collecting jinja2 (from torch==2.11.0)
+#10 2.694   Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#10 2.742 Collecting fsspec>=0.8.5 (from torch==2.11.0)
+#10 2.794   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+#10 3.120 Collecting numpy (from torchvision==0.26.0)
+#10 3.172   Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+#10 3.401 Collecting pillow!=8.3.*,>=5.3.0 (from torchvision==0.26.0)
+#10 3.457   Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)
+#10 3.492 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.11.0)
+#10 3.542   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+#10 3.586 Collecting MarkupSafe>=2.0 (from jinja2->torch==2.11.0)
+#10 3.612   Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+#10 3.905 Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.11.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl (148.1 MB)
+#10 15.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.1/148.1 MB 12.8 MB/s eta 0:00:00
+#10 15.81 Downloading https://download-r2.pytorch.org/whl/cpu/torchvision-0.26.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl (2.3 MB)
+#10 16.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 4.5 MB/s eta 0:00:00
+#10 16.36 Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+#10 16.55 Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+#10 16.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 16.8 MB/s eta 0:00:00
+#10 16.76 Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.5 MB)
+#10 16.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 32.7 MB/s eta 0:00:00
+#10 17.01 Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+#10 17.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 17.7 MB/s eta 0:00:00
+#10 17.13 Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+#10 17.35    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 27.6 MB/s eta 0:00:00
+#10 17.41 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#10 17.46 Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+#10 17.50 Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+#10 17.55 Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.7 MB)
+#10 20.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 5.8 MB/s eta 0:00:00
+#10 20.25 Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (24 kB)
+#10 20.30 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+#10 20.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 4.1 MB/s eta 0:00:00
+#10 20.73 Installing collected packages: mpmath, typing-extensions, sympy, setuptools, pillow, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision
+#10 33.01 Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 numpy-2.5.4 pillow-13.0.0 setuptools-78.1.0 sympy-1.14.0 torch-2.11.0+cpu torchvision-0.26.0+cpu typing-extensions-4.16.0
+#10 33.01 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 34.42 Collecting fastapi==0.162.0 (from -r requirements-service.txt (line 3))
+#10 34.53   Downloading fastapi-0.162.0-py3-none-any.whl.metadata (26 kB)
+#10 34.59 Collecting uvicorn==0.54.0 (from -r requirements-service.txt (line 4))
+#10 34.62   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+#10 34.73 Collecting ultralytics==8.4.201 (from -r requirements-service.txt (line 5))
+#10 34.76   Downloading ultralytics-8.4.201-py3-none-any.whl.metadata (47 kB)
+#10 34.90 Collecting Pillow==12.3.0 (from -r requirements-service.txt (line 6))
+#10 34.93   Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)
+#10 34.93 Requirement already satisfied: numpy==2.5.4 in /usr/local/lib/python3.12/site-packages (from -r requirements-service.txt (line 7)) (2.5.4)
+#10 34.97 Collecting starlette>=0.46.0 (from fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 34.99   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+#10 35.06 Collecting pydantic>=2.9.0 (from fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 35.08   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+#10 35.11 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.12/site-packages (from fastapi==0.162.0->-r requirements-service.txt (line 3)) (4.16.0)
+#10 35.14 Collecting typing-inspection>=0.4.2 (from fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 35.16   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+#10 35.19 Collecting annotated-doc>=0.0.2 (from fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 35.21   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#10 35.25 Collecting opentelemetry-api>=1.44.0 (from fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 35.28   Downloading opentelemetry_api-1.45.2-py3-none-any.whl.metadata (1.4 kB)
+#10 35.31 Collecting click>=7.0 (from uvicorn==0.54.0->-r requirements-service.txt (line 4))
+#10 35.33   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+#10 35.36 Collecting h11>=0.8 (from uvicorn==0.54.0->-r requirements-service.txt (line 4))
+#10 35.39   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#10 35.47 Collecting matplotlib>=3.3.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.49   Downloading matplotlib-3.11.2-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (80 kB)
+#10 35.55 Collecting opencv-python!=4.13.0.90,>=4.7.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.58   Downloading opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_aarch64.whl.metadata (19 kB)
+#10 35.62 Collecting requests>=2.23.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.64   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#10 35.64 Requirement already satisfied: torch>=1.8.0 in /usr/local/lib/python3.12/site-packages (from ultralytics==8.4.201->-r requirements-service.txt (line 5)) (2.11.0+cpu)
+#10 35.64 Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.12/site-packages (from ultralytics==8.4.201->-r requirements-service.txt (line 5)) (0.26.0+cpu)
+#10 35.70 Collecting psutil>=5.8.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.72   Downloading psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (22 kB)
+#10 35.82 Collecting polars>=0.20.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.84   Downloading polars-2.1.0-py3-none-any.whl.metadata (11 kB)
+#10 35.87 Collecting nvidia-ml-py>=12.0.0 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.90   Downloading nvidia_ml_py-13.615.71-py3-none-any.whl.metadata (9.7 kB)
+#10 35.93 Collecting ultralytics-thop>=2.2.4 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 35.96   Downloading ultralytics_thop-2.2.5-py3-none-any.whl.metadata (14 kB)
+#10 35.99 Collecting ultralytics-platform>=0.1.102 (from ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.02   Downloading ultralytics_platform-0.1.107-py3-none-any.whl.metadata (18 kB)
+#10 36.09 Collecting contourpy>=1.0.1 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.12   Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (3.8 kB)
+#10 36.15 Collecting cycler>=0.10 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.18   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+#10 36.29 Collecting fonttools>=4.28.2 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.31   Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (139 kB)
+#10 36.38 Collecting kiwisolver>=1.3.1 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.40   Downloading kiwisolver-1.5.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (5.2 kB)
+#10 36.44 Collecting packaging>=20.0 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.46   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+#10 36.50 Collecting pyparsing>=3 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.52   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+#10 36.56 Collecting python-dateutil>=2.7 (from matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.58   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+#10 36.62 Collecting polars-runtime-32==2.1.0 (from polars>=0.20.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 36.65   Downloading polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+#10 36.68 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 36.70   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#10 37.05 Collecting pydantic-core==2.50.4 (from pydantic>=2.9.0->fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 37.08   Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (6.6 kB)
+#10 37.15 Collecting charset_normalizer<4,>=2 (from requests>=2.23.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.18   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)
+#10 37.21 Collecting idna<4,>=2.5 (from requests>=2.23.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.24   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#10 37.28 Collecting urllib3<3,>=1.26 (from requests>=2.23.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.30   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#10 37.34 Collecting certifi>=2023.5.7 (from requests>=2.23.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.37   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#10 37.41 Collecting anyio<5,>=4.0.0 (from starlette>=0.46.0->fastapi==0.162.0->-r requirements-service.txt (line 3))
+#10 37.44   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+#10 37.44 Requirement already satisfied: filelock in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (4.2.4)
+#10 37.44 Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (78.1.0)
+#10 37.44 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (1.14.0)
+#10 37.44 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (3.7)
+#10 37.44 Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (3.1.6)
+#10 37.44 Requirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.12/site-packages (from torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (2026.9.0)
+#10 37.49 Collecting httpx<1,>=0.28 (from ultralytics-platform>=0.1.102->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.52   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+#10 37.60 Collecting httpcore==1.* (from httpx<1,>=0.28->ultralytics-platform>=0.1.102->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.63   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#10 37.67 Collecting tzdata (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics==8.4.201->-r requirements-service.txt (line 5))
+#10 37.69   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+#10 37.70 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/site-packages (from sympy>=1.13.3->torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (1.3.0)
+#10 37.70 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/site-packages (from jinja2->torch>=1.8.0->ultralytics==8.4.201->-r requirements-service.txt (line 5)) (3.0.3)
+#10 37.73 Downloading fastapi-0.162.0-py3-none-any.whl (148 kB)
+#10 37.76 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#10 37.79 Downloading ultralytics-8.4.201-py3-none-any.whl (1.4 MB)
+#10 37.86    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 21.7 MB/s eta 0:00:00
+#10 37.90 Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.3 MB)
+#10 38.15    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 24.2 MB/s eta 0:00:00
+#10 38.18 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#10 38.20 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+#10 38.23 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#10 38.26 Downloading matplotlib-3.11.2-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (10.7 MB)
+#10 39.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 11.2 MB/s eta 0:00:00
+#10 39.24 Downloading nvidia_ml_py-13.615.71-py3-none-any.whl (58 kB)
+#10 39.28 Downloading opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_aarch64.whl (49.8 MB)
+#10 46.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.8/49.8 MB 7.3 MB/s eta 0:00:00
+#10 46.12 Downloading opentelemetry_api-1.45.2-py3-none-any.whl (60 kB)
+#10 46.15 Downloading polars-2.1.0-py3-none-any.whl (911 kB)
+#10 46.27    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 911.5/911.5 kB 8.5 MB/s eta 0:00:00
+#10 46.30 Downloading polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (50.0 MB)
+#10 51.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 MB 9.9 MB/s eta 0:00:00
+#10 51.37 Downloading psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (156 kB)
+#10 51.40 Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+#10 51.47 Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (2.1 MB)
+#10 51.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 12.7 MB/s eta 0:00:00
+#10 51.66 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#10 51.69 Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+#10 51.73 Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+#10 51.75 Downloading ultralytics_platform-0.1.107-py3-none-any.whl (102 kB)
+#10 51.79 Downloading ultralytics_thop-2.2.5-py3-none-any.whl (32 kB)
+#10 51.82 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#10 51.85 Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+#10 51.88 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#10 51.92 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (246 kB)
+#10 51.97 Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (356 kB)
+#10 52.03 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+#10 52.08 Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (5.5 MB)
+#10 52.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 12.5 MB/s eta 0:00:00
+#10 52.54 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#10 52.57 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#10 52.60 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#10 52.63 Downloading kiwisolver-1.5.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (1.3 MB)
+#10 52.74    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 11.7 MB/s eta 0:00:00
+#10 52.77 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+#10 52.81 Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+#10 52.84 Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+#10 52.87 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#10 52.91 Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+#10 53.10 Installing collected packages: nvidia-ml-py, urllib3, tzdata, typing-inspection, pyparsing, pydantic-core, psutil, polars-runtime-32, Pillow, packaging, opentelemetry-api, opencv-python, kiwisolver, idna, h11, fonttools, cycler, contourpy, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, requests, python-dateutil, pydantic, polars, httpcore, anyio, ultralytics-thop, starlette, matplotlib, httpx, ultralytics-platform, fastapi, ultralytics
+#10 53.77   Attempting uninstall: Pillow
+#10 53.78     Found existing installation: pillow 13.0.0
+#10 53.78     Uninstalling pillow-13.0.0:
+#10 53.78       Successfully uninstalled pillow-13.0.0
+#10 57.27 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 57.27 Successfully installed Pillow-12.3.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.1 contourpy-1.4.0 cycler-0.12.1 fastapi-0.162.0 fonttools-4.68.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 kiwisolver-1.5.1 matplotlib-3.11.2 nvidia-ml-py-13.615.71 opencv-python-5.0.0.93 opentelemetry-api-1.45.2 packaging-26.3 polars-2.1.0 polars-runtime-32-2.1.0 psutil-7.2.2 pydantic-2.14.3 pydantic-core-2.50.4 pyparsing-3.3.3 python-dateutil-4.0.0 requests-2.34.2 starlette-1.10.0 typing-inspection-0.4.5 tzdata-2026.6 ultralytics-8.4.201 ultralytics-platform-0.1.107 ultralytics-thop-2.2.5 urllib3-2.8.0 uvicorn-0.54.0
+#10 57.56
+#10 57.56 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#10 57.56 [notice] To update, run: pip install --upgrade pip
+#10 DONE 58.0s
+
+#11 [6/6] COPY --chown=10001:10001 service /app/service
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 22.1s done
+#12 exporting manifest sha256:0f1661697de77c6df39ee5087c5f27b7f472a13f72a4b141d1aefb3c8570fe10 0.0s done
+#12 exporting config sha256:170a28f0ffe236f8f4ca7a9d1ac93ffbe5daf9a31e5a18e61cda53d598b4b6ca done
+#12 exporting attestation manifest sha256:3f2c4960f7ada08b31cdf191b23349ea208b90ac96e46d24a8be1e188504c929 done
+#12 exporting manifest list sha256:8bab5429fd2276069bc597ce46bb0025e348024d71715a5e2b95555b5ab0efb9 done
+#12 naming to docker.io/library/mlops-el-inference:phase2 0.0s done
+#12 unpacking to docker.io/library/mlops-el-inference:phase2
+#12 unpacking to docker.io/library/mlops-el-inference:phase2 10.2s done
+#12 DONE 32.5s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.1s
+ Image mlops-el-inference:phase2 Built

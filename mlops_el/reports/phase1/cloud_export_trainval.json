@@ -1,0 +1,11 @@
+{
+  "scope": "trainval",
+  "archive": "/path/to/MLOPS_EL/exports/mlops-trainval-labels-v3.tar",
+  "bytes": 6700103680,
+  "sha256": "37c7e50b954a996519fc8d4f52715fc93c733b313374ab4f2b91af9725064098",
+  "train_images": 7000,
+  "val_images": 1500,
+  "test_images": 0,
+  "source_git_commit": "d2a872f7616b36264fb464beb69f9110bdec0033",
+  "source_dvc_sha256": "5a6ed019131c15aff4e8a3004c4146e46ea96ebdc98d23aaa1d6d47c33936b44"
+}

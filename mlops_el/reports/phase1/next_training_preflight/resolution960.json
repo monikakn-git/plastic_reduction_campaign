@@ -1,0 +1,140 @@
+{
+  "run_id": "1cb3e39ac98d4790a14d6a2d399faf78",
+  "images": 1500,
+  "weights_sha256": "a284e933df489394d120c3fd381b8b8f60131e80f4f3bd5ff34176b815699230",
+  "split": "val",
+  "imgsz": 960,
+  "metrics": {
+    "metrics/precision(B)": 0.3961886795987873,
+    "metrics/recall(B)": 0.3291425484133974,
+    "metrics/mAP50(B)": 0.30534256933414794,
+    "metrics/mAP50-95(B)": 0.17410160833702826,
+    "fitness": 0.17410160833702826
+  },
+  "baseline640_metrics": {
+    "metrics/precision(B)": 0.3955498964359569,
+    "metrics/recall(B)": 0.32467410050218043,
+    "metrics/mAP50(B)": 0.32239534079536425,
+    "metrics/mAP50-95(B)": 0.1951423423616567,
+    "fitness": 0.1951423423616567
+  },
+  "per_class": [
+    {
+      "Class": "litter",
+      "Images": 1286,
+      "Instances": 7093,
+      "Box-P": 0.55306,
+      "Box-R": 0.32554,
+      "Box-F1": 0.40984,
+      "mAP50": 0.41946,
+      "mAP75": 0.22328,
+      "mAP50-95": 0.22933
+    },
+    {
+      "Class": "pile",
+      "Images": 85,
+      "Instances": 137,
+      "Box-P": 0.398,
+      "Box-R": 0.31387,
+      "Box-F1": 0.35096,
+      "mAP50": 0.27255,
+      "mAP75": 0.01935,
+      "mAP50-95": 0.07045
+    },
+    {
+      "Class": "face_mask",
+      "Images": 57,
+      "Instances": 66,
+      "Box-P": 0.32407,
+      "Box-R": 0.56061,
+      "Box-F1": 0.41072,
+      "mAP50": 0.39394,
+      "mAP75": 0.20969,
+      "mAP50-95": 0.22427
+    },
+    {
+      "Class": "trash_bin",
+      "Images": 67,
+      "Instances": 93,
+      "Box-P": 0.45387,
+      "Box-R": 0.58065,
+      "Box-F1": 0.50949,
+      "mAP50": 0.44745,
+      "mAP75": 0.34611,
+      "mAP50-95": 0.31366
+    },
+    {
+      "Class": "plastic_bag",
+      "Images": 622,
+      "Instances": 1117,
+      "Box-P": 0.51812,
+      "Box-R": 0.26086,
+      "Box-F1": 0.34701,
+      "mAP50": 0.33494,
+      "mAP75": 0.23463,
+      "mAP50-95": 0.21034
+    },
+    {
+      "Class": "bottle",
+      "Images": 247,
+      "Instances": 371,
+      "Box-P": 0.57895,
+      "Box-R": 0.11051,
+      "Box-F1": 0.1856,
+      "mAP50": 0.19022,
+      "mAP75": 0.10653,
+      "mAP50-95": 0.1098
+    },
+    {
+      "Class": "cup",
+      "Images": 105,
+      "Instances": 115,
+      "Box-P": 0.0,
+      "Box-R": 0.0,
+      "Box-F1": 0.0,
+      "mAP50": 0.05232,
+      "mAP75": 0.03036,
+      "mAP50-95": 0.03056
+    },
+    {
+      "Class": "rope",
+      "Images": 118,
+      "Instances": 139,
+      "Box-P": 0.38851,
+      "Box-R": 0.35971,
+      "Box-F1": 0.37356,
+      "mAP50": 0.31171,
+      "mAP75": 0.20585,
+      "mAP50-95": 0.1765
+    },
+    {
+      "Class": "sachet",
+      "Images": 253,
+      "Instances": 330,
+      "Box-P": 0.32194,
+      "Box-R": 0.40909,
+      "Box-F1": 0.36032,
+      "mAP50": 0.27349,
+      "mAP75": 0.17517,
+      "mAP50-95": 0.16033
+    },
+    {
+      "Class": "straw",
+      "Images": 129,
+      "Instances": 170,
+      "Box-P": 0.42536,
+      "Box-R": 0.37059,
+      "Box-F1": 0.39609,
+      "mAP50": 0.35734,
+      "mAP75": 0.23951,
+      "mAP50-95": 0.21578
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.7165939429153999,
+    "inference": 3.3176990281790495,
+    "loss": 0.00019471626728773117,
+    "postprocess": 27.18499126362925
+  },
+  "note": "Same saved model and standard validation protocol; only resolution changed. This does not test training at higher resolution or a larger model."
+}

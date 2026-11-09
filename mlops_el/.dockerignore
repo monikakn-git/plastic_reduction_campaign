@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!requirements-service.txt
+!service/
+!service/*.py
+service/__pycache__/

@@ -1,0 +1,136 @@
+{
+  "split": "val",
+  "run_id": "f0ff7aac40d146b294ff25111662210a",
+  "training_run_id": "08c11dfe46984ebeb0d8cf4e2dae534f",
+  "weights_sha256": "a284e933df489394d120c3fd381b8b8f60131e80f4f3bd5ff34176b815699230",
+  "metrics": {
+    "metrics/precision(B)": 0.3955498964359569,
+    "metrics/recall(B)": 0.32467410050218043,
+    "metrics/mAP50(B)": 0.32239534079536425,
+    "metrics/mAP50-95(B)": 0.1951423423616567,
+    "fitness": 0.1951423423616567
+  },
+  "per_class": [
+    {
+      "Class": "litter",
+      "Images": 1286,
+      "Instances": 7093,
+      "Box-P": 0.5507,
+      "Box-R": 0.35796,
+      "Box-F1": 0.43389,
+      "mAP50": 0.41783,
+      "mAP75": 0.21188,
+      "mAP50-95": 0.2211
+    },
+    {
+      "Class": "pile",
+      "Images": 85,
+      "Instances": 137,
+      "Box-P": 0.48464,
+      "Box-R": 0.42336,
+      "Box-F1": 0.45193,
+      "mAP50": 0.40253,
+      "mAP75": 0.19093,
+      "mAP50-95": 0.20121
+    },
+    {
+      "Class": "face_mask",
+      "Images": 57,
+      "Instances": 66,
+      "Box-P": 0.40798,
+      "Box-R": 0.54297,
+      "Box-F1": 0.46589,
+      "mAP50": 0.43416,
+      "mAP75": 0.1833,
+      "mAP50-95": 0.23967
+    },
+    {
+      "Class": "trash_bin",
+      "Images": 67,
+      "Instances": 93,
+      "Box-P": 0.46439,
+      "Box-R": 0.54839,
+      "Box-F1": 0.50291,
+      "mAP50": 0.53131,
+      "mAP75": 0.46758,
+      "mAP50-95": 0.40655
+    },
+    {
+      "Class": "plastic_bag",
+      "Images": 622,
+      "Instances": 1117,
+      "Box-P": 0.4769,
+      "Box-R": 0.28201,
+      "Box-F1": 0.35443,
+      "mAP50": 0.33531,
+      "mAP75": 0.24139,
+      "mAP50-95": 0.20953
+    },
+    {
+      "Class": "bottle",
+      "Images": 247,
+      "Instances": 371,
+      "Box-P": 0.48961,
+      "Box-R": 0.06739,
+      "Box-F1": 0.11847,
+      "mAP50": 0.14737,
+      "mAP75": 0.08537,
+      "mAP50-95": 0.08617
+    },
+    {
+      "Class": "cup",
+      "Images": 105,
+      "Instances": 115,
+      "Box-P": 0.0,
+      "Box-R": 0.0,
+      "Box-F1": 0.0,
+      "mAP50": 0.05086,
+      "mAP75": 0.02564,
+      "mAP50-95": 0.02676
+    },
+    {
+      "Class": "rope",
+      "Images": 118,
+      "Instances": 139,
+      "Box-P": 0.41865,
+      "Box-R": 0.3523,
+      "Box-F1": 0.38262,
+      "mAP50": 0.31397,
+      "mAP75": 0.21497,
+      "mAP50-95": 0.19517
+    },
+    {
+      "Class": "sachet",
+      "Images": 253,
+      "Instances": 330,
+      "Box-P": 0.28777,
+      "Box-R": 0.36061,
+      "Box-F1": 0.3201,
+      "mAP50": 0.26992,
+      "mAP75": 0.19026,
+      "mAP50-95": 0.16658
+    },
+    {
+      "Class": "straw",
+      "Images": 129,
+      "Instances": 170,
+      "Box-P": 0.37486,
+      "Box-R": 0.31176,
+      "Box-F1": 0.34041,
+      "mAP50": 0.3207,
+      "mAP75": 0.21362,
+      "mAP50-95": 0.19866
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.505710561449329,
+    "inference": 2.5467664118235307,
+    "loss": 0.00012291393553217253,
+    "postprocess": 10.520619275358817
+  },
+  "baseline_validation_run_id": "28dfd985bfdc49ab9f5a3df6e0655c16",
+  "test_evaluated": false,
+  "automatic_promotion": false,
+  "dataset_approval": "pending",
+  "caveat": "Validation comparison only. Ambiguous labels remain; public-street results do not establish campus performance."
+}

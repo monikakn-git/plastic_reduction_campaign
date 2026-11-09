@@ -1,0 +1,7 @@
+# Container service dependencies. PyTorch/torchvision use the CPU index in Dockerfile.
+# Linux container resolution/build still requires Docker verification.
+fastapi==0.162.0
+uvicorn==0.54.0
+ultralytics==8.4.201
+Pillow==12.3.0
+numpy==2.5.4

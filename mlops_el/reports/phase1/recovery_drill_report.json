@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "method": "controlled epoch stop, fresh Python process and empty local work directory",
+  "before_epoch": 1,
+  "after_epoch": 2,
+  "run_id": "e7d3e7558015491e9cbf813ee1b922a5",
+  "bundle_fingerprint": "15170f0233450b95a04be1de9508829f7d554abe9062d85cefe527dbf55bfd2b",
+  "same_mlflow_run": true,
+  "optimizer_state_verified": true,
+  "not_a_provider_disconnect_test": true,
+  "quality_claim": false
+}

@@ -1,0 +1,30 @@
+{
+  "source_commit": "61b92ae89fa5a593d02b0032fd4e430ebbee3585",
+  "destination_branch": "codex/mlops-phase2-copy",
+  "snapshot_folder": "mlops_el",
+  "copied_file_count": 297,
+  "excluded_private_evidence": [
+    "reports/phase1/colab_benchmark_completed.jpg",
+    "reports/phase1/colab_drive_permission.jpg",
+    "reports/phase1/colab_full_training_started.jpg",
+    "reports/phase1/colab_session1_checkpoint30.jpg",
+    "reports/phase1/kaggle_training_resumed.jpg",
+    "reports/phase1/mlops-benchmark-evidence.zip"
+  ],
+  "text_files_with_local_paths_or_private_drive_links_redacted": [
+    "docs/CLOUD_TRAINING.md",
+    "reports/phase1/cloud_benchmark/recovery_record.json",
+    "reports/phase1/cloud_export_benchmark.json",
+    "reports/phase1/cloud_export_trainval.json",
+    "reports/phase1/cloud_tracking_local_view.json",
+    "reports/phase1/kaggle_completion_verification.json",
+    "reports/phase2/github/cd_initial_tls_failure.log",
+    "reports/phase2/github/cd_success.log",
+    "reports/phase2/github/ci_initial_setup_failure.log",
+    "reports/phase2/github/ci_success.log",
+    "reports/phase2/pytest_results.txt"
+  ],
+  "source_history_transferred": false,
+  "original_repository_access_granted": false,
+  "datasets_weights_databases_credentials_transferred": false
+}

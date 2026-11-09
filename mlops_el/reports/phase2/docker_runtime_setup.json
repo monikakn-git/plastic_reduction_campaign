@@ -1,0 +1,19 @@
+{
+  "runtime": "Colima",
+  "profile": "mlops-el",
+  "cpus": 2,
+  "vm_memory_gib": 3,
+  "root_disk_capacity_gib": 8,
+  "data_disk_capacity_gib": 8,
+  "automatic_start_at_login": false,
+  "container_memory_gib": 2,
+  "installer_source": "https://github.com/abiosoft/colima-core/releases/download/v0.10.4/ubuntu-24.04-minimal-cloudimg-arm64-docker.raw.gz",
+  "installer_api_asset_id": 437242106,
+  "installer_sha256": "sha256:1fc0354f4f99734ce3886628cc7af8b0437c1a1d391b126bd09cba0df35ee53f",
+  "installer_sha256_verified": true,
+  "download_recovery": "Official release asset API after browser_download_url HTTP 504",
+  "build_cache_pruned_bytes": 1955000000,
+  "native_service_stopped": true,
+  "post_cleanup_host_free_gib_approx": 8.3,
+  "freed_vm_blocks_trimmed": true
+}

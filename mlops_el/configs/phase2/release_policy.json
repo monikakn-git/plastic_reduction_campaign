@@ -1,0 +1,16 @@
+{
+  "registry_name": "plastic-waste-yolo11m",
+  "alias": "demo",
+  "weights": "models/plitterstreet-yolo11m-candidate.pt",
+  "source_training_run_id": "85714466948d4e658ebb610a475dcf57",
+  "source_test_run_id": "4b26901d393b4fc89f0a716818788fa6",
+  "trained_dataset": "labels-v3",
+  "evaluation": "reports/phase1/evaluation_yolo11m_test.json",
+  "production_minimum_map50": 0.5,
+  "production_minimum_recall": 0.5,
+  "production_minimum_class_ap50": 0.25,
+  "faculty_dataset_approval": "pending",
+  "allowed_scope": "local demonstration with human review",
+  "production_approved": false,
+  "note": "Prospective Phase 2 policy. Do not lower thresholds to make the existing model pass. This does not change Phase 1 test settings."
+}

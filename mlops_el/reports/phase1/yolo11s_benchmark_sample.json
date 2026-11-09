@@ -1,0 +1,2025 @@
+{
+  "seed": 42,
+  "source_split": "train",
+  "training_images": [
+    {
+      "image_id": 4447,
+      "file_name": "Taladthai_2021_GX014429_205.jpg",
+      "split": "train",
+      "sha256": "957575c945055bbb263b450287c8b1e2844247821ff4f746a67591b004371453",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 9238,
+      "file_name": "Rangsit_2021_GX054614_221.jpg",
+      "split": "train",
+      "sha256": "20cc0c71227ed6a70a86f1de5e0a1476d2381b7f48a03aba78ee42dc01b53691",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 11079,
+      "file_name": "Rangsit_2021_GX174613_32.jpg",
+      "split": "train",
+      "sha256": "c4d7ddd0da5f640b6ca69bb4815bd4d3a6118ca339c9216965ccc56cade9e517",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 523,
+      "file_name": "ATT60_20200226_102552.jpg",
+      "split": "train",
+      "sha256": "bb27679d1b91717af940f796b23dbcd1850c458a41c85a8eec800f716b6e29bd",
+      "group_id": "1:ATT60_20200226"
+    },
+    {
+      "image_id": 4029,
+      "file_name": "Taladthai_2021_GX044430_293.jpg",
+      "split": "train",
+      "sha256": "72503e38a1b7a243f9850b99c3fb3b5c07fa1b2e2468a0959c813d8d9c78fe1b",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 47586,
+      "file_name": "Chiangrai_2021_GH010119_452.jpg",
+      "split": "train",
+      "sha256": "2e2afa3373c5a0e8d22dcc074299c4b0c43c6dca6b8582b29e11da1ccc2d24c7",
+      "group_id": "8:Chiangrai_2021_GH010119"
+    },
+    {
+      "image_id": 14641,
+      "file_name": "Rangsit_2021_GX034614_132.jpg",
+      "split": "train",
+      "sha256": "28e30f3f54d2a708228b2f7074832524e3b5d8fe903d5e0967ff21180757466f",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 46694,
+      "file_name": "Chiangrai_2021_GH020119_291.jpg",
+      "split": "train",
+      "sha256": "73985329e6fc620019854113009f0ab380c92dfd4898b85ec785081c767dd47d",
+      "group_id": "8:Chiangrai_2021_GH020119"
+    },
+    {
+      "image_id": 7033,
+      "file_name": "Rangsit_2021_GX244613_125.jpg",
+      "split": "train",
+      "sha256": "403bb552c00941b74b6f644311c014c406fd4c185b09f31ab0e166824c9875ae",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 10010,
+      "file_name": "Rangsit_2021_GX094613_256.jpg",
+      "split": "train",
+      "sha256": "1c05f613bf084dc7e0dc362b1e8c714b16c80776a56e175ee4a378aac99791aa",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 10124,
+      "file_name": "Rangsit_2021_GX094613_3.jpg",
+      "split": "train",
+      "sha256": "430d3b49af85c9985022e2bbcbf51221681ff2767e9b957451250f154c877758",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 7035,
+      "file_name": "Rangsit_2021_GX244613_108.jpg",
+      "split": "train",
+      "sha256": "3ddfc658cd2368970fe5403b1f2bc4d5fdba3575d4549ffdb63324be360b1053",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 12190,
+      "file_name": "Rangsit_2021_GX184613_248.jpg",
+      "split": "train",
+      "sha256": "c5b7574c97b017e33e105e65d56f232d524117b92afc7047d36af1f9d895aafd",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 5517,
+      "file_name": "Taladthai_2021_GX064430_194.jpg",
+      "split": "train",
+      "sha256": "b2426925574940eba461f99ace8d5acfd0f15b03c091a986ba6d7e9288fe2b30",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 14099,
+      "file_name": "Rangsit_2021_GX194613_45.jpg",
+      "split": "train",
+      "sha256": "aa31d606fe0e7d55fd3cecd862c0a2e47ee8f6a93b192af0d67629c84d266a26",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 47404,
+      "file_name": "Chiangrai_2021_GH010111_333.jpg",
+      "split": "train",
+      "sha256": "e2439bd7f8518e7f9e5377dfa8685e53e8a276095096a1fa8c46dac803a323b3",
+      "group_id": "8:Chiangrai_2021_GH010111"
+    },
+    {
+      "image_id": 14787,
+      "file_name": "Rangsit_2021_GX014613_296.jpg",
+      "split": "train",
+      "sha256": "ddb98b3e147301ec5b971af7393785b0a1c2c3a3e56e5a944c4893d7287035a2",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 14499,
+      "file_name": "Rangsit_2021_GX034614_110.jpg",
+      "split": "train",
+      "sha256": "93b070f0a10c406151ef6575b64ed4359f7b91b5345777242021abbd53566bb2",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 5748,
+      "file_name": "Taladthai_2021_GX064430_259.jpg",
+      "split": "train",
+      "sha256": "f20e0820a2b171da90691703b0e6f0086ec3aaaf51504cdba8c419da8e6ebc2c",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 13125,
+      "file_name": "Rangsit_2021_GX104613_75.jpg",
+      "split": "train",
+      "sha256": "3ea9878dff2951478f5085f8cbe9d90cf26ced62e6ce4a130ac16c4c7c9a3946",
+      "group_id": "2:Rangsit_2021_GX104613"
+    },
+    {
+      "image_id": 6935,
+      "file_name": "Rangsit_2021_GX094614_71.jpg",
+      "split": "train",
+      "sha256": "006e04620150f11d134cadaf8185d5e7418eaeaa14b100eaa4866e01cd74e413",
+      "group_id": "2:Rangsit_2021_GX094614"
+    },
+    {
+      "image_id": 10016,
+      "file_name": "Rangsit_2021_GX094613_177.jpg",
+      "split": "train",
+      "sha256": "ceb6c593dfb4d9944a3d114f91a172a20bd1bee18143100ba656edd8a1148624",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 6750,
+      "file_name": "Rangsit_2021_GX234613_173.jpg",
+      "split": "train",
+      "sha256": "e32d92ae2dca89630ac566eefa075fe54e664209701fcdad57a96c86b4b81a26",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 63176,
+      "file_name": "Hanwella_2022_GX010108_69.jpg",
+      "split": "train",
+      "sha256": "1fc43e08d222a17527a383c6580a1650a61ff62c3d1c650f17a615e487e26f41",
+      "group_id": "16:Hanwella_2022_GX010108"
+    },
+    {
+      "image_id": 11540,
+      "file_name": "Rangsit_2021_GX164613_129.jpg",
+      "split": "train",
+      "sha256": "32e99b987aa755a6b89035c279202f30d7c153f53f04aef330bd0186553a65bf",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 295,
+      "file_name": "ATT65_IMG_20200228_111208.jpg",
+      "split": "train",
+      "sha256": "f105fb85eec1912bf6d73d9053c92d9e5cf4407f4189269c9a218ce1cbf6f6a5",
+      "group_id": "1:ATT65_IMG_20200228"
+    },
+    {
+      "image_id": 14417,
+      "file_name": "Rangsit_2021_GX074614_55.jpg",
+      "split": "train",
+      "sha256": "13a3ba681a521d2381f4158ab16a0da3c9730a1516344504dfd93b0e0c79437c",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 9104,
+      "file_name": "Rangsit_2021_GX024613_179.jpg",
+      "split": "train",
+      "sha256": "628a48ba33ef42266a898e5f0ae9e97e54365760282b6170d25cb9b155ff14bc",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 14006,
+      "file_name": "Rangsit_2021_GX194613_309.jpg",
+      "split": "train",
+      "sha256": "6aab10a08a28bc7d1c80919df6d4fa3c11db2020aea521c11c222bc73af1b698",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 12386,
+      "file_name": "Rangsit_2021_GX044614_206.jpg",
+      "split": "train",
+      "sha256": "320f1f3226281603568fc1ed51e5991ec76d34fb465ea5981ff4fb6a9c264dfc",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 6647,
+      "file_name": "Rangsit_2021_GX234613_276.jpg",
+      "split": "train",
+      "sha256": "d359b97a131c767e67f5e7902a76fe80665e4c6155ee761ba0a85e8eabdb72fc",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 7335,
+      "file_name": "Rangsit_2021_GX154613_21.jpg",
+      "split": "train",
+      "sha256": "116b825339244cf1f145b94d8c975d566920a89a6dbb37d3589f8c22c797b097",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 12309,
+      "file_name": "Rangsit_2021_GX044614_20.jpg",
+      "split": "train",
+      "sha256": "e82e589d1a8e404e00b79bae12da6fd6919b0046fb41f40e4c2dda54d377371e",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 48367,
+      "file_name": "Chiangrai_2021_GH010119_445.jpg",
+      "split": "train",
+      "sha256": "a182514522e2cb3352528ea75b95768eba92b026d58b5b1fcb77465d3de9a5d8",
+      "group_id": "8:Chiangrai_2021_GH010119"
+    },
+    {
+      "image_id": 14670,
+      "file_name": "Rangsit_2021_GX014613_123.jpg",
+      "split": "train",
+      "sha256": "32dcb8941ed478d2324eed8a23fd0cecee23a4ec0ef1a58fd41ef83d8a165cbb",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 12347,
+      "file_name": "Rangsit_2021_GX044614_300.jpg",
+      "split": "train",
+      "sha256": "b119f885e90172d06a3a74c9e80f05b69544817c3f10fe621bb41380fad8b5fc",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 5435,
+      "file_name": "Taladthai_2021_GX064430_058.jpg",
+      "split": "train",
+      "sha256": "75cee36424e23ee3d6740045bb0593f32675b50803e93d368c26ed61027612f8",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 9197,
+      "file_name": "Rangsit_2021_GX054614_199.jpg",
+      "split": "train",
+      "sha256": "babeb60a2cce961530465cb2f1d0da659da8d4cd042f7792182cd0e87c8d233d",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 10961,
+      "file_name": "Rangsit_2021_GX174613_89.jpg",
+      "split": "train",
+      "sha256": "28ef3ef962b150204abdc7b68fdc9a4286f60ba77f72a48c0f69a65e27107a3d",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 6967,
+      "file_name": "Rangsit_2021_GX244613_285.jpg",
+      "split": "train",
+      "sha256": "742b76562cf2e43f2bc8a52597d23c02a5528ea814d71a4033ee99cac14df999",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 13164,
+      "file_name": "Rangsit_2021_GX104613_21.jpg",
+      "split": "train",
+      "sha256": "c31b4b2c9c35e94a80e56016870ba1e40c36189b27760b358d3f6ebac8ed7237",
+      "group_id": "2:Rangsit_2021_GX104613"
+    },
+    {
+      "image_id": 14706,
+      "file_name": "Rangsit_2021_GX014613_132.jpg",
+      "split": "train",
+      "sha256": "24682dd7e1c0438386b408a932ce11f8d00606d3816eb73a41c2421c621e447d",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 7698,
+      "file_name": "Rangsit_2021_GX084614_31.jpg",
+      "split": "train",
+      "sha256": "fe4d9b714ff2118a9e2c5d9df5767e2320e83e32305d1b0f323232e49537a92a",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 4914,
+      "file_name": "Taladthai_2021_GX044429_311.jpg",
+      "split": "train",
+      "sha256": "c0356087ca1ef1b09b5f8d2088ce7459d357bc7a7858d77841202e1df0aaa621",
+      "group_id": "6:Taladthai_2021_GX044429"
+    },
+    {
+      "image_id": 6560,
+      "file_name": "Rangsit_2021_GX234613_241.jpg",
+      "split": "train",
+      "sha256": "bfcd92a769e71462eeab16e8395ec2edf1fab908e0bfd58c439ea538bbda3135",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 12878,
+      "file_name": "Rangsit_2021_GX114613_237.jpg",
+      "split": "train",
+      "sha256": "64fea9dfd6a477070b16c89d4807dd98b96d114dc4d4a06cce947b7ac427dff8",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 12325,
+      "file_name": "Rangsit_2021_GX044614_146.jpg",
+      "split": "train",
+      "sha256": "0d81f05fbee2075e2276ac4ec196d446f957eb6ee1e6e9bae2e65b1f6588abcf",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 13737,
+      "file_name": "Rangsit_2021_GX014614_81.jpg",
+      "split": "train",
+      "sha256": "19b3e398368b6bb6053be1a4dd311014c30e982fd3758b50f4bf34713f5007fa",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 14351,
+      "file_name": "Rangsit_2021_GX074614_34.jpg",
+      "split": "train",
+      "sha256": "1e837221c00ff8bd17ffb851113aac5dfc34038beb02ea0a351560fb9820b7fd",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 6718,
+      "file_name": "Rangsit_2021_GX234613_19.jpg",
+      "split": "train",
+      "sha256": "7a1169962ead48eabe22f04536081cdaddfd43f1189eba5a0e97267a38ae64ea",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 14396,
+      "file_name": "Rangsit_2021_GX074614_102.jpg",
+      "split": "train",
+      "sha256": "2adadbea92bfe2e8488776b54218ccaa70b095b96bc2d75e6cb1b1fb5a3d0b09",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 7277,
+      "file_name": "Rangsit_2021_GX154613_105.jpg",
+      "split": "train",
+      "sha256": "236b59e24bde51347002de04889f133b051baca0c5d321df39a7b926b35a7c29",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 14785,
+      "file_name": "Rangsit_2021_GX014613_21.jpg",
+      "split": "train",
+      "sha256": "b958b3cab276a935a1cdeb0961a4dcdba3548b2738a10fddb757e91ea77a9f8e",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 637,
+      "file_name": "ATT73_image.jpg",
+      "split": "train",
+      "sha256": "8cb6a13da9355703ff0eb009c6a85fbb8eeb1966a4434b5b782badeea8c28782",
+      "group_id": "1:ATT73_image"
+    },
+    {
+      "image_id": 7793,
+      "file_name": "Rangsit_2021_GX114614_291.jpg",
+      "split": "train",
+      "sha256": "2ffc90edd673f809df65cdceba4e9c0ff7bf162e3859bd24b751b9d4301bf533",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 11355,
+      "file_name": "Rangsit_2021_GX124613_288.jpg",
+      "split": "train",
+      "sha256": "2d0313a04cf5120d3b4db0805d905f7d85fd1d4a1eb03542ca651500a087ac92",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 63063,
+      "file_name": "Mawanella_2022_GX010145_303.jpg",
+      "split": "train",
+      "sha256": "fa414d08abca4329c9541801e11040f5bfaa057ff3bea2bad07fa7ba6c3f9ad3",
+      "group_id": "17:Mawanella_2022_GX010145"
+    },
+    {
+      "image_id": 3944,
+      "file_name": "Taladthai_2021_GX044430_257.jpg",
+      "split": "train",
+      "sha256": "34d9201423dbae27dc3c908f3c6375b9e7b0f9a849bfaf0c56b0e0019ac10556",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 11310,
+      "file_name": "Rangsit_2021_GX124613_189.jpg",
+      "split": "train",
+      "sha256": "6c075d839db3126dc51a74db2af5ad05a3916e7b94f4f744c16dc127ce6c50ba",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 47099,
+      "file_name": "Chiangrai_2021_GH010114_48.jpg",
+      "split": "train",
+      "sha256": "2e20889a39f54af87f6b6efcde936878d9a673eab13414d06e237e410182a875",
+      "group_id": "8:Chiangrai_2021_GH010114"
+    },
+    {
+      "image_id": 62896,
+      "file_name": "Mawanella_2022_GX010145_159.jpg",
+      "split": "train",
+      "sha256": "3a12146c4c337a2cc8e6ff06fc789c29c29948144faf1fa605b5d2d1520174f1",
+      "group_id": "17:Mawanella_2022_GX010145"
+    },
+    {
+      "image_id": 7543,
+      "file_name": "Rangsit_2021_GX084614_4.jpg",
+      "split": "train",
+      "sha256": "645a833c035cff2be31438e7ca0523d449b621939ddd130620f4b6bd9ee339ec",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 46911,
+      "file_name": "Chiangrai_2021_GH020123_112.jpg",
+      "split": "train",
+      "sha256": "989613d9acbbe9333583aac018d31866d2ea327ee5a19dec4bbc292dcbb54dbf",
+      "group_id": "8:Chiangrai_2021_GH020123"
+    },
+    {
+      "image_id": 7195,
+      "file_name": "Rangsit_2021_GX244613_76.jpg",
+      "split": "train",
+      "sha256": "25fdc4153183815955cc0f396f2e67470735e2a580816858dc45f65e06ba9d27",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 4133,
+      "file_name": "Taladthai_2021_GX044430_138.jpg",
+      "split": "train",
+      "sha256": "af245fd0110117508014665b0f45dfcd897952d492be684e3c280f68ca66b5a8",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 4854,
+      "file_name": "Taladthai_2021_GX014429_119.jpg",
+      "split": "train",
+      "sha256": "e34110002403712b595b4f24fe98962ae314e5fd5db6892204614c3d94ff2405",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 6760,
+      "file_name": "Rangsit_2021_GX234613_119.jpg",
+      "split": "train",
+      "sha256": "95ac35dfa651839299771b6bb18165628dcd930294bab5f182e8c5867e0c8383",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 11521,
+      "file_name": "Rangsit_2021_GX164613_34.jpg",
+      "split": "train",
+      "sha256": "c391758028f9d3a80057aaaa7dd6444eaf4b390bdb75fa2a6b5787e271c390b1",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 9906,
+      "file_name": "Rangsit_2021_GX124614_59.jpg",
+      "split": "train",
+      "sha256": "b42ddc2b67d5f01fe10ee169c0ff9f010b932b9dca99c286c2de8da1eda48dc0",
+      "group_id": "2:Rangsit_2021_GX124614"
+    },
+    {
+      "image_id": 12902,
+      "file_name": "Rangsit_2021_GX114613_202.jpg",
+      "split": "train",
+      "sha256": "8120ff39b564a914dfbf3c4a7175d0c3a29feea5156e64e84ca5efe48313a7ad",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 4919,
+      "file_name": "Taladthai_2021_GX044429_055.jpg",
+      "split": "train",
+      "sha256": "d02259b17778050a5ab883743ebec37fca7418b47fae5304666ea1d370cb34ea",
+      "group_id": "6:Taladthai_2021_GX044429"
+    },
+    {
+      "image_id": 53497,
+      "file_name": "Chiangrai_2021_GH010127_374.jpg",
+      "split": "train",
+      "sha256": "b3f9ff65cf28606d326b7a18f0bfee53d6f332116263b1037a97850120c38c0b",
+      "group_id": "8:Chiangrai_2021_GH010127"
+    },
+    {
+      "image_id": 12934,
+      "file_name": "Rangsit_2021_GX114613_244.jpg",
+      "split": "train",
+      "sha256": "1455f787e2f885cf8bf88d8f9658792720331b654ca410bcf754c5f673629f65",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 6024,
+      "file_name": "Taladthai_2021_GX034430_066.jpg",
+      "split": "train",
+      "sha256": "75880477aa37ff3661206a673788256737e3e9bb63ec0001870243daaa4aff42",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 8237,
+      "file_name": "Rangsit_2021_GX054613_63.jpg",
+      "split": "train",
+      "sha256": "319991b1af3722ce45f2f43093f849afb2fc4bf06fff41936733ee069a4df0b1",
+      "group_id": "2:Rangsit_2021_GX054613"
+    },
+    {
+      "image_id": 46699,
+      "file_name": "Chiangrai_2021_GH020119_289.jpg",
+      "split": "train",
+      "sha256": "3a1c507d98fbceff8f7985ab897e7d6556d402e8cea011702c45c034f1445cb6",
+      "group_id": "8:Chiangrai_2021_GH020119"
+    },
+    {
+      "image_id": 9350,
+      "file_name": "Rangsit_2021_GX054614_273.jpg",
+      "split": "train",
+      "sha256": "146a17207a97a2b9c95d48338cfc50a1187913a5bc2377c3452544e2a607c1a0",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 11266,
+      "file_name": "Rangsit_2021_GX124613_150.jpg",
+      "split": "train",
+      "sha256": "41d222a230a47441a6f2ccdd17438fec169c03e2d84244d30fc8c29ff5578c70",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 8239,
+      "file_name": "Rangsit_2021_GX054613_171.jpg",
+      "split": "train",
+      "sha256": "b2ca8b7f897a0b9788d6cff8e1eac30b1aae5fe88c79658bc332b8d01303bf98",
+      "group_id": "2:Rangsit_2021_GX054613"
+    },
+    {
+      "image_id": 13537,
+      "file_name": "Rangsit_2021_GX064614_13.jpg",
+      "split": "train",
+      "sha256": "f4a16cd183a95ed89164a3e9c608e31e2319f419e450a87e9fe6a57765ac57b7",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 47951,
+      "file_name": "Chiangrai_2021_GH010101_289.jpg",
+      "split": "train",
+      "sha256": "2479dddc64dad2a241006ce848777a1bc2e04c8f4adbd8901f6405b46244f697",
+      "group_id": "8:Chiangrai_2021_GH010101"
+    },
+    {
+      "image_id": 6075,
+      "file_name": "Taladthai_2021_GX034430_103.jpg",
+      "split": "train",
+      "sha256": "d557fa24db461fe40751cb7dbb0f1fd722f9f586a854553d2fae3576eda3324e",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 63225,
+      "file_name": "Hanwella_2022_GX010109_215.jpg",
+      "split": "train",
+      "sha256": "77897471a5e7cddca8cdbf17aa5177fb98ec08a80e2035973ec1336dc10a9b23",
+      "group_id": "16:Hanwella_2022_GX010109"
+    },
+    {
+      "image_id": 9321,
+      "file_name": "Rangsit_2021_GX054614_282.jpg",
+      "split": "train",
+      "sha256": "1ba69d483d48f0280e3cb37f51237a505f5f2f6701fa720193bd02935f9f2e8e",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 8173,
+      "file_name": "Rangsit_2021_GX034613_253.jpg",
+      "split": "train",
+      "sha256": "d2f5f526040cdf1664ee12a3eb3430e0b25853edbe1edd744099d74f760f1e6f",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 8441,
+      "file_name": "Rangsit_2021_GX254613_43.jpg",
+      "split": "train",
+      "sha256": "57b1b713123da01356d5b9640094871a5b8c5f9964712133a2c72c67d559dbe3",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 47467,
+      "file_name": "Chiangrai_2021_GH010126_138.jpg",
+      "split": "train",
+      "sha256": "dca9b9172f10d783bba548e026f89a1ef34938b71922b48c6f7d53e097334b07",
+      "group_id": "8:Chiangrai_2021_GH010126"
+    },
+    {
+      "image_id": 12061,
+      "file_name": "Rangsit_2021_GX184613_23.jpg",
+      "split": "train",
+      "sha256": "1949b95d201486ee6cea73a0bfe218a991defa996b16223ea59c69ea43887370",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 12674,
+      "file_name": "Rangsit_2021_GX114613_298.jpg",
+      "split": "train",
+      "sha256": "a3d26f5adc6d059270302efbeccf0e35fe8ec333a1c2795685942da88b8e772e",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 7867,
+      "file_name": "Rangsit_2021_GX114614_252.jpg",
+      "split": "train",
+      "sha256": "a60e88742990d539d2ebe45a48b990b6ce848c1b11c6207951f3f54efef472fc",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 13566,
+      "file_name": "Rangsit_2021_GX064614_135.jpg",
+      "split": "train",
+      "sha256": "5fa740e84166324255ee7d044c3e68dbbadbede4f030096677efb7b3fb94d1cd",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 7589,
+      "file_name": "Rangsit_2021_GX084614_156.jpg",
+      "split": "train",
+      "sha256": "543f35833d0007ab949fbffc33c1960312fe3814b8ea708668017d1bd402ab82",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 12028,
+      "file_name": "Rangsit_2021_GX204613_97.jpg",
+      "split": "train",
+      "sha256": "2f20a8224fd260a017883da7a33999776040dd8c99bdf7ce1203e2dc2bd87da8",
+      "group_id": "2:Rangsit_2021_GX204613"
+    },
+    {
+      "image_id": 13562,
+      "file_name": "Rangsit_2021_GX064614_21.jpg",
+      "split": "train",
+      "sha256": "3f27508b75eb932061c6cddaa8c499f9c4abfe077c67a5b6abf4b433660befb0",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 48332,
+      "file_name": "Chiangrai_2021_GH010123_24.jpg",
+      "split": "train",
+      "sha256": "e9b1f475881280ac110c9330298e11014ced821b3357b06cd964129378408dde",
+      "group_id": "8:Chiangrai_2021_GH010123"
+    },
+    {
+      "image_id": 46894,
+      "file_name": "Chiangrai_2021_GH020123_20.jpg",
+      "split": "train",
+      "sha256": "8cd1c25088b0ce5f224bf130914556f6b9c84d7394aba76dffbbfe0c58000a42",
+      "group_id": "8:Chiangrai_2021_GH020123"
+    },
+    {
+      "image_id": 12288,
+      "file_name": "Rangsit_2021_GX184613_129.jpg",
+      "split": "train",
+      "sha256": "d6181249c1528f035d9604ab0ffc190c168987b369be27ae0cd6cb1c65cd984d",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 13965,
+      "file_name": "Rangsit_2021_GX194613_242.jpg",
+      "split": "train",
+      "sha256": "f6fdbb700c5f33721773053cb7fdfa4742f2ece7af643f0f0075092d8d57d1fe",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 46762,
+      "file_name": "Chiangrai_2021_GH010130_314.jpg",
+      "split": "train",
+      "sha256": "1ed0f14b8b942dcba9fef332c16f3d363f8a0d20ef0b4b64f02a1f868fa48b75",
+      "group_id": "8:Chiangrai_2021_GH010130"
+    },
+    {
+      "image_id": 8015,
+      "file_name": "Rangsit_2021_GX034613_230.jpg",
+      "split": "train",
+      "sha256": "7cd342459b677dfa038cc34d470ea0d21f2738271d6e6aa4d6b862d9d1fc1136",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 47036,
+      "file_name": "Chiangrai_2021_GH020128_253.jpg",
+      "split": "train",
+      "sha256": "a6129e4dc7eb701f8d4781bf37a54e15b439efb2764096ddb512fa4925a111c6",
+      "group_id": "8:Chiangrai_2021_GH020128"
+    },
+    {
+      "image_id": 14647,
+      "file_name": "Rangsit_2021_GX034614_7.jpg",
+      "split": "train",
+      "sha256": "c08ff64c72ea8a48dcc85073b1e89892e7ada17cc1bce36b756c0698621946fb",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 14051,
+      "file_name": "Rangsit_2021_GX194613_240.jpg",
+      "split": "train",
+      "sha256": "443be20d90d0366dad35fc9a43c5ca8d2e9c99c617b6eec2331cbe0d08d4bc50",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 13638,
+      "file_name": "Rangsit_2021_GX064614_223.jpg",
+      "split": "train",
+      "sha256": "53f0860c5269049b654b905a88deed2e975b27b387986d51d32cced91698909d",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 8200,
+      "file_name": "Rangsit_2021_GX034613_125.jpg",
+      "split": "train",
+      "sha256": "5c562071d726bf913ef8534dd87b8a313e23f254260d7d9196463097f833d4a1",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 7963,
+      "file_name": "Rangsit_2021_GX114614_172.jpg",
+      "split": "train",
+      "sha256": "791f766fab84f6954d32062638bc1cff4c78fb7948eacc1c07ed118bf8c45553",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 47494,
+      "file_name": "Chiangrai_2021_GH010124_203.jpg",
+      "split": "train",
+      "sha256": "f44f811c0d4f05b847760f746f8014944b9bc9b20793207d08b61c49e9adaa89",
+      "group_id": "8:Chiangrai_2021_GH010124"
+    },
+    {
+      "image_id": 12374,
+      "file_name": "Rangsit_2021_GX044614_26.jpg",
+      "split": "train",
+      "sha256": "c3699cff6c2ded40887d4a69c843f10f49ebcc4b1dfa45e8bb2030c687f6a788",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 12733,
+      "file_name": "Rangsit_2021_GX114613_80.jpg",
+      "split": "train",
+      "sha256": "55cd040e67939c0e460b32763865d0633b379c3e0474810e04cc90f7e4d4ecba",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 62626,
+      "file_name": "Ubon_2022_GH010237_219.jpg",
+      "split": "train",
+      "sha256": "55095022b8b177193d7ab3d7202acbd4deae7d3407a06642e0ba0177a72d970f",
+      "group_id": "15:Ubon_2022_GH010237"
+    },
+    {
+      "image_id": 11305,
+      "file_name": "Rangsit_2021_GX124613_52.jpg",
+      "split": "train",
+      "sha256": "eb8ce8f0f8eaf0a2cfa874a4e0d7dcce4facc0854f003333b0012bdcc69f7540",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 9232,
+      "file_name": "Rangsit_2021_GX054614_236.jpg",
+      "split": "train",
+      "sha256": "de724521fab5491b238c5a0957b7cfb75c45976905747b9c2078a78514231363",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 11037,
+      "file_name": "Rangsit_2021_GX174613_171.jpg",
+      "split": "train",
+      "sha256": "213d57f8cc4e04a841cabbd367a369d72c5f83d13236a4e17e84830ae98248ef",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 11889,
+      "file_name": "Rangsit_2021_GX204613_212.jpg",
+      "split": "train",
+      "sha256": "b6db2a04efc2d1777c6d163d41dd4e40883ff1dd1e5251338d036b8ecc49ca4f",
+      "group_id": "2:Rangsit_2021_GX204613"
+    },
+    {
+      "image_id": 14023,
+      "file_name": "Rangsit_2021_GX194613_297.jpg",
+      "split": "train",
+      "sha256": "240fb9ab74f3d0d447bbb828bebc0ab98205802fe7ecf712104de5dbd9a80909",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 5366,
+      "file_name": "Taladthai_2021_GX064430_120.jpg",
+      "split": "train",
+      "sha256": "f4924dc2ca238c9da2a4d83bb10b4f181910ad20eda45742131b20e623f22788",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 13766,
+      "file_name": "Rangsit_2021_GX014614_67.jpg",
+      "split": "train",
+      "sha256": "ec6bdcf81facd5a5f1584d40649b137349c8f7e43926c401f7477b2b38aa4cf2",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 10180,
+      "file_name": "Rangsit_2021_GX094613_100.jpg",
+      "split": "train",
+      "sha256": "f5c4be3ce3b6686b63dcdd765b687314e5ceae629a60dd986b8e901ed544a1fd",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 11493,
+      "file_name": "Rangsit_2021_GX124613_196.jpg",
+      "split": "train",
+      "sha256": "bbed6b43a4bcf04e0e17b04110376e74f84533e67a0e33d0296a5fb89a6b7d5a",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 47235,
+      "file_name": "Chiangrai_2021_GH020116_21.jpg",
+      "split": "train",
+      "sha256": "0b3e31340616468ea763792db4e19153734a140341db1ecd800124b4db56ae4f",
+      "group_id": "8:Chiangrai_2021_GH020116"
+    },
+    {
+      "image_id": 14069,
+      "file_name": "Rangsit_2021_GX194613_160.jpg",
+      "split": "train",
+      "sha256": "e293a94ea5ce18313d34aa7e2ca5f8870174804d810dff0057ff8932b4f2f474",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 4119,
+      "file_name": "Taladthai_2021_GX044430_147.jpg",
+      "split": "train",
+      "sha256": "19dcc5278f3352b67fc0e4de5286dfd619440ffb2ac7a93d79d1bfd07983ab1e",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 8104,
+      "file_name": "Rangsit_2021_GX034613_13.jpg",
+      "split": "train",
+      "sha256": "f6ccbb01180a37db1e927dd275c7d5e97a790baf3cbe376a912334a3a5bd6b72",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 11251,
+      "file_name": "Rangsit_2021_GX124613_315.jpg",
+      "split": "train",
+      "sha256": "c722a716f1c1586a60f9d0011c8f739924dffbdcdc911cacc5ebbd662d5b0471",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 12195,
+      "file_name": "Rangsit_2021_GX184613_14.jpg",
+      "split": "train",
+      "sha256": "18117dbfae0210182abd2ddcd044cb66286db40a2670afdc3a6c40febda6cbee",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 4573,
+      "file_name": "Taladthai_2021_GX014429_145.jpg",
+      "split": "train",
+      "sha256": "7f3d3cb557d079ae89f595b7bdb1baf1f243d214901cac47aa8ff23458f254af",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 11730,
+      "file_name": "Rangsit_2021_GX164613_199.jpg",
+      "split": "train",
+      "sha256": "20fadc9383e567ca851d3829a206d6aa6e1aa8d56fdc2d2f0b26b3d26d7b136b",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 5375,
+      "file_name": "Taladthai_2021_GX064430_020.jpg",
+      "split": "train",
+      "sha256": "ff51b917297f9f0196a3ec4b0c234a22e09463ede1ed6635cbf4576ed3eb6f16",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 14580,
+      "file_name": "Rangsit_2021_GX034614_212.jpg",
+      "split": "train",
+      "sha256": "d4ce44d0be6e1df1ad126356dad90a561340595f41a08244eccf64bc5898d2ef",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 603,
+      "file_name": "ATT64_39DF98AA-48D5-4BCC-822C-77A58DE4984B.jpeg",
+      "split": "train",
+      "sha256": "41c0461ead2bf3048679311072e4e26c3945047dcfaf26554e6b8ce0f3cd36b0",
+      "group_id": "1:ATT64_39DF98AA-48D5-4BCC-822C-77A58DE4984B"
+    },
+    {
+      "image_id": 4468,
+      "file_name": "Taladthai_2021_GX014429_256.jpg",
+      "split": "train",
+      "sha256": "ae31db5a259cf8b0468d29f1de41b0bf369d374fed5a4e3ebf1654dcafbfdd52",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 44512,
+      "file_name": "Chiangrai_2021_GH030124_290.jpg",
+      "split": "train",
+      "sha256": "58c565c230f06218e36a4244137a6d77bc7fc58a3de1e4e156470ebfabefafe7",
+      "group_id": "8:Chiangrai_2021_GH030124"
+    },
+    {
+      "image_id": 14719,
+      "file_name": "Rangsit_2021_GX014613_314.jpg",
+      "split": "train",
+      "sha256": "7a373116e33284f0a3103e516014f6fdc77a4b4f6be70e63c3a3e1c63d4d04e0",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 12312,
+      "file_name": "Rangsit_2021_GX044614_30.jpg",
+      "split": "train",
+      "sha256": "6df5ed342f25109e1770c3558aa88e2eb22078601994adf021c0e4127afb4d18",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 5923,
+      "file_name": "Taladthai_2021_GX034430_252.jpg",
+      "split": "train",
+      "sha256": "f8d176e849f2c46cb9068679838123f435c885f450f2e7fa084989efe2b31251",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 4115,
+      "file_name": "Taladthai_2021_GX044430_128.jpg",
+      "split": "train",
+      "sha256": "7ac6fee309f1a04d9fdf531961b4632bdfc1594395e983402d29123a399eaf6f",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 7629,
+      "file_name": "Rangsit_2021_GX084614_135.jpg",
+      "split": "train",
+      "sha256": "ee96741e60bdc1522d248843f9bf9d5f01c277b50b02f6e1c0de08b1313b63b7",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 14367,
+      "file_name": "Rangsit_2021_GX074614_145.jpg",
+      "split": "train",
+      "sha256": "0a8677dea09af7df908625408a68de68251a4bdfa7d5229ddbc7a780f14e4438",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 9976,
+      "file_name": "Rangsit_2021_GX124614_124.jpg",
+      "split": "train",
+      "sha256": "9a6ffbc265b2cb72638ec65a105fe2d7dea8cc78b551a0947fc1f69e30435e05",
+      "group_id": "2:Rangsit_2021_GX124614"
+    },
+    {
+      "image_id": 10951,
+      "file_name": "Rangsit_2021_GX174613_121.jpg",
+      "split": "train",
+      "sha256": "4e6be29864c256e964bf1093439c97f7cb39a03d8b91bad16ef3bbb5f25be50e",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 14602,
+      "file_name": "Rangsit_2021_GX034614_84.jpg",
+      "split": "train",
+      "sha256": "bdf6d70dca3822079a378f419837260ac3d21add4b601ba5f52eb547617914ca",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 62787,
+      "file_name": "Mawanella_2022_GX030150_182.jpg",
+      "split": "train",
+      "sha256": "5714db9a37d6e5f4b7b9608fbcaddf1fcb32b3ee237eef80d3f4d08e84f1ddad",
+      "group_id": "17:Mawanella_2022_GX030150"
+    },
+    {
+      "image_id": 7408,
+      "file_name": "Rangsit_2021_GX154613_132.jpg",
+      "split": "train",
+      "sha256": "941b0a82d53621ec1da2d55e8756178dcde4c872deba007d1e7a3702984e931e",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 12330,
+      "file_name": "Rangsit_2021_GX044614_226.jpg",
+      "split": "train",
+      "sha256": "6b3366b0360ed9c709b2f73039afdeeeb035932907811505861284009ff397fd",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 9946,
+      "file_name": "Rangsit_2021_GX124614_132.jpg",
+      "split": "train",
+      "sha256": "0f69326b9b95d49c50b6865999582202f8799fc52fab90912fe86044aec5dfc1",
+      "group_id": "2:Rangsit_2021_GX124614"
+    },
+    {
+      "image_id": 12427,
+      "file_name": "Rangsit_2021_GX044614_304.jpg",
+      "split": "train",
+      "sha256": "38b1ffabd9faefb79f45907fb1cf17cdad3b1ead5a9c75f652465d91fe391663",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 7722,
+      "file_name": "Rangsit_2021_GX084614_48.jpg",
+      "split": "train",
+      "sha256": "81a60f203851d452a9bb8c41d5806dcfa4fdc99cbf35112ea0d33d276561f37b",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 13769,
+      "file_name": "Rangsit_2021_GX014614_43.jpg",
+      "split": "train",
+      "sha256": "89c67dece3acc5e1d706d598b9f548c5fbec5d57e0869f7b7017aa85e599e5c4",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 12182,
+      "file_name": "Rangsit_2021_GX184613_168.jpg",
+      "split": "train",
+      "sha256": "88fe4bbbf0f59e52ed18a028d1bb9a252e87c508de72225a6d5196662b595197",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 8124,
+      "file_name": "Rangsit_2021_GX034613_229.jpg",
+      "split": "train",
+      "sha256": "509f8e3b3ab0699b3246a4114f879eb3f58c85b3ecf180de486c9a44070e37c9",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 615,
+      "file_name": "ATT158_822BDC7E-FBE2-409D-B010-CA9754263C2C.jpeg",
+      "split": "train",
+      "sha256": "b7a032eab00369fd3d506e8961b6c704dee425e2aad75b2258774aacc537dbe8",
+      "group_id": "1:ATT158_822BDC7E-FBE2-409D-B010-CA9754263C2C"
+    },
+    {
+      "image_id": 14451,
+      "file_name": "Rangsit_2021_GX074614_7.jpg",
+      "split": "train",
+      "sha256": "f1767d1dc99975dbd2d3d9d8ed608c4e3ab2a3cb5adb1782a5b139f87581821d",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 12234,
+      "file_name": "Rangsit_2021_GX184613_188.jpg",
+      "split": "train",
+      "sha256": "fb30802a0d2dec86450c9a679a97cd688ab517e138ab637be4075da8c267b657",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 10991,
+      "file_name": "Rangsit_2021_GX174613_230.jpg",
+      "split": "train",
+      "sha256": "77221bbe42199c6e4acfce870c77374eaaf1af37b71fcf17e7709c67b4f31326",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 6038,
+      "file_name": "Taladthai_2021_GX034430_289.jpg",
+      "split": "train",
+      "sha256": "18eec38b098d2c176eb97a29c8dfcaf792ff3086c6f6dfa95abbafc807199bde",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 11947,
+      "file_name": "Rangsit_2021_GX204613_182.jpg",
+      "split": "train",
+      "sha256": "9a59a4e178915e8698484c0c32fdf3ec03a0291a9d920e9b12ac16d5f21cdfdc",
+      "group_id": "2:Rangsit_2021_GX204613"
+    },
+    {
+      "image_id": 12441,
+      "file_name": "Rangsit_2021_GX044614_162.jpg",
+      "split": "train",
+      "sha256": "06818d6a2dc46fcd9f9f00122f0a17e53af06348f9fafcff88340aed22ec94e7",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 5,
+      "file_name": "ATT20_IMG_20200224_145920.jpg",
+      "split": "train",
+      "sha256": "d12671fcc62701cb6c520650c55dda88c6e50506c0ad3a1be77950252d2e20f1",
+      "group_id": "1:ATT20_IMG_20200224"
+    },
+    {
+      "image_id": 8460,
+      "file_name": "Rangsit_2021_GX254613_36.jpg",
+      "split": "train",
+      "sha256": "e2c7e75bdc7709e6cdec1dd9b525e8fa5ee19c5d22e22ca422a7599b4dd450af",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 6998,
+      "file_name": "Rangsit_2021_GX244613_212.jpg",
+      "split": "train",
+      "sha256": "6a047d16e0c9cc73ddadc1e63db63d9416d90c2b9681df7e2e778db6175b2fb5",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 10066,
+      "file_name": "Rangsit_2021_GX094613_38.jpg",
+      "split": "train",
+      "sha256": "7a873351352ffbe8fc11389e49657d7f849296d863dda38582afd2268d4bae76",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 13851,
+      "file_name": "Rangsit_2021_GX014614_69.jpg",
+      "split": "train",
+      "sha256": "3a2cabd09fc6b880c6237d39c318e9b73aa7c92954810a1ec41fa1067f1760c1",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 47802,
+      "file_name": "Chiangrai_2021_GH010148_14.jpg",
+      "split": "train",
+      "sha256": "d7926130c104cffc3c7dc9d7f438caddc3976b66505923b735a108eebecf7cce",
+      "group_id": "8:Chiangrai_2021_GH010148"
+    },
+    {
+      "image_id": 47043,
+      "file_name": "Chiangrai_2021_GH020128_78.jpg",
+      "split": "train",
+      "sha256": "443b485113546a0a77f4df5b5243c1ded35396ec455c8e880efcc8147e822066",
+      "group_id": "8:Chiangrai_2021_GH020128"
+    },
+    {
+      "image_id": 13816,
+      "file_name": "Rangsit_2021_GX014614_32.jpg",
+      "split": "train",
+      "sha256": "c0f49f474e38f33d02692807080136b1ba949940654b25d63d44fdab3d359cc0",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 62739,
+      "file_name": "Mawanella_2022_GX010145_128.jpg",
+      "split": "train",
+      "sha256": "8e449f3eee766779474ae52e4c2ed418c4ef506d0fb048bfb77bd990203573a7",
+      "group_id": "17:Mawanella_2022_GX010145"
+    },
+    {
+      "image_id": 13802,
+      "file_name": "Rangsit_2021_GX014614_184.jpg",
+      "split": "train",
+      "sha256": "eca3bf818c63f6617ae6e02c97b3be2850a460122e03b866c1e646955e6bc4c4",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 47796,
+      "file_name": "Chiangrai_2021_GH020103_48.jpg",
+      "split": "train",
+      "sha256": "33c194c30c4a53cea9a4f7352c9aa86c4d0f584b783fd3531c25f3ed22505c8b",
+      "group_id": "8:Chiangrai_2021_GH020103"
+    },
+    {
+      "image_id": 5617,
+      "file_name": "Taladthai_2021_GX064430_067.jpg",
+      "split": "train",
+      "sha256": "422db3d36aecb991bd0be66b3127f6cd6ae1c297ab1ed02e95fe50527f3397a7",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 53333,
+      "file_name": "Chiangrai_2021_GH010130_426.jpg",
+      "split": "train",
+      "sha256": "2f5d119c856f334f802eeaffffda769e49b90032bf5fd02c2decf02d991cb074",
+      "group_id": "8:Chiangrai_2021_GH010130"
+    },
+    {
+      "image_id": 3958,
+      "file_name": "Taladthai_2021_GX044430_178.jpg",
+      "split": "train",
+      "sha256": "362d638886737e6a48311af3393d2dbd9259315f450e28c1076597b04989c0c9",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 53385,
+      "file_name": "Chiangrai_2021_GH010137_379.jpg",
+      "split": "train",
+      "sha256": "ee864afdd5f7c580d668f90fa7b3c8cfd8243909982f9bf3e856cb62dfbf62ce",
+      "group_id": "8:Chiangrai_2021_GH010137"
+    },
+    {
+      "image_id": 8479,
+      "file_name": "Rangsit_2021_GX254613_80.jpg",
+      "split": "train",
+      "sha256": "b0065d14455bcc12373af37fe700b50f8504bc47f016c23463c2e4d26feaa3a2",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 11107,
+      "file_name": "Rangsit_2021_GX174613_255.jpg",
+      "split": "train",
+      "sha256": "4557ee7788c605c60eeeb70bb927263755e7294bbc7f9bf10d0fa2d3ee91386a",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 7358,
+      "file_name": "Rangsit_2021_GX154613_77.jpg",
+      "split": "train",
+      "sha256": "62f7f49486bb6fd19674de79911a47b8031cac58d75f3dcd0004d1500ed2e03a",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 6607,
+      "file_name": "Rangsit_2021_GX234613_297.jpg",
+      "split": "train",
+      "sha256": "ea65ac5c0d87710be6d2b932479bf5a271bc1a2ca0c668bf075c93bd9b61835a",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 14431,
+      "file_name": "Rangsit_2021_GX074614_146.jpg",
+      "split": "train",
+      "sha256": "139f9fd23db1a06bdd68aa3d974e842b6670098cc2bbcb6c7328a4a5e2f41ee9",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 12282,
+      "file_name": "Rangsit_2021_GX184613_271.jpg",
+      "split": "train",
+      "sha256": "813890076b796928a8590f31c6863474d0c8ce78a1d30cdfa7a2c41d51b2affd",
+      "group_id": "2:Rangsit_2021_GX184613"
+    },
+    {
+      "image_id": 176,
+      "file_name": "ATT34_IMG_20200226_123729.jpg",
+      "split": "train",
+      "sha256": "05afbb42907e213a0067be48af6e38da84a2f681ad223903c4de9ff72ce97c32",
+      "group_id": "1:ATT34_IMG_20200226"
+    },
+    {
+      "image_id": 11426,
+      "file_name": "Rangsit_2021_GX124613_281.jpg",
+      "split": "train",
+      "sha256": "1e3ee1bb788b5044c2bbb6856b78cfa0ae492752fd8f0441904a7eac1651a40d",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 4819,
+      "file_name": "Taladthai_2021_GX014429_246.jpg",
+      "split": "train",
+      "sha256": "c28700adf8e8146f5b1238389055f2f4efde815609ddddd120287652565285ee",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 5764,
+      "file_name": "Taladthai_2021_GX034430_026.jpg",
+      "split": "train",
+      "sha256": "5929e0f44e99594235a5045c18c072dd8b317451ec7ca9cc4c99916c53f9bc62",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 10159,
+      "file_name": "Rangsit_2021_GX094613_173.jpg",
+      "split": "train",
+      "sha256": "f14284624cbf3d7b51c97a72d93bab3ab4be4fb6ac3525acf1501c2ef1cea03c",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 14720,
+      "file_name": "Rangsit_2021_GX014613_86.jpg",
+      "split": "train",
+      "sha256": "3b809e233f42f28707cc71e9cf9fe3bbd112058beb07f11f86410ea0c03910e2",
+      "group_id": "2:Rangsit_2021_GX014613"
+    },
+    {
+      "image_id": 63819,
+      "file_name": "Hanwella_2022_GX010108_283.jpg",
+      "split": "train",
+      "sha256": "9223181237c7ca0c82375c049d4259d85e719378504f5e5fc579d380f2b2bb47",
+      "group_id": "16:Hanwella_2022_GX010108"
+    },
+    {
+      "image_id": 13919,
+      "file_name": "Rangsit_2021_GX194613_69.jpg",
+      "split": "train",
+      "sha256": "26e5c1714538f33ac2620857f4703c7a53313d9a23a98dec66761b787aaacacb",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 47701,
+      "file_name": "Chiangrai_2021_GH020102_69.jpg",
+      "split": "train",
+      "sha256": "50666da0e0021a656e74754b45a20e547dbf432f55604cba6fbd4cfd4d170838",
+      "group_id": "8:Chiangrai_2021_GH020102"
+    },
+    {
+      "image_id": 48361,
+      "file_name": "Chiangrai_2021_GH010119_6.jpg",
+      "split": "train",
+      "sha256": "fb508c27882a5b9faa3f8993b91fdb4c095bb378636a43de83d4419186e7c645",
+      "group_id": "8:Chiangrai_2021_GH010119"
+    },
+    {
+      "image_id": 47215,
+      "file_name": "Chiangrai_2021_GH020116_288.jpg",
+      "split": "train",
+      "sha256": "3aba8f87010981c40256fc0f2305ffc33bb73ac93c286e3b6f6343900436def0",
+      "group_id": "8:Chiangrai_2021_GH020116"
+    },
+    {
+      "image_id": 47706,
+      "file_name": "Chiangrai_2021_GH020102_355.jpg",
+      "split": "train",
+      "sha256": "1edd514be76a0243791475a4a186f8c9a3b05b4aa3cc21c6283f616123263ee8",
+      "group_id": "8:Chiangrai_2021_GH020102"
+    },
+    {
+      "image_id": 62916,
+      "file_name": "Mawanella_2022_GX010139_336.jpg",
+      "split": "train",
+      "sha256": "8a57519761379ead9d3e2f64c720c6033bb079e28ae34c87d3e37894f01a69f5",
+      "group_id": "17:Mawanella_2022_GX010139"
+    },
+    {
+      "image_id": 13880,
+      "file_name": "Rangsit_2021_GX014614_295.jpg",
+      "split": "train",
+      "sha256": "789cea21f8df600f36dc0b9bd87c3628bd8633a2731d9b531ab590808f03b610",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 47237,
+      "file_name": "Chiangrai_2021_GH020116_373.jpg",
+      "split": "train",
+      "sha256": "c6485c40fc10619bf4776bdb320bd6f6216cf829e2ac5d6b7b55434e50b1d07b",
+      "group_id": "8:Chiangrai_2021_GH020116"
+    },
+    {
+      "image_id": 9216,
+      "file_name": "Rangsit_2021_GX054614_181.jpg",
+      "split": "train",
+      "sha256": "c9ec6b4a1c9d04a3eb91cc81b8c953b4b66f52f0ccd99bf44c42299cdebc723e",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 63496,
+      "file_name": "Hanwella_2022_GX010110_155.jpg",
+      "split": "train",
+      "sha256": "90c3d456c3e282f53d4bba6758b8afb8c62abc1a4a4caf9b336f47368d1dbe4a",
+      "group_id": "16:Hanwella_2022_GX010110"
+    },
+    {
+      "image_id": 7613,
+      "file_name": "Rangsit_2021_GX084614_187.jpg",
+      "split": "train",
+      "sha256": "e45dd32f9b68b445ae182209a76bac67decfc2fad22e0e8410e0a81ed1aa24f6",
+      "group_id": "2:Rangsit_2021_GX084614"
+    },
+    {
+      "image_id": 46912,
+      "file_name": "Chiangrai_2021_GH020123_35.jpg",
+      "split": "train",
+      "sha256": "e04ecaf5c01b61b5c2a4fea69ee101e75adb69fb20ba67656d115e077405d481",
+      "group_id": "8:Chiangrai_2021_GH020123"
+    },
+    {
+      "image_id": 11398,
+      "file_name": "Rangsit_2021_GX124613_194.jpg",
+      "split": "train",
+      "sha256": "1cbe2535b6dc69ee1f85f4221f88e4c9acf02984e59f4c07f5e4e9da7de74cfb",
+      "group_id": "2:Rangsit_2021_GX124613"
+    },
+    {
+      "image_id": 47913,
+      "file_name": "Chiangrai_2021_GH010103_295.jpg",
+      "split": "train",
+      "sha256": "7cba3eb18b2380d9dbd93bb8cf507d5741e41eed5663721eb0d398335c817a71",
+      "group_id": "8:Chiangrai_2021_GH010103"
+    },
+    {
+      "image_id": 47799,
+      "file_name": "Chiangrai_2021_GH010148_5.jpg",
+      "split": "train",
+      "sha256": "b31d9815fa5710eca597866bcf6d96a19836dcf36c6b6e935e2be5b0cdcd165a",
+      "group_id": "8:Chiangrai_2021_GH010148"
+    },
+    {
+      "image_id": 4817,
+      "file_name": "Taladthai_2021_GX014429_223.jpg",
+      "split": "train",
+      "sha256": "8b2b8439bc3d073d30a4f4eb6bcf62964464b657cba9d4d89f48e0b9f084864b",
+      "group_id": "6:Taladthai_2021_GX014429"
+    },
+    {
+      "image_id": 48282,
+      "file_name": "Chiangrai_2021_GH010126_143.jpg",
+      "split": "train",
+      "sha256": "62c04dfc084aa9f105622c4abf420dc31dc4d6bf61f767edae9139145cd5f7fd",
+      "group_id": "8:Chiangrai_2021_GH010126"
+    },
+    {
+      "image_id": 8191,
+      "file_name": "Rangsit_2021_GX034613_223.jpg",
+      "split": "train",
+      "sha256": "0ff9407d4b747576a4e4067378e5d752f1d2077667c126acb269123cc2b64181",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 8004,
+      "file_name": "Rangsit_2021_GX034613_257.jpg",
+      "split": "train",
+      "sha256": "ac581747b3d082a2da171fa6f1e2c7cdc2aa5d4f4295b42ee0dd80074f99584c",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 7953,
+      "file_name": "Rangsit_2021_GX114614_1.jpg",
+      "split": "train",
+      "sha256": "58de9327b80bf8ff3b45c022859177854f3d71077fbb28d82bd4740ba9a2f96a",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 6059,
+      "file_name": "Taladthai_2021_GX034430_306.jpg",
+      "split": "train",
+      "sha256": "5c9f82986b0acc7b1d38cdd6958ccdaf42fe4c714f2fce3526284baf0a582416",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 5782,
+      "file_name": "Taladthai_2021_GX034430_299.jpg",
+      "split": "train",
+      "sha256": "3b156de143668a57c0e7d2b44c49fddbbb21ca6de6dddd99cba1759305223a59",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 53348,
+      "file_name": "Chiangrai_2021_GH010137_230.jpg",
+      "split": "train",
+      "sha256": "720480c93927710967b11de4a23188bbf204f1a11b9753a7cb5695f3606e2183",
+      "group_id": "8:Chiangrai_2021_GH010137"
+    },
+    {
+      "image_id": 619,
+      "file_name": "ATT137_V.jpg",
+      "split": "train",
+      "sha256": "c2c98725cd479b1d454ac1b5245bea004c5c8166f72fb83056b58bb4a93fd6ac",
+      "group_id": "1:ATT137_V"
+    },
+    {
+      "image_id": 47297,
+      "file_name": "Chiangrai_2021_GH020105_195.jpg",
+      "split": "train",
+      "sha256": "35ec32e45241e808e478fe5d02556da348e1ce3508902e51b34af0262dee953a",
+      "group_id": "8:Chiangrai_2021_GH020105"
+    },
+    {
+      "image_id": 9200,
+      "file_name": "Rangsit_2021_GX054614_71.jpg",
+      "split": "train",
+      "sha256": "26b22b5c1b53116b0575efae6428eef84da4b534afbc8989ee80891b0072da5e",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 8090,
+      "file_name": "Rangsit_2021_GX034613_109.jpg",
+      "split": "train",
+      "sha256": "cda6329ff2ac30cf725abc7c7b76f471c685c481c5549a13f1aab2c4ba6275aa",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 14406,
+      "file_name": "Rangsit_2021_GX074614_229.jpg",
+      "split": "train",
+      "sha256": "d7768ca36db1015b80973332c8ae01bc8385a7b9b752fb76311fecf06bad83ec",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 9030,
+      "file_name": "Rangsit_2021_GX024613_312.jpg",
+      "split": "train",
+      "sha256": "159b9488a69fde6bf1417effaa80b2d9f4e3eddbe17f400e937edc17e535c50c",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 6870,
+      "file_name": "Rangsit_2021_GX094614_189.jpg",
+      "split": "train",
+      "sha256": "f1d5ecfbb282c5c35d42855556c156d38d64f521459e2cc5d1a581d6a5c7ae32",
+      "group_id": "2:Rangsit_2021_GX094614"
+    },
+    {
+      "image_id": 5551,
+      "file_name": "Taladthai_2021_GX064430_261.jpg",
+      "split": "train",
+      "sha256": "23b7e39349694cc764f33bf62f9a1240e7aa25c08f6cac4bea552fb0c0792d55",
+      "group_id": "6:Taladthai_2021_GX064430"
+    },
+    {
+      "image_id": 6637,
+      "file_name": "Rangsit_2021_GX234613_91.jpg",
+      "split": "train",
+      "sha256": "a6cbd706b13afa5f4c60b028b06729cacd380a6c28f9a41cdd1e8146c0ae5f6a",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 7486,
+      "file_name": "Rangsit_2021_GX154613_299.jpg",
+      "split": "train",
+      "sha256": "280023611ee10296e550199a01d0f18789a5bae72aaa004eaec58634c8e4bc7a",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 11544,
+      "file_name": "Rangsit_2021_GX164613_299.jpg",
+      "split": "train",
+      "sha256": "3e1b6b627781c1843a908bee484e792fb8431acef71e8ba8f2d1a6971ddc8339",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 6894,
+      "file_name": "Rangsit_2021_GX094614_10.jpg",
+      "split": "train",
+      "sha256": "b348864c98b2f7c8e01674c3844288236ede0b2690c9971b7051c71c15dcfed9",
+      "group_id": "2:Rangsit_2021_GX094614"
+    },
+    {
+      "image_id": 4907,
+      "file_name": "Taladthai_2021_GX044429_144.jpg",
+      "split": "train",
+      "sha256": "ca9f75abecdf3b7a659b2893917f9349410e3906192ca18f269affb73391fbb4",
+      "group_id": "6:Taladthai_2021_GX044429"
+    },
+    {
+      "image_id": 7502,
+      "file_name": "Rangsit_2021_GX154613_60.jpg",
+      "split": "train",
+      "sha256": "798206784911e2ee107a339ada62a81b07756cc9e1d8b6787dd6e18b187b4c6f",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 11675,
+      "file_name": "Rangsit_2021_GX164613_222.jpg",
+      "split": "train",
+      "sha256": "1b5a6605dcf184f1f522151b28014a74bf5060b961f6b1ec19fdccd5f80c1a5b",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 11867,
+      "file_name": "Rangsit_2021_GX204613_194.jpg",
+      "split": "train",
+      "sha256": "0bf959bf3ba3fb7dba2a369425cc99e6e93a0e44705c4b62bbc44c974637de2b",
+      "group_id": "2:Rangsit_2021_GX204613"
+    },
+    {
+      "image_id": 14607,
+      "file_name": "Rangsit_2021_GX034614_280.jpg",
+      "split": "train",
+      "sha256": "51a27e70e54a8fa398a63ad7f930942c2ef6b045ca458eb07176727823da1606",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 13696,
+      "file_name": "Rangsit_2021_GX064614_257.jpg",
+      "split": "train",
+      "sha256": "6d890985bd8aea6d2cda7e0135c5077ec8f6452c97fad044022ae9f7f21c05de",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 5960,
+      "file_name": "Taladthai_2021_GX034430_089.jpg",
+      "split": "train",
+      "sha256": "b10a842e243a4808b5373844ee5eed71ae8e9e925880801bc1aeefa9d7e67e25",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 47506,
+      "file_name": "Chiangrai_2021_GH010123_64.jpg",
+      "split": "train",
+      "sha256": "eb69ab8c566d140d249f3db1531a10e3480251c4b00c9294b98c9684219faed1",
+      "group_id": "8:Chiangrai_2021_GH010123"
+    },
+    {
+      "image_id": 12348,
+      "file_name": "Rangsit_2021_GX044614_302.jpg",
+      "split": "train",
+      "sha256": "d7e2c27d600cb6d14f83b56da1bcd62409cf1cd02023439f44ceb5a787174eb9",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 13665,
+      "file_name": "Rangsit_2021_GX064614_58.jpg",
+      "split": "train",
+      "sha256": "754a31ede51bacaa60f20e9a4dfd7bd692e99f6e2e75782462a47e52e9073021",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 9286,
+      "file_name": "Rangsit_2021_GX054614_316.jpg",
+      "split": "train",
+      "sha256": "3c61d417ca6ac5d791245bff73ec4f5ec6bffb24a7363c997c89183513177cb4",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 12328,
+      "file_name": "Rangsit_2021_GX044614_267.jpg",
+      "split": "train",
+      "sha256": "9df6b223ec2f03411c57731c95eaae82c6d63c30af7c9d8bcd4895ecbc5f1615",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 13702,
+      "file_name": "Rangsit_2021_GX064614_172.jpg",
+      "split": "train",
+      "sha256": "836f3bd34fc17a6d4e222ea3932660279962d561864acb952a99dd9202c648ad",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 8480,
+      "file_name": "Rangsit_2021_GX254613_20.jpg",
+      "split": "train",
+      "sha256": "eaab14fb46660803690b6f19f4044423baf3c9cd0941b87ec70834f0c980d7f6",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 14468,
+      "file_name": "Rangsit_2021_GX074614_81.jpg",
+      "split": "train",
+      "sha256": "00c7ea3571948949a93918af4063e4fedeb02a542e3569571e40615afed03660",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 13739,
+      "file_name": "Rangsit_2021_GX014614_152.jpg",
+      "split": "train",
+      "sha256": "3c5e69d4647b8dbdc9ee6a244801e9f06af99c1caf35f73ad581cd4e171f369b",
+      "group_id": "2:Rangsit_2021_GX014614"
+    },
+    {
+      "image_id": 14577,
+      "file_name": "Rangsit_2021_GX034614_221.jpg",
+      "split": "train",
+      "sha256": "f238dbfdfafe224c5e82e66aa0e40faff6acd4718a3746697c9431a250558ee0",
+      "group_id": "2:Rangsit_2021_GX034614"
+    },
+    {
+      "image_id": 44585,
+      "file_name": "Chiangrai_2021_GH170109_161.jpg",
+      "split": "train",
+      "sha256": "8365ec4f12c21be932564e5922ae47ca09dbbc07503d0a0d3caaa07ed090a7da",
+      "group_id": "8:Chiangrai_2021_GH170109"
+    },
+    {
+      "image_id": 9121,
+      "file_name": "Rangsit_2021_GX024613_8.jpg",
+      "split": "train",
+      "sha256": "85ad3444dbbb58125b98a74366f13b58ddbe8ca0f82f36636f7438bc772d37e2",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 8449,
+      "file_name": "Rangsit_2021_GX254613_53.jpg",
+      "split": "train",
+      "sha256": "024dcbeffe02bfd10eaf4c18a33a6ba7aea86e4ca0edcb8456ede42ba076e0c8",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 13031,
+      "file_name": "Rangsit_2021_GX104613_250.jpg",
+      "split": "train",
+      "sha256": "1431b14c336f25c5af2bfd00c8f6a9922cf2a82cc137fc654f292c2f91760781",
+      "group_id": "2:Rangsit_2021_GX104613"
+    },
+    {
+      "image_id": 47302,
+      "file_name": "Chiangrai_2021_GH020105_62.jpg",
+      "split": "train",
+      "sha256": "dbfdaba50d85ce3b426e6db79bc1e030fbd095bae4479b7a1bf47977ca4b44f2",
+      "group_id": "8:Chiangrai_2021_GH020105"
+    },
+    {
+      "image_id": 528,
+      "file_name": "ATT112_859A6070-BD32-404A-9D22-8B78A83D8430.jpeg",
+      "split": "train",
+      "sha256": "5548166b21f25f114c2d596586bdf6c3a6b39ce0578ea62ca6ab454c2de20379",
+      "group_id": "1:ATT112_859A6070-BD32-404A-9D22-8B78A83D8430"
+    },
+    {
+      "image_id": 47464,
+      "file_name": "Chiangrai_2021_GH010126_121.jpg",
+      "split": "train",
+      "sha256": "8da37ccf6309a35a628fae465c8d8eea12b67c0e8554fd1d3716eebb4840f286",
+      "group_id": "8:Chiangrai_2021_GH010126"
+    },
+    {
+      "image_id": 63864,
+      "file_name": "Hanwella_2022_GX010113_271.jpg",
+      "split": "train",
+      "sha256": "d89a490c4353efcefb06443d0481c1c2117aea3220938b8ce126b4dbc78c7a02",
+      "group_id": "16:Hanwella_2022_GX010113"
+    },
+    {
+      "image_id": 13939,
+      "file_name": "Rangsit_2021_GX194613_257.jpg",
+      "split": "train",
+      "sha256": "99aad8320af6127f5e64062b8a14ae22fcedce3ab4c66a139577eef762d8a67c",
+      "group_id": "2:Rangsit_2021_GX194613"
+    },
+    {
+      "image_id": 8995,
+      "file_name": "Rangsit_2021_GX024613_291.jpg",
+      "split": "train",
+      "sha256": "9c111f9cc0d54f3d1dfd70f88808628bdf77d75543c696082ee35071a80cd7f9",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 12892,
+      "file_name": "Rangsit_2021_GX114613_218.jpg",
+      "split": "train",
+      "sha256": "dff8b5d5ef540bbfc3074f56704372ddf9dfc4536e44e00394f82c8d79a15195",
+      "group_id": "2:Rangsit_2021_GX114613"
+    },
+    {
+      "image_id": 9194,
+      "file_name": "Rangsit_2021_GX054614_74.jpg",
+      "split": "train",
+      "sha256": "7fa2aca2e8398e7f68a438ad97edd0e794b345e0a8995c51821c4c6474617dd9",
+      "group_id": "2:Rangsit_2021_GX054614"
+    },
+    {
+      "image_id": 46986,
+      "file_name": "Chiangrai_2021_GH010127_169.jpg",
+      "split": "train",
+      "sha256": "49f9eb1651af2232ff030855b05e3406ce07bee8dd5d6cfe73873ac8f3dfe7ce",
+      "group_id": "8:Chiangrai_2021_GH010127"
+    },
+    {
+      "image_id": 10108,
+      "file_name": "Rangsit_2021_GX094613_307.jpg",
+      "split": "train",
+      "sha256": "7e2c12b222d3804b47bb5ee469623ad267925519b63dacb77ffd677c4a9d0473",
+      "group_id": "2:Rangsit_2021_GX094613"
+    },
+    {
+      "image_id": 48179,
+      "file_name": "Chiangrai_2021_GH010114_130.jpg",
+      "split": "train",
+      "sha256": "1efabadf6787bc31b1798162b812db676224fd3e7624b89bb4294fdfef0e9567",
+      "group_id": "8:Chiangrai_2021_GH010114"
+    },
+    {
+      "image_id": 8087,
+      "file_name": "Rangsit_2021_GX034613_150.jpg",
+      "split": "train",
+      "sha256": "bcaacdcd5aaa82be1fd503cbfed6b0b437b927d55f8a08490ec33a2c5d1f0701",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 3933,
+      "file_name": "Taladthai_2021_GX044430_294.jpg",
+      "split": "train",
+      "sha256": "e70c55470f869167526f38b8a5d157c3d8eecde39c5daba3e1e63ac796a6547f",
+      "group_id": "6:Taladthai_2021_GX044430"
+    },
+    {
+      "image_id": 9102,
+      "file_name": "Rangsit_2021_GX024613_214.jpg",
+      "split": "train",
+      "sha256": "deabb3fc0a1e4c9350603643c33891dd27c37d435f608f76da26c35bd961d6a8",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 7705,
+      "file_name": "Rangsit_2021_GX084614_13.jpg",
+      "split": "train",
+      "sha256": "7301da731a7b99088f62ade8c346586832bb9d6bce5f9e345ccab3198c6de783",
+      "group_id": "2:Rangsit_2021_GX084614"
+    }
+  ],
+  "smoke_validation_images": [
+    {
+      "image_id": 5975,
+      "file_name": "Taladthai_2021_GX034430_203.jpg",
+      "split": "train",
+      "sha256": "e9bc9e5c6721370ac74061181e38435b9b50fb3978ed35b43a39154bedce630a",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 14342,
+      "file_name": "Rangsit_2021_GX074614_101.jpg",
+      "split": "train",
+      "sha256": "554cdcded750ab9c13467e3946cdad642bc28ce6e2829559e5ba3cf77d271b0b",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 13532,
+      "file_name": "Rangsit_2021_GX064614_301.jpg",
+      "split": "train",
+      "sha256": "3ed2579c437758ae3049ca6b65bbe009870269404bb3d88c5bb8d852b5e9c07c",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 112,
+      "file_name": "ATT12_IMG_20200212_070900.jpg",
+      "split": "train",
+      "sha256": "c5f21eb1b7c1c9a5dd088e8189fdf904e1646d5468fc68923261e9435d35a0fd",
+      "group_id": "1:ATT12_IMG_20200212"
+    },
+    {
+      "image_id": 6765,
+      "file_name": "Rangsit_2021_GX234613_40.jpg",
+      "split": "train",
+      "sha256": "4d4d2fa4d50eeead0e57b02018320da7a123f2c08694d431ab95406acd8087dd",
+      "group_id": "2:Rangsit_2021_GX234613"
+    },
+    {
+      "image_id": 6984,
+      "file_name": "Rangsit_2021_GX244613_110.jpg",
+      "split": "train",
+      "sha256": "07c01ec3c61c5614610c7d36bd5db1e40a6ee02ed3700ca32859490c8266be1a",
+      "group_id": "2:Rangsit_2021_GX244613"
+    },
+    {
+      "image_id": 47712,
+      "file_name": "Chiangrai_2021_GH020102_234.jpg",
+      "split": "train",
+      "sha256": "772113673d0b3431e69060a1c3432708a954ea0181bab0db05ddf2aa0c113e3e",
+      "group_id": "8:Chiangrai_2021_GH020102"
+    },
+    {
+      "image_id": 46663,
+      "file_name": "Chiangrai_2021_GH020114_34.jpg",
+      "split": "train",
+      "sha256": "3d8abb911f02eebe7b2cbf42eb3961b2ead8c2c9ace442475d50d85bc9525c5d",
+      "group_id": "8:Chiangrai_2021_GH020114"
+    },
+    {
+      "image_id": 11652,
+      "file_name": "Rangsit_2021_GX164613_295.jpg",
+      "split": "train",
+      "sha256": "715943175691f4bd93f3bb8ef19a40736c1b08af2bd73c3e76811e31218d589f",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 647,
+      "file_name": "ATT125_J.jpg",
+      "split": "train",
+      "sha256": "74105714d45edcbac88dbd6fd50738689409aae285f3cbf727b9e1b3b804e58e",
+      "group_id": "1:ATT125_J"
+    },
+    {
+      "image_id": 8486,
+      "file_name": "Rangsit_2021_GX254613_68.jpg",
+      "split": "train",
+      "sha256": "cfdb14c88236c873001ad5b0be200200dfc371be9773f5b8b6503332bf4f704b",
+      "group_id": "2:Rangsit_2021_GX254613"
+    },
+    {
+      "image_id": 7912,
+      "file_name": "Rangsit_2021_GX114614_74.jpg",
+      "split": "train",
+      "sha256": "e3e9bf4535cb8c6dc09a595ef4616d81f0ef1d3d6ed40387da1aeb97bb1c88bd",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 5919,
+      "file_name": "Taladthai_2021_GX034430_296.jpg",
+      "split": "train",
+      "sha256": "6971220254612c1028411d24eb23e65e3237523deddf5045ce341a1d0e64fdca",
+      "group_id": "6:Taladthai_2021_GX034430"
+    },
+    {
+      "image_id": 7864,
+      "file_name": "Rangsit_2021_GX114614_10.jpg",
+      "split": "train",
+      "sha256": "1bb9afa938d148c22e939736bcc7b924f36d4c8d4113cecf66ae94ae423fd3ac",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 9147,
+      "file_name": "Rangsit_2021_GX024613_103.jpg",
+      "split": "train",
+      "sha256": "828d5755545bba6575fb31aac11b4b8f120d8d97e91f9e606f8549850095fa78",
+      "group_id": "2:Rangsit_2021_GX024613"
+    },
+    {
+      "image_id": 12385,
+      "file_name": "Rangsit_2021_GX044614_45.jpg",
+      "split": "train",
+      "sha256": "edc236c3cdd3b61de74898cc7f98b2d207dea75888da0018d0e3efaced1b5fa6",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 7476,
+      "file_name": "Rangsit_2021_GX154613_59.jpg",
+      "split": "train",
+      "sha256": "0eb4889d347eaf66484772d870fe6b386c60e98cba89d460f80a5eb280bbe7e6",
+      "group_id": "2:Rangsit_2021_GX154613"
+    },
+    {
+      "image_id": 7835,
+      "file_name": "Rangsit_2021_GX114614_165.jpg",
+      "split": "train",
+      "sha256": "cee5bba2280669e29109bc0019de1894e6eabe1646d7501a636cc0acef3f320c",
+      "group_id": "2:Rangsit_2021_GX114614"
+    },
+    {
+      "image_id": 63017,
+      "file_name": "Mawanella_2022_GX010145_244.jpg",
+      "split": "train",
+      "sha256": "5bc5c21bdc5ac37e1681328ae02473a699efcd035d291922f9769845f1a1ef17",
+      "group_id": "17:Mawanella_2022_GX010145"
+    },
+    {
+      "image_id": 47699,
+      "file_name": "Chiangrai_2021_GH020102_323.jpg",
+      "split": "train",
+      "sha256": "5b0b06871391b2b224c6a4dc1e0d00596de5d9fe40c152d424646bbd10b8a43f",
+      "group_id": "8:Chiangrai_2021_GH020102"
+    },
+    {
+      "image_id": 6872,
+      "file_name": "Rangsit_2021_GX094614_60.jpg",
+      "split": "train",
+      "sha256": "4b3920f52ef0f89c9f32746fb464ef65570f24667398c1789575cefe9280b5da",
+      "group_id": "2:Rangsit_2021_GX094614"
+    },
+    {
+      "image_id": 11988,
+      "file_name": "Rangsit_2021_GX204613_88.jpg",
+      "split": "train",
+      "sha256": "8ba76cecf649246297963bf522903efe928bba6e3193b848996098598a85175a",
+      "group_id": "2:Rangsit_2021_GX204613"
+    },
+    {
+      "image_id": 14372,
+      "file_name": "Rangsit_2021_GX074614_107.jpg",
+      "split": "train",
+      "sha256": "93ade3d9df4f75f6b05f35abb98a3fe803560dfef3481000fd790f46229f3b6a",
+      "group_id": "2:Rangsit_2021_GX074614"
+    },
+    {
+      "image_id": 13577,
+      "file_name": "Rangsit_2021_GX064614_140.jpg",
+      "split": "train",
+      "sha256": "cf95c3aed27e7e761040eb78c8e6c9a54b6d9adffc9926af315fd96c755c44e9",
+      "group_id": "2:Rangsit_2021_GX064614"
+    },
+    {
+      "image_id": 11706,
+      "file_name": "Rangsit_2021_GX164613_183.jpg",
+      "split": "train",
+      "sha256": "34b391d03cde24a16036db3827c01e744a38088fb64110e65b771fd10e269731",
+      "group_id": "2:Rangsit_2021_GX164613"
+    },
+    {
+      "image_id": 633,
+      "file_name": "ATT45_image3..jpg",
+      "split": "train",
+      "sha256": "6056d18e8ec6c00affaab4589b577021a991dd1776843c292435aefb21d32d1c",
+      "group_id": "1:ATT45_image3."
+    },
+    {
+      "image_id": 360,
+      "file_name": "ATT143_IMG_20200303_103204.jpg",
+      "split": "train",
+      "sha256": "530bc8045cf6067682ba41449fd4cbcef0fddb49c0bedcb5167534993459b761",
+      "group_id": "1:ATT143_IMG_20200303"
+    },
+    {
+      "image_id": 12337,
+      "file_name": "Rangsit_2021_GX044614_317.jpg",
+      "split": "train",
+      "sha256": "0ab66775d080c6e217a68a49153c197f091d32dd4ff31144948f0081acd35ace",
+      "group_id": "2:Rangsit_2021_GX044614"
+    },
+    {
+      "image_id": 8063,
+      "file_name": "Rangsit_2021_GX034613_71.jpg",
+      "split": "train",
+      "sha256": "4be2e312c2b479ad9c1e25488bc63a444e2e2a0674e6abb223aeb9fe0d0e678c",
+      "group_id": "2:Rangsit_2021_GX034613"
+    },
+    {
+      "image_id": 48257,
+      "file_name": "Chiangrai_2021_GH010111_160.jpg",
+      "split": "train",
+      "sha256": "4d4d239d6939995f7722f301c7e0b62075b8bf71e3b6f59e148dfdba7ee16b6f",
+      "group_id": "8:Chiangrai_2021_GH010111"
+    },
+    {
+      "image_id": 10933,
+      "file_name": "Rangsit_2021_GX174613_78.jpg",
+      "split": "train",
+      "sha256": "d2155b6cd47f517891932f07709c2e3af9c6ad27c62c7dfdbf7e082a0bd50c92",
+      "group_id": "2:Rangsit_2021_GX174613"
+    },
+    {
+      "image_id": 63181,
+      "file_name": "Hanwella_2022_GX010108_370.jpg",
+      "split": "train",
+      "sha256": "bb846ae09082532827d7d2d61430c6d00d6ec596a8caf53972596469e81a776e",
+      "group_id": "16:Hanwella_2022_GX010108"
+    }
+  ],
+  "note": "Both subsets come only from the original training split. Smoke metrics are not independent quality evidence. Official validation/test sets are unused."
+}

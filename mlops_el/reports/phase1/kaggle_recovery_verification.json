@@ -1,0 +1,18 @@
+{
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "epoch": 30,
+  "checkpoint_sha256": {
+    "last": "2c9cba35e3ca7c840d23955f5b7ba80116a8d01caee750c5356542c72cd54432",
+    "best": "ed309f0f5abbc21cad6cd9544dd37ba58d2812cd2a813ed78f3f0c91ff02392d"
+  },
+  "bundle_fingerprint": "ab403c827b6bc3de67966a7ac633d915293cfafd3883fa8de876de1fb89dfd55",
+  "sqlite_integrity": "ok",
+  "original_artifact_uri": "file:///content/mlops_work/train/mlartifacts/85714466948d4e658ebb610a475dcf57/artifacts",
+  "weights_and_tracking_verified": true,
+  "optimizer_state_verified": false,
+  "note": "Load checkpoint with the pinned Torch environment and verify optimizer/epoch before training. No training performed.",
+  "recovery_archive": "exports/train-20261106T105552Z-1-001.zip",
+  "recovery_archive_sha256": "8bfdef12a7918ccb452a590815fcb2804faa333626d608b75aecc849e4356949",
+  "scope": "Recovery verification only; no training resumed",
+  "manifest_canonicalization": "Matches runner.unpack: json.dumps(parsed manifest, indent=2); archive manifest formatting differs from runtime manifest."
+}

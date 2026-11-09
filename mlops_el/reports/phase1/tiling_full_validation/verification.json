@@ -1,0 +1,10 @@
+{
+  "full_validation_images": 1500,
+  "sample_identity_verified": true,
+  "prediction_geometry_and_order_verified": true,
+  "candidate_and_protected_inputs_unchanged": true,
+  "single_label_reference_ap50_difference_percentage_points": 0.07225590607556343,
+  "test_images_used": 0,
+  "labels_changed": false,
+  "retraining": false
+}

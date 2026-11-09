@@ -1,0 +1,9 @@
+{
+  "scope": "Additional magnified all-label context inspection in two selected training images, following review of all 100 context previews. This is not a full completeness audit.",
+  "observations": [
+    {"image_id": 14677, "sample_id": "bottle-train-large-09", "annotation_id": 18846, "issue": "instance_grouping", "evidence": "The selected bottle annotation encloses several visible blue-capped bottles, whereas annotation 18843 encloses an individual adjacent bottle.", "status": "observable_grouping_difference_requires_adjudication", "artifact": "context_detail_14677.jpg"},
+    {"image_id": 14677, "annotation_id": 18853, "issue": "class_specificity_consistency", "evidence": "An adjacent visibly bottle-like object has source label litter, while other nearby bottles have bottle labels. This is not a missing annotation; review whether the residual label is intentional.", "status": "flag_for_human_review_not_approved_correction", "artifact": "context_detail_14677.jpg"},
+    {"image_id": 5720, "sample_id": "bottle-train-large-03", "issue": "context_and_label_coverage", "evidence": "Both visible bottles have separate bottle boxes; the surrounding bucket has a litter box. A neighbouring visible bottle should not be called unlabelled merely because only the selected target was drawn in a target-only crop.", "status": "no_bottle_omission_identified_in_this_detail", "artifact": "context_detail_5720.jpg"}
+  ],
+  "missing_annotation_conclusion": "No missing-object correction is established by this audit. Small context previews cannot certify exhaustive annotation completeness, and not every visible object is an eligible discarded target."
+}

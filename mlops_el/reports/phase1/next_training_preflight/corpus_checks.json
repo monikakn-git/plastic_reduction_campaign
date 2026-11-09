@@ -1,0 +1,173 @@
+{
+  "raw_images_hashed": 10000,
+  "train_val_label_files_checked": 8500,
+  "issue_count": 4,
+  "issues": [
+    {
+      "image_id": 372,
+      "issue": "exif_orientation_requires_review",
+      "orientation": 3
+    },
+    {
+      "image_id": 449,
+      "issue": "exif_orientation_requires_review",
+      "orientation": 3
+    },
+    {
+      "image_id": 528,
+      "issue": "exif_orientation_requires_review",
+      "orientation": 3
+    },
+    {
+      "image_id": 651,
+      "issue": "exif_orientation_requires_review",
+      "orientation": 3
+    }
+  ],
+  "duplicate_label_rows": [],
+  "exif_orientations_train_val": {
+    "1": 8459,
+    "0": 37,
+    "3": 4
+  },
+  "class_counts": {
+    "train": {
+      "pile": 761,
+      "litter": 29639,
+      "trash_bin": 429,
+      "face_mask": 466,
+      "plastic_bag": 4285,
+      "sachet": 2023,
+      "cup": 488,
+      "rope": 667,
+      "straw": 1097,
+      "bottle": 910
+    },
+    "val": {
+      "litter": 7093,
+      "pile": 137,
+      "plastic_bag": 1117,
+      "bottle": 371,
+      "trash_bin": 93,
+      "sachet": 330,
+      "straw": 170,
+      "rope": 139,
+      "cup": 115,
+      "face_mask": 66
+    }
+  },
+  "learning_curves": {
+    "nano": {
+      "epochs_completed": 50,
+      "best_epoch_by_AP50_95": 50,
+      "best_logged_AP50": 0.2679,
+      "best_logged_AP50_95": 0.15904,
+      "epoch40_AP50": 0.26562,
+      "epoch50_AP50": 0.2679,
+      "train_cls_epoch40": 1.84077,
+      "train_cls_epoch50": 1.77955,
+      "val_cls_epoch40": 1.87905,
+      "val_cls_epoch50": 1.90872
+    },
+    "small": {
+      "epochs_completed": 50,
+      "best_epoch_by_AP50_95": 48,
+      "best_logged_AP50": 0.32269,
+      "best_logged_AP50_95": 0.19535,
+      "epoch40_AP50": 0.31153,
+      "epoch50_AP50": 0.31972,
+      "train_cls_epoch40": 1.71101,
+      "train_cls_epoch50": 1.63652,
+      "val_cls_epoch40": 1.7771,
+      "val_cls_epoch50": 1.8009
+    }
+  },
+  "object_size_short_side_at_640": {
+    "train/pile": {
+      "median": 93.01587301587301,
+      "under8_fraction": 0.04336399474375821
+    },
+    "train/litter": {
+      "median": 10.0,
+      "under8_fraction": 0.3208947670299268
+    },
+    "val/litter": {
+      "median": 9.943502824858758,
+      "under8_fraction": 0.32553221485972084
+    },
+    "val/pile": {
+      "median": 116.27450980392157,
+      "under8_fraction": 0.043795620437956206
+    },
+    "train/trash_bin": {
+      "median": 70.5,
+      "under8_fraction": 0.011655011655011656
+    },
+    "train/face_mask": {
+      "median": 17.187376725838263,
+      "under8_fraction": 0.09012875536480687
+    },
+    "val/plastic_bag": {
+      "median": 16.5,
+      "under8_fraction": 0.06445837063563116
+    },
+    "val/bottle": {
+      "median": 10.5,
+      "under8_fraction": 0.2803234501347709
+    },
+    "val/trash_bin": {
+      "median": 60.333333333333336,
+      "under8_fraction": 0.010752688172043012
+    },
+    "val/sachet": {
+      "median": 11.548816568047338,
+      "under8_fraction": 0.20909090909090908
+    },
+    "val/straw": {
+      "median": 11.5,
+      "under8_fraction": 0.32941176470588235
+    },
+    "val/rope": {
+      "median": 22.5,
+      "under8_fraction": 0.014388489208633094
+    },
+    "val/cup": {
+      "median": 14.0,
+      "under8_fraction": 0.11304347826086956
+    },
+    "val/face_mask": {
+      "median": 17.2707100591716,
+      "under8_fraction": 0.045454545454545456
+    },
+    "train/plastic_bag": {
+      "median": 16.5,
+      "under8_fraction": 0.07864644107351225
+    },
+    "train/sachet": {
+      "median": 11.5,
+      "under8_fraction": 0.20958971824023728
+    },
+    "train/cup": {
+      "median": 14.5,
+      "under8_fraction": 0.0942622950819672
+    },
+    "train/rope": {
+      "median": 22.0,
+      "under8_fraction": 0.046476761619190406
+    },
+    "train/straw": {
+      "median": 11.0,
+      "under8_fraction": 0.2670920692798541
+    },
+    "train/bottle": {
+      "median": 12.0,
+      "under8_fraction": 0.2087912087912088
+    }
+  },
+  "limitations": [
+    "Mechanical consistency is not annotation correctness; unresolved visual flags remain.",
+    "Group separation is inferred from filenames, not a guarantee of absence of cross-recording near-duplicates.",
+    "No test labels inspected for tuning, no test scoring, no model or dataset edits."
+  ],
+  "orientation_note": "Tag 0 is undefined and treated as no rotation by this decoder; it is not classified as an error. Tag 3 triggers a 180-degree rotation and needs coordinate review."
+}

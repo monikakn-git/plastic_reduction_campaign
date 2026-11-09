@@ -1,0 +1,9 @@
+# Resolved versions are recorded in requirements-lock.txt after installation.
+ultralytics>=8.3,<9
+mlflow>=3,<4
+dvc>=3,<4
+Pillow>=11,<13
+matplotlib>=3.9,<4
+PyYAML>=6,<7
+requests>=2.32,<3
+pytest>=8,<10

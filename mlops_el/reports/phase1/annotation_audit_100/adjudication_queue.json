@@ -1,0 +1,453 @@
+{
+  "scope": "Review queue only; no corrections applied. Validation cases must be adjudicated independently of prediction scores.",
+  "items": [
+    {
+      "sample_id": "bottle-train-small-03",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 10073,
+      "annotation_id": 41062,
+      "file_name": "Rangsit_2021_GX094613_294.jpg",
+      "group_id": "2:Rangsit_2021_GX094613",
+      "bbox": [
+        538.0,
+        525.0,
+        43.0,
+        19.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.5,
+      "image_sha256": "9a34bca08cff886ab720deb9a487be2d15ab750e1c5d89e2bad31bd097342b3c",
+      "prepared_label_sha256": "1c350532c099b3449510920398b5641895e464264a2553d47aba50a8cc061ac1",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_train_01.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "White tapered vessel with pink rim; cup-like rather than clearly bottle-like.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-train-small-08",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 11610,
+      "annotation_id": 57297,
+      "file_name": "Rangsit_2021_GX164613_143.jpg",
+      "group_id": "2:Rangsit_2021_GX164613",
+      "bbox": [
+        1063.0,
+        322.0,
+        47.0,
+        18.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.0,
+      "image_sha256": "519f441eff61d7982bc3af92ba70927f01b469dda6dc01f09c86ccb6fd2a9b94",
+      "prepared_label_sha256": "e933429d119d1a76bc257335cf7de93f1d777ef930cdf8a03fc8cd9b25e142b5",
+      "image_annotation_count": 9,
+      "contact_sheet": "bottle_train_02.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Flat yellow printed packet-like object; no clear bottle neck or body.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-train-large-01",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 5986,
+      "annotation_id": 9710,
+      "file_name": "Taladthai_2021_GX034430_011.jpg",
+      "group_id": "6:Taladthai_2021_GX034430",
+      "bbox": [
+        203.0,
+        345.0,
+        87.0,
+        44.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 22.0,
+      "image_sha256": "182ba5f6f35cc1212e7e9a5d678bfe5f5a3911d47f3a02630acc60084aaa0b24",
+      "prepared_label_sha256": "ce8f053f1de57569fe3d181edfa8d703a6c9374d26063ed3261b89df83a05b7d",
+      "image_annotation_count": 8,
+      "contact_sheet": "bottle_train_04.jpg",
+      "class_assessment": "plausible",
+      "note": "Flattened transparent bottle with blue cap; box appears to omit part of cap/neck at upper right.",
+      "box_assessment": "possible_truncation",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-train-large-09",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 14677,
+      "annotation_id": 18846,
+      "file_name": "Rangsit_2021_GX014613_233.jpg",
+      "group_id": "2:Rangsit_2021_GX014613",
+      "bbox": [
+        639.0,
+        441.0,
+        104.0,
+        55.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 27.5,
+      "image_sha256": "9c52302ea725b43eb0f8f95ba99915ae0847e9a39e033a501adce858c19fcd01",
+      "prepared_label_sha256": "f614f148ec8e9ae7beae61b57bdb8bb793049c461bd6cdf8891a3634565a1e47",
+      "image_annotation_count": 21,
+      "contact_sheet": "bottle_train_05.jpg",
+      "class_assessment": "plausible",
+      "note": "Several blue-capped bottles share one target box; review instance grouping against pile/individual-object guidance.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-val-large-03",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 62909,
+      "annotation_id": 171612,
+      "file_name": "Mawanella_2022_GX040149_143.jpg",
+      "group_id": "17:Mawanella_2022_GX040149",
+      "bbox": [
+        1503.0,
+        558.0,
+        132.0,
+        114.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 38.0,
+      "image_sha256": "bdb7e8496117fe65602e2c86093f981434e83fa83b9bd694e3218538c565a49d",
+      "prepared_label_sha256": "e5659a4783c68813b7b3a5d80881ee9f2ca783d210ae79cb7bd88b2781af859a",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_val_04.jpg",
+      "class_assessment": "uncertain",
+      "note": "Two dirty crushed forms inside the target area; identity and instance grouping need review.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-val-large-05",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 44767,
+      "annotation_id": 128776,
+      "file_name": "Chiangrai_2021_GH130132_195.jpg",
+      "group_id": "8:Chiangrai_2021_GH130132",
+      "bbox": [
+        877.0,
+        1311.0,
+        94.0,
+        111.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 22.24852071005917,
+      "image_sha256": "4570065a17e727e305c1430be729840b24efad9f7c655dbd18155b9ce678a9a0",
+      "prepared_label_sha256": "768badcc8dc7597f1f65301152e25d5f60af7f882a9fd28d197fc95756082018",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_val_05.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Dark round flat object with a rim, resembling a lid/disc rather than a bottle.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "bottle-val-large-09",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 10636,
+      "annotation_id": 51990,
+      "file_name": "Rangsit_2021_GX134613_185.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        1009.0,
+        641.0,
+        38.0,
+        44.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 19.0,
+      "image_sha256": "6e8e2192a342355b75389a9900f016b50304a1b87b3ae75dce297b7e37e3ae8f",
+      "prepared_label_sha256": "2fb2da5a674795a0d8b9d6ba17bb398d54dbad3ade36c01cbad6e0f46e96c845",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_val_05.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Broad flat brown disc/plate-like object without recognisable bottle structure.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-train-large-01",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 10814,
+      "annotation_id": 21874,
+      "file_name": "Rangsit_2021_GX024614_161.jpg",
+      "group_id": "2:Rangsit_2021_GX024614",
+      "bbox": [
+        755.0,
+        502.0,
+        52.0,
+        37.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 18.5,
+      "image_sha256": "4bdf9512cca8d0da21288337cc7507a0335b6cd9aa874ecbe84b542370df1bca",
+      "prepared_label_sha256": "8022c22bcbd80b1f00aa11a310fabb392353bd329a07d12c1d5ac76475b6d3c2",
+      "image_annotation_count": 21,
+      "contact_sheet": "cup_train_04.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Crushed blue printed foil/packet-like object, without clear cup structure.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-train-large-02",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 53506,
+      "annotation_id": 140045,
+      "file_name": "Chiangrai_2021_GH010127_125.jpg",
+      "group_id": "8:Chiangrai_2021_GH010127",
+      "bbox": [
+        625.0,
+        1313.0,
+        88.0,
+        76.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 17.988165680473372,
+      "image_sha256": "66b9ba817f3c4fee010691343eba502add2b207f66d81cc3639096d025e577bd",
+      "prepared_label_sha256": "87819a8d45668b190a9ba6f8716e097abb90648af6a2a9add260fc777ee29213",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_04.jpg",
+      "class_assessment": "uncertain",
+      "note": "Two orange curved container fragments or vessels grouped together; class and instance boundaries need review.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-val-small-04",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 12615,
+      "annotation_id": 32262,
+      "file_name": "Rangsit_2021_GX064613_149.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        846.0,
+        342.0,
+        19.0,
+        34.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.5,
+      "image_sha256": "4665875b8e3fb46107389b61f202da3b66c21d3a3c4703871703461a4feb7407",
+      "prepared_label_sha256": "8bb0c2c5b27eb41f4e6df9470ff1e7fc65fb2a04feac3304abba5259a267dce5",
+      "image_annotation_count": 14,
+      "contact_sheet": "cup_val_01.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Upright blue/white gable-top carton-like container rather than a clear cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-val-medium-03",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47131,
+      "annotation_id": 136587,
+      "file_name": "Chiangrai_2021_GH010146_331.jpg",
+      "group_id": "8:Chiangrai_2021_GH010146",
+      "bbox": [
+        1019.0,
+        1041.0,
+        67.0,
+        51.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 12.071005917159763,
+      "image_sha256": "eba194efe3d043d781f2dab860bda30f06c99b6640bcf7aaf1998b46b9d3c3bb",
+      "prepared_label_sha256": "7970c4b7c17c67e0cdc8e5041a37e40c023a0de23ed79662e77c864f1f6da410",
+      "image_annotation_count": 2,
+      "contact_sheet": "cup_val_03.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "White/green torn printed packaging with angular edges; carton/packet-like rather than clearly cup-like.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-val-large-04",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 53681,
+      "annotation_id": 140376,
+      "file_name": "Chiangrai_2021_GH010128_359.jpg",
+      "group_id": "8:Chiangrai_2021_GH010128",
+      "bbox": [
+        1996.0,
+        1133.0,
+        133.0,
+        124.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 29.349112426035504,
+      "image_sha256": "f03406cd4cc1cfa44d437bf90bb84fe3c7dcf47631026bb61233c3351b79f8d3",
+      "prepared_label_sha256": "669e646de7903da84730e9f64097d0827a92f4a5ba00d6b3f62604ee954ed6ba",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_val_04.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Crushed brown can/food-container-like object with circular base; cup label needs adjudication.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-val-large-06",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 10685,
+      "annotation_id": 52498,
+      "file_name": "Rangsit_2021_GX134613_245.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        0.0,
+        622.0,
+        43.0,
+        56.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 21.5,
+      "image_sha256": "da679c5c5993232d4d66b7a12891f364beb75ddf8e0a1a58eac4d3a0bf5e1303",
+      "prepared_label_sha256": "28aaf6413e8ade2f71b8b55be251259b18a5d72f72a89621f7d3c8ffc532aff5",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_val_05.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Angular crushed carton/container-like object with no recognisable cup rim.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    },
+    {
+      "sample_id": "cup-val-large-09",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 8741,
+      "annotation_id": 64347,
+      "file_name": "Rangsit_2021_GX214613_307.jpg",
+      "group_id": "2:Rangsit_2021_GX214613",
+      "bbox": [
+        633.0,
+        463.0,
+        35.0,
+        40.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 17.5,
+      "image_sha256": "17d0e3522252d7b7c9340bd53e540f4dba96e36f4a724c0166852f5b2d23e4ee",
+      "prepared_label_sha256": "584ab0737737f821d1f6f6256706d7bd0721675d43bd387b9794bfd0a239f2d3",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_val_05.jpg",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Clear vessel with a narrower upper opening/neck, bottle/jar-like rather than a typical cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview",
+      "human_decision": "pending",
+      "approved_new_class": null,
+      "approved_new_bbox": null
+    }
+  ]
+}

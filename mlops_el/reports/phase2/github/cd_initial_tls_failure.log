@@ -1,0 +1,188 @@
+deploy	Set up job	﻿2026-11-09T10:00:33.8427590Z Current runner version: '2.338.2'
+deploy	Set up job	2026-11-09T10:00:33.8431970Z Runner name: 'MLOPS-EL-Mac-M3'
+deploy	Set up job	2026-11-09T10:00:33.8432340Z Runner group name: 'Default'
+deploy	Set up job	2026-11-09T10:00:33.8432810Z Machine name: 'Aayushs-Laptop-3'
+deploy	Set up job	2026-11-09T10:00:33.8434710Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-11-09T10:00:33.8435620Z Actions: read
+deploy	Set up job	2026-11-09T10:00:33.8435890Z Contents: read
+deploy	Set up job	2026-11-09T10:00:33.8436170Z Metadata: read
+deploy	Set up job	2026-11-09T10:00:33.8436440Z ##[endgroup]
+deploy	Set up job	2026-11-09T10:00:33.8437340Z Secret source: Actions
+deploy	Set up job	2026-11-09T10:00:33.8437770Z Cache mode: write
+deploy	Set up job	2026-11-09T10:00:33.8438100Z Prepare workflow directory
+deploy	Set up job	2026-11-09T10:00:33.8961040Z Prepare all required actions
+deploy	Set up job	2026-11-09T10:00:33.8988100Z Getting action download info
+deploy	Set up job	2026-11-09T10:00:35.0237710Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+deploy	Set up job	2026-11-09T10:00:36.9047800Z Complete job name: deploy
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-09T10:00:36.9419470Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9419870Z with:
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9420010Z   persist-credentials: false
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9420190Z   repository: Aayushbhandari17/MLOPS_EL
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9421750Z   token: ***
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9421890Z   ssh-strict: true
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422030Z   ssh-user: git
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422160Z   clean: true
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422310Z   sparse-checkout-cone-mode: true
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422480Z   fetch-depth: 1
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422620Z   fetch-tags: false
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422760Z   show-progress: true
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9422910Z   lfs: false
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9423050Z   submodules: false
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9423190Z   set-safe-directory: true
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9423360Z   allow-unsafe-pr-checkout: false
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9423600Z env:
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9423850Z   MODEL_RELEASE_DIR: /path/to/MLOPS_EL/releases/yolo11m-demo-v3
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9424250Z   DOCKER_CONFIG: /path/to/MLOPS_EL/.local/docker
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9424550Z   DOCKER_CONTEXT: colima-mlops-el
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9424730Z   COMPOSE_PROJECT_NAME: mlops_el
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9424900Z   API_PORT: 8011
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9425030Z   SKIP_BUILD: 1
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9425250Z   DEPLOY_IMAGE: mlops-el-inference:ci-e501ecf7e370a3f1a38f19d645e956c602d1c017
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:36.9425520Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3540700Z Syncing repository: Aayushbhandari17/MLOPS_EL
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3541560Z ##[group]Getting Git version info
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3542010Z Working directory is '/path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL'
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3542560Z [command]/usr/bin/git version
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3650920Z git version 2.50.1 (Apple Git-155)
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3658810Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3664140Z Copying '/Users/PROJECT_USER/.gitconfig' to '/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/21bbd9ca-88b5-444b-9816-4e0f27d94f70/.gitconfig'
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3668000Z Temporarily overriding HOME='/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/21bbd9ca-88b5-444b-9816-4e0f27d94f70' before making global git config changes
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3668710Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3670930Z [command]/usr/bin/git config --global --add safe.directory /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3776670Z [command]/usr/bin/git config --local --get remote.origin.url
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3862860Z https://github.com/Aayushbhandari17/MLOPS_EL
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3870910Z ##[group]Removing previously created refs, to avoid conflicts
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3872790Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3953170Z refs/heads/main
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.3958050Z [command]/usr/bin/git checkout --detach
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.4085330Z HEAD is now at e501ecf Test deployment rejection for missing failed or mismatched CI
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.4176180Z [command]/usr/bin/git branch --delete --force main
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.4261760Z Deleted branch main (was e501ecf).
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.4343510Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.4345720Z [command]/usr/bin/git submodule status
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5027190Z ##[group]Cleaning the repository
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5029340Z [command]/usr/bin/git clean -ffdx
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5184220Z Removing .pytest_cache/
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5184460Z Removing scripts/__pycache__/
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5184650Z Removing service/__pycache__/
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5184850Z Removing tests/__pycache__/
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5190620Z [command]/usr/bin/git reset --hard HEAD
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5324540Z HEAD is now at e501ecf Test deployment rejection for missing failed or mismatched CI
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5327410Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5329010Z ##[group]Disabling automatic garbage collection
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5331080Z [command]/usr/bin/git config --local gc.auto 0
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5408060Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5408360Z ##[group]Setting up auth
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5411210Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.5484940Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.6140670Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.6230300Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.6875480Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.6962790Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.7586690Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.7683460Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.7683760Z ##[group]Fetching the repository
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:37.7687380Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e501ecf7e370a3f1a38f19d645e956c602d1c017:refs/remotes/origin/main
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6315150Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6315630Z ##[group]Determining the checkout info
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6316020Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6322850Z [command]/usr/bin/git sparse-checkout disable
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6533290Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6664880Z ##[group]Checking out the ref
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6669130Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6873970Z Switched to a new branch 'main'
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6878010Z branch 'main' set up to track 'origin/main'.
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.6980450Z ##[endgroup]
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7018190Z [command]/usr/bin/git log -1 --format=%H
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7141720Z e501ecf7e370a3f1a38f19d645e956c602d1c017
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7148460Z ##[group]Removing auth
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7150990Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7235420Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7836630Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7908890Z http.https://github.com/.extraheader
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7913510Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.7988800Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.8628910Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.8709730Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:38.9291120Z ##[endgroup]
+deploy	Require successful CI for this exact commit	﻿2026-11-09T10:00:38.9427300Z ##[group]Run python3 scripts/require_ci_success.py
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9427590Z ^[[36;1mpython3 scripts/require_ci_success.py^[[0m
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9440080Z shell: /bin/bash -e {0}
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9440240Z env:
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9440510Z   MODEL_RELEASE_DIR: /path/to/MLOPS_EL/releases/yolo11m-demo-v3
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9440890Z   DOCKER_CONFIG: /path/to/MLOPS_EL/.local/docker
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9441180Z   DOCKER_CONTEXT: colima-mlops-el
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9441350Z   COMPOSE_PROJECT_NAME: mlops_el
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9441520Z   API_PORT: 8011
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9441650Z   SKIP_BUILD: 1
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9441880Z   DEPLOY_IMAGE: mlops-el-inference:ci-e501ecf7e370a3f1a38f19d645e956c602d1c017
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9443600Z   GITHUB_TOKEN: ***
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:38.9443740Z ##[endgroup]
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1540320Z Traceback (most recent call last):
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1540990Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1344, in do_open
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1551710Z     h.request(req.get_method(), req.selector, req.data, headers,
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1552240Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1336, in request
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1559720Z     self._send_request(method, url, body, headers, encode_chunked)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1560370Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1382, in _send_request
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1561570Z     self.endheaders(body, encode_chunked=encode_chunked)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1562040Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1331, in endheaders
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1563080Z     self._send_output(message_body, encode_chunked=encode_chunked)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1563560Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1091, in _send_output
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1564310Z     self.send(msg)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1564640Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1035, in send
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1565430Z     self.connect()
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1565770Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1477, in connect
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1567010Z     self.sock = self._context.wrap_socket(self.sock,
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1567270Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1567670Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 455, in wrap_socket
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1570400Z     return self.sslsocket_class._create(
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1570620Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1570990Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1041, in _create
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1576220Z     self.do_handshake()
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1576580Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1319, in do_handshake
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1578670Z     self._sslobj.do_handshake()
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1579150Z ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1579550Z
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1579690Z During handling of the above exception, another exception occurred:
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1580480Z
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1580580Z Traceback (most recent call last):
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1581080Z   File "/path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL/scripts/require_ci_success.py", line 17, in <module>
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1581630Z     if __name__=='__main__':main()
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1581820Z                             ^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1582310Z   File "/path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL/scripts/require_ci_success.py", line 9, in main
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1583460Z     with urllib.request.urlopen(request,timeout=30) as response:runs=json.load(response)['workflow_runs']
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1583830Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1584280Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1584750Z     return opener.open(url, data, timeout)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1585010Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1585380Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1585790Z     response = self._open(req, data)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1586000Z                ^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1586360Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1586870Z     result = self._call_chain(self.handle_open, protocol, protocol +
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1587150Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1587600Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1588000Z     result = func(*args)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1588200Z              ^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1588570Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1589020Z     return self.do_open(http.client.HTTPSConnection, req,
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1589280Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1589660Z   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1347, in do_open
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1590100Z     raise URLError(err)
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1590550Z urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+deploy	Require successful CI for this exact commit	2026-11-09T10:00:39.1648280Z ##[error]Process completed with exit code 1.
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-09T10:00:39.1737500Z Post job cleanup.
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2715480Z [command]/usr/bin/git version
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2808910Z git version 2.50.1 (Apple Git-155)
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2821560Z Copying '/Users/PROJECT_USER/.gitconfig' to '/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/a40b7c44-7818-44ba-9d62-b740a3d5e748/.gitconfig'
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2826360Z Temporarily overriding HOME='/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/a40b7c44-7818-44ba-9d62-b740a3d5e748' before making global git config changes
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2827010Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2829040Z [command]/usr/bin/git config --global --add safe.directory /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2916330Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.2997560Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.3585500Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.3664040Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.4234270Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T10:00:39.4312330Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Complete job	﻿2026-11-09T10:00:39.4951760Z Cleaning up orphan processes
+deploy	Complete job	2026-11-09T10:00:39.5052450Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

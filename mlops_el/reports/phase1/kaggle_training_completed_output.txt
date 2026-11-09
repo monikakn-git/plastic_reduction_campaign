@@ -1,0 +1,451 @@
+# Recover the existing private backup; preserve the interrupted setup attempt.
+import base64, pathlib, sys, importlib
+code_dir=pathlib.Path('/kaggle/working/mlops_code'); code_dir.mkdir(exist_ok=True)
+for name, source in embedded.items(): (code_dir/name).write_bytes(base64.b64decode(source))
+sys.path.insert(0,str(code_dir))
+import runner; importlib.reload(runner)
+import kaggle_backup; importlib.reload(kaggle_backup)
+import start_kaggle_training; importlib.reload(start_kaggle_training)
+start_kaggle_training.main(initialize_backup=False)
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+PRIVATE REMOTE BACKUP VERIFIED: epoch 30
+Resuming SAME MLflow run 85714466948d4e658ebb610a475dcf57 after verified epoch 30; Colab held stopped.
+New https://pypi.org/project/ultralytics/8.4.203 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.4.201 🚀 Python-3.13.16 torch-2.11.0+cu130 CUDA:0 (Tesla T4, 14912MiB)
+Downloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 18.5MB/s 0.0s
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1      1856  ultralytics.nn.modules.conv.Conv             [3, 64, 3, 2]                 
+  1                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  2                  -1  1    111872  ultralytics.nn.modules.block.C3k2            [128, 256, 1, True, 0.25]     
+  3                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+  4                  -1  1    444928  ultralytics.nn.modules.block.C3k2            [256, 512, 1, True, 0.25]     
+  5                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  6                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  7                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1   1642496  ultralytics.nn.modules.block.C3k2            [1024, 512, 1, True]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1    542720  ultralytics.nn.modules.block.C3k2            [1024, 256, 1, True]          
+ 17                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]           
+ 20                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1   1642496  ultralytics.nn.modules.block.C3k2            [1024, 512, 1, True]          
+ 23        [16, 19, 22]  1   1418734  ultralytics.nn.modules.head.Detect           [10, 16, None, [256, 512, 512]]
+YOLO11m summary: 231 layers, 20,060,718 parameters, 20,060,702 gradients, 68.3 GFLOPs
+
+Transferred 649/649 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+AMP: running Automatic Mixed Precision (AMP) checks...
+AMP: checks passed ✅
+train: Fast image access ✅ (ping: 0.0±0.0 ms, read: 3354.4±1773.2 MB/s, size: 1528.3 KB)
+train: Scanning /kaggle/temp/mlops_trainval_bundle/dataset/labels/train... 7000 images, 113 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 7000/7000 1.2Kit/s 6.0s0.0s
+train: New cache created: /kaggle/temp/mlops_trainval_bundle/dataset/labels/train.cache
+albumentations: Blur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01, method='weighted_average', num_output_channels=3), CLAHE(p=0.01, clip_limit=(1.0, 4.0), tile_grid_size=(8, 8))
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2166.9±995.3 MB/s, size: 1066.7 KB)
+val: Scanning /kaggle/temp/mlops_trainval_bundle/dataset/labels/val... 1500 images, 11 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1500/1500 1.1Kit/s 1.3s0.0s
+val: New cache created: /kaggle/temp/mlops_trainval_bundle/dataset/labels/val.cache
+optimizer: AdamW(lr=0.001, momentum=0.937) with parameter groups 106 weight(decay=0.0), 113 weight(decay=0.0005), 112 bias(decay=0.0)
+Plotting labels to /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57/labels.jpg... 
+Resuming training /kaggle/working/MLOPS_EL_cloud/train/checkpoints/epoch-0030/last.pt from epoch 31 to 100 total epochs
+Using 7000 train, 1500 val images for fraction=1.0 at imgsz=960
+Using 2 dataloader workers
+Logging results to /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57
+Starting training for 100 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     31/100      4.82G       1.51      1.624      1.034         57        960: 100% ━━━━━━━━━━━━ 1750/1750 3.6it/s 8:020.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 5.9it/s 32.1s0.4ss
+                   all       1500       9631       0.44        0.4      0.374       0.23
+PRIVATE REMOTE BACKUP VERIFIED: epoch 31
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+/usr/local/lib/python3.13/dist-packages/ray/train/_internal/session.py:683: UserWarning: `get_trial_id` is meant to only be called inside a function that is executed by a Tuner or Trainer. Returning `None`.
+  warnings.warn(
+
+     32/100      5.82G      1.501      1.624      1.035         41        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.3s0.4ss
+                   all       1500       9631      0.418      0.395      0.364      0.223
+PRIVATE REMOTE BACKUP VERIFIED: epoch 32
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     33/100      5.82G      1.504      1.602      1.033         43        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.3ss
+                   all       1500       9631      0.403       0.42      0.372      0.227
+PRIVATE REMOTE BACKUP VERIFIED: epoch 33
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     34/100      5.82G      1.487        1.6      1.029         26        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.424      0.407      0.371      0.231
+PRIVATE REMOTE BACKUP VERIFIED: epoch 34
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     35/100      5.82G      1.496      1.593       1.03         16        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.443      0.382       0.36      0.224
+PRIVATE REMOTE BACKUP VERIFIED: epoch 35
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     36/100      5.82G      1.488      1.578      1.027         36        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.3ss
+                   all       1500       9631      0.395      0.401      0.357      0.223
+PRIVATE REMOTE BACKUP VERIFIED: epoch 36
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     37/100      5.82G       1.49      1.581      1.028         36        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.424      0.389      0.363      0.226
+PRIVATE REMOTE BACKUP VERIFIED: epoch 37
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     38/100      5.82G       1.48      1.556      1.023         41        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.431      0.407      0.368      0.228
+PRIVATE REMOTE BACKUP VERIFIED: epoch 38
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     39/100      5.82G       1.48      1.553      1.022         89        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.432      0.397      0.374      0.236
+PRIVATE REMOTE BACKUP VERIFIED: epoch 39
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     40/100      5.82G      1.474      1.555      1.024        102        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.465      0.375      0.374      0.228
+PRIVATE REMOTE BACKUP VERIFIED: epoch 40
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     41/100      5.82G      1.469      1.534      1.018         59        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.443      0.394      0.373      0.232
+PRIVATE REMOTE BACKUP VERIFIED: epoch 41
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     42/100      5.82G      1.464      1.517      1.016         40        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.414       0.43      0.384      0.239
+PRIVATE REMOTE BACKUP VERIFIED: epoch 42
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     43/100      5.82G      1.458      1.525      1.017         39        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.2s0.4ss
+                   all       1500       9631      0.417      0.417      0.372      0.232
+PRIVATE REMOTE BACKUP VERIFIED: epoch 43
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     44/100      5.82G      1.452      1.506      1.015         39        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.429      0.415      0.374      0.233
+PRIVATE REMOTE BACKUP VERIFIED: epoch 44
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     45/100      5.82G      1.452        1.5      1.018         45        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.417      0.425      0.379      0.238
+PRIVATE REMOTE BACKUP VERIFIED: epoch 45
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     46/100      5.82G      1.446      1.499      1.014         19        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631       0.44      0.396      0.383      0.239
+PRIVATE REMOTE BACKUP VERIFIED: epoch 46
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     47/100      5.82G      1.448      1.485       1.01         39        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.2s0.4ss
+                   all       1500       9631      0.394      0.436      0.369      0.232
+PRIVATE REMOTE BACKUP VERIFIED: epoch 47
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     48/100      5.82G      1.437      1.465      1.011         57        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631       0.41      0.426      0.386      0.241
+PRIVATE REMOTE BACKUP VERIFIED: epoch 48
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     49/100      5.82G      1.437       1.46      1.007         32        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.422      0.416      0.384      0.241
+PRIVATE REMOTE BACKUP VERIFIED: epoch 49
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     50/100      5.82G      1.439      1.455      1.006         29        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.423      0.422      0.391      0.244
+PRIVATE REMOTE BACKUP VERIFIED: epoch 50
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     51/100      5.82G      1.435      1.446      1.004         29        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.419      0.432       0.39      0.246
+PRIVATE REMOTE BACKUP VERIFIED: epoch 51
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     52/100      5.82G      1.421       1.44      1.003         42        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.1s0.3ss
+                   all       1500       9631      0.426      0.433      0.386      0.238
+PRIVATE REMOTE BACKUP VERIFIED: epoch 52
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     53/100      5.82G      1.423      1.424     0.9995         36        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.406      0.431      0.368      0.229
+PRIVATE REMOTE BACKUP VERIFIED: epoch 53
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     54/100      5.82G       1.42      1.413      1.002         56        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631      0.447      0.405      0.376      0.235
+PRIVATE REMOTE BACKUP VERIFIED: epoch 54
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     55/100      5.82G      1.411      1.415     0.9974         43        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.427      0.429      0.388       0.24
+PRIVATE REMOTE BACKUP VERIFIED: epoch 55
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     56/100      5.82G      1.413      1.401     0.9989         36        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.426      0.431      0.389      0.241
+PRIVATE REMOTE BACKUP VERIFIED: epoch 56
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     57/100      5.82G      1.406      1.385     0.9963         27        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.439      0.412      0.382      0.235
+PRIVATE REMOTE BACKUP VERIFIED: epoch 57
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     58/100      5.82G      1.407      1.381     0.9937         79        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631      0.429      0.417      0.382      0.238
+PRIVATE REMOTE BACKUP VERIFIED: epoch 58
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     59/100      5.82G        1.4      1.372     0.9958         60        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.452       0.41      0.391      0.244
+PRIVATE REMOTE BACKUP VERIFIED: epoch 59
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     60/100      5.82G      1.395      1.352     0.9904         35        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.3ss
+                   all       1500       9631      0.443      0.414       0.38      0.238
+PRIVATE REMOTE BACKUP VERIFIED: epoch 60
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     61/100      5.82G      1.414       1.38     0.9987         30        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.4ss
+                   all       1500       9631       0.45      0.419       0.39      0.243
+PRIVATE REMOTE BACKUP VERIFIED: epoch 61
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     62/100      5.82G      1.409      1.376     0.9951         50        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.3ss
+                   all       1500       9631       0.44      0.427      0.393      0.245
+PRIVATE REMOTE BACKUP VERIFIED: epoch 62
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     63/100      5.82G      1.406      1.368     0.9946         73        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.4ss
+                   all       1500       9631      0.449       0.42      0.388      0.239
+PRIVATE REMOTE BACKUP VERIFIED: epoch 63
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     64/100      5.82G        1.4      1.352     0.9921         41        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.443      0.427      0.386      0.239
+PRIVATE REMOTE BACKUP VERIFIED: epoch 64
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     65/100      5.82G      1.398      1.348     0.9939         23        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.425      0.429      0.384       0.24
+PRIVATE REMOTE BACKUP VERIFIED: epoch 65
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     66/100      5.82G       1.39      1.323     0.9874         36        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.436      0.429      0.394      0.247
+PRIVATE REMOTE BACKUP VERIFIED: epoch 66
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     67/100      5.82G      1.392       1.33      0.991         32        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.3ss
+                   all       1500       9631      0.455      0.408      0.394      0.245
+PRIVATE REMOTE BACKUP VERIFIED: epoch 67
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     68/100      5.82G      1.388      1.312     0.9898         73        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.426      0.425      0.392      0.246
+PRIVATE REMOTE BACKUP VERIFIED: epoch 68
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     69/100      5.82G      1.385      1.313     0.9865         18        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631      0.435      0.402      0.373      0.234
+PRIVATE REMOTE BACKUP VERIFIED: epoch 69
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     70/100      5.82G       1.38      1.306     0.9856         50        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.437      0.396      0.375      0.236
+PRIVATE REMOTE BACKUP VERIFIED: epoch 70
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     71/100      5.82G      1.378      1.299     0.9845         28        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.4ss
+                   all       1500       9631       0.45      0.398      0.376      0.235
+PRIVATE REMOTE BACKUP VERIFIED: epoch 71
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     72/100      5.82G      1.364      1.287     0.9841         35        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.4ss
+                   all       1500       9631      0.446      0.397       0.38      0.237
+PRIVATE REMOTE BACKUP VERIFIED: epoch 72
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     73/100      5.82G       1.37      1.272     0.9827         27        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631      0.423      0.425      0.376      0.234
+PRIVATE REMOTE BACKUP VERIFIED: epoch 73
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     74/100      5.82G      1.364      1.267     0.9839         29        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.429      0.412      0.377      0.238
+PRIVATE REMOTE BACKUP VERIFIED: epoch 74
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     75/100      5.82G      1.363      1.258     0.9821         11        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.8s0.4ss
+                   all       1500       9631      0.419      0.404      0.371      0.233
+PRIVATE REMOTE BACKUP VERIFIED: epoch 75
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     76/100      5.82G      1.355       1.25     0.9761         21        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.9s0.3ss
+                   all       1500       9631      0.412      0.416      0.365      0.229
+PRIVATE REMOTE BACKUP VERIFIED: epoch 76
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     77/100      5.82G      1.355      1.238      0.976         60        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.433      0.394       0.36      0.224
+PRIVATE REMOTE BACKUP VERIFIED: epoch 77
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     78/100      5.82G      1.354      1.233     0.9726         90        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.426      0.398      0.361      0.224
+PRIVATE REMOTE BACKUP VERIFIED: epoch 78
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     79/100      5.82G      1.345      1.228      0.971         57        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631      0.444      0.394      0.363      0.225
+PRIVATE REMOTE BACKUP VERIFIED: epoch 79
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     80/100      5.82G      1.343      1.211     0.9699         19        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.3ss
+                   all       1500       9631      0.394       0.42      0.363      0.224
+PRIVATE REMOTE BACKUP VERIFIED: epoch 80
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     81/100      5.82G      1.338      1.211     0.9758         38        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 29.7s0.4ss
+                   all       1500       9631      0.423      0.413      0.365      0.225
+PRIVATE REMOTE BACKUP VERIFIED: epoch 81
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     82/100      5.82G      1.338      1.195      0.969         32        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.4ss
+                   all       1500       9631      0.412      0.414      0.364      0.225
+PRIVATE REMOTE BACKUP VERIFIED: epoch 82
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     83/100      5.82G      1.328      1.186     0.9685         38        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.2s0.4ss
+                   all       1500       9631      0.405      0.412      0.362      0.224
+PRIVATE REMOTE BACKUP VERIFIED: epoch 83
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     84/100      5.82G      1.326      1.173     0.9656         42        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.4it/s 29.6s0.3ss
+                   all       1500       9631      0.419      0.406      0.362      0.225
+PRIVATE REMOTE BACKUP VERIFIED: epoch 84
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     85/100      5.82G      1.333      1.168     0.9654         44        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:170.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.4ss
+                   all       1500       9631      0.412      0.406      0.362      0.225
+PRIVATE REMOTE BACKUP VERIFIED: epoch 85
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     86/100      5.82G      1.323      1.166     0.9646         45        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.3it/s 30.0s0.3ss
+                   all       1500       9631      0.411      0.413      0.363      0.225
+EarlyStopping: Training stopped early as no improvement observed in last 20 epochs. Best results observed at epoch 66, best model saved as best.pt.
+To update EarlyStopping(patience=20) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+PRIVATE REMOTE BACKUP VERIFIED: epoch 86
+
+56 epochs completed in 8.944 hours.
+Optimizer stripped from /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57/weights/last.pt, 40.6MB
+Optimizer stripped from /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57/weights/best.pt, 40.6MB
+
+Validating /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57/weights/best.pt...
+Ultralytics 8.4.201 🚀 Python-3.13.16 torch-2.11.0+cu130 CUDA:0 (Tesla T4, 14912MiB)
+YOLO11m summary (fused): 125 layers, 20,037,742 parameters, 0 gradients, 67.8 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.0it/s 31.4s0.4ss
+                   all       1500       9631      0.435      0.431      0.394      0.247
+                litter       1286       7093      0.541      0.475      0.477      0.274
+                  pile         85        137       0.41      0.461       0.44      0.232
+             face_mask         57         66      0.366      0.515       0.44      0.262
+             trash_bin         67         93      0.534      0.634      0.552       0.41
+           plastic_bag        622       1117      0.466      0.403      0.393      0.258
+                bottle        247        371      0.549       0.26      0.311      0.189
+                   cup        105        115      0.253       0.13      0.117     0.0752
+                  rope        118        139      0.433      0.482      0.409      0.241
+                sachet        253        330      0.344      0.452      0.351      0.223
+                 straw        129        170      0.458      0.494      0.446      0.308
+Speed: 0.3ms preprocess, 15.1ms inference, 0.0ms loss, 1.3ms postprocess per image
+Results saved to /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57
+{
+  "mode": "train",
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "bundle_fingerprint": "ab403c827b6bc3de67966a7ac633d915293cfafd3883fa8de876de1fb89dfd55",
+  "status": "completed",
+  "gpu": {
+    "name": "Tesla T4",
+    "vram_GiB": 14.56219482421875,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "python": "3.13.16"
+  },
+  "elapsed_seconds": 32267.557014812,
+  "peak_cuda_allocated_GiB": 4.558694839477539,
+  "peak_cuda_reserved_GiB": 5.818359375,
+  "mean_batch_compute_seconds_after10": 0.282514583069207,
+  "persistent_checkpoint_verified": true,
+  "optimizer_state_verified": true,
+  "saved_generations": 56,
+  "dataset_images": 7000,
+  "quality_claim": "Validation only; separate final evaluation required",
+  "note": "Batch timing excludes loader time; use epoch results.csv for full-run ETA. No 70% performance claim."
+}
+PRIVATE REMOTE BACKUP VERIFIED: epoch 86
+
+

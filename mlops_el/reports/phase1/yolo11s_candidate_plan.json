@@ -1,0 +1,23 @@
+{
+  "status": "authorized_not_started",
+  "baseline_run_id": "2cd6e612cd25457bb4547df0d42511b8",
+  "candidate": "YOLO11s",
+  "comparison": "Same dataset, splits, explicit hyperparameters and epoch budget; only pretrained architecture/initial weights change.",
+  "training_images": 7000,
+  "validation_images": 1500,
+  "epochs_max": 50,
+  "early_stopping_patience": 12,
+  "test_evaluation_authorized": false,
+  "automatic_promotion": false,
+  "config": "configs/yolo11s_candidate.yaml",
+  "protected_sha256": {
+    "params.yaml": "7fb86751a4a723c5762959d46ea2d0d0612a1cde96e3837d06ff6d5f361284f4",
+    "models/plitterstreet-baseline.pt": "54fe85012b0a2bd5a797268f2a85d1c9cf71a7af7307363cfa45f294b00b0c07",
+    "reports/phase1/baseline_metrics.json": "c03cecc67f7e79c43aac649e1d3ac9def731d0f8a787875f0104a2c7a6b7fa87",
+    "reports/phase1/evaluation_val.json": "2a61aed6dd96ed1e7ad53e2cecaa9df866c44869864cf4c0d6df129f83131dcb",
+    "reports/phase1/evaluation_test.json": "00f795ad029ef33aa7817ead6ddbfc8838402736d9598496e4bcd8704da27848",
+    "data/raw/plitterstreet/annotations.json": "dbef6da24c7613a631e4124b7bb22d7ed0ba1fe7e54e44c82c8149369560943d",
+    "data/prepared/plitterstreet/splits.json": "454cd3a87572b76f14f4347675e348cb82cf81d30d59ff5bf12a20e1a60f3f66"
+  },
+  "estimate": "12\u201316 hours; approximate, early stopping may shorten it"
+}

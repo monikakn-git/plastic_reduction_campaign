@@ -1,0 +1,6 @@
+outs:
+- md5: 8dd9e61df5cfe2461abc1a855de3a8ab.dir
+  size: 7790723557
+  nfiles: 20005
+  hash: md5
+  path: plitterstreet-labels-v4

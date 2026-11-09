@@ -1,0 +1,101 @@
+sample_id,class,split,image_id,annotation_id,file_name,class_assessment,box_assessment,note
+bottle-train-small-01,bottle,train,9112,20676,Rangsit_2021_GX024613_218.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent ridged bottle with green cap; target box broadly aligned.
+bottle-train-small-02,bottle,train,12758,46499,Rangsit_2021_GX114613_307.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Small green/grey object at the water edge; bottle identity not secure.
+bottle-train-small-03,bottle,train,10073,41062,Rangsit_2021_GX094613_294.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,White tapered vessel with pink rim; cup-like rather than clearly bottle-like.
+bottle-train-small-04,bottle,train,46824,136336,Chiangrai_2021_GH010137_367.jpg,plausible,broadly_aligned_no_specific_issue_identified,Crushed transparent bottle with red cap; partly blends into leaves.
+bottle-train-small-05,bottle,train,62648,196499,Ubon_2022_GH010237_281.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened transparent packaging at image edge; diagnostic bottle features unclear.
+bottle-train-small-06,bottle,train,11206,49102,Rangsit_2021_GX124613_3.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Small crushed printed container; insufficient neck/body detail.
+bottle-train-small-07,bottle,train,47496,137626,Chiangrai_2021_GH010124_264.jpg,plausible,broadly_aligned_no_specific_issue_identified,Long transparent bottle with red label and greenish cap.
+bottle-train-small-08,bottle,train,11610,57297,Rangsit_2021_GX164613_143.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,Flat yellow printed packet-like object; no clear bottle neck or body.
+bottle-train-medium-01,bottle,train,53884,141027,Chiangrai_2021_GH010139_301.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent bottle with red cap and rounded body.
+bottle-train-medium-02,bottle,train,53487,140123,Chiangrai_2021_GH010127_146.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Dirty dark crushed container with yellow marking; bottle type difficult to verify.
+bottle-train-medium-03,bottle,train,8159,22352,Rangsit_2021_GX034613_3.jpg,plausible,broadly_aligned_no_specific_issue_identified,White/transparent bottle-like body with red marking; limited detail.
+bottle-train-medium-04,bottle,train,47517,136047,Chiangrai_2021_GH010123_228.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Green bottle-like body with narrowed end, lying among leaves."
+bottle-train-medium-05,bottle,train,6610,68975,Rangsit_2021_GX234613_7.jpg,plausible,broadly_aligned_no_specific_issue_identified,Tall blue/white labelled bottle-like object.
+bottle-train-medium-06,bottle,train,7001,72497,Rangsit_2021_GX244613_138.jpg,plausible,broadly_aligned_no_specific_issue_identified,Purple bottle-like body with pink cap.
+bottle-train-medium-07,bottle,train,8490,75598,Rangsit_2021_GX254613_113.jpg,plausible,broadly_aligned_no_specific_issue_identified,Flattened white bottle-like object with blue marking; strongly deformed.
+bottle-train-medium-08,bottle,train,13173,43193,Rangsit_2021_GX104613_5.jpg,plausible,broadly_aligned_no_specific_issue_identified,Horizontal transparent bottle with green cap.
+bottle-train-large-01,bottle,train,5986,9710,Taladthai_2021_GX034430_011.jpg,plausible,possible_truncation,Flattened transparent bottle with blue cap; box appears to omit part of cap/neck at upper right.
+bottle-train-large-02,bottle,train,13573,34042,Rangsit_2021_GX064614_114.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Dirty flattened container; bottle cues not reliably visible.
+bottle-train-large-03,bottle,train,5720,16493,Taladthai_2021_GX064430_157.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent blue-capped bottle inside a bucket; litter-versus-storage context needs human interpretation.
+bottle-train-large-04,bottle,train,62905,171576,Mawanella_2022_GX030150_343.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened printed transparent object; bottle versus packaging unclear.
+bottle-train-large-05,bottle,train,11194,58932,Rangsit_2021_GX174613_56.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Green/white elongated packaging or flattened container; bottle neck not clear.
+bottle-train-large-06,bottle,train,13815,19459,Rangsit_2021_GX014614_4.jpg,plausible,broadly_aligned_no_specific_issue_identified,Flattened transparent bottle with green cap.
+bottle-train-large-07,bottle,train,4854,5296,Taladthai_2021_GX014429_119.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Transparent ridged object heavily obscured by grass; bottle class cannot be confirmed.
+bottle-train-large-08,bottle,train,47046,137541,Chiangrai_2021_GH020128_332.jpg,uncertain,broadly_aligned_no_specific_issue_identified,White and transparent crushed object partly in vegetation; category unclear.
+bottle-train-large-09,bottle,train,14677,18846,Rangsit_2021_GX014613_233.jpg,plausible,possible_multiple_objects,Several blue-capped bottles share one target box; review instance grouping against pile/individual-object guidance.
+bottle-val-small-01,bottle,val,10549,52345,Rangsit_2021_GX134613_259.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Small brown cylinder-like item by water; bottle versus other container unclear.
+bottle-val-small-02,bottle,val,12492,32291,Rangsit_2021_GX064613_20.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed white object among grass; insufficient class-specific shape.
+bottle-val-small-03,bottle,val,13315,54162,Rangsit_2021_GX144613_9.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flat dirty brown object in clutter; bottle features not visible.
+bottle-val-small-04,bottle,val,47026,135512,Chiangrai_2021_GH010110_14.jpg,plausible,broadly_aligned_no_specific_issue_identified,Motion-blurred elongated transparent/blue bottle-like object.
+bottle-val-small-05,bottle,val,5230,6320,Taladthai_2021_GX014430_040.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Small dark cylindrical object; no distinct bottle neck visible.
+bottle-val-small-06,bottle,val,47888,138106,Chiangrai_2021_GH010104_104.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent horizontal bottle-like body with red cap; small and blurred.
+bottle-val-small-07,bottle,val,48105,138560,Chiangrai_2021_GH010107_16.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed reflective object in sticks and debris; bottle identity unclear.
+bottle-val-small-08,bottle,val,53641,196741,Chiangrai_2021_GH010128_435.jpg,uncertain,broadly_aligned_no_specific_issue_identified,"Very dark, thin target at approximately 3.6 pixels short side; no reliable class detail."
+bottle-val-medium-01,bottle,val,3209,7763,Taladthai_2021_GX024429_047.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed grey/transparent vessel; bottle versus other container uncertain.
+bottle-val-medium-02,bottle,val,4322,8896,Taladthai_2021_GX034429_106.jpg,plausible,broadly_aligned_no_specific_issue_identified,Greenish transparent elongated bottle-like object on pavement.
+bottle-val-medium-03,bottle,val,14319,36317,Rangsit_2021_GX074613_160.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent purple-capped bottle with printed marking.
+bottle-val-medium-04,bottle,val,47116,136603,Chiangrai_2021_GH010146_515.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Light-coloured object partly obscured by vegetation; class cues weak.
+bottle-val-medium-05,bottle,val,8696,64089,Rangsit_2021_GX214613_182.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Dirty brown object among dry grass; no diagnostic bottle features.
+bottle-val-medium-06,bottle,val,46842,135654,Chiangrai_2021_GH010112_403.jpg,plausible,broadly_aligned_no_specific_issue_identified,Upright brown bottle with a narrow neck and cap; purpose versus litter context not certain.
+bottle-val-medium-07,bottle,val,47698,136846,Chiangrai_2021_GH020104_5.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Green-capped horizontal bottle, cut by image boundary; visible portion boxed."
+bottle-val-medium-08,bottle,val,13233,53342,Rangsit_2021_GX144613_162.jpg,plausible,broadly_aligned_no_specific_issue_identified,Motion-blurred green elongated bottle-like body.
+bottle-val-large-01,bottle,val,47443,136258,Chiangrai_2021_GH010132_148.jpg,plausible,broadly_aligned_no_specific_issue_identified,Yellow-labelled transparent bottle with pale cap; target reaches image edge.
+bottle-val-large-02,bottle,val,62750,171794,Mawanella_2022_GX060155_81.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened grey container; no clear bottle neck.
+bottle-val-large-03,bottle,val,62909,171612,Mawanella_2022_GX040149_143.jpg,uncertain,possible_multiple_objects,Two dirty crushed forms inside the target area; identity and instance grouping need review.
+bottle-val-large-04,bottle,val,46631,137067,Chiangrai_2021_GH020112_1.jpg,plausible,broadly_aligned_no_specific_issue_identified,Upright brown bottle with narrow neck; litter versus purposeful placement remains contextual.
+bottle-val-large-05,bottle,val,44767,128776,Chiangrai_2021_GH130132_195.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,"Dark round flat object with a rim, resembling a lid/disc rather than a bottle."
+bottle-val-large-06,bottle,val,14223,36438,Rangsit_2021_GX074613_243.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Clear long bottle leaning against fence, with narrowed upper end."
+bottle-val-large-07,bottle,val,12565,32459,Rangsit_2021_GX064613_307.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Dark flattened sheet-like object under vegetation; class cannot be confirmed.
+bottle-val-large-08,bottle,val,48096,138531,Chiangrai_2021_GH010107_13.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Pale squat container resting on red object; bottle versus other packaging unclear.
+bottle-val-large-09,bottle,val,10636,51990,Rangsit_2021_GX134613_185.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,Broad flat brown disc/plate-like object without recognisable bottle structure.
+cup-train-small-01,cup,train,5688,16792,Taladthai_2021_GX064430_154.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Tiny pale arch-like object obscured by grass; cup identity cannot be confirmed.
+cup-train-small-02,cup,train,6536,68988,Rangsit_2021_GX234613_56.jpg,plausible,broadly_aligned_no_specific_issue_identified,Red tapered cup lying on its side with an open pale rim.
+cup-train-small-03,cup,train,53385,142128,Chiangrai_2021_GH010137_379.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed white object without clear rim/body features.
+cup-train-small-04,cup,train,5884,9187,Taladthai_2021_GX034430_013.jpg,plausible,broadly_aligned_no_specific_issue_identified,Small red cup-like object with rounded opening.
+cup-train-small-05,cup,train,14679,17799,Rangsit_2021_GX014613_224.jpg,plausible,broadly_aligned_no_specific_issue_identified,Small tapered grey vessel with a dark opening; cup label plausible.
+cup-train-small-06,cup,train,7908,48346,Rangsit_2021_GX114614_13.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened transparent object on pavement; cup versus other packaging unclear.
+cup-train-small-07,cup,train,8323,30384,Rangsit_2021_GX054613_319.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Thin horizontal transparent object among vegetation; no clear cup opening.
+cup-train-small-08,cup,train,13100,197405,Rangsit_2021_GX104613_126.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Round shallow rim/lid-like object behind traffic cone; top view does not establish cup versus lid.
+cup-train-medium-01,cup,train,11674,57200,Rangsit_2021_GX164613_216.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed reflective white object; cup body not recognisable.
+cup-train-medium-02,cup,train,4613,4688,Taladthai_2021_GX014429_108.jpg,plausible,broadly_aligned_no_specific_issue_identified,Tall clear tapered vessel among grass; rim and cup-like body plausible.
+cup-train-medium-03,cup,train,4042,11272,Taladthai_2021_GX044430_319.jpg,plausible,broadly_aligned_no_specific_issue_identified,Grey tapered vessel partly obscured by leaves; cup shape plausible.
+cup-train-medium-04,cup,train,62720,171528,Mawanella_2022_GX030139_304.jpg,uncertain,broadly_aligned_no_specific_issue_identified,"Round shallow silver/white object; cup base, lid or dish cannot be distinguished."
+cup-train-medium-05,cup,train,8111,23178,Rangsit_2021_GX034613_110.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Transparent tapered blue-marked cup-like object, motion blurred."
+cup-train-medium-06,cup,train,11879,62081,Rangsit_2021_GX204613_82.jpg,plausible,broadly_aligned_no_specific_issue_identified,Clear tapered vessel on its side; cup label plausible.
+cup-train-medium-07,cup,train,62910,196164,Mawanella_2022_GX010139_129.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crushed white curved container beside a bottle; cup versus other container unclear.
+cup-train-medium-08,cup,train,9184,134907,Rangsit_2021_GX024613_316.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Visible round rim but little vessel depth; cup versus lid unclear.
+cup-train-large-01,cup,train,10814,21874,Rangsit_2021_GX024614_161.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,"Crushed blue printed foil/packet-like object, without clear cup structure."
+cup-train-large-02,cup,train,53506,140045,Chiangrai_2021_GH010127_125.jpg,uncertain,possible_multiple_objects,Two orange curved container fragments or vessels grouped together; class and instance boundaries need review.
+cup-train-large-03,cup,train,62976,168543,Mawanella_2022_GX010138_161.jpg,plausible,broadly_aligned_no_specific_issue_identified,Round open grey vessel with visible inner surface; cup plausible though material not verified.
+cup-train-large-04,cup,train,11371,49426,Rangsit_2021_GX124613_198.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Transparent tapered/flat object at image edge with weak diagnostic detail.
+cup-train-large-05,cup,train,13966,60642,Rangsit_2021_GX194613_236.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Target largely hidden by plants and a branch; cup identity cannot be confirmed.
+cup-train-large-06,cup,train,7146,72531,Rangsit_2021_GX244613_144.jpg,plausible,broadly_aligned_no_specific_issue_identified,"White tapered printed vessel, consistent with a discarded cup; blur obscures details."
+cup-train-large-07,cup,train,47165,136298,Chiangrai_2021_GH010135_75.jpg,plausible,broadly_aligned_no_specific_issue_identified,Clear conical vessel with wider open end; cup label plausible.
+cup-train-large-08,cup,train,13662,34537,Rangsit_2021_GX064614_216.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened transparent object amongst plants; shape too distorted to confirm cup.
+cup-train-large-09,cup,train,8484,75387,Rangsit_2021_GX254613_16.jpg,uncertain,broadly_aligned_no_specific_issue_identified,"Transparent object at image edge, with little clear rim/body detail."
+cup-val-small-01,cup,val,13223,53602,Rangsit_2021_GX144613_276.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Upright small grey tapered vessel, consistent with a cup."
+cup-val-small-02,cup,val,5163,6845,Taladthai_2021_GX014430_150.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Tiny grey arch-like object; cup cannot be reliably distinguished.
+cup-val-small-03,cup,val,10604,50922,Rangsit_2021_GX134613_141.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Small blue printed/reflective object among debris; vessel shape unclear.
+cup-val-small-04,cup,val,12615,32262,Rangsit_2021_GX064613_149.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,Upright blue/white gable-top carton-like container rather than a clear cup.
+cup-val-small-05,cup,val,62639,168229,Ubon_2022_GH010235_26.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Blue printed vessel with a pale round opening, lying on its side."
+cup-val-small-06,cup,val,53646,140332,Chiangrai_2021_GH010128_190.jpg,plausible,broadly_aligned_no_specific_issue_identified,Pale blue crushed vessel with a round base/rim; cup plausible.
+cup-val-small-07,cup,val,3291,7550,Taladthai_2021_GX024429_052.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Thin reflective object partially obscured by grass; cup shape unclear.
+cup-val-small-08,cup,val,48113,139409,Chiangrai_2021_GH010112_253.jpg,plausible,broadly_aligned_no_specific_issue_identified,Transparent round-ended cup-like vessel lying on its side.
+cup-val-medium-01,cup,val,8714,64902,Rangsit_2021_GX214613_167.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Open round rim and dark inside, consistent with a cup."
+cup-val-medium-02,cup,val,47082,135239,Chiangrai_2021_GH010104_2.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Clear tapered cup on its side, with a wider rim at left."
+cup-val-medium-03,cup,val,47131,136587,Chiangrai_2021_GH010146_331.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,White/green torn printed packaging with angular edges; carton/packet-like rather than clearly cup-like.
+cup-val-medium-04,cup,val,14240,35478,Rangsit_2021_GX074613_304.jpg,uncertain,broadly_aligned_no_specific_issue_identified,White flattened wedge-like object; crushed cup versus other packaging unclear.
+cup-val-medium-05,cup,val,47013,135517,Chiangrai_2021_GH010110_219.jpg,plausible,broadly_aligned_no_specific_issue_identified,"White rounded tapered vessel, consistent with an overturned cup; motion blurred."
+cup-val-medium-06,cup,val,5153,7188,Taladthai_2021_GX014430_072.jpg,plausible,broadly_aligned_no_specific_issue_identified,Dark transparent upright cup with open rim among grass.
+cup-val-medium-07,cup,val,12519,32296,Rangsit_2021_GX064613_231.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened white printed fragment; diagnostic cup body not visible.
+cup-val-medium-08,cup,val,3263,8134,Taladthai_2021_GX024429_008.jpg,plausible,broadly_aligned_no_specific_issue_identified,Large transparent tapered vessel with broad rim; cup label plausible.
+cup-val-large-01,cup,val,48101,138524,Chiangrai_2021_GH010107_11.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Flattened pale round-ended container; cup versus other container unclear.
+cup-val-large-02,cup,val,8524,65089,Rangsit_2021_GX214613_202.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crumpled transparent vessel-like object with poorly defined rim.
+cup-val-large-03,cup,val,13487,54814,Rangsit_2021_GX144613_233.jpg,plausible,broadly_aligned_no_specific_issue_identified,"Transparent tapered vessel with visible rim, consistent with cup."
+cup-val-large-04,cup,val,53681,140376,Chiangrai_2021_GH010128_359.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,Crushed brown can/food-container-like object with circular base; cup label needs adjudication.
+cup-val-large-05,cup,val,14282,35077,Rangsit_2021_GX074613_109.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Transparent triangular crumpled object; cup identity not clear.
+cup-val-large-06,cup,val,10685,52498,Rangsit_2021_GX134613_245.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,Angular crushed carton/container-like object with no recognisable cup rim.
+cup-val-large-07,cup,val,47273,135443,Chiangrai_2021_GH010107_259.jpg,uncertain,broadly_aligned_no_specific_issue_identified,"Flattened grey curved object; lid, crushed cup or other packaging cannot be distinguished."
+cup-val-large-08,cup,val,12603,33229,Rangsit_2021_GX064613_47.jpg,uncertain,broadly_aligned_no_specific_issue_identified,Crumpled round transparent object; diagnostic cup cues weak.
+cup-val-large-09,cup,val,8741,64347,Rangsit_2021_GX214613_307.jpg,suspected_class_mismatch,broadly_aligned_no_specific_issue_identified,"Clear vessel with a narrower upper opening/neck, bottle/jar-like rather than a typical cup."

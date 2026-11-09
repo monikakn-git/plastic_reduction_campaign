@@ -1,0 +1,11 @@
+{
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "archived_database": "/path/to/MLOPS_EL/.local/kaggle-completed-epoch86/train/mlflow.db",
+  "local_view_database": "/path/to/MLOPS_EL/.local/phase1-cloud-tracking/mlflow.db",
+  "old_artifact_uri": "file:///content/mlops_work/train/mlartifacts/85714466948d4e658ebb610a475dcf57/artifacts",
+  "local_artifact_uri": "file:///path/to/MLOPS_EL/.local/phase1-cloud-tracking/mlartifacts/85714466948d4e658ebb610a475dcf57/artifacts",
+  "original_archive_unchanged": true,
+  "run_id_preserved": true,
+  "status": "FINISHED",
+  "migration": "Only artifact URI paths in a copied database changed. Artifacts copied from archived payload; original files remain unchanged."
+}

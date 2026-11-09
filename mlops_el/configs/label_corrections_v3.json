@@ -1,0 +1,43 @@
+{
+  "version": "label-refinement-v3",
+  "target_metric": "70% validation mAP@50 is an aspiration, not an achieved result or guarantee",
+  "source_prepared": "data/prepared/plitterstreet-orientation-v2",
+  "output_prepared": "data/prepared/plitterstreet-labels-v3",
+  "authorization": "User requested AI-assisted labeling improvements; only clearly supported training corrections are applied. No expert adjudication is claimed.",
+  "rules": [
+    "Correct only training annotations; preserve validation/test labels and every image.",
+    "Use visible object identity, not predicted confidence, to decide class.",
+    "Keep bottle/cup as object categories; do not infer material certainty.",
+    "Tight boxes include the complete visible cap/body; leave ambiguous classes and occluded instance splits unresolved.",
+    "Preserve original annotations and every prior DVC version."
+  ],
+  "corrections": [
+    {
+      "image_id": 5986,
+      "annotation_id": 9710,
+      "source_category_id": 6,
+      "source_bbox": [203.0, 345.0, 87.0, 44.0],
+      "new_category_id": 6,
+      "new_bbox": [202.0, 338.0, 99.0, 52.0],
+      "reason": "Include the visible blue cap and upper bottle boundary omitted by the original box.",
+      "review": "AI-assisted close visual review using original-pixel coordinate grid; no expert sign-off"
+    },
+    {
+      "image_id": 14677,
+      "annotation_id": 18853,
+      "source_category_id": 1,
+      "source_bbox": [755.0, 462.0, 70.0, 27.0],
+      "new_category_id": 6,
+      "new_bbox": [752.0, 462.0, 76.0, 32.0],
+      "reason": "Clearly visible transparent, labelled, blue-capped bottle matches adjacent bottle instances; replace residual litter label and include the full visible cap/body.",
+      "review": "AI-assisted close visual review using original-pixel coordinate grid; no material verification or expert sign-off"
+    }
+  ],
+  "held_cases": [
+    {"image_id": 14677, "annotation_id": 18846, "reason": "Grouped overlapping bottles: grouping issue is visible, but individual occluded boundaries are insufficiently clear for confident new boxes. Retain and flag."},
+    {"image_id": 10073, "annotation_id": 41062, "reason": "Purple end may be a bottle cap. Retain bottle rather than guessing cup."},
+    {"image_id": 11610, "annotation_id": 57297, "reason": "Flattened yellow object: insufficient evidence for replacement class."},
+    {"image_id": 10814, "annotation_id": 21874, "reason": "Crushed printed object could be a vessel or packaging. Retain pending stronger evidence."},
+    {"image_id": 53506, "annotation_id": 140045, "reason": "Orange fragments or vessels: exact instance separation and class uncertain."}
+  ]
+}

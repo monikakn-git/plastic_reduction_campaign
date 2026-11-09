@@ -1,0 +1,275 @@
+{
+  "run_id": "f06c8dda7263481cbc0636ffd643cad2",
+  "scope": "100-image paired validation pilot; not the full validation set",
+  "model_sha256": "a284e933df489394d120c3fd381b8b8f60131e80f4f3bd5ff34176b815699230",
+  "object_counts": {
+    "plastic_bag": 70,
+    "cup": 6,
+    "litter": 586,
+    "bottle": 32,
+    "trash_bin": 8,
+    "pile": 4,
+    "sachet": 24,
+    "straw": 10,
+    "rope": 12,
+    "face_mask": 4
+  },
+  "retraining": false,
+  "test_used": false,
+  "results": {
+    "whole": {
+      "metrics": {
+        "metrics/precision(B)": 0.5221975001812965,
+        "metrics/recall(B)": 0.2735767565979641,
+        "metrics/mAP50(B)": 0.28289665904525724,
+        "metrics/mAP50-95(B)": 0.18921796410059397,
+        "fitness": 0.18921796410059397
+      },
+      "per_class": [
+        {
+          "Class": "litter",
+          "Images": 85,
+          "Instances": 586,
+          "Box-P": 0.62881,
+          "Box-R": 0.27645,
+          "Box-F1": 0.38406,
+          "mAP50": 0.42947,
+          "mAP75": 0.21788,
+          "mAP50-95": 0.22387
+        },
+        {
+          "Class": "pile",
+          "Images": 3,
+          "Instances": 4,
+          "Box-P": 0.29291,
+          "Box-R": 0.25,
+          "Box-F1": 0.26976,
+          "mAP50": 0.30552,
+          "mAP75": 0.25971,
+          "mAP50-95": 0.19928
+        },
+        {
+          "Class": "face_mask",
+          "Images": 4,
+          "Instances": 4,
+          "Box-P": 0.41798,
+          "Box-R": 0.5,
+          "Box-F1": 0.45533,
+          "mAP50": 0.3925,
+          "mAP75": 0.3925,
+          "mAP50-95": 0.27883
+        },
+        {
+          "Class": "trash_bin",
+          "Images": 6,
+          "Instances": 8,
+          "Box-P": 0.62443,
+          "Box-R": 0.5,
+          "Box-F1": 0.55533,
+          "mAP50": 0.58917,
+          "mAP75": 0.58917,
+          "mAP50-95": 0.46017
+        },
+        {
+          "Class": "plastic_bag",
+          "Images": 42,
+          "Instances": 70,
+          "Box-P": 0.51226,
+          "Box-R": 0.18571,
+          "Box-F1": 0.2726,
+          "mAP50": 0.18373,
+          "mAP75": 0.14953,
+          "mAP50-95": 0.11848
+        },
+        {
+          "Class": "bottle",
+          "Images": 20,
+          "Instances": 32,
+          "Box-P": 0.66456,
+          "Box-R": 0.09375,
+          "Box-F1": 0.16432,
+          "mAP50": 0.115,
+          "mAP75": 0.115,
+          "mAP50-95": 0.0895
+        },
+        {
+          "Class": "cup",
+          "Images": 6,
+          "Instances": 6,
+          "Box-P": 1.0,
+          "Box-R": 0.0,
+          "Box-F1": 0.0,
+          "mAP50": 0.0,
+          "mAP75": 0.0,
+          "mAP50-95": 0.0
+        },
+        {
+          "Class": "rope",
+          "Images": 10,
+          "Instances": 12,
+          "Box-P": 0.45227,
+          "Box-R": 0.41319,
+          "Box-F1": 0.43184,
+          "mAP50": 0.37214,
+          "mAP75": 0.24276,
+          "mAP50-95": 0.21953
+        },
+        {
+          "Class": "sachet",
+          "Images": 19,
+          "Instances": 24,
+          "Box-P": 0.47273,
+          "Box-R": 0.41667,
+          "Box-F1": 0.44293,
+          "mAP50": 0.39667,
+          "mAP75": 0.30942,
+          "mAP50-95": 0.27145
+        },
+        {
+          "Class": "straw",
+          "Images": 6,
+          "Instances": 10,
+          "Box-P": 0.15602,
+          "Box-R": 0.1,
+          "Box-F1": 0.12188,
+          "mAP50": 0.04476,
+          "mAP75": 0.04313,
+          "mAP50-95": 0.03106
+        }
+      ]
+    },
+    "tiled": {
+      "metrics": {
+        "metrics/precision(B)": 0.6036356666802744,
+        "metrics/recall(B)": 0.25071023582046725,
+        "metrics/mAP50(B)": 0.3241862230950775,
+        "metrics/mAP50-95(B)": 0.21751707871005943,
+        "fitness": 0.21751707871005943
+      },
+      "per_class": [
+        {
+          "Class": "litter",
+          "Images": 85,
+          "Instances": 586,
+          "Box-P": 0.69589,
+          "Box-R": 0.12496,
+          "Box-F1": 0.21187,
+          "mAP50": 0.42536,
+          "mAP75": 0.22042,
+          "mAP50-95": 0.2322
+        },
+        {
+          "Class": "pile",
+          "Images": 3,
+          "Instances": 4,
+          "Box-P": 0.41924,
+          "Box-R": 0.25,
+          "Box-F1": 0.31322,
+          "mAP50": 0.2948,
+          "mAP75": 0.25204,
+          "mAP50-95": 0.1854
+        },
+        {
+          "Class": "face_mask",
+          "Images": 4,
+          "Instances": 4,
+          "Box-P": 0.2255,
+          "Box-R": 0.5,
+          "Box-F1": 0.31082,
+          "mAP50": 0.35253,
+          "mAP75": 0.35253,
+          "mAP50-95": 0.27127
+        },
+        {
+          "Class": "trash_bin",
+          "Images": 6,
+          "Instances": 8,
+          "Box-P": 0.52596,
+          "Box-R": 0.5,
+          "Box-F1": 0.51265,
+          "mAP50": 0.57087,
+          "mAP75": 0.5675,
+          "mAP50-95": 0.44731
+        },
+        {
+          "Class": "plastic_bag",
+          "Images": 42,
+          "Instances": 70,
+          "Box-P": 0.77261,
+          "Box-R": 0.15714,
+          "Box-F1": 0.26117,
+          "mAP50": 0.26395,
+          "mAP75": 0.18065,
+          "mAP50-95": 0.15501
+        },
+        {
+          "Class": "bottle",
+          "Images": 20,
+          "Instances": 32,
+          "Box-P": 0.90062,
+          "Box-R": 0.125,
+          "Box-F1": 0.21953,
+          "mAP50": 0.17521,
+          "mAP75": 0.15952,
+          "mAP50-95": 0.12311
+        },
+        {
+          "Class": "cup",
+          "Images": 6,
+          "Instances": 6,
+          "Box-P": 1.0,
+          "Box-R": 0.0,
+          "Box-F1": 0.0,
+          "mAP50": 0.233,
+          "mAP75": 0.233,
+          "mAP50-95": 0.1631
+        },
+        {
+          "Class": "rope",
+          "Images": 10,
+          "Instances": 12,
+          "Box-P": 0.60557,
+          "Box-R": 0.33333,
+          "Box-F1": 0.42998,
+          "mAP50": 0.42836,
+          "mAP75": 0.29678,
+          "mAP50-95": 0.2479
+        },
+        {
+          "Class": "sachet",
+          "Images": 19,
+          "Instances": 24,
+          "Box-P": 0.64775,
+          "Box-R": 0.41667,
+          "Box-F1": 0.50712,
+          "mAP50": 0.43775,
+          "mAP75": 0.4265,
+          "mAP50-95": 0.31941
+        },
+        {
+          "Class": "straw",
+          "Images": 6,
+          "Instances": 10,
+          "Box-P": 0.24322,
+          "Box-R": 0.1,
+          "Box-F1": 0.14173,
+          "mAP50": 0.06003,
+          "mAP75": 0.03915,
+          "mAP50-95": 0.03047
+        }
+      ]
+    }
+  },
+  "timing": {
+    "whole_mean_seconds": 0.023723350004293025,
+    "tiled_mean_seconds": 0.08793076043017209
+  },
+  "limitations": [
+    "Several classes have only 4\u20138 ground-truth objects in this subset; class scores are highly uncertain.",
+    "No confidence intervals or proof of full-dataset improvement; exploratory pilot only.",
+    "Uses original unmodified labels, including unresolved ambiguity.",
+    "Custom overlapping tiling plus class-aware NMS, not the SAHI library. Includes whole-image predictions to retain large-object context.",
+    "Whole and tile inputs are square-letterboxed at 640; this pilot is not numerically interchangeable with the earlier full-validation loader.",
+    "Timing includes inference and merge, excludes image decoding, and is not a controlled hardware benchmark."
+  ]
+}

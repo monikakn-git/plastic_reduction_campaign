@@ -1,0 +1,325 @@
+{
+  "baseline_run_id": "2cd6e612cd25457bb4547df0d42511b8",
+  "weights_sha256": "54fe85012b0a2bd5a797268f2a85d1c9cf71a7af7307363cfa45f294b00b0c07",
+  "split_manifest_sha256": "454cd3a87572b76f14f4347675e348cb82cf81d30d59ff5bf12a20e1a60f3f66",
+  "annotations_sha256": "dbef6da24c7613a631e4124b7bb22d7ed0ba1fe7e54e44c82c8149369560943d",
+  "analysis_splits": [
+    "train",
+    "val"
+  ],
+  "baseline_validation": {
+    "metrics/precision(B)": 0.4336301729137634,
+    "metrics/recall(B)": 0.3113081428203578,
+    "metrics/mAP50(B)": 0.2677635512880004,
+    "metrics/mAP50-95(B)": 0.15905877511667235,
+    "fitness": 0.15905877511667235
+  },
+  "object_size_statistics": [
+    {
+      "class": "litter",
+      "train": {
+        "objects": 29639,
+        "median_width_at_640": 15.0,
+        "median_height_at_640": 10.5,
+        "fraction_short_side_under_8px": 0.3208947670299268,
+        "fraction_area_under_32_squared": 0.9352879651810115
+      },
+      "val": {
+        "objects": 7093,
+        "median_width_at_640": 15.0,
+        "median_height_at_640": 10.0,
+        "fraction_short_side_under_8px": 0.32553221485972084,
+        "fraction_area_under_32_squared": 0.9341604398702946
+      }
+    },
+    {
+      "class": "pile",
+      "train": {
+        "objects": 761,
+        "median_width_at_640": 208.0,
+        "median_height_at_640": 98.47222222222223,
+        "fraction_short_side_under_8px": 0.04336399474375821,
+        "fraction_area_under_32_squared": 0.1366622864651774
+      },
+      "val": {
+        "objects": 137,
+        "median_width_at_640": 232.2222222222222,
+        "median_height_at_640": 129.23076923076923,
+        "fraction_short_side_under_8px": 0.043795620437956206,
+        "fraction_area_under_32_squared": 0.145985401459854
+      }
+    },
+    {
+      "class": "face_mask",
+      "train": {
+        "objects": 466,
+        "median_width_at_640": 25.0,
+        "median_height_at_640": 18.0,
+        "fraction_short_side_under_8px": 0.09012875536480687,
+        "fraction_area_under_32_squared": 0.8390557939914163
+      },
+      "val": {
+        "objects": 66,
+        "median_width_at_640": 29.583333333333332,
+        "median_height_at_640": 17.5,
+        "fraction_short_side_under_8px": 0.045454545454545456,
+        "fraction_area_under_32_squared": 0.8333333333333334
+      }
+    },
+    {
+      "class": "trash_bin",
+      "train": {
+        "objects": 429,
+        "median_width_at_640": 73.66666666666666,
+        "median_height_at_640": 117.0,
+        "fraction_short_side_under_8px": 0.011655011655011656,
+        "fraction_area_under_32_squared": 0.0675990675990676
+      },
+      "val": {
+        "objects": 93,
+        "median_width_at_640": 62.5,
+        "median_height_at_640": 87.0,
+        "fraction_short_side_under_8px": 0.010752688172043012,
+        "fraction_area_under_32_squared": 0.10752688172043011
+      }
+    },
+    {
+      "class": "plastic_bag",
+      "train": {
+        "objects": 4285,
+        "median_width_at_640": 24.0,
+        "median_height_at_640": 17.5,
+        "fraction_short_side_under_8px": 0.07864644107351225,
+        "fraction_area_under_32_squared": 0.8037339556592765
+      },
+      "val": {
+        "objects": 1117,
+        "median_width_at_640": 24.0,
+        "median_height_at_640": 17.0,
+        "fraction_short_side_under_8px": 0.06445837063563116,
+        "fraction_area_under_32_squared": 0.8254252461951657
+      }
+    },
+    {
+      "class": "bottle",
+      "train": {
+        "objects": 910,
+        "median_width_at_640": 20.0,
+        "median_height_at_640": 13.0,
+        "fraction_short_side_under_8px": 0.2087912087912088,
+        "fraction_area_under_32_squared": 0.9340659340659341
+      },
+      "val": {
+        "objects": 371,
+        "median_width_at_640": 17.5,
+        "median_height_at_640": 11.0,
+        "fraction_short_side_under_8px": 0.2803234501347709,
+        "fraction_area_under_32_squared": 0.9622641509433962
+      }
+    },
+    {
+      "class": "cup",
+      "train": {
+        "objects": 488,
+        "median_width_at_640": 18.0,
+        "median_height_at_640": 15.5,
+        "fraction_short_side_under_8px": 0.0942622950819672,
+        "fraction_area_under_32_squared": 0.9590163934426229
+      },
+      "val": {
+        "objects": 115,
+        "median_width_at_640": 17.5,
+        "median_height_at_640": 15.14792899408284,
+        "fraction_short_side_under_8px": 0.11304347826086956,
+        "fraction_area_under_32_squared": 0.9739130434782609
+      }
+    },
+    {
+      "class": "rope",
+      "train": {
+        "objects": 667,
+        "median_width_at_640": 42.0,
+        "median_height_at_640": 23.5,
+        "fraction_short_side_under_8px": 0.046476761619190406,
+        "fraction_area_under_32_squared": 0.5382308845577212
+      },
+      "val": {
+        "objects": 139,
+        "median_width_at_640": 45.680473372781066,
+        "median_height_at_640": 24.5,
+        "fraction_short_side_under_8px": 0.014388489208633094,
+        "fraction_area_under_32_squared": 0.4460431654676259
+      }
+    },
+    {
+      "class": "sachet",
+      "train": {
+        "objects": 2023,
+        "median_width_at_640": 17.0,
+        "median_height_at_640": 12.0,
+        "fraction_short_side_under_8px": 0.20958971824023728,
+        "fraction_area_under_32_squared": 0.9624320316361838
+      },
+      "val": {
+        "objects": 330,
+        "median_width_at_640": 18.583333333333332,
+        "median_height_at_640": 12.153846153846153,
+        "fraction_short_side_under_8px": 0.20909090909090908,
+        "fraction_area_under_32_squared": 0.9575757575757575
+      }
+    },
+    {
+      "class": "straw",
+      "train": {
+        "objects": 1097,
+        "median_width_at_640": 24.5,
+        "median_height_at_640": 13.0,
+        "fraction_short_side_under_8px": 0.2670920692798541,
+        "fraction_area_under_32_squared": 0.9480401093892434
+      },
+      "val": {
+        "objects": 170,
+        "median_width_at_640": 22.5,
+        "median_height_at_640": 12.25,
+        "fraction_short_side_under_8px": 0.32941176470588235,
+        "fraction_area_under_32_squared": 0.9470588235294117
+      }
+    }
+  ],
+  "size_note": "Projected sizes after aspect-preserving longest-side resize to 640; no augmentation. Area threshold is descriptive, not official COCO size evaluation.",
+  "limitations": [
+    "Class imbalance and object size suggest hypotheses, not proven causes.",
+    "The baseline test set has already been evaluated; it is excluded from improvement selection.",
+    "Three saved validation preview batches are illustrative, not a representative error audit."
+  ],
+  "resolution_experiment": {
+    "run_id": "990c659bc71043fcb5829ba820515c18",
+    "imgsz": 960,
+    "metrics": {
+      "metrics/precision(B)": 0.3142181410209807,
+      "metrics/recall(B)": 0.3280918024906824,
+      "metrics/mAP50(B)": 0.26561909365172104,
+      "metrics/mAP50-95(B)": 0.1514851408703661,
+      "fitness": 0.1514851408703661
+    },
+    "per_class": [
+      {
+        "Class": "litter",
+        "Images": 1286,
+        "Instances": 7093,
+        "Box-P": 0.50552,
+        "Box-R": 0.36148,
+        "Box-F1": 0.42154,
+        "mAP50": 0.37913,
+        "mAP75": 0.19265,
+        "mAP50-95": 0.20253
+      },
+      {
+        "Class": "pile",
+        "Images": 85,
+        "Instances": 137,
+        "Box-P": 0.22684,
+        "Box-R": 0.40876,
+        "Box-F1": 0.29177,
+        "mAP50": 0.24475,
+        "mAP75": 0.01335,
+        "mAP50-95": 0.06088
+      },
+      {
+        "Class": "face_mask",
+        "Images": 57,
+        "Instances": 66,
+        "Box-P": 0.22982,
+        "Box-R": 0.5303,
+        "Box-F1": 0.32067,
+        "mAP50": 0.32209,
+        "mAP75": 0.19387,
+        "mAP50-95": 0.19615
+      },
+      {
+        "Class": "trash_bin",
+        "Images": 67,
+        "Instances": 93,
+        "Box-P": 0.41615,
+        "Box-R": 0.55914,
+        "Box-F1": 0.47716,
+        "mAP50": 0.48557,
+        "mAP75": 0.38208,
+        "mAP50-95": 0.3321
+      },
+      {
+        "Class": "plastic_bag",
+        "Images": 622,
+        "Instances": 1117,
+        "Box-P": 0.39313,
+        "Box-R": 0.35721,
+        "Box-F1": 0.37431,
+        "mAP50": 0.31118,
+        "mAP75": 0.22193,
+        "mAP50-95": 0.19639
+      },
+      {
+        "Class": "bottle",
+        "Images": 247,
+        "Instances": 371,
+        "Box-P": 0.34895,
+        "Box-R": 0.07817,
+        "Box-F1": 0.12772,
+        "mAP50": 0.095,
+        "mAP75": 0.05509,
+        "mAP50-95": 0.05466
+      },
+      {
+        "Class": "cup",
+        "Images": 105,
+        "Instances": 115,
+        "Box-P": 0.0,
+        "Box-R": 0.0,
+        "Box-F1": 0.0,
+        "mAP50": 0.03672,
+        "mAP75": 0.02439,
+        "mAP50-95": 0.02135
+      },
+      {
+        "Class": "rope",
+        "Images": 118,
+        "Instances": 139,
+        "Box-P": 0.35764,
+        "Box-R": 0.27338,
+        "Box-F1": 0.30989,
+        "mAP50": 0.29278,
+        "mAP75": 0.15051,
+        "mAP50-95": 0.16159
+      },
+      {
+        "Class": "sachet",
+        "Images": 253,
+        "Instances": 330,
+        "Box-P": 0.2481,
+        "Box-R": 0.42424,
+        "Box-F1": 0.3131,
+        "mAP50": 0.23496,
+        "mAP75": 0.14413,
+        "mAP50-95": 0.13617
+      },
+      {
+        "Class": "straw",
+        "Images": 129,
+        "Instances": 170,
+        "Box-P": 0.41602,
+        "Box-R": 0.28824,
+        "Box-F1": 0.34053,
+        "mAP50": 0.25402,
+        "mAP75": 0.16307,
+        "mAP50-95": 0.15303
+      }
+    ],
+    "speed_ms_per_image": {
+      "preprocess": 0.6477591139264405,
+      "inference": 3.118504909643282,
+      "loss": 0.00016064755618572235,
+      "postprocess": 10.448264718210947
+    },
+    "note": "Same trained weights; only inference resolution changed. Timing is descriptive, not a controlled speed benchmark."
+  }
+}

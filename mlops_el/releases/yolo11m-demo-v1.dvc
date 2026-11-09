@@ -1,0 +1,6 @@
+outs:
+- md5: f15e6cbd6e1a31c31a0d517a9a231524.dir
+  size: 40600566
+  nfiles: 2
+  hash: md5
+  path: yolo11m-demo-v1

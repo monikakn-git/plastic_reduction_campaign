@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "deployment_type": "docker_colima_arm64_cpu",
+  "address": "http://127.0.0.1:8011",
+  "container_id": "da42796729d561aaa8f5845eb7f6a3706c5f1d6fb46557c1f1150d906fcb245f",
+  "image_id": "sha256:05dd74912ef25bc048551f0b444413164ccbde9c75b28157783e02ca72b0e19b",
+  "image_architecture": "arm64",
+  "image_os": "linux",
+  "image_size_bytes": 482162443,
+  "health": "healthy",
+  "non_root_user": "10001:10001",
+  "read_only_root": true,
+  "model_mount_read_only": true,
+  "port_bindings": [
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "8011"
+    }
+  ],
+  "memory_limit_bytes": 2147483648,
+  "pids_limit": 128,
+  "security_opt": [
+    "no-new-privileges:true"
+  ],
+  "cap_drop": [
+    "ALL"
+  ],
+  "prediction_http_status": 200,
+  "invalid_image_status": 422,
+  "sample_split": "train",
+  "sample_image_id": 2,
+  "sample_sha256": "1f3687633ce544cbfc7c1263282e3eab4b6f9fc9380d74cbd81f1c7e06d5eae9",
+  "detections": 16,
+  "single_request_ms": 2626.5537501312792,
+  "latency_scope": "One smoke request, not a throughput benchmark",
+  "model": {
+    "sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+    "registry_name": "plastic-waste-yolo11m",
+    "registry_version": "3",
+    "source_training_run_id": "85714466948d4e658ebb610a475dcf57",
+    "trained_dataset": "labels-v3"
+  },
+  "production_approved": false,
+  "docker_version": {
+    "Client": {
+      "Platform": {
+        "Name": "Docker Engine - Community"
+      },
+      "Version": "29.9.2",
+      "ApiVersion": "1.54",
+      "DefaultAPIVersion": "1.56",
+      "GitCommit": "a82e528901",
+      "GoVersion": "go1.27.3",
+      "Os": "darwin",
+      "Arch": "arm64",
+      "BuildTime": "Tue Oct 20 11:24:07 2026",
+      "Context": "colima-mlops-el"
+    },
+    "Server": {
+      "Platform": {
+        "Name": "Docker Engine - Community"
+      },
+      "Version": "29.5.2",
+      "ApiVersion": "1.54",
+      "MinAPIVersion": "1.40",
+      "Os": "linux",
+      "Arch": "arm64",
+      "Components": [
+        {
+          "Name": "Engine",
+          "Version": "29.5.2",
+          "Details": {
+            "ApiVersion": "1.54",
+            "Arch": "arm64",
+            "BuildTime": "Wed May 20 14:39:25 2026",
+            "Experimental": "false",
+            "GitCommit": "568f755",
+            "GoVersion": "go1.26.3",
+            "KernelVersion": "6.8.0-117-generic",
+            "MinAPIVersion": "1.40",
+            "Module": "github.com/moby/moby/v2",
+            "ModuleVersion": "v2.0.0+unknown",
+            "Os": "linux"
+          }
+        },
+        {
+          "Name": "containerd",
+          "Version": "v2.2.4",
+          "Details": {
+            "GitCommit": "193637f7ee8ae5f5aa5248f49e7baa3e6164966e"
+          }
+        },
+        {
+          "Name": "runc",
+          "Version": "1.3.5",
+          "Details": {
+            "GitCommit": "v1.3.5-0-g488fc13e"
+          }
+        },
+        {
+          "Name": "docker-init",
+          "Version": "0.19.0",
+          "Details": {
+            "GitCommit": "de40ad0"
+          }
+        }
+      ],
+      "GitCommit": "568f755",
+      "GoVersion": "go1.26.3",
+      "KernelVersion": "6.8.0-117-generic",
+      "BuildTime": "2026-05-20T14:39:25.000000000+00:00"
+    }
+  },
+  "verified_at_utc": "2026-11-09T07:55:57.068902+00:00"
+}

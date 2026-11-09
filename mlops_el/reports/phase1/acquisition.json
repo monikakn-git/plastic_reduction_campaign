@@ -1,0 +1,16 @@
+{
+  "dataset": "plitterstreet",
+  "status": "complete",
+  "expected_images": 10000,
+  "verified_images": 10000,
+  "unique_image_hashes": 10000,
+  "annotations": 60826,
+  "source_categories": 10,
+  "downloaded_image_bytes": 7785363634,
+  "failures": [],
+  "systemic_network_abort": false,
+  "network_stop_reason": "",
+  "duplicate_image_count": 0,
+  "annotations_sha256": "dbef6da24c7613a631e4124b7bb22d7ed0ba1fe7e54e44c82c8149369560943d",
+  "excluded_exact_duplicate_copies": 2
+}

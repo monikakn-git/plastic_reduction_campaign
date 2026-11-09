@@ -1,0 +1,25 @@
+dataset:
+  name: plitterstreet
+  target_images: 10000
+train:
+  model: models/yolo11s.pt
+  epochs: 50
+  imgsz: 640
+  batch: 2
+  workers: 0
+  device: mps
+  seed: 42
+  patience: 12
+  cache: false
+  amp: false
+  plots: true
+  deterministic: true
+  optimizer: AdamW
+  lr0: 0.001
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  fliplr: 0.5
+  flipud: 0.0
+  mosaic: 1.0
+  close_mosaic: 10

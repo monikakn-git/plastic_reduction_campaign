@@ -1,0 +1,29 @@
+{
+  "status": "running",
+  "authorized_on": "2026-11-06",
+  "gpu": "Tesla T4",
+  "train_images": 7000,
+  "validation_images": 1500,
+  "test_images": 0,
+  "max_epochs": 100,
+  "patience": 20,
+  "imgsz": 960,
+  "batch": 4,
+  "free_gpu_only": true,
+  "tests_passed": 24,
+  "recovery_drill": "passed controlled epoch stop and fresh-process restore",
+  "source_sha256": {
+    "cloud/runner.py": "2dc3840b792c692aafa58edc5298fc9a22bec1924f5987e8bd8531359fd4d340",
+    "cloud/recovery_drill.py": "6fe74dad43f4b3ed770b326f47c51da58267e369674ab337a0aef8b345a3b647",
+    "cloud/start_full_training.py": "047e4941550f0a2aef505ee867de7d55db379dcce27b84fe90c933f67d347136",
+    "configs/yolo11m_cloud_proposed.yaml": "1737447b91aa9ddfa8c8ba0d062db734c1d837601af39ce34f61593c07254f37"
+  },
+  "dataset_archive_sha256": "37c7e50b954a996519fc8d4f52715fc93c733b313374ab4f2b91af9725064098",
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "epoch_at_launch_verification": 1,
+  "corrupt_training_files": 0,
+  "corrupt_validation_files": 0,
+  "recovery_test_run_id": "e7d3e7558015491e9cbf813ee1b922a5",
+  "first_full_checkpoint_pending": false,
+  "current_status_record": "reports/phase1/cloud_training_status.json"
+}

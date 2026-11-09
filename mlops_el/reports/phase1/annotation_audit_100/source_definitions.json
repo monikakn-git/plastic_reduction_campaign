@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"title": "pLitterStreet paper, section 3.2, printed page 5", "url": "https://arxiv.org/pdf/2401.14719", "finding": "Authors ask for discarded rather than functional objects, tight boxes, and a single pile box for inseparable clusters. They describe expert review but acknowledge interpretation differences. Their ten-class taxonomy includes bottles and cups plus a residual other-plastic category. Detailed inclusion rules for cups versus lids, cartons or cans were not found in the reviewed section."},
+    {"title": "Authors' repository README", "url": "https://github.com/gicait/pLitter", "finding": "Describes COCO-format litter annotations and the annotation tool; no detailed cup/bottle decision rules located in the reviewed README."},
+    {"title": "Locally acquired official Zenodo metadata", "url": "https://zenodo.org/records/8288500", "local_file": "data/raw/plitterstreet/record.json", "finding": "Dataset description confirms COCO annotations but does not specify cup/bottle inclusion exceptions. Live page timed out; local acquisition metadata was inspected."}
+  ],
+  "project_interpretation": "Use original source labels for the existing experiment. Do not treat these broad source guidelines as proof that every ambiguous object is mislabeled. Raw JSON calls the residual category litter; preserve its identifier rather than silently changing the taxonomy.",
+  "proposed_review_rule_not_applied": "A reviewer should record visible bottle/cup cues, note deformation and visibility, and flag competing interpretations. Relabel only after human adjudication with written class rules. Uncertain material must not be asserted as plastic."
+}

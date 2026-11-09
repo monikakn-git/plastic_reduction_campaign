@@ -1,0 +1,9 @@
+{
+  "source": "Colab notebook output export",
+  "notebook_url": "https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID",
+  "archive_sha256": "1ad0f0fc7d0732733ab638d51a6f013cdba50f57788142014388f54accb1e233",
+  "archive_bytes": 64676,
+  "persistent_project_bytes": 806713504,
+  "google_storage_available_at_check": "4.99 TB",
+  "full_training_started": false
+}

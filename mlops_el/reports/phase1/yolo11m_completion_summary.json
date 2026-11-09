@@ -1,0 +1,65 @@
+{
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "status": "completed",
+  "stopping_reason": "20 epochs without improvement",
+  "completed_epochs": 86,
+  "best_epoch": 66,
+  "final_best_validation": {
+    "images": 1500,
+    "instances": 9631,
+    "map50_displayed": 0.394,
+    "map50_95_displayed": 0.247,
+    "precision_displayed": 0.435,
+    "recall_displayed": 0.431
+  },
+  "best_epoch_csv_metrics": {
+    "epoch": "66",
+    "time": "20642.4",
+    "train/box_loss": "1.39023",
+    "train/cls_loss": "1.32294",
+    "train/dfl_loss": "0.98738",
+    "metrics/precision(B)": "0.43609",
+    "metrics/recall(B)": "0.4292",
+    "metrics/mAP50(B)": "0.39375",
+    "metrics/mAP50-95(B)": "0.24725",
+    "val/box_loss": "1.36666",
+    "val/cls_loss": "1.59787",
+    "val/dfl_loss": "1.02387",
+    "lr/pg0": "0.0003565",
+    "lr/pg1": "0.0003565",
+    "lr/pg2": "0.0003565"
+  },
+  "test_set_evaluated": true,
+  "model_path": "models/plitterstreet-yolo11m-candidate.pt",
+  "model_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "checkpoint_and_tracking_verification": "reports/phase1/kaggle_completion_verification.json",
+  "class_map50_displayed": {
+    "litter": 0.477,
+    "pile": 0.44,
+    "face_mask": 0.44,
+    "trash_bin": 0.552,
+    "plastic_bag": 0.393,
+    "bottle": 0.311,
+    "cup": 0.117,
+    "rope": 0.409,
+    "sachet": 0.351,
+    "straw": 0.446
+  },
+  "limitations": [
+    "70% mAP50 target not reached.",
+    "Held-out test scores measure this public dataset; campus/regional field performance remains unverified."
+  ],
+  "final_test_evaluation": {
+    "run_id": "4b26901d393b4fc89f0a716818788fa6",
+    "images": 1500,
+    "metrics": {
+      "metrics/precision(B)": 0.4612720001751546,
+      "metrics/recall(B)": 0.39645984933215905,
+      "metrics/mAP50(B)": 0.37118754279257643,
+      "metrics/mAP50-95(B)": 0.22735957303694218,
+      "fitness": 0.22735957303694218
+    },
+    "report": "reports/phase1/evaluation_yolo11m_test.json"
+  },
+  "local_cloud_tracking_view": "reports/phase1/cloud_tracking_local_view.json"
+}

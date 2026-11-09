@@ -1,0 +1,6 @@
+outs:
+- md5: 14c5373acd688e065dcbacc7ee339b81.dir
+  size: 7844017193
+  nfiles: 10009
+  hash: md5
+  path: plitterstreet

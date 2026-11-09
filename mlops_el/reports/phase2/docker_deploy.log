@@ -1,0 +1,70 @@
+{
+  "status": "verified",
+  "model_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "registry_version": "3",
+  "production_approved": false
+}
+ Image mlops-el-inference:phase2 Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 566B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.13kB 0.0s done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 125B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 264B done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#6 resolve docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df 0.0s done
+#6 DONE 0.0s
+
+#7 [5/6] RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch==2.11.0 torchvision==0.26.0     && pip install --no-cache-dir -r requirements-service.txt
+#7 CACHED
+
+#8 [3/6] RUN apt-get update && apt-get install -y --no-install-recommends libgl1 libglib2.0-0     && rm -rf /var/lib/apt/lists/*     && useradd --create-home --uid 10001 app
+#8 CACHED
+
+#9 [4/6] COPY requirements-service.txt .
+#9 CACHED
+
+#10 [2/6] WORKDIR /app
+#10 CACHED
+
+#11 [6/6] COPY --chown=10001:10001 service /app/service
+#11 CACHED
+
+#12 exporting to image
+#12 exporting layers done
+#12 exporting manifest sha256:0f1661697de77c6df39ee5087c5f27b7f472a13f72a4b141d1aefb3c8570fe10 done
+#12 exporting config sha256:170a28f0ffe236f8f4ca7a9d1ac93ffbe5daf9a31e5a18e61cda53d598b4b6ca done
+#12 exporting attestation manifest sha256:28042e305ed27f5c2fa59ae2ee34950e24a3d9f4c123ac14817d60555be96953 done
+#12 exporting manifest list sha256:05dd74912ef25bc048551f0b444413164ccbde9c75b28157783e02ca72b0e19b
+#12 exporting manifest list sha256:05dd74912ef25bc048551f0b444413164ccbde9c75b28157783e02ca72b0e19b done
+#12 naming to docker.io/library/mlops-el-inference:phase2 done
+#12 unpacking to docker.io/library/mlops-el-inference:phase2 done
+#12 DONE 0.1s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image mlops-el-inference:phase2 Built
+ Network mlops_el_default Creating
+ Network mlops_el_default Creating
+ Network mlops_el_default Created
+ Network mlops_el_default Created
+ Container mlops_el-detector-1 Creating
+ Container mlops_el-detector-1 Created
+ Container mlops_el-detector-1 Starting
+ Container mlops_el-detector-1 Started
+ Container mlops_el-detector-1 Waiting
+ Container mlops_el-detector-1 Healthy
+{'status': 'ready', 'model_sha256': 'a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e', 'production_approved': False}

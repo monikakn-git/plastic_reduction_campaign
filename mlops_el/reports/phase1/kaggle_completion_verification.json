@@ -1,0 +1,51 @@
+{
+  "run_id": "85714466948d4e658ebb610a475dcf57",
+  "epoch": 86,
+  "checkpoint_sha256": {
+    "last": "016c7c074276d0a6c0bd14f39addd0092fe3ef4bd64728a464c39949c737956c",
+    "best": "5adda6387a40b58f740a5b73291070a508dbdf966679280dc729ae11a1044b2d"
+  },
+  "bundle_fingerprint": "ab403c827b6bc3de67966a7ac633d915293cfafd3883fa8de876de1fb89dfd55",
+  "sqlite_integrity": "ok",
+  "original_artifact_uri": "file:///content/mlops_work/train/mlartifacts/85714466948d4e658ebb610a475dcf57/artifacts",
+  "weights_and_tracking_verified": true,
+  "optimizer_state_verified": false,
+  "note": "Load checkpoint with the pinned Torch environment and verify optimizer/epoch before training. No training performed.",
+  "mlflow_status": "FINISHED",
+  "remote_receipt": {
+    "run_id": "85714466948d4e658ebb610a475dcf57",
+    "epoch": 86,
+    "provider": "kaggle",
+    "recovery_sha256": "5988366d124ce7ab1dc3fa0e1c0274c3ca5fe0ddc38128c3c1cb9372fd691f3c",
+    "recovery_bytes": 500275200,
+    "checkpoint_files": {
+      "last": "016c7c074276d0a6c0bd14f39addd0092fe3ef4bd64728a464c39949c737956c",
+      "best": "5adda6387a40b58f740a5b73291070a508dbdf966679280dc729ae11a1044b2d"
+    },
+    "nonce": "3c8a466c59de4629b363b1162b337f6e"
+  },
+  "local_directory": "/path/to/MLOPS_EL/.local/kaggle-completed-epoch86",
+  "completed_report": {
+    "mode": "train",
+    "run_id": "85714466948d4e658ebb610a475dcf57",
+    "bundle_fingerprint": "ab403c827b6bc3de67966a7ac633d915293cfafd3883fa8de876de1fb89dfd55",
+    "status": "completed",
+    "gpu": {
+      "name": "Tesla T4",
+      "vram_GiB": 14.56219482421875,
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "python": "3.13.16"
+    },
+    "elapsed_seconds": 32267.557014812,
+    "peak_cuda_allocated_GiB": 4.558694839477539,
+    "peak_cuda_reserved_GiB": 5.818359375,
+    "mean_batch_compute_seconds_after10": 0.282514583069207,
+    "persistent_checkpoint_verified": true,
+    "optimizer_state_verified": true,
+    "saved_generations": 56,
+    "dataset_images": 7000,
+    "quality_claim": "Validation only; separate final evaluation required",
+    "note": "Batch timing excludes loader time; use epoch results.csv for full-run ETA. No 70% performance claim."
+  }
+}

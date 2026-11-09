@@ -1,0 +1,5 @@
+outs:
+- md5: d59a11db2dc187f512ea44d0cd570ea2
+  size: 40599788
+  hash: md5
+  path: plitterstreet-yolo11m-candidate.pt

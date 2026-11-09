@@ -1,0 +1,37 @@
+stages:
+  train_candidate:
+    wdir: ../..
+    cmd: .venv/bin/python scripts/train_candidate.py
+    deps:
+      - scripts/train_candidate.py
+      - scripts/train.py
+      - configs/yolo11s_candidate.yaml
+      - reports/phase1/yolo11s_candidate_plan.json
+      - models/yolo11s.pt
+      - data/prepared/plitterstreet
+      - data/raw/plitterstreet/annotations.json
+      - requirements-lock.txt
+    outs:
+      - models/plitterstreet-yolo11s-candidate.pt
+    metrics:
+      - reports/phase1/yolo11s_candidate_training.json:
+          cache: false
+  compare_candidate:
+    wdir: ../..
+    cmd: .venv/bin/python scripts/compare_candidate.py
+    deps:
+      - scripts/compare_candidate.py
+      - scripts/train_candidate.py
+      - scripts/train.py
+      - models/plitterstreet-yolo11s-candidate.pt
+      - reports/phase1/yolo11s_candidate_training.json
+      - reports/phase1/evaluation_val.json
+      - reports/phase1/yolo11s_candidate_plan.json
+      - data/prepared/plitterstreet
+      - configs/yolo11s_candidate.yaml
+    metrics:
+      - reports/phase1/yolo11s_candidate_validation.json:
+          cache: false
+    outs:
+      - reports/phase1/yolo11s_validation_comparison.md:
+          cache: false

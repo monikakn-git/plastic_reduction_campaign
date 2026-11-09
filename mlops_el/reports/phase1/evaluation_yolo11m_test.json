@@ -1,0 +1,140 @@
+{
+  "split": "test",
+  "run_id": "4b26901d393b4fc89f0a716818788fa6",
+  "dataset": "plitterstreet",
+  "dataset_images": 10000,
+  "metrics": {
+    "metrics/precision(B)": 0.4612720001751546,
+    "metrics/recall(B)": 0.39645984933215905,
+    "metrics/mAP50(B)": 0.37118754279257643,
+    "metrics/mAP50-95(B)": 0.22735957303694218,
+    "fitness": 0.22735957303694218
+  },
+  "evaluated_images": 1500,
+  "weights": "models/plitterstreet-yolo11m-candidate.pt",
+  "weights_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "source_run_id": "85714466948d4e658ebb610a475dcf57",
+  "prepared_path": "data/prepared/plitterstreet-labels-v3",
+  "imgsz": 960,
+  "device": "mps",
+  "batch": 1,
+  "per_class": [
+    {
+      "Class": "litter",
+      "Images": 1283,
+      "Instances": 8032,
+      "Box-P": 0.5879,
+      "Box-R": 0.47831,
+      "Box-F1": 0.52747,
+      "mAP50": 0.51178,
+      "mAP75": 0.26642,
+      "mAP50-95": 0.27663
+    },
+    {
+      "Class": "pile",
+      "Images": 86,
+      "Instances": 130,
+      "Box-P": 0.47131,
+      "Box-R": 0.43846,
+      "Box-F1": 0.45429,
+      "mAP50": 0.40376,
+      "mAP75": 0.13554,
+      "mAP50-95": 0.17896
+    },
+    {
+      "Class": "face_mask",
+      "Images": 69,
+      "Instances": 78,
+      "Box-P": 0.43252,
+      "Box-R": 0.46154,
+      "Box-F1": 0.44656,
+      "mAP50": 0.36202,
+      "mAP75": 0.28762,
+      "mAP50-95": 0.22546
+    },
+    {
+      "Class": "trash_bin",
+      "Images": 48,
+      "Instances": 85,
+      "Box-P": 0.59563,
+      "Box-R": 0.62353,
+      "Box-F1": 0.60926,
+      "mAP50": 0.58162,
+      "mAP75": 0.50493,
+      "mAP50-95": 0.44907
+    },
+    {
+      "Class": "plastic_bag",
+      "Images": 520,
+      "Instances": 950,
+      "Box-P": 0.48813,
+      "Box-R": 0.41056,
+      "Box-F1": 0.446,
+      "mAP50": 0.41164,
+      "mAP75": 0.27506,
+      "mAP50-95": 0.25022
+    },
+    {
+      "Class": "bottle",
+      "Images": 155,
+      "Instances": 186,
+      "Box-P": 0.43887,
+      "Box-R": 0.2957,
+      "Box-F1": 0.35333,
+      "mAP50": 0.30852,
+      "mAP75": 0.2319,
+      "mAP50-95": 0.19366
+    },
+    {
+      "Class": "cup",
+      "Images": 103,
+      "Instances": 121,
+      "Box-P": 0.30147,
+      "Box-R": 0.10744,
+      "Box-F1": 0.15842,
+      "mAP50": 0.11454,
+      "mAP75": 0.07923,
+      "mAP50-95": 0.07147
+    },
+    {
+      "Class": "rope",
+      "Images": 127,
+      "Instances": 162,
+      "Box-P": 0.38707,
+      "Box-R": 0.34695,
+      "Box-F1": 0.36592,
+      "mAP50": 0.28738,
+      "mAP75": 0.19974,
+      "mAP50-95": 0.18789
+    },
+    {
+      "Class": "sachet",
+      "Images": 332,
+      "Instances": 445,
+      "Box-P": 0.42331,
+      "Box-R": 0.3618,
+      "Box-F1": 0.39014,
+      "mAP50": 0.33258,
+      "mAP75": 0.21194,
+      "mAP50-95": 0.19332
+    },
+    {
+      "Class": "straw",
+      "Images": 177,
+      "Instances": 241,
+      "Box-P": 0.48651,
+      "Box-R": 0.44031,
+      "Box-F1": 0.46226,
+      "mAP50": 0.39804,
+      "mAP75": 0.29442,
+      "mAP50-95": 0.24693
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 1.6037428088796635,
+    "inference": 10.914905723494787,
+    "loss": 0.000575182493776083,
+    "postprocess": 70.60785687652726
+  },
+  "caveat": "Initial evaluation; public-dataset results do not establish campus performance."
+}

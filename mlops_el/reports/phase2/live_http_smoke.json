@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "address": "http://127.0.0.1:8010",
+  "bind_scope": "localhost_only",
+  "deployment_type": "native_uvicorn_not_docker",
+  "ready": {
+    "status": "ready",
+    "model_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+    "production_approved": false
+  },
+  "prediction_http_status": 200,
+  "sample_split": "train",
+  "sample_image_id": 2,
+  "detections": 16,
+  "elapsed_ms": 1342.7454996854067,
+  "model": {
+    "sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+    "registry_name": "plastic-waste-yolo11m",
+    "registry_version": "3",
+    "source_training_run_id": "85714466948d4e658ebb610a475dcf57",
+    "trained_dataset": "labels-v3"
+  }
+}

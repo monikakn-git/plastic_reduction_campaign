@@ -1,0 +1,6 @@
+outs:
+- md5: 1d2bc2a9a59f23b81c983944ac9c83cc.dir
+  size: 7790692302
+  nfiles: 20003
+  hash: md5
+  path: plitterstreet-orientation-v2

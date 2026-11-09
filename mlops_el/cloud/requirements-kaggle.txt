@@ -1,0 +1,6 @@
+# Preserve Kaggle's preinstalled CUDA Torch 2.11.0+cu130 and torchvision 0.26.0+cu130.
+# The notebook checks both and uses pip constraints instead of replacing them.
+ultralytics==8.4.201
+mlflow==3.17.2
+PyYAML==6.0.3
+kaggle==2.0.2

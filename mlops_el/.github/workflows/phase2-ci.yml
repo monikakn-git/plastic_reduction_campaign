@@ -1,0 +1,40 @@
+name: Phase 2 checks and container build
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**', 'reports/**', 'README.md']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: phase2-ci-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    # Only owner-triggered code in this private repository may use the local Mac.
+    if: github.event.repository.private && github.actor == github.repository_owner && github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, macOS, ARM64, mlops-el-demo]
+    timeout-minutes: 30
+    env:
+      SSL_CERT_FILE: /etc/ssl/cert.pem
+      DOCKER_CONFIG: ${{ vars.PROJECT_DOCKER_CONFIG }}
+      DOCKER_CONTEXT: colima-mlops-el
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Create isolated test environment
+        run: |
+          python3.12 -m venv "$RUNNER_TEMP/phase2-ci-env"
+          "$RUNNER_TEMP/phase2-ci-env/bin/python" -m pip install -r requirements-ci.txt
+      - name: Run API and quality tests
+        run: |
+          "$RUNNER_TEMP/phase2-ci-env/bin/python" -m pytest tests/test_phase2_api.py tests/test_phase2_quality.py tests/test_phase2_ci_gate.py -q --junitxml="$RUNNER_TEMP/phase2-ci-tests.xml"
+      - name: Build CPU inference container
+        run: sh scripts/docker_local.sh build --label "org.opencontainers.image.revision=$GITHUB_SHA" --tag "mlops-el-inference:ci-$GITHUB_SHA" .
+      - name: Verify service import and dependency consistency
+        run: |
+          sh scripts/docker_local.sh run --rm --network none --entrypoint python "mlops-el-inference:ci-$GITHUB_SHA" -c "from service.app import app; assert app.title == 'Litter detection demo'"
+          sh scripts/docker_local.sh run --rm --network none --entrypoint python "mlops-el-inference:ci-$GITHUB_SHA" -m pip check
+# This private self-hosted workflow consumes no GitHub-hosted compute minutes.
+# No datasets, weights or credentials enter the Docker build context.

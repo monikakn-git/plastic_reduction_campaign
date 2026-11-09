@@ -1,0 +1,87 @@
+# Recover the existing private backup; preserve the interrupted setup attempt.
+import base64, pathlib, sys, importlib
+code_dir=pathlib.Path('/kaggle/working/mlops_code'); code_dir.mkdir(exist_ok=True)
+for name, source in embedded.items(): (code_dir/name).write_bytes(base64.b64decode(source))
+sys.path.insert(0,str(code_dir))
+import runner; importlib.reload(runner)
+import kaggle_backup; importlib.reload(kaggle_backup)
+import start_kaggle_training; importlib.reload(start_kaggle_training)
+start_kaggle_training.main(initialize_backup=False)
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+PRIVATE REMOTE BACKUP VERIFIED: epoch 30
+Resuming SAME MLflow run 85714466948d4e658ebb610a475dcf57 after verified epoch 30; Colab held stopped.
+New https://pypi.org/project/ultralytics/8.4.203 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.4.201 🚀 Python-3.13.16 torch-2.11.0+cu130 CUDA:0 (Tesla T4, 14912MiB)
+Downloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 18.5MB/s 0.0s
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1      1856  ultralytics.nn.modules.conv.Conv             [3, 64, 3, 2]                 
+  1                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  2                  -1  1    111872  ultralytics.nn.modules.block.C3k2            [128, 256, 1, True, 0.25]     
+  3                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+  4                  -1  1    444928  ultralytics.nn.modules.block.C3k2            [256, 512, 1, True, 0.25]     
+  5                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  6                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  7                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1   1642496  ultralytics.nn.modules.block.C3k2            [1024, 512, 1, True]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1    542720  ultralytics.nn.modules.block.C3k2            [1024, 256, 1, True]          
+ 17                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]           
+ 20                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1   1642496  ultralytics.nn.modules.block.C3k2            [1024, 512, 1, True]          
+ 23        [16, 19, 22]  1   1418734  ultralytics.nn.modules.head.Detect           [10, 16, None, [256, 512, 512]]
+YOLO11m summary: 231 layers, 20,060,718 parameters, 20,060,702 gradients, 68.3 GFLOPs
+
+Transferred 649/649 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+AMP: running Automatic Mixed Precision (AMP) checks...
+AMP: checks passed ✅
+train: Fast image access ✅ (ping: 0.0±0.0 ms, read: 3354.4±1773.2 MB/s, size: 1528.3 KB)
+train: Scanning /kaggle/temp/mlops_trainval_bundle/dataset/labels/train... 7000 images, 113 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 7000/7000 1.2Kit/s 6.0s0.0s
+train: New cache created: /kaggle/temp/mlops_trainval_bundle/dataset/labels/train.cache
+albumentations: Blur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01, method='weighted_average', num_output_channels=3), CLAHE(p=0.01, clip_limit=(1.0, 4.0), tile_grid_size=(8, 8))
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2166.9±995.3 MB/s, size: 1066.7 KB)
+val: Scanning /kaggle/temp/mlops_trainval_bundle/dataset/labels/val... 1500 images, 11 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1500/1500 1.1Kit/s 1.3s0.0s
+val: New cache created: /kaggle/temp/mlops_trainval_bundle/dataset/labels/val.cache
+optimizer: AdamW(lr=0.001, momentum=0.937) with parameter groups 106 weight(decay=0.0), 113 weight(decay=0.0005), 112 bias(decay=0.0)
+Plotting labels to /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57/labels.jpg... 
+Resuming training /kaggle/working/MLOPS_EL_cloud/train/checkpoints/epoch-0030/last.pt from epoch 31 to 100 total epochs
+Using 7000 train, 1500 val images for fraction=1.0 at imgsz=960
+Using 2 dataloader workers
+Logging results to /kaggle/working/mlops_work/train/runs/85714466948d4e658ebb610a475dcf57
+Starting training for 100 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     31/100      4.82G       1.51      1.624      1.034         57        960: 100% ━━━━━━━━━━━━ 1750/1750 3.6it/s 8:020.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 5.9it/s 32.1s0.4ss
+                   all       1500       9631       0.44        0.4      0.374       0.23
+PRIVATE REMOTE BACKUP VERIFIED: epoch 31
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+/usr/local/lib/python3.13/dist-packages/ray/train/_internal/session.py:683: UserWarning: `get_trial_id` is meant to only be called inside a function that is executed by a Tuner or Trainer. Returning `None`.
+  warnings.warn(
+
+     32/100      5.82G      1.501      1.624      1.035         41        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:150.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.3s0.4ss
+                   all       1500       9631      0.418      0.395      0.364      0.223
+PRIVATE REMOTE BACKUP VERIFIED: epoch 32
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     33/100      5.82G      1.504      1.602      1.033         43        960: 100% ━━━━━━━━━━━━ 1750/1750 3.5it/s 8:160.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 188/188 6.2it/s 30.1s0.3ss
+                   all       1500       9631      0.403       0.42      0.372      0.227
+PRIVATE REMOTE BACKUP VERIFIED: epoch 33
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     34/100      5.82G      1.486        1.6      1.027         53        960: 71% ━━━━━━━━╸─── 1258/1750 3.5it/s 5:57<2:20
+

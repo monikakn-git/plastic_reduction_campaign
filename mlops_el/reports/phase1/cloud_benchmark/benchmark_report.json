@@ -1,0 +1,23 @@
+{
+  "mode": "benchmark",
+  "run_id": "e8c17f3e33584b57ad732ffd92618dae",
+  "bundle_fingerprint": "15170f0233450b95a04be1de9508829f7d554abe9062d85cefe527dbf55bfd2b",
+  "status": "completed",
+  "gpu": {
+    "name": "Tesla T4",
+    "vram_GiB": 14.56317138671875,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "python": "3.13.16"
+  },
+  "elapsed_seconds": 76.33494041099993,
+  "peak_cuda_allocated_GiB": 4.482869625091553,
+  "peak_cuda_reserved_GiB": 5.943359375,
+  "mean_batch_compute_seconds_after10": 0.25837270633048504,
+  "persistent_checkpoint_verified": true,
+  "optimizer_state_verified": true,
+  "saved_generations": 2,
+  "dataset_images": 256,
+  "quality_claim": false,
+  "note": "Batch timing excludes loader time; use epoch results.csv for full-run ETA. No 70% performance claim."
+}

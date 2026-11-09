@@ -1,0 +1,96 @@
+schema: '2.0'
+stages:
+  train_candidate:
+    cmd: .venv/bin/python scripts/train_candidate.py
+    deps:
+    - path: configs/yolo11s_candidate.yaml
+      hash: md5
+      md5: dbc85bd89995756dbc1bea4a5efd93c1
+      size: 376
+    - path: data/prepared/plitterstreet
+      hash: md5
+      md5: 5399f0a8088c570fdc2d6864befcca7e.dir
+      size: 7790690521
+      nfiles: 20002
+    - path: data/raw/plitterstreet/annotations.json
+      hash: md5
+      md5: eaea2faaea8929f31d3930d1d7ae78d2
+      size: 21803561
+    - path: models/yolo11s.pt
+      hash: md5
+      md5: 9637097d5fbdc1002d25d2d3d9f7c435
+      size: 19313732
+    - path: reports/phase1/yolo11s_candidate_plan.json
+      hash: md5
+      md5: ff4949f0b44d66bfa01a7731638cc5dd
+      size: 1350
+    - path: requirements-lock.txt
+      hash: md5
+      md5: 0334fb28d47768be0d9b85afc8017f6f
+      size: 2971
+    - path: scripts/train.py
+      hash: md5
+      md5: a8b7d459ed697b8497902b20b50e438f
+      size: 8781
+    - path: scripts/train_candidate.py
+      hash: md5
+      md5: b223c6b24fca64793ff977a6078f3f1b
+      size: 7553
+    outs:
+    - path: models/plitterstreet-yolo11s-candidate.pt
+      hash: md5
+      md5: 5d77c191c77be725806aa2ab3684cf63
+      size: 19184602
+    - path: reports/phase1/yolo11s_candidate_training.json
+      hash: md5
+      md5: 1c10f25b134f3638053ff1a73f8c5063
+      size: 987
+  compare_candidate:
+    cmd: .venv/bin/python scripts/compare_candidate.py
+    deps:
+    - path: configs/yolo11s_candidate.yaml
+      hash: md5
+      md5: dbc85bd89995756dbc1bea4a5efd93c1
+      size: 376
+    - path: data/prepared/plitterstreet
+      hash: md5
+      md5: 5399f0a8088c570fdc2d6864befcca7e.dir
+      size: 7790690521
+      nfiles: 20002
+    - path: models/plitterstreet-yolo11s-candidate.pt
+      hash: md5
+      md5: 5d77c191c77be725806aa2ab3684cf63
+      size: 19184602
+    - path: reports/phase1/evaluation_val.json
+      hash: md5
+      md5: e244b736593b15206757abaf780e4d23
+      size: 2942
+    - path: reports/phase1/yolo11s_candidate_plan.json
+      hash: md5
+      md5: ff4949f0b44d66bfa01a7731638cc5dd
+      size: 1350
+    - path: reports/phase1/yolo11s_candidate_training.json
+      hash: md5
+      md5: 1c10f25b134f3638053ff1a73f8c5063
+      size: 987
+    - path: scripts/compare_candidate.py
+      hash: md5
+      md5: abc6e4830e5ee1401780e8bda863ab77
+      size: 4651
+    - path: scripts/train.py
+      hash: md5
+      md5: a8b7d459ed697b8497902b20b50e438f
+      size: 8781
+    - path: scripts/train_candidate.py
+      hash: md5
+      md5: b223c6b24fca64793ff977a6078f3f1b
+      size: 7553
+    outs:
+    - path: reports/phase1/yolo11s_candidate_validation.json
+      hash: md5
+      md5: d1d4c5f5de0dab98fc5a6d80eace1e3c
+      size: 3222
+    - path: reports/phase1/yolo11s_validation_comparison.md
+      hash: md5
+      md5: 447c3a8c7641ef18a2e3d32f880af127
+      size: 1522

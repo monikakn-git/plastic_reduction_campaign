@@ -1,0 +1,6 @@
+outs:
+- md5: f7b89ad80803e0095f6435a61327c8fe.dir
+  size: 22040695
+  nfiles: 76
+  hash: md5
+  path: training_quality_v4

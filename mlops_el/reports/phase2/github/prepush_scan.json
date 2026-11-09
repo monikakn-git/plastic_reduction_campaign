@@ -1,0 +1,5 @@
+{
+  "checked_history_blobs": 413,
+  "credential_pattern_findings": [],
+  "scope": "Known GitHub token, AWS access key and private-key patterns; not a guarantee against all secret formats"
+}

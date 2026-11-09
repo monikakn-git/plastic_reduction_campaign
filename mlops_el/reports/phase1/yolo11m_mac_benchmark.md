@@ -1,0 +1,5 @@
+# YOLO11m Mac feasibility test
+
+A separate 32-image training / 8-image smoke-validation test was attempted on native M3 MPS at 960px, batch 4, using FP32 (MPS does not use the cloud CUDA AMP configuration). No batch-end callback completed. Training was interrupted due to substantial system memory pressure: system-wide swap was observed at 15.25 GiB, not a measured incremental allocation by this process. Interrupt and terminate did not promptly exit; force termination was requested and the process subsequently showed exiting state with zero resident memory. No explicit out-of-memory exception was captured.
+
+The existing full cloud experiment and its checkpoints were not used or changed. All sampled image and label hashes were verified unchanged. No test-set images were used. This test does not establish accuracy, inference speed, cloud-checkpoint resume compatibility, or an exact full-training runtime. Current settings are not practical under the observed load on this 8 GB Mac. Smaller settings would require a separate test.

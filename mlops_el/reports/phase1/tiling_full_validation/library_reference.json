@@ -1,0 +1,11 @@
+{
+  "method": "Ultralytics standard validator; square padding, batch 1, same weights and full validation split",
+  "metrics": {
+    "metrics/precision(B)": 0.39442589833149144,
+    "metrics/recall(B)": 0.3311922925493753,
+    "metrics/mAP50(B)": 0.3190853782646651,
+    "metrics/mAP50-95(B)": 0.1928404159920186,
+    "fitness": 0.1928404159920186
+  },
+  "purpose": "Check paired experiment metric harness against standard evaluation under square preprocessing"
+}

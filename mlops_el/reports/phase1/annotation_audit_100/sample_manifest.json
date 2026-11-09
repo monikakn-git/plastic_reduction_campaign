@@ -1,0 +1,2519 @@
+{
+  "seed": 2026,
+  "sample_count": 100,
+  "unique_images": 100,
+  "selection": "25 targets per class/split: 8 small, 8 medium and 9 large by within-pool short-side tertiles. Seeded shuffle, prefer least-used inferred source group; globally distinct images. Group repetition is necessary in validation (especially cups: 14 available groups).",
+  "scope": "Training and validation only; no model predictions used for sampling. Not a probability sample for dataset-wide error estimation.",
+  "protected_sha256": {
+    "data/raw/plitterstreet/annotations.json": "dbef6da24c7613a631e4124b7bb22d7ed0ba1fe7e54e44c82c8149369560943d",
+    "data/prepared/plitterstreet/splits.json": "454cd3a87572b76f14f4347675e348cb82cf81d30d59ff5bf12a20e1a60f3f66",
+    "params.yaml": "7fb86751a4a723c5762959d46ea2d0d0612a1cde96e3837d06ff6d5f361284f4",
+    "models/plitterstreet-baseline.pt": "54fe85012b0a2bd5a797268f2a85d1c9cf71a7af7307363cfa45f294b00b0c07",
+    "models/plitterstreet-yolo11s-candidate.pt": "a284e933df489394d120c3fd381b8b8f60131e80f4f3bd5ff34176b815699230",
+    "reports/phase1/evaluation_val.json": "2a61aed6dd96ed1e7ad53e2cecaa9df866c44869864cf4c0d6df129f83131dcb",
+    "reports/phase1/evaluation_test.json": "00f795ad029ef33aa7817ead6ddbfc8838402736d9598496e4bcd8704da27848",
+    "reports/phase1/yolo11s_candidate_validation.json": "01b023694fc77866caa356117e8c6404a95ce5de00ceaf01b4937f2d1cd666ce"
+  },
+  "samples": [
+    {
+      "sample_id": "bottle-train-small-01",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 9112,
+      "annotation_id": 20676,
+      "file_name": "Rangsit_2021_GX024613_218.jpg",
+      "group_id": "2:Rangsit_2021_GX024613",
+      "bbox": [
+        420.0,
+        272.0,
+        18.0,
+        38.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.0,
+      "image_sha256": "f1ace70f2c5ed62094778e1f193415f944db1924b6676e3f78268fdeca75a996",
+      "prepared_label_sha256": "73af4d727dab0e59ebc23acf072bb392713a2961aa0dd7e9048c44d8f9a16722",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_train_01.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-02",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 12758,
+      "annotation_id": 46499,
+      "file_name": "Rangsit_2021_GX114613_307.jpg",
+      "group_id": "2:Rangsit_2021_GX114613",
+      "bbox": [
+        657.0,
+        364.0,
+        37.0,
+        14.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 7.0,
+      "image_sha256": "c7200d75aa26e6a3c4162ed420fbea4560620a7e0cb7142c5ff5aaf5e15078a9",
+      "prepared_label_sha256": "7cb18e980ef1562189488fdd6c6eedc17dd59b89dcc5dfd97dff2e253f620e12",
+      "image_annotation_count": 10,
+      "contact_sheet": "bottle_train_01.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-03",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 10073,
+      "annotation_id": 41062,
+      "file_name": "Rangsit_2021_GX094613_294.jpg",
+      "group_id": "2:Rangsit_2021_GX094613",
+      "bbox": [
+        538.0,
+        525.0,
+        43.0,
+        19.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.5,
+      "image_sha256": "9a34bca08cff886ab720deb9a487be2d15ab750e1c5d89e2bad31bd097342b3c",
+      "prepared_label_sha256": "1c350532c099b3449510920398b5641895e464264a2553d47aba50a8cc061ac1",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_train_01.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-04",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 46824,
+      "annotation_id": 136336,
+      "file_name": "Chiangrai_2021_GH010137_367.jpg",
+      "group_id": "8:Chiangrai_2021_GH010137",
+      "bbox": [
+        1000.0,
+        365.0,
+        73.0,
+        36.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 8.520710059171599,
+      "image_sha256": "a5529e5e3c0c9841f7dde1f3d7419240526c614e9e6f3885d07976f3ff1894f4",
+      "prepared_label_sha256": "184cdbdec9c7526d49d7b7a2c38654d9be67e73e8c3d19c340a5e14335b1ecf0",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_train_01.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-05",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 62648,
+      "annotation_id": 196499,
+      "file_name": "Ubon_2022_GH010237_281.jpg",
+      "group_id": "15:Ubon_2022_GH010237",
+      "bbox": [
+        1852.0,
+        539.0,
+        68.0,
+        25.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 8.333333333333334,
+      "image_sha256": "2a51966160193ef60eb100e1b87b47180dffa674093f7f78f9b43962d6625294",
+      "prepared_label_sha256": "c726f3f874c28f4b63cba7913861e9975df7fe926ac8cb7a672622be9519ef36",
+      "image_annotation_count": 9,
+      "contact_sheet": "bottle_train_01.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-06",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 11206,
+      "annotation_id": 49102,
+      "file_name": "Rangsit_2021_GX124613_3.jpg",
+      "group_id": "2:Rangsit_2021_GX124613",
+      "bbox": [
+        1075.0,
+        387.0,
+        26.0,
+        14.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 7.0,
+      "image_sha256": "bd87f3b2e5afeb7ed37cc5e8d470c633960141fd20a4de14d8a79765f25a107b",
+      "prepared_label_sha256": "1d5b5357a83206b93575e7c35c84315a9132bd0e7e0fda3838f816ef4115f14b",
+      "image_annotation_count": 12,
+      "contact_sheet": "bottle_train_02.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-07",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 47496,
+      "annotation_id": 137626,
+      "file_name": "Chiangrai_2021_GH010124_264.jpg",
+      "group_id": "8:Chiangrai_2021_GH010124",
+      "bbox": [
+        1294.0,
+        1130.0,
+        164.0,
+        38.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 8.994082840236686,
+      "image_sha256": "a248b5636e9cdfeb12070b4dc5963ee5fcac90069e8bdb527996563f2bd5bffa",
+      "prepared_label_sha256": "f1639e4d7211e2a529a36162af6d161476dc9a1132a8cedc851fa5fbbb7a1bfa",
+      "image_annotation_count": 2,
+      "contact_sheet": "bottle_train_02.jpg"
+    },
+    {
+      "sample_id": "bottle-train-small-08",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 11610,
+      "annotation_id": 57297,
+      "file_name": "Rangsit_2021_GX164613_143.jpg",
+      "group_id": "2:Rangsit_2021_GX164613",
+      "bbox": [
+        1063.0,
+        322.0,
+        47.0,
+        18.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.0,
+      "image_sha256": "519f441eff61d7982bc3af92ba70927f01b469dda6dc01f09c86ccb6fd2a9b94",
+      "prepared_label_sha256": "e933429d119d1a76bc257335cf7de93f1d777ef930cdf8a03fc8cd9b25e142b5",
+      "image_annotation_count": 9,
+      "contact_sheet": "bottle_train_02.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-01",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 53884,
+      "annotation_id": 141027,
+      "file_name": "Chiangrai_2021_GH010139_301.jpg",
+      "group_id": "8:Chiangrai_2021_GH010139",
+      "bbox": [
+        1423.0,
+        988.0,
+        50.0,
+        78.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 11.834319526627219,
+      "image_sha256": "6cfbb9cd953b091ce98245788f75ebf43d141bc08df3ffae80d574bc192ce591",
+      "prepared_label_sha256": "67466f1895fbd0206fc785ecd97fd450643552a5469f26ed04602368dea9584c",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_train_02.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-02",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 53487,
+      "annotation_id": 140123,
+      "file_name": "Chiangrai_2021_GH010127_146.jpg",
+      "group_id": "8:Chiangrai_2021_GH010127",
+      "bbox": [
+        1336.0,
+        965.0,
+        46.0,
+        50.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 10.887573964497042,
+      "image_sha256": "2e817a17f92445842d8e7bb284cb20c06ab977215d581236ea3ddaaa3271d41a",
+      "prepared_label_sha256": "f020ccb036d5cfbdbb07147d49951557c3377b3cee2132bf7a7843cbdbf9802b",
+      "image_annotation_count": 14,
+      "contact_sheet": "bottle_train_02.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-03",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 8159,
+      "annotation_id": 22352,
+      "file_name": "Rangsit_2021_GX034613_3.jpg",
+      "group_id": "2:Rangsit_2021_GX034613",
+      "bbox": [
+        164.0,
+        447.0,
+        34.0,
+        23.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 11.5,
+      "image_sha256": "70e133ad95baaf32b639ffbe99305075a96d8bdb76e69d76a3ae8a1f2360f417",
+      "prepared_label_sha256": "c6588a813ae484b027f3b9e306130eb648d4318220bf6a4775ffb287f79807aa",
+      "image_annotation_count": 14,
+      "contact_sheet": "bottle_train_03.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-04",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 47517,
+      "annotation_id": 136047,
+      "file_name": "Chiangrai_2021_GH010123_228.jpg",
+      "group_id": "8:Chiangrai_2021_GH010123",
+      "bbox": [
+        921.0,
+        694.0,
+        89.0,
+        60.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 14.201183431952662,
+      "image_sha256": "72203435d82de5f55535e91f353db5caf6bc8f946a8f0415fb00ccf915205e65",
+      "prepared_label_sha256": "7decd5b1b9bcf4cfccb2d817cf213500ef5dd449e2dbdad8eb9791ba6a41a955",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_train_03.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-05",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 6610,
+      "annotation_id": 68975,
+      "file_name": "Rangsit_2021_GX234613_7.jpg",
+      "group_id": "2:Rangsit_2021_GX234613",
+      "bbox": [
+        940.0,
+        628.0,
+        21.0,
+        36.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 10.5,
+      "image_sha256": "e6723e567a91877abe2a2bef5a2fc66195416cf91c1c2488e899765988a859d0",
+      "prepared_label_sha256": "4d4456ad6e73ae67d7e35d4f3752701109a0e68df26f6c0de0fb72febe7baa3f",
+      "image_annotation_count": 27,
+      "contact_sheet": "bottle_train_03.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-06",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 7001,
+      "annotation_id": 72497,
+      "file_name": "Rangsit_2021_GX244613_138.jpg",
+      "group_id": "2:Rangsit_2021_GX244613",
+      "bbox": [
+        899.0,
+        506.0,
+        74.0,
+        27.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 13.5,
+      "image_sha256": "d2eddd27b1c1137af68a805dd8b873099a6cb5ff63ffd15bbcfabebfe6e71163",
+      "prepared_label_sha256": "6a8e3d455c0719e282716a05a9d482e260d2921625f85ae50c2c6ee9ee416721",
+      "image_annotation_count": 14,
+      "contact_sheet": "bottle_train_03.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-07",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 8490,
+      "annotation_id": 75598,
+      "file_name": "Rangsit_2021_GX254613_113.jpg",
+      "group_id": "2:Rangsit_2021_GX254613",
+      "bbox": [
+        1100.0,
+        448.0,
+        47.0,
+        21.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 10.5,
+      "image_sha256": "ce432c8e6b0cd5a5929bcfa43e9f4f767548ea41c5c2e6629065a2a3c1984c37",
+      "prepared_label_sha256": "873cc0035fe71cab58979e35dac18195160430ca72216ec9346392645a549974",
+      "image_annotation_count": 2,
+      "contact_sheet": "bottle_train_03.jpg"
+    },
+    {
+      "sample_id": "bottle-train-medium-08",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 13173,
+      "annotation_id": 43193,
+      "file_name": "Rangsit_2021_GX104613_5.jpg",
+      "group_id": "2:Rangsit_2021_GX104613",
+      "bbox": [
+        989.0,
+        323.0,
+        80.0,
+        23.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 11.5,
+      "image_sha256": "2efb89c7230f62795b1017d8e5ee3f1dde6eb246aa7be1d4244b3d19a1eaf7d5",
+      "prepared_label_sha256": "037f3363090ee848607d22664fa08ba81f5037c9efbe77f680e39f5c60f4074d",
+      "image_annotation_count": 21,
+      "contact_sheet": "bottle_train_04.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-01",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 5986,
+      "annotation_id": 9710,
+      "file_name": "Taladthai_2021_GX034430_011.jpg",
+      "group_id": "6:Taladthai_2021_GX034430",
+      "bbox": [
+        203.0,
+        345.0,
+        87.0,
+        44.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 22.0,
+      "image_sha256": "182ba5f6f35cc1212e7e9a5d678bfe5f5a3911d47f3a02630acc60084aaa0b24",
+      "prepared_label_sha256": "ce8f053f1de57569fe3d181edfa8d703a6c9374d26063ed3261b89df83a05b7d",
+      "image_annotation_count": 8,
+      "contact_sheet": "bottle_train_04.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-02",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 13573,
+      "annotation_id": 34042,
+      "file_name": "Rangsit_2021_GX064614_114.jpg",
+      "group_id": "2:Rangsit_2021_GX064614",
+      "bbox": [
+        597.0,
+        336.0,
+        39.0,
+        39.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 19.5,
+      "image_sha256": "91a635d2170bd3f5d7589e4d46cfb8e5d34bd8206be959223c05d953abf3a31e",
+      "prepared_label_sha256": "f0e9598f20eced2f74003558e90b7787c18fa45c7813441a5f2602c11f5f37fc",
+      "image_annotation_count": 14,
+      "contact_sheet": "bottle_train_04.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-03",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 5720,
+      "annotation_id": 16493,
+      "file_name": "Taladthai_2021_GX064430_157.jpg",
+      "group_id": "6:Taladthai_2021_GX064430",
+      "bbox": [
+        770.0,
+        444.0,
+        37.0,
+        76.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 18.5,
+      "image_sha256": "4487f31cb20d013c0f92982eb86f3c0533028d491de24d43b752b259856fae2b",
+      "prepared_label_sha256": "abd63627869f49bc28b84448f1ae4b05b586518b77899302ce65be3d6fb846ae",
+      "image_annotation_count": 11,
+      "contact_sheet": "bottle_train_04.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-04",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 62905,
+      "annotation_id": 171576,
+      "file_name": "Mawanella_2022_GX030150_343.jpg",
+      "group_id": "17:Mawanella_2022_GX030150",
+      "bbox": [
+        851.0,
+        274.0,
+        50.0,
+        52.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 16.666666666666668,
+      "image_sha256": "85551a07e3774952dc1fc05b510c1dc212abbed49c34c976a281ba9a6e8ef12c",
+      "prepared_label_sha256": "bd8b211f1db31b9554ea249200f13675b6d4273173a85a5058784b6d568e4ec2",
+      "image_annotation_count": 13,
+      "contact_sheet": "bottle_train_04.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-05",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 11194,
+      "annotation_id": 58932,
+      "file_name": "Rangsit_2021_GX174613_56.jpg",
+      "group_id": "2:Rangsit_2021_GX174613",
+      "bbox": [
+        920.0,
+        583.0,
+        127.0,
+        87.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 43.5,
+      "image_sha256": "5f17c5ef26da01ba0af9db31a11248bad59e9b7b29a5ae482160d761a568814c",
+      "prepared_label_sha256": "cdf0d76230f423d24b8503abdd6197f6c0cbc78b0f1201dc22cbdc3b21bc9e6a",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_train_05.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-06",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 13815,
+      "annotation_id": 19459,
+      "file_name": "Rangsit_2021_GX014614_4.jpg",
+      "group_id": "2:Rangsit_2021_GX014614",
+      "bbox": [
+        354.0,
+        664.0,
+        66.0,
+        46.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 23.0,
+      "image_sha256": "55a14196ec36788cd9bd346952561c9d09da3319e3352cf9e773065c72211e6f",
+      "prepared_label_sha256": "0dee40487e95f1e931cddcc7411440d5a97280446f761eb7507a9e2fe2edcb89",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_train_05.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-07",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 4854,
+      "annotation_id": 5296,
+      "file_name": "Taladthai_2021_GX014429_119.jpg",
+      "group_id": "6:Taladthai_2021_GX014429",
+      "bbox": [
+        380.0,
+        655.0,
+        47.0,
+        46.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 23.0,
+      "image_sha256": "e34110002403712b595b4f24fe98962ae314e5fd5db6892204614c3d94ff2405",
+      "prepared_label_sha256": "7271b40d1061edfa5d4549e2035ceb11234cc6a7587573e9bcc7c5841d5286b9",
+      "image_annotation_count": 9,
+      "contact_sheet": "bottle_train_05.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-08",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 47046,
+      "annotation_id": 137541,
+      "file_name": "Chiangrai_2021_GH020128_332.jpg",
+      "group_id": "8:Chiangrai_2021_GH020128",
+      "bbox": [
+        488.0,
+        973.0,
+        139.0,
+        65.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 15.384615384615385,
+      "image_sha256": "f8ca93a98aa7ae7074060a7d86f7ce103d463b49237174e0623950dbcb58b930",
+      "prepared_label_sha256": "a13b78204fe082778d4fab85e405849fe98bc72888a3dcbbc23c459f21cbd2e8",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_train_05.jpg"
+    },
+    {
+      "sample_id": "bottle-train-large-09",
+      "class": "bottle",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 14677,
+      "annotation_id": 18846,
+      "file_name": "Rangsit_2021_GX014613_233.jpg",
+      "group_id": "2:Rangsit_2021_GX014613",
+      "bbox": [
+        639.0,
+        441.0,
+        104.0,
+        55.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 27.5,
+      "image_sha256": "9c52302ea725b43eb0f8f95ba99915ae0847e9a39e033a501adce858c19fcd01",
+      "prepared_label_sha256": "f614f148ec8e9ae7beae61b57bdb8bb793049c461bd6cdf8891a3634565a1e47",
+      "image_annotation_count": 21,
+      "contact_sheet": "bottle_train_05.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-01",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 10549,
+      "annotation_id": 52345,
+      "file_name": "Rangsit_2021_GX134613_259.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        709.0,
+        473.0,
+        17.0,
+        22.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 8.5,
+      "image_sha256": "564b9ae3725348079f4b2138448870304993425f0613f804f7ab06cc09f1ddff",
+      "prepared_label_sha256": "281e47ad432f25e04bd75c4856e30bb5725d0699c0688a6bddc1f52b6e27b217",
+      "image_annotation_count": 9,
+      "contact_sheet": "bottle_val_01.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-02",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 12492,
+      "annotation_id": 32291,
+      "file_name": "Rangsit_2021_GX064613_20.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        1000.0,
+        363.0,
+        35.0,
+        13.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 6.5,
+      "image_sha256": "a05438bb404134b2c5621c09b5e56e457b1cede2a698e66b5b2b2f9a30de13b6",
+      "prepared_label_sha256": "bddb750c7068b9c0a18445054db52680aa032abb375d286214c85b14339e5e98",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_val_01.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-03",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 13315,
+      "annotation_id": 54162,
+      "file_name": "Rangsit_2021_GX144613_9.jpg",
+      "group_id": "2:Rangsit_2021_GX144613",
+      "bbox": [
+        204.0,
+        451.0,
+        38.0,
+        12.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 6.0,
+      "image_sha256": "bc1b093e9cda9f18e8be76fd8ba058648c349539b109c1aa628c2376655d4a36",
+      "prepared_label_sha256": "2c3cf7cc677146a05c11d3822e2d9d3133859d84b95bd0b0dc8aeb6b23ed73f6",
+      "image_annotation_count": 7,
+      "contact_sheet": "bottle_val_01.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-04",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 47026,
+      "annotation_id": 135512,
+      "file_name": "Chiangrai_2021_GH010110_14.jpg",
+      "group_id": "8:Chiangrai_2021_GH010110",
+      "bbox": [
+        1733.0,
+        658.0,
+        80.0,
+        25.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 5.9171597633136095,
+      "image_sha256": "c7c315a10ec4e135df523792575e6d5218f5570156c6eedf5c1802cd36a97334",
+      "prepared_label_sha256": "319d7ebccb2bfc1643e0faf5a9719963e26477124fca8f79bf04eff91fca78f4",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_val_01.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-05",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 5230,
+      "annotation_id": 6320,
+      "file_name": "Taladthai_2021_GX014430_040.jpg",
+      "group_id": "6:Taladthai_2021_GX014430",
+      "bbox": [
+        881.0,
+        102.0,
+        22.0,
+        13.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 6.5,
+      "image_sha256": "7ef6cda6cfd84464675bd80418286df0cd452062a64ad167210ff30f11695ba6",
+      "prepared_label_sha256": "f3d702a8ef5dbacabf24cb95a4fe14d326d4fbaabf2c535f16133031157f9ec1",
+      "image_annotation_count": 16,
+      "contact_sheet": "bottle_val_01.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-06",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 47888,
+      "annotation_id": 138106,
+      "file_name": "Chiangrai_2021_GH010104_104.jpg",
+      "group_id": "8:Chiangrai_2021_GH010104",
+      "bbox": [
+        2030.0,
+        1231.0,
+        71.0,
+        25.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 5.9171597633136095,
+      "image_sha256": "082fe53a172e85187fe97f4fb0782e8ed97f4f55300cf28a7b34b769254214d1",
+      "prepared_label_sha256": "679bd375e3dc4664413bf9fbcc304baf62cd1a3f8da571b83f1e710befdff2ce",
+      "image_annotation_count": 8,
+      "contact_sheet": "bottle_val_02.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-07",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 48105,
+      "annotation_id": 138560,
+      "file_name": "Chiangrai_2021_GH010107_16.jpg",
+      "group_id": "8:Chiangrai_2021_GH010107",
+      "bbox": [
+        850.0,
+        878.0,
+        51.0,
+        33.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 7.810650887573964,
+      "image_sha256": "db63a6605a9fe9b1e9bab02d91063ee5871502dfbcf7b8671e78fa6e78d3f196",
+      "prepared_label_sha256": "fcea25a935a8a2e2d0ef6214872f7984a872015b1854d02326e147ba3f23f369",
+      "image_annotation_count": 8,
+      "contact_sheet": "bottle_val_02.jpg"
+    },
+    {
+      "sample_id": "bottle-val-small-08",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 53641,
+      "annotation_id": 196741,
+      "file_name": "Chiangrai_2021_GH010128_435.jpg",
+      "group_id": "8:Chiangrai_2021_GH010128",
+      "bbox": [
+        1667.0,
+        544.0,
+        47.0,
+        15.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 3.5502958579881656,
+      "image_sha256": "963ea645f79ca39e706d6b0bf794b504209a69e8c878f7b66291c1fa4a38a6cb",
+      "prepared_label_sha256": "0728503364e7fbf3ed2e0db4a408aae9589037969c6495f95b33fd76866e9cae",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_val_02.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-01",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 3209,
+      "annotation_id": 7763,
+      "file_name": "Taladthai_2021_GX024429_047.jpg",
+      "group_id": "6:Taladthai_2021_GX024429",
+      "bbox": [
+        1052.0,
+        493.0,
+        23.0,
+        37.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 11.5,
+      "image_sha256": "eef9f67999330204ef064ce659eccd2af1d6d219828e5662832ec803605266d0",
+      "prepared_label_sha256": "74a0473bf2ab2b85302c37217132f10e96a05b756eaa19312cade0db9ffd5d7f",
+      "image_annotation_count": 14,
+      "contact_sheet": "bottle_val_02.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-02",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 4322,
+      "annotation_id": 8896,
+      "file_name": "Taladthai_2021_GX034429_106.jpg",
+      "group_id": "6:Taladthai_2021_GX034429",
+      "bbox": [
+        486.0,
+        196.0,
+        28.0,
+        25.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 12.5,
+      "image_sha256": "a3f8637cbb0722acef33058e44c44a5cc64df722c84d3f32e405c825f4900df4",
+      "prepared_label_sha256": "442e6a06afc1dc51e2fe925621e8e549c17fc69616acc11dda1003e1a25df01b",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_val_02.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-03",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 14319,
+      "annotation_id": 36317,
+      "file_name": "Rangsit_2021_GX074613_160.jpg",
+      "group_id": "2:Rangsit_2021_GX074613",
+      "bbox": [
+        378.0,
+        399.0,
+        57.0,
+        21.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 10.5,
+      "image_sha256": "db9694771b526fab83c6231f3d186a41258e2ab9d17c30e6902abad369b97523",
+      "prepared_label_sha256": "bb0ce6ee95b025c5a0d6292c7b0942ed865a5840b3cea3ae42d63306801b60ca",
+      "image_annotation_count": 17,
+      "contact_sheet": "bottle_val_03.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-04",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47116,
+      "annotation_id": 136603,
+      "file_name": "Chiangrai_2021_GH010146_515.jpg",
+      "group_id": "8:Chiangrai_2021_GH010146",
+      "bbox": [
+        2431.0,
+        695.0,
+        93.0,
+        39.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 9.23076923076923,
+      "image_sha256": "c2d17c6f27279b15cefa6c4db5af86f5e7bba12e3aef3e88e1b3e33cc43893c0",
+      "prepared_label_sha256": "753907d520e27ba0b6c265ec3c23c4a74d7e865cae3fe7ac22b5ae7021f14b1d",
+      "image_annotation_count": 2,
+      "contact_sheet": "bottle_val_03.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-05",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 8696,
+      "annotation_id": 64089,
+      "file_name": "Rangsit_2021_GX214613_182.jpg",
+      "group_id": "2:Rangsit_2021_GX214613",
+      "bbox": [
+        1141.0,
+        464.0,
+        38.0,
+        18.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.0,
+      "image_sha256": "e2f12ced58dbb7373c4300332ecbb9b3c2672af9ba12df2710d82284e3a14218",
+      "prepared_label_sha256": "010a3511ff06900b1e5d4496a2514147efab6c5a419a3bf787215ed5f50f0c4e",
+      "image_annotation_count": 13,
+      "contact_sheet": "bottle_val_03.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-06",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 46842,
+      "annotation_id": 135654,
+      "file_name": "Chiangrai_2021_GH010112_403.jpg",
+      "group_id": "8:Chiangrai_2021_GH010112",
+      "bbox": [
+        1479.0,
+        740.0,
+        49.0,
+        122.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 11.597633136094675,
+      "image_sha256": "f57e27a99a09573d9edbd95358b24b0bb4208a7a618627ef5ac7c07b37fd4c8e",
+      "prepared_label_sha256": "03cfd3d938a7b2e349c3518c0f7b9ebc8d2f88c217a6de7cbc1c851d84f441f7",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_val_03.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-07",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47698,
+      "annotation_id": 136846,
+      "file_name": "Chiangrai_2021_GH020104_5.jpg",
+      "group_id": "8:Chiangrai_2021_GH020104",
+      "bbox": [
+        2581.0,
+        1152.0,
+        123.0,
+        54.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 12.781065088757396,
+      "image_sha256": "3bc99f03b34e72266d2285a7bbaf9c6c31e48bbe2d291f0eb8845563febc6a3c",
+      "prepared_label_sha256": "21a2a944c338cbbc1c7da8e38b6106f252699e1050fbfc0ef0b76fb39a477b70",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_val_03.jpg"
+    },
+    {
+      "sample_id": "bottle-val-medium-08",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 13233,
+      "annotation_id": 53342,
+      "file_name": "Rangsit_2021_GX144613_162.jpg",
+      "group_id": "2:Rangsit_2021_GX144613",
+      "bbox": [
+        1096.0,
+        355.0,
+        55.0,
+        25.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 12.5,
+      "image_sha256": "f50be91ab99219b07056cd5def7576e69802a03e4cce3d35f8b9c0069367de6a",
+      "prepared_label_sha256": "a691790578025c655f86065a60ddc6ca073a3df4965f59b8ab8e560fdf3a22b4",
+      "image_annotation_count": 23,
+      "contact_sheet": "bottle_val_04.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-01",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 47443,
+      "annotation_id": 136258,
+      "file_name": "Chiangrai_2021_GH010132_148.jpg",
+      "group_id": "8:Chiangrai_2021_GH010132",
+      "bbox": [
+        769.0,
+        1384.0,
+        213.0,
+        135.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 31.952662721893493,
+      "image_sha256": "524f8ea57d4dd1b8b7dedb222f6b71f04d8e5e688f1bda9ac55b710990407112",
+      "prepared_label_sha256": "c82b2176f778e2800d1fe9fe3a870794a76453119fbe8cb737240e84e02497fa",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_val_04.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-02",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 62750,
+      "annotation_id": 171794,
+      "file_name": "Mawanella_2022_GX060155_81.jpg",
+      "group_id": "17:Mawanella_2022_GX060155",
+      "bbox": [
+        1224.0,
+        529.0,
+        95.0,
+        112.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 31.666666666666668,
+      "image_sha256": "121974988d6f1efed3de1e19a01568d41186b477f473711c62657b36eab6f93f",
+      "prepared_label_sha256": "9d310869bc5498552f726962c51f817fc31983d9bc29e1f8b2af19bdd5eaf359",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_val_04.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-03",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 62909,
+      "annotation_id": 171612,
+      "file_name": "Mawanella_2022_GX040149_143.jpg",
+      "group_id": "17:Mawanella_2022_GX040149",
+      "bbox": [
+        1503.0,
+        558.0,
+        132.0,
+        114.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 38.0,
+      "image_sha256": "bdb7e8496117fe65602e2c86093f981434e83fa83b9bd694e3218538c565a49d",
+      "prepared_label_sha256": "e5659a4783c68813b7b3a5d80881ee9f2ca783d210ae79cb7bd88b2781af859a",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_val_04.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-04",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 46631,
+      "annotation_id": 137067,
+      "file_name": "Chiangrai_2021_GH020112_1.jpg",
+      "group_id": "8:Chiangrai_2021_GH020112",
+      "bbox": [
+        199.0,
+        806.0,
+        62.0,
+        114.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 14.674556213017752,
+      "image_sha256": "46b118cf5139f00e7ebb0331af0cde5e14ef154577635fcd66a42d0d4a0c6801",
+      "prepared_label_sha256": "b1c820f70994625d737612a37608045e4e940927128d14cb10a894f9140645e4",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_val_04.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-05",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 44767,
+      "annotation_id": 128776,
+      "file_name": "Chiangrai_2021_GH130132_195.jpg",
+      "group_id": "8:Chiangrai_2021_GH130132",
+      "bbox": [
+        877.0,
+        1311.0,
+        94.0,
+        111.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 22.24852071005917,
+      "image_sha256": "4570065a17e727e305c1430be729840b24efad9f7c655dbd18155b9ce678a9a0",
+      "prepared_label_sha256": "768badcc8dc7597f1f65301152e25d5f60af7f882a9fd28d197fc95756082018",
+      "image_annotation_count": 3,
+      "contact_sheet": "bottle_val_05.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-06",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 14223,
+      "annotation_id": 36438,
+      "file_name": "Rangsit_2021_GX074613_243.jpg",
+      "group_id": "2:Rangsit_2021_GX074613",
+      "bbox": [
+        966.0,
+        297.0,
+        51.0,
+        61.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 25.5,
+      "image_sha256": "d8383dbee2c8a4098403af9f5ce12e13cc131ad03c6c2fb42a0464205d779c5f",
+      "prepared_label_sha256": "6bdf9b82714a5e9bdd760ec9c431e76efa4c1c1d82b1a806bc52249ad6d4d090",
+      "image_annotation_count": 4,
+      "contact_sheet": "bottle_val_05.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-07",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 12565,
+      "annotation_id": 32459,
+      "file_name": "Rangsit_2021_GX064613_307.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        273.0,
+        662.0,
+        117.0,
+        52.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 26.0,
+      "image_sha256": "dbe94436075091d5d6fc552def4f43b5a452878281fa7899b4a5c95180b16f87",
+      "prepared_label_sha256": "4563336247573daf1a992d20cb63a7314d10311e75e842a2e03570f530741bdf",
+      "image_annotation_count": 1,
+      "contact_sheet": "bottle_val_05.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-08",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 48096,
+      "annotation_id": 138531,
+      "file_name": "Chiangrai_2021_GH010107_13.jpg",
+      "group_id": "8:Chiangrai_2021_GH010107",
+      "bbox": [
+        415.0,
+        995.0,
+        92.0,
+        65.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 15.384615384615385,
+      "image_sha256": "f47f7250274975c2bdafc7ee4dfd642b969557e83bd5b875e393f8879fd3c3c9",
+      "prepared_label_sha256": "2fb9864fb2474e4a45e43ac7b0edd4720f61966a89c8c542ed620e16c200ca12",
+      "image_annotation_count": 5,
+      "contact_sheet": "bottle_val_05.jpg"
+    },
+    {
+      "sample_id": "bottle-val-large-09",
+      "class": "bottle",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 10636,
+      "annotation_id": 51990,
+      "file_name": "Rangsit_2021_GX134613_185.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        1009.0,
+        641.0,
+        38.0,
+        44.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 19.0,
+      "image_sha256": "6e8e2192a342355b75389a9900f016b50304a1b87b3ae75dce297b7e37e3ae8f",
+      "prepared_label_sha256": "2fb2da5a674795a0d8b9d6ba17bb398d54dbad3ade36c01cbad6e0f46e96c845",
+      "image_annotation_count": 6,
+      "contact_sheet": "bottle_val_05.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-01",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 5688,
+      "annotation_id": 16792,
+      "file_name": "Taladthai_2021_GX064430_154.jpg",
+      "group_id": "6:Taladthai_2021_GX064430",
+      "bbox": [
+        1255.0,
+        120.0,
+        15.0,
+        17.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 7.5,
+      "image_sha256": "86b90b125d1a878ceca029a4f45b3500ad0027f29462d8e44686f2722d35fcee",
+      "prepared_label_sha256": "f94094f9236f29a67d5965a248f6815485874f305f6b6c62d041b78be33cd234",
+      "image_annotation_count": 6,
+      "contact_sheet": "cup_train_01.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-02",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 6536,
+      "annotation_id": 68988,
+      "file_name": "Rangsit_2021_GX234613_56.jpg",
+      "group_id": "2:Rangsit_2021_GX234613",
+      "bbox": [
+        46.0,
+        160.0,
+        34.0,
+        21.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 10.5,
+      "image_sha256": "7846725d0a7c9215e7dded3a8f6d545be059c561bcc2904d351e08b80f5c3903",
+      "prepared_label_sha256": "47e94cfb51c95b937a5694f84d90acf987beb3451861874cde01151839959c9b",
+      "image_annotation_count": 7,
+      "contact_sheet": "cup_train_01.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-03",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 53385,
+      "annotation_id": 142128,
+      "file_name": "Chiangrai_2021_GH010137_379.jpg",
+      "group_id": "8:Chiangrai_2021_GH010137",
+      "bbox": [
+        2197.0,
+        577.0,
+        39.0,
+        29.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 6.863905325443787,
+      "image_sha256": "ee864afdd5f7c580d668f90fa7b3c8cfd8243909982f9bf3e856cb62dfbf62ce",
+      "prepared_label_sha256": "243e4f8ede5267d27640ac2be319a5bf38299125bf5a1fb349de68e31739d53f",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_train_01.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-04",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 5884,
+      "annotation_id": 9187,
+      "file_name": "Taladthai_2021_GX034430_013.jpg",
+      "group_id": "6:Taladthai_2021_GX034430",
+      "bbox": [
+        213.0,
+        22.0,
+        16.0,
+        16.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 8.0,
+      "image_sha256": "e9a58cdff3cedf813e93820e19dfa7bccdd7530d41c3ea6fbb89a86705128928",
+      "prepared_label_sha256": "7b81ac7558d46c839050f7ee3e934db6f3e2c46cd55f671114794ed2e1568038",
+      "image_annotation_count": 22,
+      "contact_sheet": "cup_train_01.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-05",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 14679,
+      "annotation_id": 17799,
+      "file_name": "Rangsit_2021_GX014613_224.jpg",
+      "group_id": "2:Rangsit_2021_GX014613",
+      "bbox": [
+        900.0,
+        222.0,
+        23.0,
+        13.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 6.5,
+      "image_sha256": "4fddd7dfeae5c4ee0186931a9d5755dcc5b338bb07fc3ded55827f068a630f94",
+      "prepared_label_sha256": "51a3d034c3c85d7d54bb1d7cdb6fe2712c3702ee9c4e3bf4d39fa0ba2b30f1ca",
+      "image_annotation_count": 17,
+      "contact_sheet": "cup_train_01.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-06",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 7908,
+      "annotation_id": 48346,
+      "file_name": "Rangsit_2021_GX114614_13.jpg",
+      "group_id": "2:Rangsit_2021_GX114614",
+      "bbox": [
+        828.0,
+        184.0,
+        25.0,
+        18.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.0,
+      "image_sha256": "85d5d4ed14d4c4af15ca0ad6b6f2981939ecfbeea3a46ac0e40ae2fc5f2ae437",
+      "prepared_label_sha256": "86d534fe54e2ce5ab478be147447824ba8dcd57ff1d5741755b0b9df115cac01",
+      "image_annotation_count": 1,
+      "contact_sheet": "cup_train_02.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-07",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 8323,
+      "annotation_id": 30384,
+      "file_name": "Rangsit_2021_GX054613_319.jpg",
+      "group_id": "2:Rangsit_2021_GX054613",
+      "bbox": [
+        472.0,
+        419.0,
+        45.0,
+        20.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 10.0,
+      "image_sha256": "67614755543c77bbd87b7f8c7fcf0007045751513ff209167a2d629595b2e890",
+      "prepared_label_sha256": "b4bc7db479b0dce680490d2de9f23c3275b54ca92fecfbe78bd74029601b7702",
+      "image_annotation_count": 12,
+      "contact_sheet": "cup_train_02.jpg"
+    },
+    {
+      "sample_id": "cup-train-small-08",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "small",
+      "image_id": 13100,
+      "annotation_id": 197405,
+      "file_name": "Rangsit_2021_GX104613_126.jpg",
+      "group_id": "2:Rangsit_2021_GX104613",
+      "bbox": [
+        1005.0,
+        416.0,
+        42.0,
+        23.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 11.5,
+      "image_sha256": "0d93459d79193f3bfb3da0695848e3bcf241a30875cd207fa353da97813d2f92",
+      "prepared_label_sha256": "0a9d08098fd6f51886bd2cffe62f359db075c7f651715caa456b1fc540fe2b72",
+      "image_annotation_count": 6,
+      "contact_sheet": "cup_train_02.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-01",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 11674,
+      "annotation_id": 57200,
+      "file_name": "Rangsit_2021_GX164613_216.jpg",
+      "group_id": "2:Rangsit_2021_GX164613",
+      "bbox": [
+        522.0,
+        258.0,
+        31.0,
+        34.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 15.5,
+      "image_sha256": "29ffed3a1f26ba8dd918ccc07d2265cc18cf38bb1de7ae99f8e1b942537f8a84",
+      "prepared_label_sha256": "64f57bb8a6c4f4e7c4ca9811ea425f783d66715c7af3bf77b2ad79f331aa8ac2",
+      "image_annotation_count": 13,
+      "contact_sheet": "cup_train_02.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-02",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 4613,
+      "annotation_id": 4688,
+      "file_name": "Taladthai_2021_GX014429_108.jpg",
+      "group_id": "6:Taladthai_2021_GX014429",
+      "bbox": [
+        566.0,
+        489.0,
+        32.0,
+        54.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 16.0,
+      "image_sha256": "e26e642e331454f4cf0e459c6adacbb1ef32d53494c82b25dc094c77e12b4596",
+      "prepared_label_sha256": "ed15cdb6d432ea475a18a7d3aac0c79493b4bd83600c6c37504fd07a777f0015",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_02.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-03",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 4042,
+      "annotation_id": 11272,
+      "file_name": "Taladthai_2021_GX044430_319.jpg",
+      "group_id": "6:Taladthai_2021_GX044430",
+      "bbox": [
+        913.0,
+        265.0,
+        28.0,
+        32.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 14.0,
+      "image_sha256": "8594f3d253f553742d7ed54cac0b9be6401ff9987b44c282402982f0093abbeb",
+      "prepared_label_sha256": "8926707157664ea8a992e4abbab136a385cebeeb148222e8fb02192734da3e44",
+      "image_annotation_count": 9,
+      "contact_sheet": "cup_train_03.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-04",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 62720,
+      "annotation_id": 171528,
+      "file_name": "Mawanella_2022_GX030139_304.jpg",
+      "group_id": "17:Mawanella_2022_GX030139",
+      "bbox": [
+        1281.0,
+        859.0,
+        63.0,
+        47.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 15.666666666666666,
+      "image_sha256": "37f7ae47ab38ecb1d5e73ceaeff8f22308c8b320e50a87dac2d3a5a8777cfe18",
+      "prepared_label_sha256": "59ebee7d651cb6c846b56f8c0f573b97bc62728b25b8e639d28fc071f2865f3a",
+      "image_annotation_count": 5,
+      "contact_sheet": "cup_train_03.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-05",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 8111,
+      "annotation_id": 23178,
+      "file_name": "Rangsit_2021_GX034613_110.jpg",
+      "group_id": "2:Rangsit_2021_GX034613",
+      "bbox": [
+        243.0,
+        640.0,
+        48.0,
+        33.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 16.5,
+      "image_sha256": "cc25a7a30e51a7e004726de8d2f21ccc923a753c09a451ef635c84712caaaf42",
+      "prepared_label_sha256": "170e41bbe12d7c33cddeacac45e03a27b8c86482e76024f86be5cb5bed214a3f",
+      "image_annotation_count": 13,
+      "contact_sheet": "cup_train_03.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-06",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 11879,
+      "annotation_id": 62081,
+      "file_name": "Rangsit_2021_GX204613_82.jpg",
+      "group_id": "2:Rangsit_2021_GX204613",
+      "bbox": [
+        1113.0,
+        253.0,
+        45.0,
+        25.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 12.5,
+      "image_sha256": "fe154a52e0abe573465ccde22369fc2c006295e3586c55313be7852eae4ef40c",
+      "prepared_label_sha256": "5e46205cde96a0ee0dc90876edb57ebf4b8213fe108f43cb8eb6acd72fddfcd7",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_train_03.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-07",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 62910,
+      "annotation_id": 196164,
+      "file_name": "Mawanella_2022_GX010139_129.jpg",
+      "group_id": "17:Mawanella_2022_GX010139",
+      "bbox": [
+        26.0,
+        670.0,
+        53.0,
+        41.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 13.666666666666666,
+      "image_sha256": "ee49c3fd17bd5b5edccc3119eee7d8fa5754e0826e361dfc243e3a52044d5b68",
+      "prepared_label_sha256": "628c98e07e100701297aba5ea63b15acb8f60a91b03d0f432d0de9497dc87fde",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_03.jpg"
+    },
+    {
+      "sample_id": "cup-train-medium-08",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "medium",
+      "image_id": 9184,
+      "annotation_id": 134907,
+      "file_name": "Rangsit_2021_GX024613_316.jpg",
+      "group_id": "2:Rangsit_2021_GX024613",
+      "bbox": [
+        1024.0,
+        213.0,
+        32.0,
+        26.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 13.0,
+      "image_sha256": "d496497a3b5c04fe79edff8d6e0633fc3b000b3f90f7c0cc22d7c0491449d3f4",
+      "prepared_label_sha256": "dc7475450f145760c28aceee98c4a1d1d2af86220743d40f0a36d259d3f1cc4f",
+      "image_annotation_count": 18,
+      "contact_sheet": "cup_train_04.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-01",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 10814,
+      "annotation_id": 21874,
+      "file_name": "Rangsit_2021_GX024614_161.jpg",
+      "group_id": "2:Rangsit_2021_GX024614",
+      "bbox": [
+        755.0,
+        502.0,
+        52.0,
+        37.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 18.5,
+      "image_sha256": "4bdf9512cca8d0da21288337cc7507a0335b6cd9aa874ecbe84b542370df1bca",
+      "prepared_label_sha256": "8022c22bcbd80b1f00aa11a310fabb392353bd329a07d12c1d5ac76475b6d3c2",
+      "image_annotation_count": 21,
+      "contact_sheet": "cup_train_04.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-02",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 53506,
+      "annotation_id": 140045,
+      "file_name": "Chiangrai_2021_GH010127_125.jpg",
+      "group_id": "8:Chiangrai_2021_GH010127",
+      "bbox": [
+        625.0,
+        1313.0,
+        88.0,
+        76.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 17.988165680473372,
+      "image_sha256": "66b9ba817f3c4fee010691343eba502add2b207f66d81cc3639096d025e577bd",
+      "prepared_label_sha256": "87819a8d45668b190a9ba6f8716e097abb90648af6a2a9add260fc777ee29213",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_04.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-03",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 62976,
+      "annotation_id": 168543,
+      "file_name": "Mawanella_2022_GX010138_161.jpg",
+      "group_id": "17:Mawanella_2022_GX010138",
+      "bbox": [
+        1112.0,
+        403.0,
+        64.0,
+        62.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 20.666666666666668,
+      "image_sha256": "6255763fc03dc9cb511d40d9a28117d0ddc2481db0f52ef6c6cd6ef9ada0cef5",
+      "prepared_label_sha256": "4abd736b813fdd135fa8a28b39075f405333fcd79d47ddad0218139e8c79ca9e",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_04.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-04",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 11371,
+      "annotation_id": 49426,
+      "file_name": "Rangsit_2021_GX124613_198.jpg",
+      "group_id": "2:Rangsit_2021_GX124613",
+      "bbox": [
+        1228.0,
+        504.0,
+        48.0,
+        47.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 23.5,
+      "image_sha256": "0ea1ce012b8b2cc47411409688da641d4b0a4676519822017777dbfc66a2ff6e",
+      "prepared_label_sha256": "ea9f4f7c8378a674327d4ccb4d011303047e5ea899f5809adbe19793a615776c",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_train_04.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-05",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 13966,
+      "annotation_id": 60642,
+      "file_name": "Rangsit_2021_GX194613_236.jpg",
+      "group_id": "2:Rangsit_2021_GX194613",
+      "bbox": [
+        418.0,
+        673.0,
+        65.0,
+        46.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 23.0,
+      "image_sha256": "09f8b1241b3284fd4fe98db1dd683760cb94ad75cc554771712d96471a6e97fa",
+      "prepared_label_sha256": "5531fbd8de304202c78e04e0cd354aaad8bb43061b2bc7bbd86c49b574b3a22e",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_train_05.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-06",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 7146,
+      "annotation_id": 72531,
+      "file_name": "Rangsit_2021_GX244613_144.jpg",
+      "group_id": "2:Rangsit_2021_GX244613",
+      "bbox": [
+        106.0,
+        620.0,
+        40.0,
+        37.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 18.5,
+      "image_sha256": "c46efe6c4dd41577e0cdaaab859b4429712076ed3c9e99575ac17769a4325e3f",
+      "prepared_label_sha256": "e603ad93ad65c6ef9460064a94b4a2d8777d2a05730ffa042260ffae7a567635",
+      "image_annotation_count": 25,
+      "contact_sheet": "cup_train_05.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-07",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 47165,
+      "annotation_id": 136298,
+      "file_name": "Chiangrai_2021_GH010135_75.jpg",
+      "group_id": "8:Chiangrai_2021_GH010135",
+      "bbox": [
+        2243.0,
+        977.0,
+        124.0,
+        74.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 17.514792899408285,
+      "image_sha256": "d95420476160ad4951173ccc4254e0b3e7749530919e6cda7c9b8baf3c80573f",
+      "prepared_label_sha256": "5f4bcef07e6232000ed9d90e6bff477df5ea17212fa29a74fac95495e7dde402",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_05.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-08",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 13662,
+      "annotation_id": 34537,
+      "file_name": "Rangsit_2021_GX064614_216.jpg",
+      "group_id": "2:Rangsit_2021_GX064614",
+      "bbox": [
+        487.0,
+        472.0,
+        63.0,
+        57.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 28.5,
+      "image_sha256": "5614f3ad2d694a2687ac67c134479a8957822c87080ef141d0f50136ee26b85c",
+      "prepared_label_sha256": "c97a31862808207bb4c738f95441674971a962b26be08db0cee01c882c429701",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_train_05.jpg"
+    },
+    {
+      "sample_id": "cup-train-large-09",
+      "class": "cup",
+      "split": "train",
+      "size_stratum": "large",
+      "image_id": 8484,
+      "annotation_id": 75387,
+      "file_name": "Rangsit_2021_GX254613_16.jpg",
+      "group_id": "2:Rangsit_2021_GX254613",
+      "bbox": [
+        0.0,
+        444.0,
+        42.0,
+        47.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 21.0,
+      "image_sha256": "bd04dbea093f31d7d12d3d582b171427a4351339654342600885e0dc12e4fc00",
+      "prepared_label_sha256": "2d11af91c02473ff96405f503260b552e4c5a395897bfa79950ef813b33656fb",
+      "image_annotation_count": 1,
+      "contact_sheet": "cup_train_05.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-01",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 13223,
+      "annotation_id": 53602,
+      "file_name": "Rangsit_2021_GX144613_276.jpg",
+      "group_id": "2:Rangsit_2021_GX144613",
+      "bbox": [
+        613.0,
+        398.0,
+        14.0,
+        19.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 7.0,
+      "image_sha256": "348323f54c9bbf615a5e4910d70e84c4a3d3e5bf5623d7156ef20d5124ac445f",
+      "prepared_label_sha256": "59ce2a24c068bc843a7e232a8abe12a49cca74348f3df3da7826cf148f662bce",
+      "image_annotation_count": 6,
+      "contact_sheet": "cup_val_01.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-02",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 5163,
+      "annotation_id": 6845,
+      "file_name": "Taladthai_2021_GX014430_150.jpg",
+      "group_id": "6:Taladthai_2021_GX014430",
+      "bbox": [
+        1001.0,
+        45.0,
+        16.0,
+        19.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 8.0,
+      "image_sha256": "addfc9976b9568ca0cbfd7abbfe6e7ca55a4e7744a72d417662f25851393bac5",
+      "prepared_label_sha256": "ed48ddcccc7e2c30ffeb53ed979fd7ea4119dd6312162ea8ecb649fe6931373f",
+      "image_annotation_count": 19,
+      "contact_sheet": "cup_val_01.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-03",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 10604,
+      "annotation_id": 50922,
+      "file_name": "Rangsit_2021_GX134613_141.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        1116.0,
+        423.0,
+        22.0,
+        19.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.5,
+      "image_sha256": "865ba08ca2ed9e026cd3b608c458fa9bca29878f55bd42d3aec788f6bd4ffe45",
+      "prepared_label_sha256": "338fa670b5fa19a5406fe8e87fcc0890bc2b9af23c72a3942929a2429d824ae3",
+      "image_annotation_count": 14,
+      "contact_sheet": "cup_val_01.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-04",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 12615,
+      "annotation_id": 32262,
+      "file_name": "Rangsit_2021_GX064613_149.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        846.0,
+        342.0,
+        19.0,
+        34.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 9.5,
+      "image_sha256": "4665875b8e3fb46107389b61f202da3b66c21d3a3c4703871703461a4feb7407",
+      "prepared_label_sha256": "8bb0c2c5b27eb41f4e6df9470ff1e7fc65fb2a04feac3304abba5259a267dce5",
+      "image_annotation_count": 14,
+      "contact_sheet": "cup_val_01.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-05",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 62639,
+      "annotation_id": 168229,
+      "file_name": "Ubon_2022_GH010235_26.jpg",
+      "group_id": "15:Ubon_2022_GH010235",
+      "bbox": [
+        1690.0,
+        187.0,
+        40.0,
+        18.0
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "short_side_at_640": 6.0,
+      "image_sha256": "c593ef3cbdf51bf0cc106a16492010371c664435f5225a441fd65084cffa4a95",
+      "prepared_label_sha256": "9047304a3cc0d69b9f174d27923c239c7252f4d694e6a11398ec03c4577b82b6",
+      "image_annotation_count": 13,
+      "contact_sheet": "cup_val_01.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-06",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 53646,
+      "annotation_id": 140332,
+      "file_name": "Chiangrai_2021_GH010128_190.jpg",
+      "group_id": "8:Chiangrai_2021_GH010128",
+      "bbox": [
+        2110.0,
+        611.0,
+        39.0,
+        29.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 6.863905325443787,
+      "image_sha256": "fb5d1042a5694862a221b2662109d5bef996be75b3408889333837c5a0d4cfc2",
+      "prepared_label_sha256": "710e7ba0398923623c966b85568cc32881b496f8f351870975fecda2414025a8",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_val_02.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-07",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 3291,
+      "annotation_id": 7550,
+      "file_name": "Taladthai_2021_GX024429_052.jpg",
+      "group_id": "6:Taladthai_2021_GX024429",
+      "bbox": [
+        981.0,
+        362.0,
+        15.0,
+        29.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 7.5,
+      "image_sha256": "9633e297180b27e1b92eb936a097f938cee2c8449435c8b42b43595b19e6ca4c",
+      "prepared_label_sha256": "27050f0f83777c8d9c592bb8dfd97e968209f1aca52656dea7cc4df45e33c3e1",
+      "image_annotation_count": 15,
+      "contact_sheet": "cup_val_02.jpg"
+    },
+    {
+      "sample_id": "cup-val-small-08",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "small",
+      "image_id": 48113,
+      "annotation_id": 139409,
+      "file_name": "Chiangrai_2021_GH010112_253.jpg",
+      "group_id": "8:Chiangrai_2021_GH010112",
+      "bbox": [
+        1573.0,
+        1001.0,
+        41.0,
+        31.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 7.337278106508876,
+      "image_sha256": "69b399df7fe8d6b5b4546749e815889dcce949431c43055c7068b514c96bdd0f",
+      "prepared_label_sha256": "8c71052062feff83d5fa9333250a2798f9af28dcc718f91e9cd603ffbeeee652",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_val_02.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-01",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 8714,
+      "annotation_id": 64902,
+      "file_name": "Rangsit_2021_GX214613_167.jpg",
+      "group_id": "2:Rangsit_2021_GX214613",
+      "bbox": [
+        608.0,
+        518.0,
+        28.0,
+        26.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 13.0,
+      "image_sha256": "5d2cebdbb57eb06bd077b57f5050994c10a7bd0734f7c5b01a6440e90b6ce809",
+      "prepared_label_sha256": "e85a0404129eb66704a18fbb199c9405a1f3d316143de032fba34b8b83a776f5",
+      "image_annotation_count": 14,
+      "contact_sheet": "cup_val_02.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-02",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47082,
+      "annotation_id": 135239,
+      "file_name": "Chiangrai_2021_GH010104_2.jpg",
+      "group_id": "8:Chiangrai_2021_GH010104",
+      "bbox": [
+        762.0,
+        961.0,
+        81.0,
+        53.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 12.544378698224852,
+      "image_sha256": "d3c706eb4c8586a083b0619a83873794a777eaddb30e576465256053b9382033",
+      "prepared_label_sha256": "5461c4f3471fff4133195e5f7a4e0944bc735f67f404230eb690d4aedc79b96b",
+      "image_annotation_count": 15,
+      "contact_sheet": "cup_val_02.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-03",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47131,
+      "annotation_id": 136587,
+      "file_name": "Chiangrai_2021_GH010146_331.jpg",
+      "group_id": "8:Chiangrai_2021_GH010146",
+      "bbox": [
+        1019.0,
+        1041.0,
+        67.0,
+        51.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 12.071005917159763,
+      "image_sha256": "eba194efe3d043d781f2dab860bda30f06c99b6640bcf7aaf1998b46b9d3c3bb",
+      "prepared_label_sha256": "7970c4b7c17c67e0cdc8e5041a37e40c023a0de23ed79662e77c864f1f6da410",
+      "image_annotation_count": 2,
+      "contact_sheet": "cup_val_03.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-04",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 14240,
+      "annotation_id": 35478,
+      "file_name": "Rangsit_2021_GX074613_304.jpg",
+      "group_id": "2:Rangsit_2021_GX074613",
+      "bbox": [
+        954.0,
+        491.0,
+        56.0,
+        31.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 15.5,
+      "image_sha256": "94a1bdd740e4f7f233ab518c7da9b7faf8c019d6ae8054ceafbac62ecd70c945",
+      "prepared_label_sha256": "74b1087dbc7aa146765207528de3b443588064d2c81f3ef452d62238c5cce810",
+      "image_annotation_count": 24,
+      "contact_sheet": "cup_val_03.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-05",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 47013,
+      "annotation_id": 135517,
+      "file_name": "Chiangrai_2021_GH010110_219.jpg",
+      "group_id": "8:Chiangrai_2021_GH010110",
+      "bbox": [
+        785.0,
+        1253.0,
+        120.0,
+        72.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 17.041420118343197,
+      "image_sha256": "8aba63a2a030ef5793eae83885014f883a099bd2efcd990a4ca1c310a2a8db16",
+      "prepared_label_sha256": "87876d50c0402496d0ebde7445bfa730f4f9cbe2e69bf5854ed871927fbed1f6",
+      "image_annotation_count": 2,
+      "contact_sheet": "cup_val_03.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-06",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 5153,
+      "annotation_id": 7188,
+      "file_name": "Taladthai_2021_GX014430_072.jpg",
+      "group_id": "6:Taladthai_2021_GX014430",
+      "bbox": [
+        715.0,
+        231.0,
+        24.0,
+        38.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 12.0,
+      "image_sha256": "40f5777ff9b9d41a7691853266a2cdd5316f290eb229a52f0a992df23c96a26f",
+      "prepared_label_sha256": "872187bd2b8886452a627173cb6afcba4766559860f7faad3cab96b470dd9cbf",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_val_03.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-07",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 12519,
+      "annotation_id": 32296,
+      "file_name": "Rangsit_2021_GX064613_231.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        1203.0,
+        468.0,
+        43.0,
+        28.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 14.0,
+      "image_sha256": "928039d9a4e5525188c8ec656579fb8ee996f4475e790feb5a142ec7fbf621de",
+      "prepared_label_sha256": "ba99bf19440ee1e90f688c40b2546d035c305b44d96dd45604d13831567c2e0d",
+      "image_annotation_count": 2,
+      "contact_sheet": "cup_val_03.jpg"
+    },
+    {
+      "sample_id": "cup-val-medium-08",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "medium",
+      "image_id": 3263,
+      "annotation_id": 8134,
+      "file_name": "Taladthai_2021_GX024429_008.jpg",
+      "group_id": "6:Taladthai_2021_GX024429",
+      "bbox": [
+        1036.0,
+        342.0,
+        33.0,
+        38.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 16.5,
+      "image_sha256": "19bff396f2d5cae2d0ef601044adcaaf639ef2bc7c8c7fb1ec050992d45c2b4f",
+      "prepared_label_sha256": "1bdd91b9fc1465da0934b3b4c890eede01932837f5204dec4d0299fb2278f396",
+      "image_annotation_count": 4,
+      "contact_sheet": "cup_val_04.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-01",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 48101,
+      "annotation_id": 138524,
+      "file_name": "Chiangrai_2021_GH010107_11.jpg",
+      "group_id": "8:Chiangrai_2021_GH010107",
+      "bbox": [
+        858.0,
+        1155.0,
+        87.0,
+        108.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 20.59171597633136,
+      "image_sha256": "67720c20a64ef6c0fa5894a72af49b46749ad7067713cbdfed3f66b10542f933",
+      "prepared_label_sha256": "c6aaae73cab2102e289025f68179df353fc32ea10c4edf3f175edcde07c4aac1",
+      "image_annotation_count": 2,
+      "contact_sheet": "cup_val_04.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-02",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 8524,
+      "annotation_id": 65089,
+      "file_name": "Rangsit_2021_GX214613_202.jpg",
+      "group_id": "2:Rangsit_2021_GX214613",
+      "bbox": [
+        898.0,
+        339.0,
+        38.0,
+        39.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 19.0,
+      "image_sha256": "93e3761ef95c328fa0a313fc0b3882f2cb50372ed2421c9c1dac8495e8ad3665",
+      "prepared_label_sha256": "3d8d5900e592f8f564ea2e8409227a74a562d8ad86b57e45d7f277a23cb22875",
+      "image_annotation_count": 8,
+      "contact_sheet": "cup_val_04.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-03",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 13487,
+      "annotation_id": 54814,
+      "file_name": "Rangsit_2021_GX144613_233.jpg",
+      "group_id": "2:Rangsit_2021_GX144613",
+      "bbox": [
+        1056.0,
+        475.0,
+        37.0,
+        41.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 18.5,
+      "image_sha256": "9e1da5dfbd29be769df2e684db1c5403b7cdbf386b5d2bebffd66b2bd919e02d",
+      "prepared_label_sha256": "34aaa47deb8876a6f5c2269a10f565de802396c8d5404bd3faae07f71abf5220",
+      "image_annotation_count": 11,
+      "contact_sheet": "cup_val_04.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-04",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 53681,
+      "annotation_id": 140376,
+      "file_name": "Chiangrai_2021_GH010128_359.jpg",
+      "group_id": "8:Chiangrai_2021_GH010128",
+      "bbox": [
+        1996.0,
+        1133.0,
+        133.0,
+        124.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 29.349112426035504,
+      "image_sha256": "f03406cd4cc1cfa44d437bf90bb84fe3c7dcf47631026bb61233c3351b79f8d3",
+      "prepared_label_sha256": "669e646de7903da84730e9f64097d0827a92f4a5ba00d6b3f62604ee954ed6ba",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_val_04.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-05",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 14282,
+      "annotation_id": 35077,
+      "file_name": "Rangsit_2021_GX074613_109.jpg",
+      "group_id": "2:Rangsit_2021_GX074613",
+      "bbox": [
+        888.0,
+        529.0,
+        48.0,
+        43.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 21.5,
+      "image_sha256": "e810e130a376e9e7f8e81fc5492160dc97a1d560ce9130c3eaca59aeca356b29",
+      "prepared_label_sha256": "99539d417692ca66b8487cf926465f8f9581139bbd056a1e095443a8f9ea8cce",
+      "image_annotation_count": 11,
+      "contact_sheet": "cup_val_05.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-06",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 10685,
+      "annotation_id": 52498,
+      "file_name": "Rangsit_2021_GX134613_245.jpg",
+      "group_id": "2:Rangsit_2021_GX134613",
+      "bbox": [
+        0.0,
+        622.0,
+        43.0,
+        56.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 21.5,
+      "image_sha256": "da679c5c5993232d4d66b7a12891f364beb75ddf8e0a1a58eac4d3a0bf5e1303",
+      "prepared_label_sha256": "28aaf6413e8ade2f71b8b55be251259b18a5d72f72a89621f7d3c8ffc532aff5",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_val_05.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-07",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 47273,
+      "annotation_id": 135443,
+      "file_name": "Chiangrai_2021_GH010107_259.jpg",
+      "group_id": "8:Chiangrai_2021_GH010107",
+      "bbox": [
+        1577.0,
+        1128.0,
+        118.0,
+        93.0
+      ],
+      "source_size": [
+        2704,
+        1520
+      ],
+      "short_side_at_640": 22.011834319526628,
+      "image_sha256": "d2c67626ab24c09045243a83283fba6e704421cc58de31fb0b4933f5d29ea91e",
+      "prepared_label_sha256": "ae6ef05addce4d845ebbdd93c05b686a90c83317b0c04cb71d26c8ecf0c0272c",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_val_05.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-08",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 12603,
+      "annotation_id": 33229,
+      "file_name": "Rangsit_2021_GX064613_47.jpg",
+      "group_id": "2:Rangsit_2021_GX064613",
+      "bbox": [
+        644.0,
+        325.0,
+        36.0,
+        35.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 17.5,
+      "image_sha256": "fb1b07e2c294e9f8e6f238ad525430322173b02e2794fe872d9e0a547cb354d1",
+      "prepared_label_sha256": "041684066f93c48cd9200e906f2f96f3874c580fc42e70ecb5eb81b90ceb20c7",
+      "image_annotation_count": 3,
+      "contact_sheet": "cup_val_05.jpg"
+    },
+    {
+      "sample_id": "cup-val-large-09",
+      "class": "cup",
+      "split": "val",
+      "size_stratum": "large",
+      "image_id": 8741,
+      "annotation_id": 64347,
+      "file_name": "Rangsit_2021_GX214613_307.jpg",
+      "group_id": "2:Rangsit_2021_GX214613",
+      "bbox": [
+        633.0,
+        463.0,
+        35.0,
+        40.0
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "short_side_at_640": 17.5,
+      "image_sha256": "17d0e3522252d7b7c9340bd53e540f4dba96e36f4a724c0166852f5b2d23e4ee",
+      "prepared_label_sha256": "584ab0737737f821d1f6f6256706d7bd0721675d43bd387b9794bfd0a239f2d3",
+      "image_annotation_count": 10,
+      "contact_sheet": "cup_val_05.jpg"
+    }
+  ]
+}

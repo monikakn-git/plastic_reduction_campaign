@@ -1,0 +1,4 @@
+# Keep the runtime's working CUDA torch/torchvision builds; record their exact versions.
+ultralytics==8.4.201
+mlflow==3.17.2
+PyYAML==6.0.3

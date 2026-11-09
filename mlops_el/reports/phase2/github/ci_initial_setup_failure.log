@@ -1,0 +1,211 @@
+verify	Set up job	﻿2026-11-09T09:55:45.0354030Z Current runner version: '2.338.2'
+verify	Set up job	2026-11-09T09:55:45.0358780Z Runner name: 'MLOPS-EL-Mac-M3'
+verify	Set up job	2026-11-09T09:55:45.0359170Z Runner group name: 'Default'
+verify	Set up job	2026-11-09T09:55:45.0359740Z Machine name: 'Aayushs-Laptop-3'
+verify	Set up job	2026-11-09T09:55:45.0361740Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-11-09T09:55:45.0362900Z Contents: read
+verify	Set up job	2026-11-09T09:55:45.0363190Z Metadata: read
+verify	Set up job	2026-11-09T09:55:45.0363500Z ##[endgroup]
+verify	Set up job	2026-11-09T09:55:45.0364510Z Secret source: Actions
+verify	Set up job	2026-11-09T09:55:45.0364980Z Cache mode: write
+verify	Set up job	2026-11-09T09:55:45.0365350Z Prepare workflow directory
+verify	Set up job	2026-11-09T09:55:45.0739150Z Prepare all required actions
+verify	Set up job	2026-11-09T09:55:45.0763410Z Getting action download info
+verify	Set up job	2026-11-09T09:55:46.2318950Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-11-09T09:55:47.2219070Z Complete job name: verify
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-09T09:55:47.2622970Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2623420Z with:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2623570Z   persist-credentials: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2623770Z   repository: Aayushbhandari17/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2625320Z   token: ***
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2625460Z   ssh-strict: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2625590Z   ssh-user: git
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2625730Z   clean: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2625880Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626060Z   fetch-depth: 1
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626200Z   fetch-tags: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626340Z   show-progress: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626500Z   lfs: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626640Z   submodules: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626800Z   set-safe-directory: true
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2626970Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2627230Z env:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2627370Z   DOCKER_CONFIG:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2627520Z   DOCKER_CONTEXT: colima-mlops-el
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:47.2627700Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.7765380Z Syncing repository: Aayushbhandari17/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.7767540Z ##[group]Getting Git version info
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.7769210Z Working directory is '/path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.7782870Z [command]/usr/bin/git version
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8247770Z git version 2.50.1 (Apple Git-155)
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8271910Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8276850Z Copying '/Users/PROJECT_USER/.gitconfig' to '/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/88dd7e81-a41e-437c-94d9-7ab112758b30/.gitconfig'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8280960Z Temporarily overriding HOME='/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/88dd7e81-a41e-437c-94d9-7ab112758b30' before making global git config changes
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8281650Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8283410Z [command]/usr/bin/git config --global --add safe.directory /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8395680Z Deleting the contents of '/path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8397470Z ##[group]Initializing the repository
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8399970Z [command]/usr/bin/git init /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8680120Z Initialized empty Git repository in /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL/.git/
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8685810Z [command]/usr/bin/git remote add origin https://github.com/Aayushbhandari17/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8786340Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8786690Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8788560Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8905370Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8905780Z ##[group]Setting up auth
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8910230Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:49.8998820Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.2626910Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.2725240Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.3388590Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.3475410Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.4110340Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.4203000Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.4203310Z ##[group]Fetching the repository
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:50.4207560Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e501ecf7e370a3f1a38f19d645e956c602d1c017:refs/remotes/origin/main
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2065030Z From https://github.com/Aayushbhandari17/MLOPS_EL
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2066370Z  * [new ref]         e501ecf7e370a3f1a38f19d645e956c602d1c017 -> origin/main
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2124610Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2190570Z ##[group]Determining the checkout info
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2191240Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2191620Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2325240Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2431010Z ##[group]Checking out the ref
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.2446530Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4080240Z Reset branch 'main'
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4086240Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4098540Z ##[endgroup]
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4290220Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4383900Z e501ecf7e370a3f1a38f19d645e956c602d1c017
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4473250Z ##[group]Removing auth
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4475910Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.4572610Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.5258990Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.5343330Z http.https://github.com/.extraheader
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.5347510Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.5514030Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.6096920Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.6172270Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:55:56.6794110Z ##[endgroup]
+verify	Create isolated test environment	﻿2026-11-09T09:55:56.7329130Z ##[group]Run python3.12 -m venv "$RUNNER_TEMP/phase2-ci-env"
+verify	Create isolated test environment	2026-11-09T09:55:56.7329450Z ^[[36;1mpython3.12 -m venv "$RUNNER_TEMP/phase2-ci-env"^[[0m
+verify	Create isolated test environment	2026-11-09T09:55:56.7329760Z ^[[36;1m"$RUNNER_TEMP/phase2-ci-env/bin/python" -m pip install -r requirements-ci.txt^[[0m
+verify	Create isolated test environment	2026-11-09T09:55:56.7394700Z shell: /bin/bash -e {0}
+verify	Create isolated test environment	2026-11-09T09:55:56.7394860Z env:
+verify	Create isolated test environment	2026-11-09T09:55:56.7394970Z   DOCKER_CONFIG:
+verify	Create isolated test environment	2026-11-09T09:55:56.7395120Z   DOCKER_CONTEXT: colima-mlops-el
+verify	Create isolated test environment	2026-11-09T09:55:56.7398670Z ##[endgroup]
+verify	Create isolated test environment	2026-11-09T09:55:58.6855230Z Collecting fastapi==0.162.0 (from -r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:58.8264570Z   Downloading fastapi-0.162.0-py3-none-any.whl.metadata (26 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.0904950Z Collecting Pillow==12.3.0 (from -r requirements-ci.txt (line 3))
+verify	Create isolated test environment	2026-11-09T09:55:59.1252670Z   Downloading pillow-12.3.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.2003150Z Collecting httpx==0.28.1 (from -r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:55:59.2315220Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.3220870Z Collecting pytest==9.2.0 (from -r requirements-ci.txt (line 5))
+verify	Create isolated test environment	2026-11-09T09:55:59.3545540Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.4388250Z Collecting starlette>=0.46.0 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:59.4709170Z   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.6110740Z Collecting pydantic>=2.9.0 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:59.6424100Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.7613800Z Collecting typing-extensions>=4.8.0 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:59.7951540Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.8647360Z Collecting typing-inspection>=0.4.2 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:59.8979310Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+verify	Create isolated test environment	2026-11-09T09:55:59.9631380Z Collecting annotated-doc>=0.0.2 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:55:59.9983840Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.0969390Z Collecting opentelemetry-api>=1.44.0 (from fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:56:00.1296030Z   Downloading opentelemetry_api-1.45.2-py3-none-any.whl.metadata (1.4 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.2241760Z Collecting anyio (from httpx==0.28.1->-r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:56:00.2591570Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.3425240Z Collecting certifi (from httpx==0.28.1->-r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:56:00.3752720Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.4590320Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:56:00.4923640Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.5565560Z Collecting idna (from httpx==0.28.1->-r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:56:00.5909310Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.6602990Z Collecting iniconfig>=2 (from pytest==9.2.0->-r requirements-ci.txt (line 5))
+verify	Create isolated test environment	2026-11-09T09:56:00.7031020Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.7847150Z Collecting packaging>=24 (from pytest==9.2.0->-r requirements-ci.txt (line 5))
+verify	Create isolated test environment	2026-11-09T09:56:00.8198540Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Create isolated test environment	2026-11-09T09:56:00.8943510Z Collecting pluggy<2,>=1.6 (from pytest==9.2.0->-r requirements-ci.txt (line 5))
+verify	Create isolated test environment	2026-11-09T09:56:00.9291060Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.0162030Z Collecting pygments>=2.15 (from pytest==9.2.0->-r requirements-ci.txt (line 5))
+verify	Create isolated test environment	2026-11-09T09:56:01.0542500Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.1309660Z Collecting h11>=0.16 (from httpcore==1.*->httpx==0.28.1->-r requirements-ci.txt (line 4))
+verify	Create isolated test environment	2026-11-09T09:56:01.1665390Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.2623580Z Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:56:01.2954100Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.8512370Z Collecting pydantic-core==2.50.4 (from pydantic>=2.9.0->fastapi==0.162.0->-r requirements-ci.txt (line 2))
+verify	Create isolated test environment	2026-11-09T09:56:01.8841140Z   Downloading pydantic_core-2.50.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (6.6 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.9310710Z Downloading fastapi-0.162.0-py3-none-any.whl (148 kB)
+verify	Create isolated test environment	2026-11-09T09:56:01.9789830Z Downloading pillow-12.3.0-cp312-cp312-macosx_11_0_arm64.whl (4.8 MB)
+verify	Create isolated test environment	2026-11-09T09:56:02.1590580Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 27.2 MB/s eta 0:00:00
+verify	Create isolated test environment	2026-11-09T09:56:02.1931810Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.2295100Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.2796300Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.3186570Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.3544510Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.3952380Z Downloading opentelemetry_api-1.45.2-py3-none-any.whl (60 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.4364970Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.4741230Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.5104810Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.5729940Z Downloading pydantic_core-2.50.4-cp312-cp312-macosx_11_0_arm64.whl (2.1 MB)
+verify	Create isolated test environment	2026-11-09T09:56:02.6225760Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 44.4 MB/s eta 0:00:00
+verify	Create isolated test environment	2026-11-09T09:56:02.6547460Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Create isolated test environment	2026-11-09T09:56:02.6921140Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 33.4 MB/s eta 0:00:00
+verify	Create isolated test environment	2026-11-09T09:56:02.7243480Z Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.7642930Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.8046190Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.8426060Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.8870390Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.9307000Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+verify	Create isolated test environment	2026-11-09T09:56:02.9777470Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+verify	Create isolated test environment	2026-11-09T09:56:03.0240080Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+verify	Create isolated test environment	2026-11-09T09:56:03.0876700Z Installing collected packages: typing-extensions, pygments, pluggy, Pillow, packaging, iniconfig, idna, h11, certifi, annotated-types, annotated-doc, typing-inspection, pytest, pydantic-core, opentelemetry-api, httpcore, anyio, starlette, pydantic, httpx, fastapi
+verify	Create isolated test environment	2026-11-09T09:56:04.2959930Z Successfully installed Pillow-12.3.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 certifi-2026.10.23 fastapi-0.162.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 opentelemetry-api-1.45.2 packaging-26.3 pluggy-1.7.0 pydantic-2.14.3 pydantic-core-2.50.4 pygments-2.21.0 pytest-9.2.0 starlette-1.10.0 typing-extensions-4.16.0 typing-inspection-0.4.5
+verify	Create isolated test environment	2026-11-09T09:56:04.5037510Z
+verify	Create isolated test environment	2026-11-09T09:56:04.5037930Z [notice] A new release of pip is available: 24.2 -> 26.3
+verify	Create isolated test environment	2026-11-09T09:56:04.5038630Z [notice] To update, run: /path/to/MLOPS_EL/.local/actions-runner/_work/_temp/phase2-ci-env/bin/python -m pip install --upgrade pip
+verify	Run API and quality tests	﻿2026-11-09T09:56:04.6312870Z ##[group]Run "$RUNNER_TEMP/phase2-ci-env/bin/python" -m pytest tests/test_phase2_api.py tests/test_phase2_quality.py tests/test_phase2_ci_gate.py -q --junitxml="$RUNNER_TEMP/phase2-ci-tests.xml"
+verify	Run API and quality tests	2026-11-09T09:56:04.6313710Z ^[[36;1m"$RUNNER_TEMP/phase2-ci-env/bin/python" -m pytest tests/test_phase2_api.py tests/test_phase2_quality.py tests/test_phase2_ci_gate.py -q --junitxml="$RUNNER_TEMP/phase2-ci-tests.xml"^[[0m
+verify	Run API and quality tests	2026-11-09T09:56:04.6373360Z shell: /bin/bash -e {0}
+verify	Run API and quality tests	2026-11-09T09:56:04.6373550Z env:
+verify	Run API and quality tests	2026-11-09T09:56:04.6373680Z   DOCKER_CONFIG:
+verify	Run API and quality tests	2026-11-09T09:56:04.6373850Z   DOCKER_CONTEXT: colima-mlops-el
+verify	Run API and quality tests	2026-11-09T09:56:04.6374030Z ##[endgroup]
+verify	Run API and quality tests	2026-11-09T09:56:06.3643300Z .....................                                                    [100%]
+verify	Run API and quality tests	2026-11-09T09:56:06.3643800Z =============================== warnings summary ===============================
+verify	Run API and quality tests	2026-11-09T09:56:06.3644180Z ../../_temp/phase2-ci-env/lib/python3.12/site-packages/fastapi/testclient.py:1
+verify	Run API and quality tests	2026-11-09T09:56:06.3645200Z   /path/to/MLOPS_EL/.local/actions-runner/_work/_temp/phase2-ci-env/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+verify	Run API and quality tests	2026-11-09T09:56:06.3646140Z     from starlette.testclient import TestClient as TestClient  # noqa
+verify	Run API and quality tests	2026-11-09T09:56:06.3646330Z
+verify	Run API and quality tests	2026-11-09T09:56:06.3646470Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+verify	Run API and quality tests	2026-11-09T09:56:06.3646750Z 21 passed, 1 warning in 1.48s
+verify	Build CPU inference container	﻿2026-11-09T09:56:06.4000870Z ##[group]Run sh scripts/docker_local.sh build --label "org.opencontainers.image.revision=$GITHUB_SHA" --tag "mlops-el-inference:ci-$GITHUB_SHA" .
+verify	Build CPU inference container	2026-11-09T09:56:06.4001610Z ^[[36;1msh scripts/docker_local.sh build --label "org.opencontainers.image.revision=$GITHUB_SHA" --tag "mlops-el-inference:ci-$GITHUB_SHA" .^[[0m
+verify	Build CPU inference container	2026-11-09T09:56:06.4015530Z shell: /bin/bash -e {0}
+verify	Build CPU inference container	2026-11-09T09:56:06.4015690Z env:
+verify	Build CPU inference container	2026-11-09T09:56:06.4015810Z   DOCKER_CONFIG:
+verify	Build CPU inference container	2026-11-09T09:56:06.4015980Z   DOCKER_CONTEXT: colima-mlops-el
+verify	Build CPU inference container	2026-11-09T09:56:06.4016130Z ##[endgroup]
+verify	Build CPU inference container	2026-11-09T09:56:06.4913850Z DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+verify	Build CPU inference container	2026-11-09T09:56:06.4914350Z             Install the buildx component to build images with BuildKit:
+verify	Build CPU inference container	2026-11-09T09:56:06.4914630Z             https://docs.docker.com/go/buildx/
+verify	Build CPU inference container	2026-11-09T09:56:06.4914790Z
+verify	Build CPU inference container	2026-11-09T09:56:06.4929490Z Failed to initialize: unable to resolve docker endpoint: context "colima-mlops-el": context not found: open /Users/PROJECT_USER/.docker/contexts/meta/951af5b1883cf02e29f6b4c5453d066e8d8aef6fda64ccbf79f64c8004fa1201/meta.json: no such file or directory
+verify	Build CPU inference container	2026-11-09T09:56:06.4948340Z ##[error]Process completed with exit code 1.
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-09T09:56:06.5045920Z Post job cleanup.
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.8832080Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.8987520Z git version 2.50.1 (Apple Git-155)
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9003730Z Copying '/Users/PROJECT_USER/.gitconfig' to '/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/b738604b-93de-43b4-a37e-8cc027813e86/.gitconfig'
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9009330Z Temporarily overriding HOME='/path/to/MLOPS_EL/.local/actions-runner/_work/_temp/b738604b-93de-43b4-a37e-8cc027813e86' before making global git config changes
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9009990Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9012000Z [command]/usr/bin/git config --global --add safe.directory /path/to/MLOPS_EL/.local/actions-runner/_work/MLOPS_EL/MLOPS_EL
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9101280Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9180340Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9845480Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:06.9922060Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:07.0484760Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-09T09:56:07.0559880Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-11-09T09:56:07.1218730Z Cleaning up orphan processes
+verify	Complete job	2026-11-09T09:56:07.2645090Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

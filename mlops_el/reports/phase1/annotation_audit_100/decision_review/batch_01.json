@@ -1,0 +1,57 @@
+{
+  "status": "user unsure; no correction approved or applied",
+  "scope": "First three training cases, examined again at larger display size. Source identity and original boxes remain in the audit manifest.",
+  "sheet": "first_three_training_cases.jpg",
+  "cases": [
+    {
+      "case": "A",
+      "sample_id": "bottle-train-large-01",
+      "image_id": 5986,
+      "annotation_id": 9710,
+      "source_class": "bottle",
+      "source_bbox": [
+        203.0,
+        345.0,
+        87.0,
+        44.0
+      ],
+      "conclusion": "The current box visibly omits the blue cap and part of the upper bottle boundary.",
+      "recommendation": "Keep bottle class. Prepare an expanded box around the entire visible bottle for later approval; no coordinates have been changed.",
+      "user_decision": "unsure"
+    },
+    {
+      "case": "B",
+      "sample_id": "bottle-train-large-09",
+      "image_id": 14677,
+      "annotation_id": 18846,
+      "source_class": "bottle",
+      "source_bbox": [
+        639.0,
+        441.0,
+        104.0,
+        55.0
+      ],
+      "conclusion": "One source box encloses several clearly separate bottles.",
+      "recommendation": "Prepare individual-instance boxes after checking all existing annotations in the scene to avoid duplication. Retain bottle class and preserve baseline source annotation history.",
+      "user_decision": "unsure"
+    },
+    {
+      "case": "C",
+      "sample_id": "bottle-train-small-03",
+      "image_id": 10073,
+      "annotation_id": 41062,
+      "source_class": "bottle",
+      "source_bbox": [
+        538.0,
+        525.0,
+        43.0,
+        19.0
+      ],
+      "conclusion": "Earlier review flagged a cup-like interpretation. On closer inspection, the purple end can also be a bottle cap. Evidence does not establish a class mismatch.",
+      "recommendation": "Keep existing bottle label and box unchanged; mark class interpretation unresolved rather than relabelling to cup.",
+      "user_decision": "unsure"
+    }
+  ],
+  "dataset_modified": false,
+  "training_started": false
+}

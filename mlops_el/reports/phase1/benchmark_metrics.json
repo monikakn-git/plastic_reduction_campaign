@@ -1,0 +1,21 @@
+{
+  "run_id": "a217af5c305d4a1c91efecbff6f6e14d",
+  "profile": "benchmark",
+  "dataset": "plitterstreet",
+  "dataset_images": 10000,
+  "metrics": {
+    "metrics/precision_B_": 0.5076107686147566,
+    "metrics/recall_B_": 0.0659458641757423,
+    "metrics/mAP50_B_": 0.002140724847102693,
+    "metrics/mAP50-95_B_": 0.0006831084922157011,
+    "fitness": 0.0006831084922157011,
+    "training_seconds": 87.00071933306754
+  },
+  "git_commit": "283c6f7b6137e85fb15b3c4f5b9ea056f828e5c6",
+  "git_dirty": false,
+  "model": "models/plitterstreet-benchmark.pt",
+  "model_sha256": "6c66fb4bc389fbcd58f81b1b28908793bea7203305b69cf8381789c4f2ac379a",
+  "dataset_approval": "pending",
+  "evaluation_split": "validation",
+  "note": "Pipeline check only, not a final baseline"
+}

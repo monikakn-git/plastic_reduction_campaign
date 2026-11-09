@@ -1,0 +1,28 @@
+{
+  "run_id": "2cd6e612cd25457bb4547df0d42511b8",
+  "profile": "baseline",
+  "dataset": "plitterstreet",
+  "dataset_images": 10000,
+  "metrics": {
+    "metrics/precision_B_": 0.43351751803753286,
+    "metrics/recall_B_": 0.3113081428203578,
+    "metrics/mAP50_B_": 0.2677343382564759,
+    "metrics/mAP50-95_B_": 0.15895425224857151,
+    "fitness": 0.15895425224857151,
+    "training_seconds": 6223.00197412516
+  },
+  "git_commit": "a49db4135cdb32b401e23d1285adaeeb85a402d9",
+  "git_dirty": false,
+  "model": "models/plitterstreet-baseline.pt",
+  "model_sha256": "54fe85012b0a2bd5a797268f2a85d1c9cf71a7af7307363cfa45f294b00b0c07",
+  "dataset_approval": "pending",
+  "evaluation_split": "validation",
+  "note": "Initial baseline; test evaluation is separate",
+  "recovery": {
+    "checkpoint": "runs/baseline-20261104-164642/weights/last.pt",
+    "checkpoint_sha256": "0f0b56b5f95b262be6148de55e0d54e155e90551ecb8416535d2eb7b2e307b0b",
+    "completed_epochs": 38,
+    "resumed_at": "2026-11-05T00:01:55+0530"
+  },
+  "timing_note": "training_seconds measures the resumed session; results.csv time restarts at recovery"
+}

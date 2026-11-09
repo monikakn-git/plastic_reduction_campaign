@@ -1,0 +1,37 @@
+name: Deploy local demo after successful CI
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: local-demo-deployment
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.event.repository.private && github.actor == github.repository_owner && github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, macOS, ARM64, mlops-el-demo]
+    timeout-minutes: 20
+    env:
+      SSL_CERT_FILE: /etc/ssl/cert.pem
+      MODEL_RELEASE_DIR: ${{ vars.MODEL_RELEASE_DIR }}
+      DOCKER_CONFIG: ${{ vars.PROJECT_DOCKER_CONFIG }}
+      DOCKER_CONTEXT: colima-mlops-el
+      COMPOSE_PROJECT_NAME: mlops_el
+      API_PORT: '8011'
+      SKIP_BUILD: '1'
+      DEPLOY_IMAGE: mlops-el-inference:ci-${{ github.sha }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Require successful CI for this exact commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/require_ci_success.py
+      - name: Require the private verified release
+        run: test -n "$MODEL_RELEASE_DIR" && test -f "$MODEL_RELEASE_DIR/release.json"
+      - name: Deploy the verified demo container
+        run: sh scripts/deploy_local.sh
+# GitHub Free private repositories do not provide protected deployment environments.
+# This demo therefore uses owner-only manual dispatch + exact-commit CI validation.

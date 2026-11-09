@@ -1,0 +1,93 @@
+{
+  "status": "metadata-only plan; image acquisition and duplicate checks not complete",
+  "selected_images": 10000,
+  "selected_annotations": 60822,
+  "classes": [
+    {
+      "id": 1,
+      "name": "litter"
+    },
+    {
+      "id": 2,
+      "name": "pile"
+    },
+    {
+      "id": 3,
+      "name": "face mask"
+    },
+    {
+      "id": 4,
+      "name": "trash bin"
+    },
+    {
+      "id": 5,
+      "name": "plastic bag"
+    },
+    {
+      "id": 6,
+      "name": "bottle"
+    },
+    {
+      "id": 7,
+      "name": "cup"
+    },
+    {
+      "id": 8,
+      "name": "rope"
+    },
+    {
+      "id": 9,
+      "name": "sachet"
+    },
+    {
+      "id": 10,
+      "name": "straw"
+    }
+  ],
+  "source_groups": 520,
+  "projected_split_counts": {
+    "train": 7000,
+    "val": 1500,
+    "test": 1500
+  },
+  "per_split_annotation_counts": {
+    "train": {
+      "1": 30443,
+      "5": 4452,
+      "4": 442,
+      "9": 2074,
+      "2": 756,
+      "7": 503,
+      "3": 467,
+      "6": 942,
+      "8": 697,
+      "10": 1105
+    },
+    "val": {
+      "1": 7224,
+      "4": 99,
+      "5": 1004,
+      "9": 459,
+      "3": 74,
+      "6": 346,
+      "2": 146,
+      "7": 89,
+      "8": 110,
+      "10": 197
+    },
+    "test": {
+      "1": 7094,
+      "9": 263,
+      "5": 894,
+      "3": 69,
+      "2": 130,
+      "6": 178,
+      "10": 206,
+      "4": 66,
+      "8": 161,
+      "7": 132
+    }
+  },
+  "invalid_boxes": [],
+  "duplicate_compound_annotation_ids": []
+}

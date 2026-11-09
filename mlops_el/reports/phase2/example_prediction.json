@@ -1,0 +1,193 @@
+{
+  "width": 4032,
+  "height": 3024,
+  "detections": [
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.643709,
+      "bbox_xyxy": [
+        1945.053,
+        2077.925,
+        2054.409,
+        2149.894
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.627346,
+      "bbox_xyxy": [
+        3362.506,
+        2577.079,
+        4031.812,
+        3015.652
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.472961,
+      "bbox_xyxy": [
+        810.183,
+        1293.15,
+        2416.699,
+        1654.613
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.457214,
+      "bbox_xyxy": [
+        2707.671,
+        1787.605,
+        3038.86,
+        1926.641
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.427198,
+      "bbox_xyxy": [
+        2558.035,
+        2252.835,
+        2685.031,
+        2350.281
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.409429,
+      "bbox_xyxy": [
+        855.395,
+        2293.909,
+        978.712,
+        2360.754
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.359302,
+      "bbox_xyxy": [
+        646.707,
+        2206.203,
+        840.769,
+        2289.72
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.327646,
+      "bbox_xyxy": [
+        2790.09,
+        1789.806,
+        3040.877,
+        1918.326
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.318157,
+      "bbox_xyxy": [
+        0.037,
+        1670.114,
+        247.227,
+        1983.556
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.298019,
+      "bbox_xyxy": [
+        2865.793,
+        2234.545,
+        2935.799,
+        2321.404
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.28877,
+      "bbox_xyxy": [
+        2226.058,
+        2134.644,
+        2355.165,
+        2192.056
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.283287,
+      "bbox_xyxy": [
+        714.457,
+        2114.221,
+        803.799,
+        2154.528
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.274827,
+      "bbox_xyxy": [
+        552.217,
+        1369.493,
+        628.944,
+        1406.998
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.272466,
+      "bbox_xyxy": [
+        3325.37,
+        2335.293,
+        4032.0,
+        3024.0
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "litter",
+      "confidence": 0.271789,
+      "bbox_xyxy": [
+        1042.264,
+        1735.935,
+        1153.913,
+        1826.569
+      ]
+    },
+    {
+      "class_id": 1,
+      "label": "pile",
+      "confidence": 0.250056,
+      "bbox_xyxy": [
+        2664.229,
+        2805.357,
+        3010.582,
+        3024.0
+      ]
+    }
+  ],
+  "request_id": "c6f85267c0b14cedac1600f078d1ce05",
+  "model": {
+    "sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+    "registry_name": "plastic-waste-yolo11m",
+    "registry_version": "3",
+    "source_training_run_id": "85714466948d4e658ebb610a475dcf57",
+    "trained_dataset": "labels-v3"
+  },
+  "confidence_threshold": 0.25,
+  "human_review_required": true,
+  "production_approved": false
+}

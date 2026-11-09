@@ -1,0 +1,45 @@
+{
+  "status": "technical_review_package_ready",
+  "faculty_approval": "pending",
+  "new_training_performed": false,
+  "presentation_artifact_ref": "artifact_Wm7ILkB9qAimbt0qlgH9ZSWHkbry2T9r",
+  "presentation_slides": 13,
+  "project_tests": "36 passed",
+  "files": [
+    {
+      "path": "reports/phase1/PHASE1_FINAL_REPORT.md",
+      "bytes": 11803,
+      "sha256": "bdc8c4640e7690479a56341f1526851d982dd7bcf5f705a1cf03a2d7ae29a570"
+    },
+    {
+      "path": "reports/phase1/PHASE1_CHECKLIST.md",
+      "bytes": 1387,
+      "sha256": "a688c29524dd3770c8058f81b23fcfea557f5df75b5d74e004fd0bc10c2202c8"
+    },
+    {
+      "path": "docs/PHASE1_REVIEW.md",
+      "bytes": 5117,
+      "sha256": "2ac2e0dea67118b185c10ba2d6bae36451e1ab57f5a90b4631ee8f9c6ac8129e"
+    },
+    {
+      "path": "reports/phase1/phase1_final_summary.json",
+      "bytes": 4047,
+      "sha256": "c02f38104e17c4e86d7456981cad9c86ad56aedf1a4023a5dccceb1c95c74bb5"
+    },
+    {
+      "path": "reports/phase1/evaluation_yolo11m_test.json",
+      "bytes": 3293,
+      "sha256": "b00a41780a89303ebddbe77adffab470d67af9e4037c28d2dc0263baa3ef16de"
+    },
+    {
+      "path": "reports/phase1/submission/Phase1_Review.pptx",
+      "bytes": 69166,
+      "sha256": "c856c039ca1bbc5df5e4d9b8c19f8903687abf6c61a48fe2a945290f40c9332a"
+    },
+    {
+      "path": "reports/phase1/submission/phase1_review.presentation.json",
+      "bytes": 258322,
+      "sha256": "83e169627bb1f3970b9eea70460a3d0aa029d755c9a199e6101cd84e48c2157a"
+    }
+  ]
+}

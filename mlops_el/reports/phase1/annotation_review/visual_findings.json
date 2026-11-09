@@ -1,0 +1,35 @@
+{
+  "reviewer": "AI-assisted visual inspection; not expert adjudication",
+  "scope": "All 24 examples in sample_manifest.json inspected using full context, original crop and simulated 640 input crop. Only the selected target box was reviewed.",
+  "status_definitions": {
+    "plausible": "Visible object shape is compatible with the source label; this is not confirmation of material or expert label validation.",
+    "uncertain": "Class cannot be confidently confirmed from this view, because of blur, deformation, occlusion or possible category ambiguity. Not a confirmed annotation error."
+  },
+  "findings": [
+    {"sample_id": "bottle-train-small-1", "status": "plausible", "note": "Box encloses a flattened white/transparent bottle-like item; detail is limited at 640."},
+    {"sample_id": "bottle-train-small-2", "status": "uncertain", "note": "Partly visible pink/grey object near the image boundary. Small and cluttered; bottle identity cannot be confidently confirmed."},
+    {"sample_id": "bottle-train-medium-1", "status": "plausible", "note": "Transparent bottle-like body and blue cap are visible. Box surrounds the item."},
+    {"sample_id": "bottle-train-medium-2", "status": "plausible", "note": "Orange elongated bottle-like object, with a narrower end. Box is broadly aligned."},
+    {"sample_id": "bottle-train-large-1", "status": "plausible", "note": "Flattened transparent container with a blue-labelled end. Deformation weakens bottle cues but label is plausible."},
+    {"sample_id": "bottle-train-large-2", "status": "uncertain", "note": "Green elongated container/packaging-like item. A bottle neck is not clear; possible taxonomy ambiguity."},
+    {"sample_id": "bottle-val-small-1", "status": "plausible", "note": "Horizontal transparent bottle-like body with a red end; blur makes recognition difficult."},
+    {"sample_id": "bottle-val-small-2", "status": "uncertain", "note": "White angular object with little diagnostic detail. Box targets an object but class is uncertain."},
+    {"sample_id": "bottle-val-medium-1", "status": "uncertain", "note": "Flattened grey rectangular object with no clear neck or cap. Requires source taxonomy or expert review."},
+    {"sample_id": "bottle-val-medium-2", "status": "uncertain", "note": "Crushed printed cylindrical container; can-like appearance. Material and class cannot be confirmed."},
+    {"sample_id": "bottle-val-large-1", "status": "plausible", "note": "Deformed transparent vessel with coloured markings. Bottle label is plausible; box encloses visible item."},
+    {"sample_id": "bottle-val-large-2", "status": "uncertain", "note": "Flattened grey container/packaging-like item; diagnostic bottle shape is absent."},
+    {"sample_id": "cup-train-small-1", "status": "uncertain", "note": "Tiny white crumpled object. Cup identity cannot be confidently confirmed."},
+    {"sample_id": "cup-train-small-2", "status": "uncertain", "note": "Thin horizontal translucent object with limited visible shape. Cup is possible but not confirmable."},
+    {"sample_id": "cup-train-medium-1", "status": "uncertain", "note": "Flattened translucent vessel-like object among leaves. Rim/body cues are insufficient to confirm cup."},
+    {"sample_id": "cup-train-medium-2", "status": "uncertain", "note": "Shallow translucent tray/lid-like item partly among vegetation. Class boundary needs clarification."},
+    {"sample_id": "cup-train-large-1", "status": "plausible", "note": "Tall transparent cup-like object with a visible upper rim; lower portion blends into vegetation."},
+    {"sample_id": "cup-train-large-2", "status": "plausible", "note": "Tapered vessel with a dark open rim, consistent with a cup lying on its side."},
+    {"sample_id": "cup-val-small-1", "status": "plausible", "note": "Upright transparent tapered vessel with a rim; very small in the full image."},
+    {"sample_id": "cup-val-small-2", "status": "plausible", "note": "White cup-like object on its side with a rounded opening. Box broadly encloses it."},
+    {"sample_id": "cup-val-medium-1", "status": "plausible", "note": "Translucent cup-like vessel among vegetation. Label plausible but source detail is limited."},
+    {"sample_id": "cup-val-medium-2", "status": "uncertain", "note": "Circular shallow container/lid-like object; needs a clear definition of whether cup includes such containers."},
+    {"sample_id": "cup-val-large-1", "status": "uncertain", "note": "Crushed brown container with a circular base; can/food-container-like appearance. Cup classification is questionable but not adjudicated."},
+    {"sample_id": "cup-val-large-2", "status": "uncertain", "note": "Crushed angular container/carton-like object with weak cup cues. Requires taxonomy or expert review."}
+  ],
+  "action": "Flag uncertain examples for review; no relabelling, deletion, filtering or data version changes. No model training or inference benchmark performed in this step."
+}

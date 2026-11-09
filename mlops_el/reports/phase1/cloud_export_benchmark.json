@@ -1,0 +1,11 @@
+{
+  "scope": "benchmark",
+  "archive": "/path/to/MLOPS_EL/exports/mlops-benchmark-labels-v3.tar",
+  "bytes": 284508160,
+  "sha256": "388732d00a3fbd81db132da52cc76c5734430c89e8fc05c7e24e796046b80910",
+  "train_images": 256,
+  "val_images": 32,
+  "test_images": 0,
+  "source_git_commit": "d2a872f7616b36264fb464beb69f9110bdec0033",
+  "source_dvc_sha256": "5a6ed019131c15aff4e8a3004c4146e46ea96ebdc98d23aaa1d6d47c33936b44"
+}

@@ -1,0 +1,27 @@
+{
+  "registry_name": "plastic-waste-yolo11m",
+  "registry_version": "2",
+  "alias": "demo",
+  "model_uri": "models:/plastic-waste-yolo11m/2",
+  "packaging_run_id": "3fd66984c3574bbf92595027098e22a3",
+  "source_training_run_id": "85714466948d4e658ebb610a475dcf57",
+  "source_test_run_id": "4b26901d393b4fc89f0a716818788fa6",
+  "weights_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "trained_dataset": "labels-v3",
+  "classes": [
+    "litter",
+    "pile",
+    "face_mask",
+    "trash_bin",
+    "plastic_bag",
+    "bottle",
+    "cup",
+    "rope",
+    "sachet",
+    "straw"
+  ],
+  "production_approved": false,
+  "allowed_scope": "local demonstration with human review",
+  "test_map50": 0.37118754279257643,
+  "test_map50_95": 0.22735957303694218
+}

@@ -1,0 +1,198 @@
+{
+  "status": "technically_complete_local_demo",
+  "college_phase": 2,
+  "completed_date": "2026-11-09",
+  "repository": "https://github.com/Aayushbhandari17/MLOPS_EL",
+  "repository_visibility": "private",
+  "deployed_source_commit": "fbe5d9003acd370f5beabbde31a9937e90468fd0",
+  "ci": {
+    "conclusion": "success",
+    "databaseId": 42597980578,
+    "event": "push",
+    "headSha": "fbe5d9003acd370f5beabbde31a9937e90468fd0",
+    "jobs": [
+      {
+        "completedAt": "2026-11-09T10:03:20Z",
+        "conclusion": "success",
+        "databaseId": 129095211675,
+        "name": "verify",
+        "startedAt": "2026-11-09T10:02:59Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-09T10:03:03Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-09T10:03:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:05Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-11-09T10:03:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:10Z",
+            "conclusion": "success",
+            "name": "Create isolated test environment",
+            "number": 3,
+            "startedAt": "2026-11-09T10:03:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:12Z",
+            "conclusion": "success",
+            "name": "Run API and quality tests",
+            "number": 4,
+            "startedAt": "2026-11-09T10:03:10Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:13Z",
+            "conclusion": "success",
+            "name": "Build CPU inference container",
+            "number": 5,
+            "startedAt": "2026-11-09T10:03:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:14Z",
+            "conclusion": "success",
+            "name": "Verify service import and dependency consistency",
+            "number": 6,
+            "startedAt": "2026-11-09T10:03:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:15Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 12,
+            "startedAt": "2026-11-09T10:03:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:15Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-09T10:03:15Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Aayushbhandari17/MLOPS_EL/actions/runs/42597980578/job/129095211675"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Aayushbhandari17/MLOPS_EL/actions/runs/42597980578"
+  },
+  "cd": {
+    "conclusion": "success",
+    "databaseId": 42598091030,
+    "event": "workflow_dispatch",
+    "headSha": "fbe5d9003acd370f5beabbde31a9937e90468fd0",
+    "jobs": [
+      {
+        "completedAt": "2026-11-09T10:04:15Z",
+        "conclusion": "success",
+        "databaseId": 129095574553,
+        "name": "deploy",
+        "startedAt": "2026-11-09T10:03:52Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-09T10:03:57Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-09T10:03:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:03:59Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-11-09T10:03:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:04:00Z",
+            "conclusion": "success",
+            "name": "Require successful CI for this exact commit",
+            "number": 3,
+            "startedAt": "2026-11-09T10:03:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:04:00Z",
+            "conclusion": "success",
+            "name": "Require the private verified release",
+            "number": 4,
+            "startedAt": "2026-11-09T10:04:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:04:09Z",
+            "conclusion": "success",
+            "name": "Deploy the verified demo container",
+            "number": 5,
+            "startedAt": "2026-11-09T10:04:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:04:10Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 10,
+            "startedAt": "2026-11-09T10:04:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-09T10:04:10Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 11,
+            "startedAt": "2026-11-09T10:04:10Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Aayushbhandari17/MLOPS_EL/actions/runs/42598091030/job/129095574553"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Aayushbhandari17/MLOPS_EL/actions/runs/42598091030"
+  },
+  "ci_test_count": 21,
+  "full_local_test_count": 58,
+  "real_model_integration_passed": true,
+  "docker_http_smoke_passed": true,
+  "application_url": "http://127.0.0.1:8011",
+  "image_id": "sha256:452dff2e0168766e503569a9206b2dbf3202dc8887d07853c5494da4a9dcf4a8",
+  "registered_model": "plastic-waste-yolo11m",
+  "registered_model_version": "3",
+  "training_run_id": "85714466948d4e658ebb610a475dcf57",
+  "weights_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "trained_dataset": "labels-v3",
+  "model_training_performed_in_phase2": false,
+  "production_approved": false,
+  "faculty_dataset_approval": "pending",
+  "runner_cleanup": {
+    "repository": "Aayushbhandari17/MLOPS_EL",
+    "remote_runner_count_after_cleanup": 0,
+    "runner_credentials_removed": true,
+    "runner_service_installed": false,
+    "docker_application_left_running": true,
+    "temporary_runner_binaries_removed": true,
+    "runner_version_used": "2.338.2",
+    "official_download_sha256": "25a065af409ffa317ab4d5a3b614dd15fc9c40f2172bc1b35a1b1258e919a388"
+  },
+  "future_workflow_requirement": "A newly approved registered online runner with the mlops-el-demo label; the temporary runner was removed after the demonstration",
+  "test_map50": 0.37118754279257643,
+  "test_map50_95": 0.22735957303694218,
+  "remaining_scope": "Phase 3 monitoring, feedback, drift/retraining demonstration, governance and planned location/campaign features"
+}

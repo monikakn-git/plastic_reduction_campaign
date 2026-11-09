@@ -1,0 +1,711 @@
+{
+  "reviewer": "AI-assisted visual inspection, not expert adjudication",
+  "status_definitions": {
+    "plausible": "Visible cues support the source label, without material verification.",
+    "uncertain": "Insufficient detail or ambiguous shape. Not a confirmed error.",
+    "suspected_class_mismatch": "Visible shape suggests a competing category. Flag for human adjudication; not an approved correction."
+  },
+  "scope": "100 targets inspected from 20 sheets. Context previews show all source boxes in grey and target in red. Original and 640 crops inspected for each target. No test images or model predictions used.",
+  "findings": [
+    {
+      "sample_id": "bottle-train-small-01",
+      "class_assessment": "plausible",
+      "note": "Transparent ridged bottle with green cap; target box broadly aligned.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-02",
+      "class_assessment": "uncertain",
+      "note": "Small green/grey object at the water edge; bottle identity not secure.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-03",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "White tapered vessel with pink rim; cup-like rather than clearly bottle-like.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-04",
+      "class_assessment": "plausible",
+      "note": "Crushed transparent bottle with red cap; partly blends into leaves.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-05",
+      "class_assessment": "uncertain",
+      "note": "Flattened transparent packaging at image edge; diagnostic bottle features unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-06",
+      "class_assessment": "uncertain",
+      "note": "Small crushed printed container; insufficient neck/body detail.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-07",
+      "class_assessment": "plausible",
+      "note": "Long transparent bottle with red label and greenish cap.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-small-08",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Flat yellow printed packet-like object; no clear bottle neck or body.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-01",
+      "class_assessment": "plausible",
+      "note": "Transparent bottle with red cap and rounded body.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-02",
+      "class_assessment": "uncertain",
+      "note": "Dirty dark crushed container with yellow marking; bottle type difficult to verify.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-03",
+      "class_assessment": "plausible",
+      "note": "White/transparent bottle-like body with red marking; limited detail.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-04",
+      "class_assessment": "plausible",
+      "note": "Green bottle-like body with narrowed end, lying among leaves.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-05",
+      "class_assessment": "plausible",
+      "note": "Tall blue/white labelled bottle-like object.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-06",
+      "class_assessment": "plausible",
+      "note": "Purple bottle-like body with pink cap.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-07",
+      "class_assessment": "plausible",
+      "note": "Flattened white bottle-like object with blue marking; strongly deformed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-medium-08",
+      "class_assessment": "plausible",
+      "note": "Horizontal transparent bottle with green cap.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-01",
+      "class_assessment": "plausible",
+      "note": "Flattened transparent bottle with blue cap; box appears to omit part of cap/neck at upper right.",
+      "box_assessment": "possible_truncation",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-02",
+      "class_assessment": "uncertain",
+      "note": "Dirty flattened container; bottle cues not reliably visible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-03",
+      "class_assessment": "plausible",
+      "note": "Transparent blue-capped bottle inside a bucket; litter-versus-storage context needs human interpretation.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-04",
+      "class_assessment": "uncertain",
+      "note": "Flattened printed transparent object; bottle versus packaging unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-05",
+      "class_assessment": "uncertain",
+      "note": "Green/white elongated packaging or flattened container; bottle neck not clear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-06",
+      "class_assessment": "plausible",
+      "note": "Flattened transparent bottle with green cap.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-07",
+      "class_assessment": "uncertain",
+      "note": "Transparent ridged object heavily obscured by grass; bottle class cannot be confirmed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-08",
+      "class_assessment": "uncertain",
+      "note": "White and transparent crushed object partly in vegetation; category unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-train-large-09",
+      "class_assessment": "plausible",
+      "note": "Several blue-capped bottles share one target box; review instance grouping against pile/individual-object guidance.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-01",
+      "class_assessment": "uncertain",
+      "note": "Small brown cylinder-like item by water; bottle versus other container unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-02",
+      "class_assessment": "uncertain",
+      "note": "Crushed white object among grass; insufficient class-specific shape.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-03",
+      "class_assessment": "uncertain",
+      "note": "Flat dirty brown object in clutter; bottle features not visible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-04",
+      "class_assessment": "plausible",
+      "note": "Motion-blurred elongated transparent/blue bottle-like object.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-05",
+      "class_assessment": "uncertain",
+      "note": "Small dark cylindrical object; no distinct bottle neck visible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-06",
+      "class_assessment": "plausible",
+      "note": "Transparent horizontal bottle-like body with red cap; small and blurred.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-07",
+      "class_assessment": "uncertain",
+      "note": "Crushed reflective object in sticks and debris; bottle identity unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-small-08",
+      "class_assessment": "uncertain",
+      "note": "Very dark, thin target at approximately 3.6 pixels short side; no reliable class detail.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-01",
+      "class_assessment": "uncertain",
+      "note": "Crushed grey/transparent vessel; bottle versus other container uncertain.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-02",
+      "class_assessment": "plausible",
+      "note": "Greenish transparent elongated bottle-like object on pavement.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-03",
+      "class_assessment": "plausible",
+      "note": "Transparent purple-capped bottle with printed marking.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-04",
+      "class_assessment": "uncertain",
+      "note": "Light-coloured object partly obscured by vegetation; class cues weak.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-05",
+      "class_assessment": "uncertain",
+      "note": "Dirty brown object among dry grass; no diagnostic bottle features.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-06",
+      "class_assessment": "plausible",
+      "note": "Upright brown bottle with a narrow neck and cap; purpose versus litter context not certain.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-07",
+      "class_assessment": "plausible",
+      "note": "Green-capped horizontal bottle, cut by image boundary; visible portion boxed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-medium-08",
+      "class_assessment": "plausible",
+      "note": "Motion-blurred green elongated bottle-like body.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-01",
+      "class_assessment": "plausible",
+      "note": "Yellow-labelled transparent bottle with pale cap; target reaches image edge.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-02",
+      "class_assessment": "uncertain",
+      "note": "Flattened grey container; no clear bottle neck.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-03",
+      "class_assessment": "uncertain",
+      "note": "Two dirty crushed forms inside the target area; identity and instance grouping need review.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-04",
+      "class_assessment": "plausible",
+      "note": "Upright brown bottle with narrow neck; litter versus purposeful placement remains contextual.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-05",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Dark round flat object with a rim, resembling a lid/disc rather than a bottle.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-06",
+      "class_assessment": "plausible",
+      "note": "Clear long bottle leaning against fence, with narrowed upper end.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-07",
+      "class_assessment": "uncertain",
+      "note": "Dark flattened sheet-like object under vegetation; class cannot be confirmed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-08",
+      "class_assessment": "uncertain",
+      "note": "Pale squat container resting on red object; bottle versus other packaging unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "bottle-val-large-09",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Broad flat brown disc/plate-like object without recognisable bottle structure.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-01",
+      "class_assessment": "uncertain",
+      "note": "Tiny pale arch-like object obscured by grass; cup identity cannot be confirmed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-02",
+      "class_assessment": "plausible",
+      "note": "Red tapered cup lying on its side with an open pale rim.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-03",
+      "class_assessment": "uncertain",
+      "note": "Crushed white object without clear rim/body features.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-04",
+      "class_assessment": "plausible",
+      "note": "Small red cup-like object with rounded opening.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-05",
+      "class_assessment": "plausible",
+      "note": "Small tapered grey vessel with a dark opening; cup label plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-06",
+      "class_assessment": "uncertain",
+      "note": "Flattened transparent object on pavement; cup versus other packaging unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-07",
+      "class_assessment": "uncertain",
+      "note": "Thin horizontal transparent object among vegetation; no clear cup opening.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-small-08",
+      "class_assessment": "uncertain",
+      "note": "Round shallow rim/lid-like object behind traffic cone; top view does not establish cup versus lid.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-01",
+      "class_assessment": "uncertain",
+      "note": "Crushed reflective white object; cup body not recognisable.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-02",
+      "class_assessment": "plausible",
+      "note": "Tall clear tapered vessel among grass; rim and cup-like body plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-03",
+      "class_assessment": "plausible",
+      "note": "Grey tapered vessel partly obscured by leaves; cup shape plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-04",
+      "class_assessment": "uncertain",
+      "note": "Round shallow silver/white object; cup base, lid or dish cannot be distinguished.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-05",
+      "class_assessment": "plausible",
+      "note": "Transparent tapered blue-marked cup-like object, motion blurred.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-06",
+      "class_assessment": "plausible",
+      "note": "Clear tapered vessel on its side; cup label plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-07",
+      "class_assessment": "uncertain",
+      "note": "Crushed white curved container beside a bottle; cup versus other container unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-medium-08",
+      "class_assessment": "uncertain",
+      "note": "Visible round rim but little vessel depth; cup versus lid unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-01",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Crushed blue printed foil/packet-like object, without clear cup structure.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-02",
+      "class_assessment": "uncertain",
+      "note": "Two orange curved container fragments or vessels grouped together; class and instance boundaries need review.",
+      "box_assessment": "possible_multiple_objects",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-03",
+      "class_assessment": "plausible",
+      "note": "Round open grey vessel with visible inner surface; cup plausible though material not verified.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-04",
+      "class_assessment": "uncertain",
+      "note": "Transparent tapered/flat object at image edge with weak diagnostic detail.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-05",
+      "class_assessment": "uncertain",
+      "note": "Target largely hidden by plants and a branch; cup identity cannot be confirmed.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-06",
+      "class_assessment": "plausible",
+      "note": "White tapered printed vessel, consistent with a discarded cup; blur obscures details.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-07",
+      "class_assessment": "plausible",
+      "note": "Clear conical vessel with wider open end; cup label plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-08",
+      "class_assessment": "uncertain",
+      "note": "Flattened transparent object amongst plants; shape too distorted to confirm cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-train-large-09",
+      "class_assessment": "uncertain",
+      "note": "Transparent object at image edge, with little clear rim/body detail.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-01",
+      "class_assessment": "plausible",
+      "note": "Upright small grey tapered vessel, consistent with a cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-02",
+      "class_assessment": "uncertain",
+      "note": "Tiny grey arch-like object; cup cannot be reliably distinguished.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-03",
+      "class_assessment": "uncertain",
+      "note": "Small blue printed/reflective object among debris; vessel shape unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-04",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Upright blue/white gable-top carton-like container rather than a clear cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-05",
+      "class_assessment": "plausible",
+      "note": "Blue printed vessel with a pale round opening, lying on its side.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-06",
+      "class_assessment": "plausible",
+      "note": "Pale blue crushed vessel with a round base/rim; cup plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-07",
+      "class_assessment": "uncertain",
+      "note": "Thin reflective object partially obscured by grass; cup shape unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-small-08",
+      "class_assessment": "plausible",
+      "note": "Transparent round-ended cup-like vessel lying on its side.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-01",
+      "class_assessment": "plausible",
+      "note": "Open round rim and dark inside, consistent with a cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-02",
+      "class_assessment": "plausible",
+      "note": "Clear tapered cup on its side, with a wider rim at left.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-03",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "White/green torn printed packaging with angular edges; carton/packet-like rather than clearly cup-like.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-04",
+      "class_assessment": "uncertain",
+      "note": "White flattened wedge-like object; crushed cup versus other packaging unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-05",
+      "class_assessment": "plausible",
+      "note": "White rounded tapered vessel, consistent with an overturned cup; motion blurred.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-06",
+      "class_assessment": "plausible",
+      "note": "Dark transparent upright cup with open rim among grass.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-07",
+      "class_assessment": "uncertain",
+      "note": "Flattened white printed fragment; diagnostic cup body not visible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-medium-08",
+      "class_assessment": "plausible",
+      "note": "Large transparent tapered vessel with broad rim; cup label plausible.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-01",
+      "class_assessment": "uncertain",
+      "note": "Flattened pale round-ended container; cup versus other container unclear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-02",
+      "class_assessment": "uncertain",
+      "note": "Crumpled transparent vessel-like object with poorly defined rim.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-03",
+      "class_assessment": "plausible",
+      "note": "Transparent tapered vessel with visible rim, consistent with cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-04",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Crushed brown can/food-container-like object with circular base; cup label needs adjudication.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-05",
+      "class_assessment": "uncertain",
+      "note": "Transparent triangular crumpled object; cup identity not clear.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-06",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Angular crushed carton/container-like object with no recognisable cup rim.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-07",
+      "class_assessment": "uncertain",
+      "note": "Flattened grey curved object; lid, crushed cup or other packaging cannot be distinguished.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-08",
+      "class_assessment": "uncertain",
+      "note": "Crumpled round transparent object; diagnostic cup cues weak.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    },
+    {
+      "sample_id": "cup-val-large-09",
+      "class_assessment": "suspected_class_mismatch",
+      "note": "Clear vessel with a narrower upper opening/neck, bottle/jar-like rather than a typical cup.",
+      "box_assessment": "broadly_aligned_no_specific_issue_identified",
+      "missing_annotation_assessment": "not_established_from_context_preview"
+    }
+  ]
+}

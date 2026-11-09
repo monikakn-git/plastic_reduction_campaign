@@ -1,0 +1,10 @@
+{
+  "repository": "Aayushbhandari17/MLOPS_EL",
+  "remote_runner_count_after_cleanup": 0,
+  "runner_credentials_removed": true,
+  "runner_service_installed": false,
+  "docker_application_left_running": true,
+  "temporary_runner_binaries_removed": true,
+  "runner_version_used": "2.338.2",
+  "official_download_sha256": "25a065af409ffa317ab4d5a3b614dd15fc9c40f2172bc1b35a1b1258e919a388"
+}

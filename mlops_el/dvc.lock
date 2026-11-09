@@ -1,0 +1,139 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: .venv/bin/python scripts/prepare_data.py
+    deps:
+    - path: configs/plitter_classes.json
+      hash: md5
+      md5: c76bee915f36b0fbea1e693f64a4573b
+      size: 249
+    - path: data/raw/plitterstreet
+      hash: md5
+      md5: 14c5373acd688e065dcbacc7ee339b81.dir
+      size: 7844017193
+      nfiles: 10009
+    - path: reports/phase1/acquisition.json
+      hash: md5
+      md5: 4cfec3519dd8a8bee4c483910bf34cf0
+      size: 479
+    - path: scripts/prepare_data.py
+      hash: md5
+      md5: e37688c838112d3cf16463913c429f1e
+      size: 9002
+    params:
+      params.yaml:
+        dataset:
+          name: plitterstreet
+          target_images: 10000
+        prepare:
+          seed: 42
+          train_fraction: 0.7
+          val_fraction: 0.15
+          classes: configs/plitter_classes.json
+    outs:
+    - path: data/prepared/plitterstreet
+      hash: md5
+      md5: 5399f0a8088c570fdc2d6864befcca7e.dir
+      size: 7790690521
+      nfiles: 20002
+    - path: reports/phase1/dataset_summary.json
+      hash: md5
+      md5: a70fc8ef054b6cb954fbbe25c67a3ab7
+      size: 4330
+  explore:
+    cmd: .venv/bin/python scripts/explore_data.py
+    deps:
+    - path: data/raw/plitterstreet
+      hash: md5
+      md5: 14c5373acd688e065dcbacc7ee339b81.dir
+      size: 7844017193
+      nfiles: 10009
+    - path: reports/phase1/dataset_summary.json
+      hash: md5
+      md5: a70fc8ef054b6cb954fbbe25c67a3ab7
+      size: 4330
+    - path: scripts/explore_data.py
+      hash: md5
+      md5: 2012b8559c32328e7b821e296976deea
+      size: 6664
+    outs:
+    - path: reports/phase1/annotated_source_samples.jpg
+      hash: md5
+      md5: 8543ef3f8105ce12fb25661a2e374b99
+      size: 330201
+    - path: reports/phase1/exploration.md
+      hash: md5
+      md5: e08c4741212b88ecf8dedaf609372a5e
+      size: 2498
+    - path: reports/phase1/image_and_object_sizes.png
+      hash: md5
+      md5: 359678aa5b68f346bcf239ea38d9bd2c
+      size: 41885
+    - path: reports/phase1/source_class_distribution.png
+      hash: md5
+      md5: a7e5fdd253112bdf3218466a9e21a26d
+      size: 40987
+    - path: reports/phase1/target_split_distribution.png
+      hash: md5
+      md5: 7e8472e598192201d68b5bd4e7e12efe
+      size: 42905
+  train:
+    cmd: .venv/bin/python scripts/train.py --profile baseline
+    deps:
+    - path: data/prepared/plitterstreet
+      hash: md5
+      md5: 5399f0a8088c570fdc2d6864befcca7e.dir
+      size: 7790690521
+      nfiles: 20002
+    - path: data/raw/plitterstreet/source.json
+      hash: md5
+      md5: a066cacf93589200abbb87dde03b4fe7
+      size: 987
+    - path: models/yolo11n.pt
+      hash: md5
+      md5: 261474e91b15f5ef14a63c21ce6c0cbb
+      size: 5613764
+    - path: requirements-lock.txt
+      hash: md5
+      md5: 0334fb28d47768be0d9b85afc8017f6f
+      size: 2971
+    - path: scripts/train.py
+      hash: md5
+      md5: a8b7d459ed697b8497902b20b50e438f
+      size: 8781
+    params:
+      params.yaml:
+        dataset:
+          name: plitterstreet
+          target_images: 10000
+        train:
+          model: models/yolo11n.pt
+          epochs: 50
+          imgsz: 640
+          batch: 2
+          workers: 0
+          device: mps
+          seed: 42
+          patience: 12
+          cache: false
+          amp: false
+          plots: true
+          deterministic: true
+          optimizer: AdamW
+          lr0: 0.001
+          hsv_h: 0.015
+          hsv_s: 0.7
+          hsv_v: 0.4
+          fliplr: 0.5
+          flipud: 0.0
+          mosaic: 1.0
+          close_mosaic: 10
+    outs:
+    - path: models/plitterstreet-baseline.pt
+      hash: md5
+      md5: 29301daba14fb52e547f73856d57cc25
+      size: 5514074
+    - path: reports/phase1/baseline_metrics.json
+      hash: md5
+      md5: 2c359da5af5453d3f68fa7c601f36cb7
+      size: 1117

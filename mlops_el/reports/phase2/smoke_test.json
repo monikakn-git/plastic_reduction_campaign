@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "test_type": "inference_only_training_image_smoke",
+  "training_performed": false,
+  "test_set_used": false,
+  "sample_image_id": 2,
+  "sample_sha256": "1f3687633ce544cbfc7c1263282e3eab4b6f9fc9380d74cbd81f1c7e06d5eae9",
+  "registered_model": "models:/plastic-waste-yolo11m/3",
+  "model_sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+  "registry_api_predictions_identical": true,
+  "detections": 16,
+  "width": 4032,
+  "height": 3024,
+  "registry_single_request_ms": 1392.8091251291335,
+  "api_single_request_ms": 444.1104168072343,
+  "device": "cpu",
+  "latency_claim": "One engineering request per path, including cold inference; not a throughput or accuracy benchmark."
+}

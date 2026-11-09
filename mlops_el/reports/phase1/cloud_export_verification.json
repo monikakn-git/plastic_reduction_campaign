@@ -1,0 +1,9 @@
+{
+  "benchmark_roundtrip_files_verified": 586,
+  "full_archive_sha256_verified": true,
+  "full_train_images": 7000,
+  "full_validation_images": 1500,
+  "test_images_exported": 0,
+  "notebook_code_cells_syntax_checked": 8,
+  "full_training_default_disabled": true
+}

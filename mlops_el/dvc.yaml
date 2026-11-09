@@ -1,0 +1,49 @@
+stages:
+  prepare:
+    cmd: .venv/bin/python scripts/prepare_data.py
+    deps:
+      - scripts/prepare_data.py
+      - configs/plitter_classes.json
+      - data/raw/plitterstreet
+      - reports/phase1/acquisition.json
+    params:
+      - prepare
+      - dataset
+    outs:
+      - data/prepared/plitterstreet
+    metrics:
+      - reports/phase1/dataset_summary.json:
+          cache: false
+  explore:
+    cmd: .venv/bin/python scripts/explore_data.py
+    deps:
+      - scripts/explore_data.py
+      - data/raw/plitterstreet
+      - reports/phase1/dataset_summary.json
+    outs:
+      - reports/phase1/exploration.md:
+          cache: false
+      - reports/phase1/source_class_distribution.png:
+          cache: false
+      - reports/phase1/target_split_distribution.png:
+          cache: false
+      - reports/phase1/image_and_object_sizes.png:
+          cache: false
+      - reports/phase1/annotated_source_samples.jpg:
+          cache: false
+  train:
+    cmd: .venv/bin/python scripts/train.py --profile baseline
+    deps:
+      - scripts/train.py
+      - models/yolo11n.pt
+      - data/prepared/plitterstreet
+      - data/raw/plitterstreet/source.json
+      - requirements-lock.txt
+    params:
+      - train
+      - dataset
+    outs:
+      - models/plitterstreet-baseline.pt
+    metrics:
+      - reports/phase1/baseline_metrics.json:
+          cache: false

@@ -1,0 +1,111 @@
+{
+  "status": "implemented_in_separate_derived_variant_for_review; original dataset unchanged",
+  "dataset_modified": false,
+  "evidence": "orientation_review.jpg",
+  "scope": "Four training images / five annotations; no validation/test label changes.",
+  "finding": "The small litter box in image 528 targets the wrong side after EXIF-aware decoding. Broad pile boxes in the other images make alignment less diagnostic. This is a targeted preprocessing proposal, not a claim that every box is wrong.",
+  "corrections": [
+    {
+      "image_id": 372,
+      "annotation_id": 128368,
+      "file_name": "ATT82_9304590E-91A3-429F-B1FC-8D44377482D5.jpeg",
+      "split": "train",
+      "original_bbox": [
+        0.0,
+        1048.0,
+        4031.0,
+        888.0
+      ],
+      "proposed_decoder_aligned_bbox": [
+        1.0,
+        1088.0,
+        4031.0,
+        888.0
+      ],
+      "reason": "EXIF orientation 3: decoder rotates pixels 180 degrees. Proposed coordinate transform assumes source boxes use encoded-pixel coordinates.",
+      "status": "transformed_in_derived_variant_only"
+    },
+    {
+      "image_id": 449,
+      "annotation_id": 277,
+      "file_name": "ATT157_20200304_093209.jpg",
+      "split": "train",
+      "original_bbox": [
+        0.0,
+        0.0,
+        4160.0,
+        1805.0
+      ],
+      "proposed_decoder_aligned_bbox": [
+        0.0,
+        1315.0,
+        4160.0,
+        1805.0
+      ],
+      "reason": "EXIF orientation 3: decoder rotates pixels 180 degrees. Proposed coordinate transform assumes source boxes use encoded-pixel coordinates.",
+      "status": "transformed_in_derived_variant_only"
+    },
+    {
+      "image_id": 528,
+      "annotation_id": 976,
+      "file_name": "ATT112_859A6070-BD32-404A-9D22-8B78A83D8430.jpeg",
+      "split": "train",
+      "original_bbox": [
+        0.0,
+        5.0,
+        3620.0,
+        2112.0
+      ],
+      "proposed_decoder_aligned_bbox": [
+        412.0,
+        907.0,
+        3620.0,
+        2112.0
+      ],
+      "reason": "EXIF orientation 3: decoder rotates pixels 180 degrees. Proposed coordinate transform assumes source boxes use encoded-pixel coordinates.",
+      "status": "transformed_in_derived_variant_only"
+    },
+    {
+      "image_id": 528,
+      "annotation_id": 977,
+      "file_name": "ATT112_859A6070-BD32-404A-9D22-8B78A83D8430.jpeg",
+      "split": "train",
+      "original_bbox": [
+        3630.0,
+        735.0,
+        402.0,
+        501.0
+      ],
+      "proposed_decoder_aligned_bbox": [
+        0.0,
+        1788.0,
+        402.0,
+        501.0
+      ],
+      "reason": "EXIF orientation 3: decoder rotates pixels 180 degrees. Proposed coordinate transform assumes source boxes use encoded-pixel coordinates.",
+      "status": "transformed_in_derived_variant_only"
+    },
+    {
+      "image_id": 651,
+      "annotation_id": 76108,
+      "file_name": "ATT227_887D62F8-ABCC-40AC-87A3-15FF0DFE0305.jpeg",
+      "split": "train",
+      "original_bbox": [
+        0.0,
+        0.0,
+        720.0,
+        708.0
+      ],
+      "proposed_decoder_aligned_bbox": [
+        0.0,
+        12.0,
+        720.0,
+        708.0
+      ],
+      "reason": "EXIF orientation 3: decoder rotates pixels 180 degrees. Proposed coordinate transform assumes source boxes use encoded-pixel coordinates.",
+      "status": "transformed_in_derived_variant_only"
+    }
+  ],
+  "alternative": "Normalize derived image orientation handling consistently with annotation coordinates; preserve raw originals and document chosen coordinate convention.",
+  "derived_variant": "data/prepared/plitterstreet-orientation-v2"
+}

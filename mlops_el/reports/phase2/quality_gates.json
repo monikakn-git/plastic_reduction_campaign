@@ -1,0 +1,35 @@
+{
+  "integrity_checks": {
+    "trusted_weights_sha256": true,
+    "source_training_run": true,
+    "source_test_run": true,
+    "frozen_test_split": true,
+    "trained_dataset": true,
+    "complete_class_schema": true
+  },
+  "integrity_passed": true,
+  "demo_eligible": true,
+  "production_checks": {
+    "map50": false,
+    "recall": false,
+    "all_class_ap50": false,
+    "faculty_dataset_approval": false
+  },
+  "production_approved": false,
+  "failed_classes": [
+    "cup"
+  ],
+  "measured_test_metrics": {
+    "metrics/precision(B)": 0.4612720001751546,
+    "metrics/recall(B)": 0.39645984933215905,
+    "metrics/mAP50(B)": 0.37118754279257643,
+    "metrics/mAP50-95(B)": 0.22735957303694218,
+    "fitness": 0.22735957303694218
+  },
+  "thresholds": {
+    "production_minimum_map50": 0.5,
+    "production_minimum_recall": 0.5,
+    "production_minimum_class_ap50": 0.25
+  },
+  "scope": "Demo only while production gates remain unmet; reviewed predictions cannot establish plastic material or campaign impact."
+}

@@ -1,0 +1,12 @@
+{
+  "litter": ["litter"],
+  "pile": ["pile"],
+  "face_mask": ["face mask"],
+  "trash_bin": ["trash bin"],
+  "plastic_bag": ["plastic bag"],
+  "bottle": ["bottle"],
+  "cup": ["cup"],
+  "rope": ["rope"],
+  "sachet": ["sachet"],
+  "straw": ["straw"]
+}

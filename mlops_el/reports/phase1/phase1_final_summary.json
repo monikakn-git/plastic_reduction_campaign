@@ -1,0 +1,146 @@
+{
+  "phase": "1 Development and Reproducibility",
+  "as_of": "2026-11-07",
+  "technical_review_package": "ready",
+  "faculty_dataset_approval": "pending_external_action",
+  "dataset": {
+    "images": 10000,
+    "annotations": 60826,
+    "split_images": {
+      "train": 7000,
+      "val": 1500,
+      "test": 1500
+    },
+    "classes": [
+      "litter",
+      "pile",
+      "face_mask",
+      "trash_bin",
+      "plastic_bag",
+      "bottle",
+      "cup",
+      "rope",
+      "sachet",
+      "straw"
+    ],
+    "negative_images": 155
+  },
+  "selected_evaluated_model": {
+    "path": "models/plitterstreet-yolo11m-candidate.pt",
+    "sha256": "a9a39b52f2de03927ce5f387a6feb52295468e50262e436d75ee6a0a95ed1b8e",
+    "training_run_id": "85714466948d4e658ebb610a475dcf57",
+    "test_run_id": "4b26901d393b4fc89f0a716818788fa6",
+    "trained_dataset": "labels-v3",
+    "completed_epochs": 86,
+    "best_epoch": 66,
+    "test_metrics": {
+      "metrics/precision(B)": 0.4612720001751546,
+      "metrics/recall(B)": 0.39645984933215905,
+      "metrics/mAP50(B)": 0.37118754279257643,
+      "metrics/mAP50-95(B)": 0.22735957303694218,
+      "fitness": 0.22735957303694218
+    }
+  },
+  "experiments": [
+    [
+      "YOLO11n",
+      "Original prepared",
+      640,
+      "50",
+      0.2677635512880004,
+      0.15905877511667235,
+      0.2618994709538888
+    ],
+    [
+      "YOLO11s",
+      "Original prepared",
+      640,
+      "50",
+      0.32239534079536425,
+      0.1951423423616567,
+      null
+    ],
+    [
+      "YOLO11m",
+      "labels-v3",
+      960,
+      "86 (best 66)",
+      0.394,
+      0.247,
+      0.37118754279257643
+    ]
+  ],
+  "new_dataset_variant": {
+    "path": "data/prepared/plitterstreet-labels-v4",
+    "class_corrections": 30,
+    "training_started": false,
+    "model_score": null
+  },
+  "qa": {
+    "tests": "36 passed in 8.54s",
+    "dvc_status": {},
+    "selected_model_hash_verified": true,
+    "cloud_mlflow_integrity": "ok",
+    "cloud_mlflow_status": "FINISHED"
+  },
+  "dvc_pointers": {
+    "data/raw/plitterstreet.dvc": {
+      "md5": "14c5373acd688e065dcbacc7ee339b81.dir",
+      "size": 7844017193,
+      "nfiles": 10009,
+      "hash": "md5",
+      "path": "plitterstreet"
+    },
+    "data/prepared/plitterstreet-orientation-v2.dvc": {
+      "md5": "1d2bc2a9a59f23b81c983944ac9c83cc.dir",
+      "size": 7790692302,
+      "nfiles": 20003,
+      "hash": "md5",
+      "path": "plitterstreet-orientation-v2"
+    },
+    "data/prepared/plitterstreet-labels-v3.dvc": {
+      "md5": "b2fd66d8a3ce7d88d5be3f7dff6ec74c.dir",
+      "size": 7790695246,
+      "nfiles": 20004,
+      "hash": "md5",
+      "path": "plitterstreet-labels-v3"
+    },
+    "data/prepared/plitterstreet-labels-v4.dvc": {
+      "md5": "8dd9e61df5cfe2461abc1a855de3a8ab.dir",
+      "size": 7790723557,
+      "nfiles": 20005,
+      "hash": "md5",
+      "path": "plitterstreet-labels-v4"
+    },
+    "models/plitterstreet-yolo11m-candidate.pt.dvc": {
+      "md5": "d59a11db2dc187f512ea44d0cd570ea2",
+      "size": 40599788,
+      "hash": "md5",
+      "path": "plitterstreet-yolo11m-candidate.pt"
+    },
+    "reports/phase1/training_quality_v4.dvc": {
+      "md5": "f7b89ad80803e0095f6435a61327c8fe.dir",
+      "size": 22040695,
+      "nfiles": 76,
+      "hash": "md5",
+      "path": "training_quality_v4"
+    },
+    "reports/phase1/experiment_history.dvc": {
+      "md5": "d6babff37bfe0ba19c548537f168cab8.dir",
+      "size": 2574877,
+      "nfiles": 3,
+      "hash": "md5",
+      "path": "experiment_history"
+    }
+  },
+  "git_evidence_parent": "fe2f1bdb7dab7286f9d2be5a0b51c38af1985e6e",
+  "limitations": [
+    "70% target not achieved",
+    "Faculty approval pending",
+    "No configured off-device DVC remote; verified private train/validation checkpoint backups are separate",
+    "Near-duplicate/scene independence not exhaustively verified",
+    "Further tuning requires validation; previously evaluated test set must not become a selection target",
+    "No campus performance, material certainty or campaign-impact claim"
+  ],
+  "phase2_started": false
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "08c11dfe46984ebeb0d8cf4e2dae534f",
+  "run_directory": "runs/yolo11s-candidate-20261105-022251",
+  "profile": "yolo11s-candidate",
+  "config": "configs/yolo11s_candidate.yaml",
+  "started_at": "2026-11-05T02:22:51+0530",
+  "status": "completed",
+  "dataset": "plitterstreet",
+  "training_images": 7000,
+  "validation_images": 1500,
+  "model": "models/plitterstreet-yolo11s-candidate.pt",
+  "model_sha256": "a284e933df489394d120c3fd381b8b8f60131e80f4f3bd5ff34176b815699230",
+  "metrics": {
+    "metrics/precision_B_": 0.3955379546705565,
+    "metrics/recall_B_": 0.32467410050218043,
+    "metrics/mAP50_B_": 0.32233379133358425,
+    "metrics/mAP50-95_B_": 0.1951040172189069,
+    "fitness": 0.1951040172189069,
+    "training_session_seconds": 51432.14024041593
+  },
+  "baseline_preserved": true,
+  "test_evaluated": false,
+  "dataset_approval": "pending",
+  "note": "Candidate experiment; no automatic model promotion. Session timing excludes earlier sessions if resumed."
+}

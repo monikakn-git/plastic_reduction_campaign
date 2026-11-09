@@ -1,0 +1,5 @@
+# API boundary/quality tests do not download datasets or trained weights.
+fastapi==0.162.0
+Pillow==12.3.0
+httpx==0.28.1
+pytest==9.2.0

@@ -1,0 +1,52 @@
+{
+  "status": "derived_training_label_variant_created_not_trained",
+  "target_metric": "70% validation mAP@50 aspiration, no score assumed",
+  "variant_path": "data/prepared/plitterstreet-labels-v3",
+  "parent_path": "data/prepared/plitterstreet-orientation-v2",
+  "correction_manifest_sha256": "417a7e5ed9f8b6c4cbabafd0ec042f28fc8773287f7253e925a991cf39815874",
+  "annotations_modified": 2,
+  "training_label_files_modified": 2,
+  "box_changes": 2,
+  "class_changes": 1,
+  "training_class_count_delta": {
+    "bottle": 1,
+    "litter": -1
+  },
+  "image_count": 10000,
+  "validation_test_label_files_verified_identical": 3000,
+  "original_data_and_models_preserved": true,
+  "new_annotations_added": 0,
+  "annotations_removed": 0,
+  "different_label_files": [
+    "labels/train/Rangsit_2021_GX014613_233.txt",
+    "labels/train/Taladthai_2021_GX034430_011.txt"
+  ],
+  "held_cases": [
+    {
+      "image_id": 14677,
+      "annotation_id": 18846,
+      "reason": "Grouped overlapping bottles: grouping issue is visible, but individual occluded boundaries are insufficiently clear for confident new boxes. Retain and flag."
+    },
+    {
+      "image_id": 10073,
+      "annotation_id": 41062,
+      "reason": "Purple end may be a bottle cap. Retain bottle rather than guessing cup."
+    },
+    {
+      "image_id": 11610,
+      "annotation_id": 57297,
+      "reason": "Flattened yellow object: insufficient evidence for replacement class."
+    },
+    {
+      "image_id": 10814,
+      "annotation_id": 21874,
+      "reason": "Crushed printed object could be a vessel or packaging. Retain pending stronger evidence."
+    },
+    {
+      "image_id": 53506,
+      "annotation_id": 140045,
+      "reason": "Orange fragments or vessels: exact instance separation and class uncertain."
+    }
+  ],
+  "limitation": "Small, visually supported AI-assisted patch; not a comprehensive expert relabeling or evidence of a large accuracy gain."
+}

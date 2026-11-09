@@ -1,0 +1,607 @@
+{
+  "sampled_targets": 100,
+  "all_boxes_in_bounds": true,
+  "all_prepared_labels_match_source": true,
+  "checks": [
+    {
+      "image_id": 9112,
+      "annotation_id": 20676,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12758,
+      "annotation_id": 46499,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10073,
+      "annotation_id": 41062,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 46824,
+      "annotation_id": 136336,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62648,
+      "annotation_id": 196499,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11206,
+      "annotation_id": 49102,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47496,
+      "annotation_id": 137626,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11610,
+      "annotation_id": 57297,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53884,
+      "annotation_id": 141027,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53487,
+      "annotation_id": 140123,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8159,
+      "annotation_id": 22352,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47517,
+      "annotation_id": 136047,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 6610,
+      "annotation_id": 68975,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 7001,
+      "annotation_id": 72497,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8490,
+      "annotation_id": 75598,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13173,
+      "annotation_id": 43193,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5986,
+      "annotation_id": 9710,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13573,
+      "annotation_id": 34042,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5720,
+      "annotation_id": 16493,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62905,
+      "annotation_id": 171576,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11194,
+      "annotation_id": 58932,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13815,
+      "annotation_id": 19459,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 4854,
+      "annotation_id": 5296,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47046,
+      "annotation_id": 137541,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14677,
+      "annotation_id": 18846,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10549,
+      "annotation_id": 52345,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12492,
+      "annotation_id": 32291,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13315,
+      "annotation_id": 54162,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47026,
+      "annotation_id": 135512,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5230,
+      "annotation_id": 6320,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47888,
+      "annotation_id": 138106,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 48105,
+      "annotation_id": 138560,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53641,
+      "annotation_id": 196741,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 3209,
+      "annotation_id": 7763,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 4322,
+      "annotation_id": 8896,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14319,
+      "annotation_id": 36317,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47116,
+      "annotation_id": 136603,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8696,
+      "annotation_id": 64089,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 46842,
+      "annotation_id": 135654,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47698,
+      "annotation_id": 136846,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13233,
+      "annotation_id": 53342,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47443,
+      "annotation_id": 136258,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62750,
+      "annotation_id": 171794,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62909,
+      "annotation_id": 171612,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 46631,
+      "annotation_id": 137067,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 44767,
+      "annotation_id": 128776,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14223,
+      "annotation_id": 36438,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12565,
+      "annotation_id": 32459,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 48096,
+      "annotation_id": 138531,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10636,
+      "annotation_id": 51990,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5688,
+      "annotation_id": 16792,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 6536,
+      "annotation_id": 68988,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53385,
+      "annotation_id": 142128,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5884,
+      "annotation_id": 9187,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14679,
+      "annotation_id": 17799,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 7908,
+      "annotation_id": 48346,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8323,
+      "annotation_id": 30384,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13100,
+      "annotation_id": 197405,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11674,
+      "annotation_id": 57200,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 4613,
+      "annotation_id": 4688,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 4042,
+      "annotation_id": 11272,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62720,
+      "annotation_id": 171528,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8111,
+      "annotation_id": 23178,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11879,
+      "annotation_id": 62081,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62910,
+      "annotation_id": 196164,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 9184,
+      "annotation_id": 134907,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10814,
+      "annotation_id": 21874,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53506,
+      "annotation_id": 140045,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62976,
+      "annotation_id": 168543,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 11371,
+      "annotation_id": 49426,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13966,
+      "annotation_id": 60642,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 7146,
+      "annotation_id": 72531,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47165,
+      "annotation_id": 136298,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13662,
+      "annotation_id": 34537,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8484,
+      "annotation_id": 75387,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13223,
+      "annotation_id": 53602,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5163,
+      "annotation_id": 6845,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10604,
+      "annotation_id": 50922,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12615,
+      "annotation_id": 32262,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 62639,
+      "annotation_id": 168229,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53646,
+      "annotation_id": 140332,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 3291,
+      "annotation_id": 7550,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 48113,
+      "annotation_id": 139409,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8714,
+      "annotation_id": 64902,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47082,
+      "annotation_id": 135239,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47131,
+      "annotation_id": 136587,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14240,
+      "annotation_id": 35478,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47013,
+      "annotation_id": 135517,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 5153,
+      "annotation_id": 7188,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12519,
+      "annotation_id": 32296,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 3263,
+      "annotation_id": 8134,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 48101,
+      "annotation_id": 138524,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8524,
+      "annotation_id": 65089,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 13487,
+      "annotation_id": 54814,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 53681,
+      "annotation_id": 140376,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 14282,
+      "annotation_id": 35077,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 10685,
+      "annotation_id": 52498,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 47273,
+      "annotation_id": 135443,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 12603,
+      "annotation_id": 33229,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    },
+    {
+      "image_id": 8741,
+      "annotation_id": 64347,
+      "box_in_bounds": true,
+      "prepared_label_matches": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "method": "Standard Ultralytics validator with single-label NMS, square padding and batch 1; same full validation split.",
+  "metrics": {
+    "metrics/precision(B)": 0.39532235613048244,
+    "metrics/recall(B)": 0.3274221197365931,
+    "metrics/mAP50(B)": 0.28783319949428016,
+    "metrics/mAP50-95(B)": 0.17567634897121834,
+    "fitness": 0.17567634897121834
+  },
+  "note": "Only NMS multi_label differs from the default validator. Metric computation and dataset loading are standard."
+}

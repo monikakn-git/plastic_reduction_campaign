@@ -1,0 +1,46 @@
+{
+  "legacy_paths": [
+    ".local/phase1-training.log",
+    "configs/classes.json",
+    "data/prepared/taco",
+    "data/raw/taco",
+    "data/raw/taco.dvc",
+    "docs/DATASET_APPROVAL_TACO_PILOT.md",
+    "mlruns/1/738d901625934754bd790c509783b0a7",
+    "mlruns/1/82313a3cf2e4476fb90f062f0ce5722f",
+    "mlruns/1/bfe92c1c793745168e3e552ca21efe30",
+    "models/baseline.pt",
+    "models/benchmark.pt",
+    "models/taco-pilot.pt",
+    "models/taco-pilot.pt.dvc",
+    "reports/phase1/taco-pilot",
+    "runs/baseline-20261104-030333",
+    "runs/benchmark-20261104-025847",
+    "runs/benchmark-validated-inputs",
+    "runs/evaluation-val-d16a9478",
+    "scripts/__pycache__/acquire_taco.cpython-312.pyc",
+    "scripts/acquire_taco.py"
+  ],
+  "legacy_mlflow_run_ids": [
+    "d16a9478a049494d8cbc97bd58af91c7",
+    "738d901625934754bd790c509783b0a7",
+    "bfe92c1c793745168e3e552ca21efe30",
+    "82313a3cf2e4476fb90f062f0ce5722f"
+  ],
+  "protected_active_cache_objects": 19922,
+  "exclusive_legacy_cache_objects": 2440,
+  "legacy_directory_manifests": [
+    "9871a018d75558e3b2c5a13a9db066dd.dir",
+    "1cd4e096939f9d1d57af75c29dc399dc.dir",
+    "7f469c86686204e632d2328366aaf400.dir"
+  ],
+  "exclusive_cache_logical_bytes": 5042073211,
+  "shared_cache_objects_retained": 1,
+  "active_run_ids": [
+    "2cd6e612cd25457bb4547df0d42511b8"
+  ],
+  "free_bytes_before": 24489013248,
+  "free_bytes_after": 29617426432,
+  "freed_bytes_observed": 5128413184,
+  "status": "complete"
+}

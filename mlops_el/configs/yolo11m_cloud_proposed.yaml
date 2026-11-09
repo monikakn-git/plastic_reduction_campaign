@@ -1,0 +1,42 @@
+status: user_authorized_pending_cloud_start
+authorization:
+  date: '2026-11-06'
+  scope: Full training on free cloud GPU with persistent backups and resume support
+dataset:
+  name: plitterstreet
+  target_images: 10000
+  prepared_path: data/prepared/plitterstreet-labels-v3
+train:
+  model: models/yolo11m.pt
+  epochs: 100
+  imgsz: 960
+  batch: 4
+  workers: 2
+  device: '0'
+  seed: 42
+  patience: 20
+  cache: false
+  amp: true
+  plots: true
+  deterministic: true
+  optimizer: AdamW
+  lr0: 0.001
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  fliplr: 0.5
+  flipud: 0.0
+  mosaic: 1.0
+  close_mosaic: 10
+preconditions:
+- Verify the labels-v3 DVC version, inherited orientation corrections and training-only
+  correction manifest; preserve originals and unchanged holdouts.
+- Verify CUDA GPU, memory headroom, checkpoint persistence and measured runtime in
+  a short engineering benchmark.
+- Freeze actual CUDA environment versions; do not blindly install the Mac-specific
+  lock.
+- Receive explicit full-run approval after the cloud benchmark and settings review.
+objective:
+  metric: validation mAP@50
+  target: 0.7
+  status: aspiration_not_guarantee_or_achieved_result

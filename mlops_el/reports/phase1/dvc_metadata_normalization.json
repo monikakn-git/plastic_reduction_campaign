@@ -1,0 +1,35 @@
+{
+  "reason": "Exclude non-semantic macOS Finder .DS_Store consistently; preserve image/label bytes and historical Git references.",
+  "before": [
+    {
+      "record": "baseline-prepared",
+      "previous_tree_md5": "5399f0a8088c570fdc2d6864befcca7e.dir",
+      "dataset": "data/prepared/plitterstreet",
+      "historically_tracked_finder_metadata": [],
+      "nonmetadata_file_mismatches": [],
+      "nonmetadata_files_verified": 20002
+    },
+    {
+      "record": "orientation-v2",
+      "previous_tree_md5": "5950f826beed0cfb9a72deaa98d9639c.dir",
+      "dataset": "data/prepared/plitterstreet-orientation-v2",
+      "historically_tracked_finder_metadata": [
+        ".DS_Store",
+        "images/.DS_Store",
+        "labels/.DS_Store"
+      ],
+      "nonmetadata_file_mismatches": [],
+      "nonmetadata_files_verified": 20003
+    }
+  ],
+  "candidate_previous_dependency_trees": {
+    "train_candidate": "999116b7f684ef216dad1c110ddafbf5.dir",
+    "compare_candidate": "999116b7f684ef216dad1c110ddafbf5.dir"
+  },
+  "candidate_previous_tree_cache_available": false,
+  "candidate_scientific_data_verification": "All current original-prepared images and labels match the baseline cached tree. The old candidate dependency .dir cache is unavailable, so its exact historical tree composition cannot be reconstructed here. Old dependency hashes remain in this record and Git history. Current dependency references were normalized without training or editing models.",
+  "normalization_complete": true,
+  "after_dvc_status": {},
+  "new_orientation_v2_tree": "1d2bc2a9a59f23b81c983944ac9c83cc.dir",
+  "new_candidate_dependency_tree": "5399f0a8088c570fdc2d6864befcca7e.dir"
+}

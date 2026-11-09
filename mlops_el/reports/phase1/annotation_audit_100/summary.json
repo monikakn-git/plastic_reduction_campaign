@@ -1,0 +1,18 @@
+{
+  "audited_objects": 100,
+  "distinct_images": 100,
+  "counts": {
+    "plausible": 44,
+    "uncertain": 46,
+    "suspected_class_mismatch": 10
+  },
+  "box_flags": 4,
+  "all_sampled_boxes_in_bounds": true,
+  "all_sampled_prepared_labels_match": true,
+  "protected_inputs_unchanged": true,
+  "overlap_with_previous_24_target_review": 5,
+  "confirmed_label_corrections": 0,
+  "test_images_reviewed": 0,
+  "dataset_modified": false,
+  "interpretation": "Visual assessments are provisional, not confirmed errors or dataset-wide error rates."
+}
