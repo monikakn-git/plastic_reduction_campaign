@@ -130,6 +130,8 @@ Open `http://127.0.0.1:5000` in your browser. The main experiment is `ecopulse-w
 uvicorn src.api.app:app --host 127.0.0.1 --port 8000 --reload
 ```
 Interactive API docs are available at `http://127.0.0.1:8000/docs`.
+Open `http://127.0.0.1:8000/ui` for the EcoPulse Detection Studio. Upload an image, choose a model and confidence threshold, and inspect or download the annotated result. Recent run summaries are stored in your browser.
+If the MLflow registry is unreachable, the API falls back to local checkpoints in `artifacts/checkpoints/` so image inference can continue.
 
 ---
 

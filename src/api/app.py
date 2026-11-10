@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, File, HTTPException, Query, UploadFile
+from fastapi.responses import FileResponse
 from PIL import Image, UnidentifiedImageError
 from prometheus_client import Counter, Histogram
 from prometheus_fastapi_instrumentator import Instrumentator
@@ -21,6 +22,7 @@ app = FastAPI(
     description="Waste detection using trained YOLO11n and YOLOv8n models",
     version="1.0.0",
 )
+UI_FILE = Path(__file__).with_name("ui.html")
 MAX_UPLOAD_BYTES = int(os.environ.get("ECOPULSE_MAX_UPLOAD_BYTES", 10 * 1024 * 1024))
 INFERENCE_SECONDS = Histogram("ecopulse_inference_duration_seconds", "YOLO inference duration", ["model"])
 DETECTIONS_TOTAL = Counter("ecopulse_detections_total", "Detections produced by class", ["model", "class_name"])
@@ -35,6 +37,12 @@ def home():
         "available_models": ["yolo11n", "yolov8n"],
         "default_model": "yolo11n",
     }
+
+
+@app.get("/ui", include_in_schema=False)
+def user_interface():
+    """Serve the browser based image detection interface."""
+    return FileResponse(UI_FILE)
 
 
 @app.get("/health")
@@ -122,9 +130,15 @@ async def predict(
 
     try:
         registered = resolve_model(model_name)
-        checkpoint_path = Path(registered["path"]) if registered else get_checkpoint_path(model_name)
-    except (ValueError, FileNotFoundError, MlflowException) as exc:
+    except MlflowException as exc:
+        # Local development commonly uses the SQLite tracking store, which cannot
+        # resolve registry artifacts created through an HTTP artifact proxy. Keep
+        # image inference available from the checked-in local checkpoints.
+        registered = None
+        print(f"Warning: model registry unavailable; using local checkpoint: {exc}")
+    except (ValueError, FileNotFoundError) as exc:
         raise HTTPException(status_code=503, detail=f"Model registry unavailable: {exc}") from exc
+    checkpoint_path = Path(registered["path"]) if registered else get_checkpoint_path(model_name)
     if not checkpoint_path.is_file():
         raise HTTPException(
             status_code=400,
