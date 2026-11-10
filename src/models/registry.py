@@ -20,7 +20,6 @@ if str(PROJECT_ROOT) not in sys.path:
 import mlflow
 from mlflow import MlflowClient
 from mlflow.exceptions import MlflowException
-from src.models.mlflow_yolo import YOLOInferenceModel
 
 from src.tracking.mlflow_utils import get_tracking_uri
 
@@ -289,6 +288,10 @@ def register(
     try:
         run_context = mlflow.start_run(run_name=f"register-{model_name}")
         with run_context as run:
+            # The inference API only resolves checkpoints; keep the heavier PyFunc
+            # wrapper imports out of its startup path.
+            from src.models.mlflow_yolo import YOLOInferenceModel
+
             mlflow.pyfunc.log_model(
                 artifact_path="model",
                 python_model=YOLOInferenceModel(),

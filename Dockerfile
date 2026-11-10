@@ -20,10 +20,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# Copy and install Python dependencies
-COPY requirements.txt .
+# Install the CPU-only PyTorch build for this CPU inference service, then its
+# runtime dependencies. Training, DVC, and pytest dependencies stay out of the
+# serving image.
+COPY requirements-api.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements-api.txt
 
 # Copy application source code, configs, checkpoints, and reports
 COPY src/ ./src/

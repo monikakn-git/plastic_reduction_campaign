@@ -1,0 +1,12 @@
+# Runtime-only dependencies for the CPU inference container.
+# Install CPU PyTorch from the official index in Dockerfile before this file.
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.3.0
+mlflow-skinny>=2.15.0
+fastapi>=0.110.0
+uvicorn>=0.30.0
+python-multipart>=0.0.18
+pydantic>=2.7.0
+pillow>=10.0.0
+prometheus-fastapi-instrumentator>=7.0.0

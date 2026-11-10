@@ -26,6 +26,7 @@ models/
 
 # Local caches
 .cache/
+.docker-cache/
 *.cache
 
 # Generated reports: retain code, avoid accidental large outputs

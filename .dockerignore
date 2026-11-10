@@ -31,6 +31,7 @@ yolo_runs/
 # IDE and OS
 .vscode/
 .idea/
+.docker-cache/
 .DS_Store
 Thumbs.db
 

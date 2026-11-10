@@ -11,8 +11,6 @@
 #   docker compose down           # stop and remove containers
 # =============================================================================
 
-version: "3.8"
-
 services:
   # ---------------------------------------------------------------------------
   # MLflow Tracking Server
@@ -26,22 +24,21 @@ services:
     container_name: ecopulse-mlflow
     ports:
       - "127.0.0.1:5000:5000"
-    command: >
-      bash -c "pip install 'mlflow>=2.15.0' &&
-               mlflow server
-                 --host 0.0.0.0
-                 --port 5000
-                 --backend-store-uri sqlite:////data/mlflow.db
-                 --serve-artifacts
-                 --artifacts-destination /data/mlruns"
+    command:
+      - bash
+      - -c
+      - >-
+        pip install 'mlflow>=2.15.0' &&
+        exec mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:////data/mlflow.db --serve-artifacts --artifacts-destination /data/mlruns --allowed-hosts 'localhost:*,127.0.0.1:*,mlflow:5000,ecopulse-mlflow:5000' --cors-allowed-origins 'http://localhost:5000,http://127.0.0.1:5000'
     volumes:
       - mlflow-data:/data
+      - ./.docker-cache/pip:/root/.cache/pip
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health', timeout=3)"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health', timeout=3)"]
       interval: 30s
       timeout: 10s
-      start_period: 40s
+      start_period: 300s
       retries: 5
 
   # ---------------------------------------------------------------------------
