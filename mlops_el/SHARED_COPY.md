@@ -15,3 +15,7 @@ The copied `.github/workflows/` files are nested under this folder and are refer
 Do not run the scripts blindly: adapt paths, dependencies and cloud configuration. Running this copy requires choosing and configuring your own environment. Copying code does not start an application or training run.
 
 Start with [README.md](README.md), [Phase 2 final report](reports/phase2/PHASE2_FINAL_REPORT.md) and [operations](docs/PHASE2.md). Planned Phase 3 monitoring, drift/retraining governance and location/campaign features are not yet completed here.
+
+## Visual refresh
+
+The existing `mlops-phase2` branch now also includes the original project's visual refresh from commit `f330a59`: the separate `service/demo.html`, matching FastAPI root page loader, Docker build-context allowlist and static preview/check records. Model weights, prediction behavior and thresholds are unchanged. The 21 checks recorded with the visual refresh passed in the original workspace; this shared copy has not rerun real-model inference or Docker deployment. Rebuild a properly configured local image to use the new interface. The repository root implementation and master branch remain separate.

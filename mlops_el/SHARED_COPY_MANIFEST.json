@@ -1,6 +1,6 @@
 {
   "source_commit": "61b92ae89fa5a593d02b0032fd4e430ebbee3585",
-  "destination_branch": "codex/mlops-phase2-copy",
+  "destination_branch": "mlops-phase2",
   "snapshot_folder": "mlops_el",
   "copied_file_count": 297,
   "excluded_private_evidence": [
@@ -26,5 +26,15 @@
   ],
   "source_history_transferred": false,
   "original_repository_access_granted": false,
-  "datasets_weights_databases_credentials_transferred": false
+  "datasets_weights_databases_credentials_transferred": false,
+  "ui_source_commit": "f330a59acb8a19400e545024161487ad66a10356",
+  "ui_refresh_files": [
+    ".dockerignore",
+    "service/app.py",
+    "service/demo.html",
+    "reports/phase2/interface/README.md",
+    "reports/phase2/interface/checks.txt",
+    "reports/phase2/interface/preview.png"
+  ],
+  "ui_refresh_applied": "2026-11-10"
 }

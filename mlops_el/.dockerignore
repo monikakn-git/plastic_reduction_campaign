@@ -3,4 +3,5 @@
 !requirements-service.txt
 !service/
 !service/*.py
+!service/demo.html
 service/__pycache__/
