@@ -210,9 +210,11 @@ python src/monitoring/drift.py --reference reports/baseline_inference.csv --curr
 
 The API also exposes Prometheus request, inference-latency, and class-detection metrics at `/metrics`; Compose provisions a Grafana dashboard for them.
 
-### AWS EC2 deployment
+### Render deployment
 
-On an Ubuntu EC2 instance, install Docker Engine and the Compose plugin, copy/clone the repository, restore a checkpoint under `artifacts/checkpoints/` (or configure a reachable MLflow registry), set a strong Grafana password in `.env`, and run `docker compose up --build -d`. The GitHub Actions `Deploy EcoPulse to EC2` workflow can copy the tracked release source and deploy it over SSH when `EC2_HOST`, `EC2_USER`, `EC2_SSH_KEY`, and pinned `EC2_KNOWN_HOSTS` secrets are configured. Restore the model artifact on the instance before the first deploy. Use an SSH tunnel for the localhost-bound service ports during setup. For public API traffic, put a TLS reverse proxy or load balancer in front of port 8000 and restrict the EC2 security group to the required ingress; keep MLflow, Prometheus, and Grafana private. The workflow does not provision cloud resources.
+This repository includes a Render Blueprint in `render.yaml`. In Render, create a new Blueprint instance from the connected Git repository and set `WASTE_MODEL_URL` to a direct HTTPS download URL for the trained `yolo11n_best.pt` checkpoint. The checkpoint files are ignored by Git, so Render cannot get them from the repository checkout. The container downloads the checkpoint at startup when it is not already present, then serves the FastAPI app on Render's `PORT`; `/health` is the configured health check. Keep the URL private if it grants access to a private model artifact. The service disables inference-event MLflow logging because the default SQLite database is ephemeral on Render. If you need durable tracking or registry-based model promotion, configure an external MLflow tracking server and persistent artifact store separately.
+
+The app uses YOLO11n as the default model. YOLOv8n remains available only if its checkpoint is included in the image or otherwise mounted/configured. Render's default filesystem is ephemeral, so runtime downloads and local tracking data may be lost when the service restarts or redeploys.
 
 ---
 
@@ -221,10 +223,12 @@ On an Ubuntu EC2 instance, install Docker Engine and the Compose plugin, copy/cl
 | Metric | YOLO11n (`yolo11n_best.pt`) | YOLOv8n (`yolov8n_best.pt`) | Threshold / Gate |
 |---|---|---|---|
 | **File Size** | 5.25 MB | 6.20 MB | Edge deployable |
-| **mAP50** | 0.2721 | 0.2761 | >= 0.20 (PASS) |
-| **mAP50-95** | 0.1652 | 0.1675 | Informational |
+| **mAP50** | 0.2721 | 0.2761 | >= 0.20 (both PASS) |
+| **mAP50-95** | 0.1652 | 0.1675 | Informational (YOLOv8n higher) |
 | **Precision** | 0.3690 | 0.3626 | Informational |
-| **Recall** | 0.3153 | 0.3296 | Informational |
-| **Mean Latency (CPU)** | 215.07 ms | 219.72 ms | <= 500 ms (PASS) |
-| **Quality Gate** | **PASSED** | **PASSED** | PASSED |
+| **Recall** | 0.3153 | 0.3296 | Informational (YOLOv8n higher) |
+| **Mean Latency (CPU)** | 204.11 ms | 219.72 ms | <= 500 ms (PASS) |
+| **Quality Gate** | **PASSED** | **PASSED** | Both exceed mAP50 and latency thresholds |
+
+YOLO11n passed because its test report records mAP50 0.2721 (minimum 0.20) and mean CPU latency 204.11 ms (maximum 500 ms). The separate risk report also records passing precision, recall, p95 latency, model-size, robustness, and Deepchecks checks. This is a pass against configured thresholds; it does not establish that YOLO11n outperforms the YOLOv8n baseline. In these reports, YOLOv8n has slightly better mAP50 (0.2761), mAP50–95 (0.1675), and recall (0.3296). The robustness test covered only five images, so that result is a limited signal.
 

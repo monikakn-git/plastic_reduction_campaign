@@ -30,6 +30,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 # Copy application source code, configs, checkpoints, and reports
 COPY src/ ./src/
+COPY scripts/start_render.sh ./scripts/start_render.sh
 COPY configs/ ./configs/
 COPY artifacts/checkpoints/ ./artifacts/checkpoints/
 COPY reports/ ./reports/
@@ -40,11 +41,11 @@ RUN useradd -m -u 1000 ecopulse && \
 
 USER ecopulse
 
-EXPOSE 8000
+EXPOSE 8000 10000
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
-    CMD curl -f http://localhost:8000/health || exit 1
+    CMD curl -f "http://localhost:${PORT}/health" || exit 1
 
 # Start the EcoPulse AI FastAPI service
-CMD ["uvicorn", "src.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "scripts/start_render.sh"]
 

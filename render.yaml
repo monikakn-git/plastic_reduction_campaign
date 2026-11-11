@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ecopulse-api
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: WASTE_MODEL_PATH
+        value: /app/artifacts/checkpoints/yolo11n_best.pt
+      - key: WASTE_MODEL_URL
+        sync: false
+      - key: ECOPULSE_DISABLE_MLFLOW
+        value: "true"
+      - key: ECOPULSE_MAX_UPLOAD_BYTES
+        value: "10485760"
