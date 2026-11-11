@@ -220,7 +220,7 @@ The detection UI is at the API service root URL. It fetches `/api` on load and s
 
 ### Jenkins CI/CD
 
-The root `Jenkinsfile` replaces the GitHub Actions workflow. Configure a Jenkins Multibranch Pipeline for this repository on a Linux agent with Python 3.11 and Docker available. It runs lint and syntax checks, unit tests, optional dataset and model-quality checks, then builds both Docker images. On `main` or `master`, Jenkins triggers Render deploy hooks only after those stages pass. Render auto-deploy is disabled in the Blueprint so a push cannot deploy before Jenkins finishes.
+The root `Jenkinsfile` replaces the GitHub Actions workflow and targets the Windows Jenkins agent. The Jenkins service account must be able to run Git, Python 3.11 or newer (`python`), Docker Desktop, and `curl.exe`. It runs lint and syntax checks, unit tests, optional dataset and model-quality checks (installing `requirements-quality.txt` when both model weights and dataset are present), then builds both Docker images. Only the `master` branch triggers Render deploy hooks, and only after every required stage passes. Render auto-deploy is disabled in the Blueprint so a push cannot deploy before Jenkins finishes. Docker Desktop must be running in Linux-container mode for these Linux-based Dockerfiles.
 
 Create two Render deploy hooks, one for the API service and one for `plastic-reduction-mlflow`. In Jenkins, add each hook as a **Secret text** credential with these exact IDs: `render-api-deploy-hook` and `render-mlflow-deploy-hook`. Keep the URLs out of the repository. Connect GitHub push/branch events to the Jenkins Multibranch Pipeline so pushes start the pipeline. The Jenkins agent needs permission to access Docker and enough disk space to build the API image.
 
