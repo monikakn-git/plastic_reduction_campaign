@@ -3,7 +3,7 @@
 torch>=2.0.0
 torchvision>=0.15.0
 ultralytics>=8.3.0
-mlflow-skinny>=2.15.0
+mlflow-skinny>=3.5,<4
 fastapi>=0.110.0
 uvicorn>=0.30.0
 python-multipart>=0.0.18

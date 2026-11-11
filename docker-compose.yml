@@ -23,7 +23,9 @@ services:
     image: python:3.11-slim
     container_name: ecopulse-mlflow
     ports:
-      - "127.0.0.1:5000:5000"
+      # Keep the host UI accessible when another local MLflow service uses 5000.
+      # The API still reaches MLflow over the Compose network at mlflow:5000.
+      - "127.0.0.1:5001:5000"
     command:
       - bash
       - -c

@@ -13,10 +13,13 @@ DEFAULT_EXPERIMENT = "ecopulse-waste-detection"
 
 def get_tracking_uri() -> str:
     """Resolve MLflow tracking URI, prioritizing environment variables."""
-    return os.environ.get(
-        "MLFLOW_TRACKING_URI",
-        f"sqlite:///{TRACKING_DB.as_posix()}"
-    )
+    tracking_uri = os.environ.get(
+        "MLFLOW_TRACKING_URI", f"sqlite:///{TRACKING_DB.as_posix()}"
+    ).strip()
+    # Render's fromService hostport reference supplies host:port without a scheme.
+    if tracking_uri and "://" not in tracking_uri:
+        tracking_uri = f"http://{tracking_uri}"
+    return tracking_uri
 
 
 def setup_tracking(experiment_name: str = DEFAULT_EXPERIMENT) -> None:

@@ -1,17 +1,59 @@
 services:
   - type: web
-    name: ecopulse-api
+    name: plastic-reduction-campaign-1
     runtime: docker
     plan: starter
+    region: oregon
     dockerfilePath: ./Dockerfile
     dockerContext: .
+    autoDeployTrigger: off
     healthCheckPath: /health
     envVars:
+      - fromGroup: ecopulse-mlflow-credentials
       - key: WASTE_MODEL_PATH
         value: /app/artifacts/checkpoints/yolo11n_best.pt
       - key: WASTE_MODEL_URL
         sync: false
+      - key: WASTE_MODEL_SHA256
+        value: d02aa68e42257ec8ca9c460e428fdb2ba587e3ca40d4bf63b09209ce3fe8412b
+      - key: MLFLOW_TRACKING_URI
+        fromService:
+          type: web
+          name: plastic-reduction-mlflow
+          property: hostport
       - key: ECOPULSE_DISABLE_MLFLOW
-        value: "true"
+        value: "false"
       - key: ECOPULSE_MAX_UPLOAD_BYTES
         value: "10485760"
+
+  - type: web
+    name: plastic-reduction-mlflow
+    runtime: docker
+    plan: starter
+    region: oregon
+    dockerfilePath: ./Dockerfile.mlflow
+    dockerContext: .
+    autoDeployTrigger: off
+    healthCheckPath: /health
+    disk:
+      name: ecopulse-mlflow-data
+      mountPath: /var/data
+      sizeGB: 10
+    envVars:
+      - fromGroup: ecopulse-mlflow-credentials
+      - key: MLFLOW_FLASK_SERVER_SECRET_KEY
+        generateValue: true
+      - key: MLFLOW_AUTH_CONFIG_PATH
+        value: /app/config/mlflow_auth.ini
+      - key: MLFLOW_BACKEND_STORE_URI
+        value: sqlite:////var/data/mlflow.db
+      - key: MLFLOW_ARTIFACTS_DESTINATION
+        value: /var/data/mlartifacts
+
+envVarGroups:
+  - name: ecopulse-mlflow-credentials
+    envVars:
+      - key: MLFLOW_TRACKING_USERNAME
+        value: admin
+      - key: MLFLOW_TRACKING_PASSWORD
+        generateValue: true

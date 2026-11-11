@@ -21,7 +21,7 @@ import mlflow
 from mlflow import MlflowClient
 from mlflow.exceptions import MlflowException
 
-from src.tracking.mlflow_utils import get_tracking_uri
+from src.tracking.mlflow_utils import DEFAULT_EXPERIMENT, get_tracking_uri
 
 DEFAULT_ALIAS = "production"
 _CACHE_SECONDS = max(0, int(os.environ.get("ECOPULSE_REGISTRY_CACHE_SECONDS", "30")))
@@ -277,6 +277,7 @@ def register(
     )
     quality_artifacts = _quality_artifacts(risk_report.resolve(), checkpoint)
     client = _client(tracking_uri)
+    mlflow.set_experiment(DEFAULT_EXPERIMENT)
 
     try:
         client.get_registered_model(model_name)

@@ -11,6 +11,14 @@ if [ ! -s "$model_path" ]; then
     echo "Downloading YOLO11n checkpoint for Render..."
     curl --fail --location --silent --show-error "$WASTE_MODEL_URL" --output "$model_path.tmp"
     test -s "$model_path.tmp"
+    if [ -n "${WASTE_MODEL_SHA256:-}" ]; then
+        actual_sha256="$(sha256sum "$model_path.tmp" | cut -d ' ' -f 1)"
+        if [ "$actual_sha256" != "$WASTE_MODEL_SHA256" ]; then
+            echo "Checkpoint SHA-256 mismatch: expected $WASTE_MODEL_SHA256, got $actual_sha256" >&2
+            rm -f "$model_path.tmp"
+            exit 1
+        fi
+    fi
     mv "$model_path.tmp" "$model_path"
 fi
 

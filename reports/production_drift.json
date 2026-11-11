@@ -1,0 +1,193 @@
+{
+  "metrics": [
+    {
+      "id": "15e89f895b482f9b84ba7274ed18a106",
+      "metric_name": "DriftedColumnsCount(drift_share=0.5)",
+      "config": {
+        "type": "evidently:metric_v2:DriftedColumnsCount",
+        "drift_share": 0.5
+      },
+      "value": {
+        "count": 6.0,
+        "share": 0.375
+      }
+    },
+    {
+      "id": "eee8906827f38cbf353ba7fcf025926a",
+      "metric_name": "ValueDrift(column=mean_confidence,method=K-S p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "mean_confidence",
+        "method": "K-S p_value",
+        "threshold": 0.05
+      },
+      "value": 3.0791310913703865e-15
+    },
+    {
+      "id": "514a6d13e297f66ec005da0085ca6f6e",
+      "metric_name": "ValueDrift(column=mean_box_area_ratio,method=K-S p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "mean_box_area_ratio",
+        "method": "K-S p_value",
+        "threshold": 0.05
+      },
+      "value": 2.932505801305133e-16
+    },
+    {
+      "id": "9dfbf97070d3c7be7cacf0e82c750aa2",
+      "metric_name": "ValueDrift(column=model,method=Z-test p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "model",
+        "method": "Z-test p_value",
+        "threshold": 0.05
+      },
+      "value": 4.1094796010554546e-08
+    },
+    {
+      "id": "815a838e92c02ac5007fdf9fb8d8b9c1",
+      "metric_name": "ValueDrift(column=image_width,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "image_width",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.0
+    },
+    {
+      "id": "9125b7f5db1310723338ce8dc67afe29",
+      "metric_name": "ValueDrift(column=image_height,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "image_height",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.0
+    },
+    {
+      "id": "a13dfe20450c639dad007f8124e10044",
+      "metric_name": "ValueDrift(column=total_detections,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "total_detections",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.11702676545702012
+    },
+    {
+      "id": "157789f1a0a1e8dce996e84769dd9237",
+      "metric_name": "ValueDrift(column=detections_0,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_0",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.29151225875264913
+    },
+    {
+      "id": "60280b397a99faf0c5b76d6b90b02ea9",
+      "metric_name": "ValueDrift(column=detections_1,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_1",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 1.1496632565445122e-48
+    },
+    {
+      "id": "b2a947a6117ae0aaade8dbfa22614c6c",
+      "metric_name": "ValueDrift(column=detections_2,method=Z-test p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_2",
+        "method": "Z-test p_value",
+        "threshold": 0.05
+      },
+      "value": 0.6515533340914925
+    },
+    {
+      "id": "4741d03ee3c8a1291f14a4898e41119b",
+      "metric_name": "ValueDrift(column=detections_3,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_3",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.9130730571561693
+    },
+    {
+      "id": "eb0c16fb2ba7fb7cd1eaf3007ddfc314",
+      "metric_name": "ValueDrift(column=detections_4,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_4",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.5427130176312365
+    },
+    {
+      "id": "60abe373577b383a7715e1956596743a",
+      "metric_name": "ValueDrift(column=detections_5,method=Z-test p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_5",
+        "method": "Z-test p_value",
+        "threshold": 0.05
+      },
+      "value": 1.0
+    },
+    {
+      "id": "db9aa3a3b6f0cf223d3c5c3d3465559a",
+      "metric_name": "ValueDrift(column=detections_6,method=Z-test p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_6",
+        "method": "Z-test p_value",
+        "threshold": 0.05
+      },
+      "value": 1.0
+    },
+    {
+      "id": "cdacbf701e6a075d183e008de2c7d323",
+      "metric_name": "ValueDrift(column=detections_7,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_7",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.8567242490262801
+    },
+    {
+      "id": "7c187a3d6eb42f1a5c432ee897b2e4b3",
+      "metric_name": "ValueDrift(column=detections_8,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_8",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.7267672993071734
+    },
+    {
+      "id": "f233892c20a8828394d00d27abc7374b",
+      "metric_name": "ValueDrift(column=detections_9,method=chi-square p_value,threshold=0.05)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "detections_9",
+        "method": "chi-square p_value",
+        "threshold": 0.05
+      },
+      "value": 0.6996725373751304
+    }
+  ],
+  "tests": []
+}

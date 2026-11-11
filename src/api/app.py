@@ -29,12 +29,32 @@ DETECTIONS_TOTAL = Counter("ecopulse_detections_total", "Detections produced by 
 Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
+def _registered_model_for_serving(model_name: str) -> dict | None:
+    """Resolve MLflow aliases when enabled, otherwise use the local checkpoint."""
+    if os.environ.get("ECOPULSE_DISABLE_MLFLOW", "").lower() in {"1", "true", "yes"}:
+        return None
+    try:
+        return resolve_model(model_name)
+    except MlflowException as exc:
+        # Keep local inference available if the configured registry cannot be reached.
+        print(f"Warning: model registry unavailable; using local checkpoint: {exc}")
+        return None
+
+
 @app.get("/api")
 def home():
+    available_models = [
+        model_name
+        for model_name, checkpoint in DEFAULT_CHECKPOINTS.items()
+        if checkpoint.is_file()
+    ]
+    configured_checkpoint = os.environ.get("WASTE_MODEL_PATH")
+    if configured_checkpoint and Path(configured_checkpoint).is_file() and "yolo11n" not in available_models:
+        available_models.insert(0, "yolo11n")
     return {
         "project": "EcoPulse AI",
         "message": "EcoPulse AI Waste Detection API is running",
-        "available_models": ["yolo11n", "yolov8n"],
+        "available_models": available_models,
         "default_model": "yolo11n",
     }
 
@@ -55,13 +75,7 @@ def user_interface():
 def health():
     try:
         active_checkpoint = get_checkpoint_path()
-        try:
-            registered = resolve_model("yolo11n")
-        except MlflowException as exc:
-            # A local SQLite tracking store cannot resolve artifact-proxy URIs.
-            # Keep the health endpoint available with the configured local model.
-            registered = None
-            print(f"Warning: model registry unavailable; using local checkpoint: {exc}")
+        registered = _registered_model_for_serving("yolo11n")
         if registered:
             active_checkpoint = Path(registered["path"])
         model = load_model(active_checkpoint)
@@ -141,13 +155,7 @@ async def predict(
         raise HTTPException(status_code=400, detail=f"Unknown model_name '{model_name}'.")
 
     try:
-        registered = resolve_model(model_name)
-    except MlflowException as exc:
-        # Local development commonly uses the SQLite tracking store, which cannot
-        # resolve registry artifacts created through an HTTP artifact proxy. Keep
-        # image inference available from the checked-in local checkpoints.
-        registered = None
-        print(f"Warning: model registry unavailable; using local checkpoint: {exc}")
+        registered = _registered_model_for_serving(model_name)
     except (ValueError, FileNotFoundError) as exc:
         raise HTTPException(status_code=503, detail=f"Model registry unavailable: {exc}") from exc
     checkpoint_path = Path(registered["path"]) if registered else get_checkpoint_path(model_name)

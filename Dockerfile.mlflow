@@ -1,0 +1,22 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=5000 \
+    MLFLOW_AUTH_CONFIG_PATH=/app/config/mlflow_auth.ini
+
+WORKDIR /app
+COPY requirements-mlflow.txt ./
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements-mlflow.txt && \
+    apt-get update && apt-get install -y --no-install-recommends gosu && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY scripts/start_mlflow.sh ./scripts/start_mlflow.sh
+COPY configs/mlflow_auth.ini ./config/mlflow_auth.ini
+RUN useradd --create-home --uid 1000 mlflow && \
+    mkdir -p /var/data/mlartifacts && \
+    chown -R mlflow:mlflow /app /var/data
+
+EXPOSE 5000
+CMD ["sh", "scripts/start_mlflow.sh"]
