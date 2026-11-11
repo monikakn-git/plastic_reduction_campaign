@@ -49,7 +49,13 @@ def user_interface():
 def health():
     try:
         active_checkpoint = get_checkpoint_path()
-        registered = resolve_model("yolo11n")
+        try:
+            registered = resolve_model("yolo11n")
+        except MlflowException as exc:
+            # A local SQLite tracking store cannot resolve artifact-proxy URIs.
+            # Keep the health endpoint available with the configured local model.
+            registered = None
+            print(f"Warning: model registry unavailable; using local checkpoint: {exc}")
         if registered:
             active_checkpoint = Path(registered["path"])
         model = load_model(active_checkpoint)
