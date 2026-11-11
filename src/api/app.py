@@ -29,7 +29,7 @@ DETECTIONS_TOTAL = Counter("ecopulse_detections_total", "Detections produced by 
 Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
-@app.get("/")
+@app.get("/api")
 def home():
     return {
         "project": "EcoPulse AI",
@@ -37,6 +37,12 @@ def home():
         "available_models": ["yolo11n", "yolov8n"],
         "default_model": "yolo11n",
     }
+
+
+@app.get("/", include_in_schema=False)
+def landing_page():
+    """Open the detection interface at the service's root URL."""
+    return FileResponse(UI_FILE)
 
 
 @app.get("/ui", include_in_schema=False)
