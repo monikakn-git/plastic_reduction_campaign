@@ -79,8 +79,6 @@ def detect_model_name(checkpoint_path: str | Path) -> str:
 
 def load_model(checkpoint_path: str | Path | None = None) -> YOLO:
     """Load and cache the YOLO model checkpoint."""
-    global _model_cache
-
     target_path = Path(checkpoint_path) if checkpoint_path else get_checkpoint_path()
     if not target_path.is_absolute():
         target_path = PROJECT_ROOT / target_path
